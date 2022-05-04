@@ -1,0 +1,388 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{ahireintro}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7275f5a3b75f3b44814576e0e96bfd78}{%
+           family={Ahire},
+           familyi={A\bibinitperiod},
+           given={Jayesh\bibnamedelima Bapu},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7275f5a3b75f3b44814576e0e96bfd78}
+      \strng{fullhash}{7275f5a3b75f3b44814576e0e96bfd78}
+      \strng{bibnamehash}{7275f5a3b75f3b44814576e0e96bfd78}
+      \strng{authorbibnamehash}{7275f5a3b75f3b44814576e0e96bfd78}
+      \strng{authornamehash}{7275f5a3b75f3b44814576e0e96bfd78}
+      \strng{authorfullhash}{7275f5a3b75f3b44814576e0e96bfd78}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Retrieved March}
+      \field{title}{Introduction to Word Vectors}
+      \field{year}{2018}
+      \field{pages}{2018}
+      \range{pages}{1}
+      \field{volume}{12}
+      \range{volume}{1}
+    \endentry
+    \entry{erkkatrin}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ff518e81176d3e3d1e38b4de99b95f8c}{%
+           family={Erk},
+           familyi={E\bibinitperiod},
+           given={Katrin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ff518e81176d3e3d1e38b4de99b95f8c}
+      \strng{fullhash}{ff518e81176d3e3d1e38b4de99b95f8c}
+      \strng{bibnamehash}{ff518e81176d3e3d1e38b4de99b95f8c}
+      \strng{authorbibnamehash}{ff518e81176d3e3d1e38b4de99b95f8c}
+      \strng{authornamehash}{ff518e81176d3e3d1e38b4de99b95f8c}
+      \strng{authorfullhash}{ff518e81176d3e3d1e38b4de99b95f8c}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Language and Linguistics Compass}
+      \field{month}{10}
+      \field{title}{Vector Space Models of Word Meaning and Phrase Meaning: A Survey}
+      \field{year}{2012}
+      \field{volume}{6}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1002/lnco.362
+      \endverb
+    \endentry
+    \entry{firth}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8f4e558692cd8257e0b3f3afb83483ab}{%
+           family={Firth},
+           familyi={F\bibinitperiod},
+           given={J.R.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8f4e558692cd8257e0b3f3afb83483ab}
+      \strng{fullhash}{8f4e558692cd8257e0b3f3afb83483ab}
+      \strng{bibnamehash}{8f4e558692cd8257e0b3f3afb83483ab}
+      \strng{authorbibnamehash}{8f4e558692cd8257e0b3f3afb83483ab}
+      \strng{authornamehash}{8f4e558692cd8257e0b3f3afb83483ab}
+      \strng{authorfullhash}{8f4e558692cd8257e0b3f3afb83483ab}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Synopsis of Linguistic Theory, 1930-1955}
+      \field{year}{1957}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=T8LDtgAACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=T8LDtgAACAAJ
+      \endverb
+    \endentry
+    \entry{realworldnlp}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6c736ab2eebffc3686ce55bc25b7ab31}{%
+           family={Hagiwara},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Manning}%
+      }
+      \strng{namehash}{6c736ab2eebffc3686ce55bc25b7ab31}
+      \strng{fullhash}{6c736ab2eebffc3686ce55bc25b7ab31}
+      \strng{bibnamehash}{6c736ab2eebffc3686ce55bc25b7ab31}
+      \strng{authorbibnamehash}{6c736ab2eebffc3686ce55bc25b7ab31}
+      \strng{authornamehash}{6c736ab2eebffc3686ce55bc25b7ab31}
+      \strng{authorfullhash}{6c736ab2eebffc3686ce55bc25b7ab31}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781617296420}
+      \field{title}{Real-World Natural Language Processing: Practical Applications with Deep Learning}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=Ok5NEAAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=Ok5NEAAAQBAJ
+      \endverb
+    \endentry
+    \entry{harris}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c93d2fea5cc5e59f6d92c0cfb5ba20a8}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={Zellig\bibnamedelima S.},
+           giveni={Z\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{c93d2fea5cc5e59f6d92c0cfb5ba20a8}
+      \strng{fullhash}{c93d2fea5cc5e59f6d92c0cfb5ba20a8}
+      \strng{bibnamehash}{c93d2fea5cc5e59f6d92c0cfb5ba20a8}
+      \strng{authorbibnamehash}{c93d2fea5cc5e59f6d92c0cfb5ba20a8}
+      \strng{authornamehash}{c93d2fea5cc5e59f6d92c0cfb5ba20a8}
+      \strng{authorfullhash}{c93d2fea5cc5e59f6d92c0cfb5ba20a8}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{WORD}
+      \field{title}{Distributional Structure}
+      \field{year}{1954}
+      \field{number}{2\bibrangedash 3}
+      \range{number}{2}
+      \field{pages}{146\bibrangedash 162}
+      \range{pages}{17}
+      \field{volume}{10}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1080/00437956.1954.11659520
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/00437956.1954.11659520
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/00437956.1954.11659520
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/00437956.1954.11659520
+      \endverb
+    \endentry
+    \entry{lane2019natural}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=18c73692c4d90dfe554faabde26daa11}{%
+           family={Lane},
+           familyi={L\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a1b2572d033dce6fe0302f3124748f5}{%
+           family={Hapke},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=601897eb4096061c657093f93779cdf8}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Manning Publications}%
+      }
+      \strng{namehash}{032b9143ce58a85413c43aa5bc1ec105}
+      \strng{fullhash}{032b9143ce58a85413c43aa5bc1ec105}
+      \strng{bibnamehash}{032b9143ce58a85413c43aa5bc1ec105}
+      \strng{authorbibnamehash}{032b9143ce58a85413c43aa5bc1ec105}
+      \strng{authornamehash}{032b9143ce58a85413c43aa5bc1ec105}
+      \strng{authorfullhash}{032b9143ce58a85413c43aa5bc1ec105}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781617294631}
+      \field{title}{Natural Language Processing in Action: Understanding, analyzing, and generating text with Python}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=UyHgswEACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=UyHgswEACAAJ
+      \endverb
+    \endentry
+    \entry{mcdonald}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c8b98a0a9abe5b6948a13999a492bafd}{%
+           family={Mcdonald},
+           familyi={M\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c8b98a0a9abe5b6948a13999a492bafd}
+      \strng{fullhash}{c8b98a0a9abe5b6948a13999a492bafd}
+      \strng{bibnamehash}{c8b98a0a9abe5b6948a13999a492bafd}
+      \strng{authorbibnamehash}{c8b98a0a9abe5b6948a13999a492bafd}
+      \strng{authornamehash}{c8b98a0a9abe5b6948a13999a492bafd}
+      \strng{authorfullhash}{c8b98a0a9abe5b6948a13999a492bafd}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{07}
+      \field{title}{Testing the distributional hypothesis: The influence of context on judgements of semantic similarity}
+      \field{year}{2008}
+    \endentry
+    \entry{nlpandcl}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=86965abedf4e93b7be8759d4be48e34e}{%
+           family={Tsujii},
+           familyi={T\bibinitperiod},
+           given={Junichi},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{86965abedf4e93b7be8759d4be48e34e}
+      \strng{fullhash}{86965abedf4e93b7be8759d4be48e34e}
+      \strng{bibnamehash}{86965abedf4e93b7be8759d4be48e34e}
+      \strng{authorbibnamehash}{86965abedf4e93b7be8759d4be48e34e}
+      \strng{authornamehash}{86965abedf4e93b7be8759d4be48e34e}
+      \strng{authorfullhash}{86965abedf4e93b7be8759d4be48e34e}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0891-2017}
+      \field{journaltitle}{Computational Linguistics}
+      \field{month}{12}
+      \field{title}{{Natural Language Processing and Computational Linguistics}}
+      \field{year}{2021}
+      \field{number}{4}
+      \range{number}{1}
+      \field{pages}{707\bibrangedash 727}
+      \range{pages}{21}
+      \field{volume}{47}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1162/coli_a_00420
+      \endverb
+      \verb{eprint}
+      \verb https://direct.mit.edu/coli/article-pdf/47/4/707/1979478/coli\_a\_00420.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1162/coli\_a\_00420
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1162/coli%5C_a%5C_00420
+      \endverb
+    \endentry
+    \entry{practicalnlp}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e04c8911911bd5bd793c3ecf5db45004}{%
+           family={Vajjala},
+           familyi={V\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b801edbf9748261571653f913ef2eb34}{%
+           family={Majumder},
+           familyi={M\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{16eff2eebf618530571820c90ea1dd82}
+      \strng{fullhash}{16eff2eebf618530571820c90ea1dd82}
+      \strng{bibnamehash}{16eff2eebf618530571820c90ea1dd82}
+      \strng{authorbibnamehash}{16eff2eebf618530571820c90ea1dd82}
+      \strng{authornamehash}{16eff2eebf618530571820c90ea1dd82}
+      \strng{authorfullhash}{16eff2eebf618530571820c90ea1dd82}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781492054009}
+      \field{title}{Practical Natural Language Processing: A Comprehensive Guide to Building Real-World NLP Systems}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=hPrrDwAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=hPrrDwAAQBAJ
+      \endverb
+    \endentry
+    \entry{yarlett}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6859ade3fc75a7e1f375600d2d058896}{%
+           family={Yarlett},
+           familyi={Y\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a3192d0f3b3cb594c20e4d38cbe49c64}{%
+           family={Ramscar},
+           familyi={R\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9edf31e490703bf0cb80b2657157b8d}{%
+           family={Dye},
+           familyi={D\bibinitperiod},
+           given={Melody},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aaa629ed511e438e5914eca614cf679d}
+      \strng{fullhash}{aaa629ed511e438e5914eca614cf679d}
+      \strng{bibnamehash}{aaa629ed511e438e5914eca614cf679d}
+      \strng{authorbibnamehash}{aaa629ed511e438e5914eca614cf679d}
+      \strng{authornamehash}{aaa629ed511e438e5914eca614cf679d}
+      \strng{authorfullhash}{aaa629ed511e438e5914eca614cf679d}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Language Learning Through Similarity-Based Generalization}
+      \field{year}{2008}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

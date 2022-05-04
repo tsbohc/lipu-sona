@@ -1,0 +1,381 @@
+% \section{Phonological analysis}
+%
+% \subsection{Phonemic inventory compatibility}
+%
+% \paragraph{Phoible}
+%
+% ``PHOIBLE is a repository of cross-linguistic phonological inventory data, which have been extracted from source documents and tertiary databases and compiled into a single searchable convenience sample. Release 2.0 from 2019 includes 3020 inventories that contain 3183 segment types found in 2186 distinct languages'' \parencite{phoible}.
+%
+% A dataset containing all 3020 phonetic inventories was acquired from phoible.org.
+%
+% \paragraph{PanPhon}
+%
+% ``PanPhon is a resource consisting of a database that relates over 5,000 IPA segments (simple and complex) to their definitions in terms of 21 articulatory features, as well as a Python package for interacting with this database and manipulating the representations that it provides'' \parencite{panphon}.
+%
+% The PanPhon Python package includes a module containing methods for computing Levenshtein distance, and more importantly, methods for computing similarity between IPA segments that take into account articulatory features.
+%
+% \paragraph{Analysis}
+%
+% The phonemes in each phonemic inventory of the dataset were normalised and sorted. The phonemic inventory of Toki Pona was compared to the phonetic inventories of the other 3020 languages. The comparison was accomplished via a Python script.
+%
+% In each comparison, the script found unique pairs of phonemes closest in articulation between the phonemes of Toki Pona and the compared language. Weighted feature edit distance was used as a metric for articulatory distinctiveness:
+%
+% \begin{figure}[ht]
+%   \bigskip
+%   \begin{center}
+%     \resizebox{\textwidth}{!}{%
+%     \ttfamily
+%     \begin{tabular}{||ccccccccccc||}
+%       \hline
+%     syl & son & cons  & cont & delrel & lat  & nas  & strid & voi   & sg    & cg \\ 
+%     1   & 1   & 1     & 0.5  & 0.25   & 0.25 & 0.25 & 0.125 & 0.125 & 0.125 & 0.125 \\
+%       \hline
+%       \hline
+%     ant  & cor  & distr & lab  & hi   & lo   & back & round & tense & long  & velaric \\
+%     0.25 & 0.25 & 0.125 & 0.25 & 0.25 & 0.25 & 0.25 & 0.25  & 0.25  & 0.125 & 0.25 \\
+%       \hline
+%     \end{tabular}}
+%   \end{center}
+%   \caption{PanPhon's feature edit weights}
+% \end{figure}
+%
+% This means that the feature edit distance between [o] and [o:] is 0.25, between [o] and [b] is 1.0, etc.
+%
+% The feature edit distances between individual phonemes in these pairs were added up to a total for each language (dt). The resulting feature edit distance quatifies how incompatible Toki Pona's phonemic inventory with that of each compared language.
+%
+% This, in turn, is a rough measurement of how difficult it is to produce Toki Pona phonemes for speakers of different language backgrounds.
+%
+% % TODO: numbers below are wrong
+%
+% Across the 3020 phonetic inventories, 629 were found to be fully compatible with Toki Pona's phonemic inventory. The average feature edit distance was 3.94.
+%
+% In the following comparisons, only a subset of 144 languages that have received ISO6391 codes was considered. The ISO6391 registry covers the world's most major languages. Note that this list include macrolanguages, such as English, Chinese, and Arabic.
+%
+% % TODO: could mention how i had to convert iso-3 to iso-1 and yeah
+%
+% \begin{figure}[ht]
+%   \bigskip
+%   \begin{center}
+%     \resizebox{\textwidth}{!}{%
+%     \ttfamily
+%     \begin{tabular}{||cl|l|cccccccccccccc||}
+%       \hline
+%       ISO & Language & dt & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       \hline
+%
+%       en & English & 0.25 & a & e & i & j & k & l & m & n & ɒ & p & s & t & u & w \\
+%       zh & Chinese & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       hi & Hindi & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t̪ & u & w \\
+%       es & Spanish & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       fr & French & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       ar & Arabic & 0.5 & a & eː & i & j & k & l & m & n & oː & p & s & t & u & w \\
+%       bn & Bengali & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       ru & Russian & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       pt & Portuguese & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t̪ & u & w \\
+%       % ur & Urdu & 0.8 & a & ẽ̞ & i & j & k & r & m & n & ɔ & p & s & t̪ & u & w \\
+%       de & German & 1.25 & a & eː & ɪ & j & k & l & m & n & ɔ & p & s & t & uː & v \\
+%       ja & Japanese & 0.25 & a & e & i & j & k & ɾ & m & n & o & p & s & t & u & w \\
+%       tr & Turkish & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       ko & Korean & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       it & Italian & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       \hline
+%
+%       % {{{
+%       % no & Norwegian & 0.85 & a & e̞ & i & j & kʰ & l & m & n & o̞ː & b & s & d & u & w \\
+%       % fi & Finnish & 0.3 & a & e̞ & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       % ik & Inupiaq & 13.75 & a & i & u & j & k & l & m & n & ʔ & p & s & t & h & v \\
+%       % mi & Maori & 8.925 & ɑ & ɛ & i & w & k & ɾ & m & n & o̞ & p & t & f & u & uː \\
+%       % ab & Abkhazian & 8.225 & ä & äː & ɨ & j & kʰ & l & m & n & w & b & s & t̠ʆʷʰ & ɥˤ & v \\
+%       % nd & North Ndebele & 6.5 & e & i & o & j & kʰ & l & m & n & u & b & s & d & ɑ & w \\
+%       % kl & Kalaallisut & 6.25 & a & i & ɪː & ʔ & k & l & m & n & u & p & s̻ & t & ʊː & β \\
+%       % za & Zhuang & 6.175 & a & e & i & j & k & h & m & ŋ & ŏ & p & ʃ & pʰ & u & v \\
+%       % oj & Ojibwa & 5.875 & a & ɛː & ɪ & ʔ & k & l & m & n & oː & p & s & t & ʊ & p͈ː \\
+%       % pav & Swedish & 4.375 & a & ɛ & ɪ & ɹ & k & l & m & n̪ & ɔ & p & s̪ & t̪ & uː & v \\
+%       % ki & Kikuyu & 3.625 & a & e & i & j & k & ɾ & m & n & o & t & ð & ʃ & u & w \\
+%       % to & Tonga (Tonga Islands) & 3.5 & a & e & i & ʔ & k & ɺ & m & n̪ & o & p & s & t̪ & u & v \\
+%       % ay & Aymara & 2.5 & a & i & iː & j & k & l & m & n & u & p & s & t & uː & w \\
+%       % tk & Turkmen & 2.5 & æː & ɛ & i & j & k & l̪ & m & n̪ & ɔ & b & θ & d̪ & u & w \\
+%       % nv & Navajo & 2.25 & a & ɛ & ɪ & j & k & l & m & n & ɔ & p & s & t & oː & w \\
+%       % ug & Uighur & 2.25 & e & ɛ & ɪ & j & k & l & m & n̪ & o & p & s & t̪ & ʊ & w \\
+%       % uz & Uzbek & 2.05 & æ & e & i & j & k & l & m & n̪ & ɵ & p & s & t̪ & ʉ & f \\
+%       % hz & Herero & 1.875 & a & e & i & j & k & ɾ & n & n̪ & o & p & θ & t & u & w \\
+%       % cv & Chuvash & 1.8 & e̞ & i & ɯ & j & k & l & m & n & o̞ & p & s & t & u & w \\
+%       % tt & Tatar & 1.8 & a & ɛ & ɨ & j & k & l & m & n̪ & ŏ & p & s̪ & t̪ & u & v \\
+%       % so & Somali & 1.75 & a & e & i & j & kʰ & l & m & n & ɔ & b & s & d & ʊ & w \\
+%       % si & Sinhala & 1.6 & a & e̞ & ɪ & j & k & l & m & n & o̞ & p & s & t & uː & ɸ \\
+%       % uk & Ukrainian & 1.5 & a & ɛ & i & j & k & l̪ & m & n̪ & ɔ & p & s̪ & t̪ & u & w \\
+%       % fo & Faroese & 1.5 & a & ɛ & ɪ & j & k & l & m & n & ɔ & p & s & t & uː & v \\
+%       % ii & Sichuan Yi & 1.375 & a & e & i & ɻ̹̩ & k & l & m & n & o & p & s & t & u & v \\
+%       % dv & Dhivehi & 1.3 & ä & e & i & j & kʰ & l & m & n & o & b & s & d̪ & u & v \\
+%       % sa & Sanskrit & 1.25 & a & eː & i & j & k & l & m & n & oː & p & s & t̪ & u & w \\
+%       % cy & Welsh & 1.25 & a & ɛ & ɪ & j & k & l & m & n & ɔ & p & s & t & uː & w \\
+%       % fj & Fijian & 1.1 & a & e̞ & i & j & k & l & m & n̪ & o̞ & p & s & t̪ & u & f \\
+%       % ga & Irish & 1.05 & a & e & i & j & k & l & mʲ & n & o & pʲ & s & t̠ʲ & u & w \\
+%       % el & Modern Greek (1453-) & 1.05 & e̞ & ɛ & i & j & k & l & m & n & o̞ & p & s & t & u & v \\
+%       % pl & Polish & 1.0 & a & e & i & j & k & l̪ & m & n̪ & o & p & s̪ & t̪ & u & w \\
+%       % kj & Kuanyama & 1.0 & a & ɛ & i & j & k & l & m & n & ɔ & p & ʃ & t & u & w \\
+%       % dz & Dzongkha & 1.0 & e & eː & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % fy & Western Frisian & 1.0 & a & ɛ & i & j & kʰ & l & m & n & o & b & s & d & u & w \\
+%       % mn & Mongolian & 0.85 & a & e & i & j & kʰ & l & m & n & o̞ː & b & s & d & u & w̜ \\
+%       % sk & Slovak & 0.85 & a & ɛ & i̞ & j & k & l & m & n & ɔ & p & s & t & u̞ & v \\
+%       % mg & Malagasy & 0.8 & a & e̞ & i & j & k & l & m & n & o & p & s & t & ʊ & w \\
+%       % fa & Persian & 0.8 & a̟ & e & i & j & kʰ & l & m & n & o & b & s & d & u & w \\
+%       % os & Ossetian & 0.8 & e & ɛ & i & j & k & l & m & n & o & p & s & t̺ & u & w \\
+%       % lv & Latvian & 0.8 & ä & ɛ & i & j & k & l & m & n & ɔ & p & s & t & u & v \\
+%       % av & Avaric & 0.75 & a & e & i & j & R̪|R & l & m & n & o & pʰ & s & d & u & w \\
+%       % sn & Shona & 0.75 & a & e & i & j & k & r & m & n̪ & o & p & s̪ & t & u & w \\
+%       % st & Southern Sotho & 0.75 & a & e & i & j & kʰ & l & m & n & o & b & s & tʰ & u & w \\
+%       % xh & Xhosa & 0.75 & a & e & i & j & kʰ & l & m & n & o & pʰ & s & tʰ & u & w \\
+%       % af & Afrikaans & 0.75 & a & ɛ & i & j & k & l & m & n & ɔ & p & s & t & u & v \\
+%       % oc & Occitan (post 1500) & 0.75 & a & e & i & j & k & l & m & n̪ & ɔ & p & s & t̪ & u & w \\
+%       % an & Aragonese & 0.625 & a & e & i & j & k & l & m & n & o & p & s & t̪ & u & u̯ \\
+%       % bg & Bulgarian & 0.6 & a & ɛ & i & j & k & l̟ & m & n & o & p & s & t̟ & u & v \\
+%       % tg & Tajik & 0.55 & ä & e & i & j & k & l & m & n & o & p & s & t̻ & u & v \\
+%       % su & Sundanese & 0.5 & a & ɛ & i & j & k & l & m & n & o & p & s & d & u & w \\
+%       % zu & Zulu & 0.5 & a & ɛ & i & j & k & l & m & n & ɔ & p & s & t & u & w \\
+%       % is & Icelandic & 0.5 & a & e & i & j & k & l & m & n & ɔ & p & s & t & u & v \\
+%       % pa & Panjabi & 0.5 & a & e & i & j & k & l & m & n̻ & o & p & s & t̻ & u & w \\
+%       % mk & Macedonian & 0.5 & a & e & i & j & k & l & m & n & o & p & s & t̪ & u & v \\
+%       % cs & Czech & 0.5 & a & ɛ & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       % mr & Marathi & 0.5 & a & e & i & j & k & l & m & n̪ & o & p & s & t̪ & u & w \\
+%       % or & Oriya (macrolanguage) & 0.5 & a & e & i & j & k & l & m & n̪ & o & p & s & t̪ & u & w \\
+%       % eu & Basque & 0.425 & a & e & i & j & k & l & m & n & o & p & s̺ & t & u & u̯ \\
+%       % ka & Georgian & 0.4 & a̟ & e̞ & i & j & k & l & m & n & o̞ & p & s & t & u & v \\
+%       % hy & Armenian & 0.35 & a & e̞ & i & j & k & l & m & n & o̞ & p & s & t & u & v \\
+%       % hu & Hungarian & 0.3 & æ & ɛ & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % az & Azerbaijani & 0.3 & a̟ & e & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       % ky & Kirghiz & 0.3 & a & e̞ː & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       % ku & Kurdish & 0.3 & äː & e & i & j & k & l & m & n & o & p & s & t̪ & u & w \\
+%       % gl & Galician & 0.3 & a & e & i & j & k & l & m & n & o & p & s̺ & t̪ & u & w \\
+%       % et & Estonian & 0.3 & æ & e & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       % sc & Sardinian & 0.3 & ä & e & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       % ha & Hausa & 0.25 & a & e & i & j & k & l & m & n & o & b & s & t & u & w \\
+%       % he & Hebrew & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       % lt & Lithuanian & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       % sq & Albanian & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       % kv & Komi & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       % ne & Nepali (macrolanguage) & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t̪ & u & w \\
+%       % ce & Chechen & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t̪ & u & w \\
+%       % rw & Kinyarwanda & 0.25 & a & e & i & j & k & r & m & n & o & p & s & t & u & w \\
+%       % rn & Rundi & 0.25 & a & e & i & j & k & r & m & n & o & p & s & t & u & w \\
+%       % yi & Yiddish & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       % nl & Dutch & 0.25 & a & ɛ & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % ca & Catalan & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t̪ & u & w \\
+%       % sd & Sindhi & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t̪ & u & w \\
+%       % sl & Slovenian & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t̪ & u & w \\
+%       % aa & Afar & 0.25 & a & e & i & j & k & l & m & n & o & b & s & t & u & w \\
+%       % gu & Gujarati & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t̪ & u & w \\
+%       % kn & Kannada & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t̪ & u & w \\
+%       % se & Northern Sami & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       % gd & Scottish Gaelic & 0.25 & a & e & i & j & k & l & m & n & o & p & s & t & u & v \\
+%       % ba & Bashkir & 0.15 & æ & e̞ & i & j & k & l & m & n & o̞ & p & s & t & u & w \\
+%       % mt & Maltese & 0.1 & a & e̞ & i & j & k & l & m & n & o̞ & p & s & t & u & w \\
+%       % ps & Pushto & 0.1 & a & e̞ː & i & j & k & l & m & n & o̞ː & p & s & t & u & w \\
+%       % ch & Chamorro & 0.05 & æ & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % lb & Luxembourgish & 0.05 & æ & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % rm & Romansh & 0.05 & ä & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % te & Telugu & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % km & Central Khmer & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % vi & Vietnamese & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % my & Burmese & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % th & Thai & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % ms & Malay (macrolanguage) & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % jv & Javanese & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % tl & Tagalog & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % qu & Quechua & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % gn & Guarani & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % am & Amharic & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % wo & Wolof & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % ak & Akan & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % ee & Ewe & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % ig & Igbo & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % sw & Swahili (macrolanguage) & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % kr & Kanuri & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % br & Breton & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % ro & Romanian & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % ks & Kashmiri & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % bm & Bambara & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % sg & Sango & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % yo & Yoruba & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % ff & Fulah & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % ln & Lingala & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % lg & Ganda & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % lo & Lao & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % ta & Tamil & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % bo & Tibetan & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % ng & Ndonga & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % ti & Tigrinya & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % om & Oromo & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % as & Assamese & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % ml & Malayalam & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % da & Danish & 0.0 & a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       % }}}
+%       \hline
+%   \end{tabular}}
+%   \end{center}
+%   \caption{Phonemic inventory approximations}
+% \end{figure}
+%
+% The majority of world's most spoken languages had no trouble approximating the phonemic inventory of Toki Pona. The average feature edit distance between them was 0.91. This tells us that the bulk of the feature edit distance came from less spoken languages.
+%
+% The hardest phonemes to approximate were found to be /u/, /t/, and /w/. /w/ was commonly substituted for /v/ or /f/, /s/ for /z/ or voiced/unvoiced dental fricatives, and /l/ for an alveolar tap or a rhotic. Some languages lack unvoiced plosives, which were substituted for voiced ones.
+%
+% \begin{figure}[ht]
+%   \bigskip
+%   \begin{center}
+%     \resizebox{\textwidth}{!}{%
+%     \ttfamily
+%     \begin{tabular}{||cccccccccccccc||}
+%       \hline
+%       a & e & i & j & k & l & m & n & o & p & s & t & u & w \\
+%       5.05 & 10.85 & 8.05 & 10.75 & 2.75 & 5.42 & 1.62 & 5.88 & 17.25 & 5.12 & 4.6 & 16.33 & 21.43 & 16.3 \\
+%       \hline
+%   \end{tabular}}
+%   \end{center}
+%   \caption{Total feature edit distance per phoneme}
+% \end{figure}
+%
+% Toki Pona's phonemic inventory is minimal, flexible, and allows for wide range of allophonic variations. Speakers coming from most backgrounds will have no trouble achieving proper pronunciation or something very close to it. This quality positively affects the learnability of the language.
+
+
+
+
+% TODO: uhhh, you forgot m- and the order is wrong
+
+% \begin{figure}[h]
+%   \begin{center}
+%     \ttfamily
+%     \begin{tabular}{|r|rrrrrrrrrr|}
+%       \hline
+%          & -i & -in & -u & -un & -e & -en & -o & -on & -a & -an \\
+%       \hline
+%       -  &  i &  in &  u &  un &  e &  en &  o &  on &  a &  an \\
+%       p- & pi & pin & pu & pun & pe & pen & po & pon & pa & pan \\
+%       t- &    &     & tu & tun & te & ten & to & ton & ta & tan \\
+%       k- & ki & kin & ku & kun & ke & ken & ko & kon & ka & kan \\
+%       s- & si & sin & su & sun & se & sen & so & son & sa & san \\
+%       w- & wi & win &    &     & we & wen &    &     & wa & wan \\
+%       l- & li & lin & lu & lun & le & len & lo & lon & la & lan \\
+%       j- &    &     & ju & jun & je & jen & jo & jon & ja & jan \\
+%       \hline
+%
+%       %    & \bfseries{-i} & \bfseries{-in} & \bfseries{-u} & \bfseries{-un} & \bfseries{-e} & \bfseries{-en} & \bfseries{-o} & \bfseries{-on} & \bfseries{-a} & \bfseries{-an} \\
+%       % \hline
+%       % \bfseries{-}  &  i &  in &  u &  un &  e &  en &  o &  on &  a &  an \\
+%       % \bfseries{p-} & pi & pin & pu & pun & pe & pen & po & pon & pa & pan \\
+%       % \bfseries{t-} &    &     & tu & tun & te & ten & to & ton & ta & tan \\
+%       % \bfseries{k-} & ki & kin & ku & kun & ke & ken & ko & kon & ka & kan \\
+%       % \bfseries{s-} & si & sin & su & sun & se & sen & so & son & sa & san \\
+%       % \bfseries{w-} & wi & win &    &     & we & wen &    &     & wa & wan \\
+%       % \bfseries{l-} & li & lin & lu & lun & le & len & lo & lon & la & lan \\
+%       % \bfseries{j-} &    &     & ju & jun & je & jen & jo & jon & ja & jan \\
+%     \end{tabular}
+%   \end{center}
+%   \caption{Valid syllables}
+% \end{figure}
+
+
+
+% \subsection{Phonology}
+% \paragraph{Phonemic inventory}
+%
+% \subsection{Writing systems}
+%
+% \subsection{Grammar}
+% \subsection{Vocabulary}
+%
+% \paragraph{Etymology}
+
+
+
+% \section{Levenshtein distance}
+%
+% ``Levenshtein distance is a measure of the similarity between two strings, the source string and the target string. The distance is the number of deletions, insertions, or substitutions required to transform the source string into the target string. The greater the Levenshtein distance, the more different the strings are'' \parencite{levenshtein}.
+%
+% The algorithm for determining the Levenshtein distance between two strings was developed Vladimir Levenshtein in 1965 \parencite{levenorig}.
+%
+% The Levenshtein distance is computed in steps:
+%
+% \begin{enumerate}
+%   \item kitten -> sitten (substituted 'k' for 's')
+%   \item sitten -> sittin (substituted 'e' for 'i')
+%   \item sittin -> sitting (inserted 'g' at the end)
+% \end{enumerate}
+%
+% Depending of the variation, different distance penalties may be imposed for different actions (deletion, substitution, insertion).
+%
+% The algorithm can be used to determine phonetic similarity between IPA strings. It can also expanded to take into account phonological features different IPA symbols.
+%
+% Similar research has been done when comparing phonemic inventories of different languages.
+%
+
+
+% pretty vectors :C
+
+% \paragraph{Practical example}
+%
+% \begin{exe}
+% \ex
+% suno en mun li lon sewi. suno li seli. mun li lete.
+% \glt The sun and the moon are in the sky. The sun is hot. The moon is cold.
+% \end{exe}
+%
+% After the model is trained on the above corpus, the following word vector data can be accessed. Columns represent tokens and rows represent vector values. Table cells are colour coded based on values they contain. For the sake of this example very low model dimensionality was chosen (4).
+%
+% % \setlength{\arrayrulewidth}{0.3mm}
+%
+% \begin{figure}[ht]
+%   \bigskip
+%   \begin{center}
+%     \ttfamily
+%     \begin{tabular}{||r|RRRR||}
+%       \hline
+%       suno_v  & -0.1253857 & -0.09408429 & 0.18451262 & -0.038336784 \\
+%       \hline
+%       mun_v   & -0.23257375 & -0.17792022 & 0.16147181 & 0.2243247 \\
+%       \hline
+%       seli_v  & 0.071914494 & 0.024796844 & -0.20713037 & -0.23622045 \\
+%       \hline
+%       lete_v  & -0.11341533 & 0.16385129 & -0.12150401 & -0.04540044 \\
+%       \hline
+%     \end{tabular}
+%   \end{center}
+%   \caption{Example model vectors}
+% \end{figure}
+%
+% While the numbers may not tell us much, there are observations to be made. The `suno_v' and `mun_v' vectors are very similar, except for one value. Both of them also relate to `seli_v` and `lete_v` respectively, though this may not be apparent yet.
+%
+% To make the word vectors easier to visualise, we can project them onto 2D space.
+%
+% \begin{figure}[ht]
+%   \bigskip
+%   \begin{tikzpicture}
+%   \ttfamily
+%   \draw[->, line width=1.5](1,3) -- (4,6) node[pos=0,above left]{suno_v} node[pos=1.0,above left]{seli_v};
+%   \draw[->, line width=1.5](3,1) -- (6,4) node[pos=0,below right]{mun_v} node[pos=1.0,below right]{lete_v};
+%   \draw[->, dotted, line width=1, gray](1,3) -- (3,1) node[pos=0.5,below left]{suno_v+lete_v-seli_v};
+%   \end{tikzpicture}
+%   \centering
+%   \caption{2D projection of the example model vectors}
+% \end{figure}
+%
+% Via simple vector operations, we can obtain the approximation of the `mun_v' word vector from other known vectors.
+%
+% \[ suno_v + lete_v - seli_v \approx mun_v \]
+%
+% \begin{figure}[ht]
+%   \bigskip
+%   \begin{center}
+%     \ttfamily
+%     \begin{tabular}{||r|RRRR||}
+%       \hline
+%       mun_v   & -0.23257375 & -0.17792022 & 0.16147181 & 0.2243247 \\
+%       \hline
+%       suno_v+lete_v-seli_v & -0.310715524 & 0.044970156 & 0.27013898 & 0.152483226 \\
+%       \hline
+%     \end{tabular}
+%   \end{center}
+%   \caption{`mun' word vector approximation}
+% \end{figure}
+%
+% While the precision of this particular example is only around 75\%, the resulting vector is the closest one to the actual vector of `mun_v'. The precision will only increase with the sizes of the corpus and the vocabulary.
