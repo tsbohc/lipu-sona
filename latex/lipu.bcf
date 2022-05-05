@@ -3481,14 +3481,20 @@
     <bcf:citekey order="3">realworldnlp</bcf:citekey>
     <bcf:citekey order="4">nlpandcl</bcf:citekey>
     <bcf:citekey order="5">harris</bcf:citekey>
-    <bcf:citekey order="6">firth</bcf:citekey>
-    <bcf:citekey order="7">mcdonald</bcf:citekey>
-    <bcf:citekey order="8">yarlett</bcf:citekey>
-    <bcf:citekey order="9">ahireintro</bcf:citekey>
-    <bcf:citekey order="10">lane2019natural</bcf:citekey>
-    <bcf:citekey order="11">erkkatrin</bcf:citekey>
+    <bcf:citekey order="6">lenci</bcf:citekey>
+    <bcf:citekey order="7">firth</bcf:citekey>
+    <bcf:citekey order="8">mcdonald</bcf:citekey>
+    <bcf:citekey order="9">yarlett</bcf:citekey>
+    <bcf:citekey order="10">emerson</bcf:citekey>
+    <bcf:citekey order="11">erkkatrin2</bcf:citekey>
     <bcf:citekey order="12">ahireintro</bcf:citekey>
-    <bcf:citekey order="13">lane2019natural</bcf:citekey>
+    <bcf:citekey order="13">lenci</bcf:citekey>
+    <bcf:citekey order="14">lenci</bcf:citekey>
+    <bcf:citekey order="15">oduntan</bcf:citekey>
+    <bcf:citekey order="16">oduntan</bcf:citekey>
+    <bcf:citekey order="17">erkkatrin2</bcf:citekey>
+    <bcf:citekey order="18">erkkatrin2</bcf:citekey>
+    <bcf:citekey order="19">baroni</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

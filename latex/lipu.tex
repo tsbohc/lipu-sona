@@ -217,10 +217,11 @@
     \textbf{tsbohc}
 
     \large
-    \textbf{TOKI PONA: DATA-DRIVEN VOCABULARY ANALYSIS}
+    \textbf{TOKI PONA: SEMANTIC VECTOR SPACE VOCABULARY~ANALYSIS}
 
     \normalsize
 
+    \bigskip
     (tenpo ni la, lipu ni li pona ala) 
 
     \bigskip
@@ -316,9 +317,10 @@ In turn, ``Natural Language Processing is a field at the intersection of compute
 
 \section{Distributional semantics}
 % {{{
+
 The core idea behind distributional semantics has roots in American structuralism (Harris) and British lexicology (Firth) and is known as the distributional hypothesis. In its simplest form, it states that ``similarity in meaning results in similarity of linguistic distribution'' \parencite{harris}.
 
-The reverse of this statement is also true. That is, meaning can be inferred from context. The aim of distributional semantics is exactly that, to learn the meanings of linguistics units from a corpus of text. That is, distributional semantics can be described as the field that reverse-engineers the distributional hypothesis.
+The reverse of this statement is also true. Meaning that ``the statistical distribution of linguistic items in context plays a key role in characterizing their semantic behavior'' \parencite{lenci}. The aim of distributional semantics is exactly that, to learn the meanings of linguistics units from a corpus of text.
 
 Distributional semantics was popularised by Firth in the 1950s. In a 1957 publication he wrote, ``the placing of a text as a constituent in a context of situation contributes to the statement of meaning since situations are set up to recognise use. <...> You shall know a word by the company it keeps!'' \parencite[11]{firth}.
 
@@ -328,7 +330,9 @@ The ideas introduced by the distributional hypothesis have received attention in
 % {{{
 Distributional semantics has become widespread with the adoption of information technology in the field of linguistic research.
 
-Distributional semantics are most frequently applied by taking large amounts of text as input and pushing it through an abstraction algorithm to produce a distributional model as output.
+Distributional semantics are most frequently applied by taking large amounts of text as input and pushing it through an abstraction algorithm to produce a distributional model as output \parencite{emerson}.
+
+Distributional models rely on context to produce semantic representations. That is, distributional models characterise the meanings of words through the context in which they have been observed \parencite{erkkatrin2}.
 
 \begin{figure}[ht]% {{{
   \bigskip
@@ -379,24 +383,44 @@ Distributional semantics are most frequently applied by taking large amounts of 
   \caption{Distributional semantics, an illustrated overview}
 \end{figure}% }}}
 
-In the model, the semantic representations are stored in the form of vectors. Vectors are essentially lists of numbers that refer to points in a multi-dimensional space. These vectors are referred to as word vectors.
+In a model, the semantic representations are stored in the form of vectors. Vectors are essentially lists of numbers that refer to points in a multi-dimensional space. These vectors are referred to as word vectors.
 
-The position of a word in the semantic space is determined by the values in its word vectors, that is, the context the word is most commonly used in. This way, words that are often used together are placed close to each other. The distance between points is a measurement of semantic similarity between the words they represent.
+In the illustrated example, the model only has the dimensionality of two and thus can be mapped onto a two dimensionsional plane without any further processing.
 
-The multi-dimensionality of the word vector encodings can be reduced to only two or three dimensions. The resulting dimensions can then be used to create a projection of the model which can be observed by the human eye.
+If this is not the case, the multi-dimensionality of the word vector encodings can be reduced to only two or three dimensions. The resulting dimensions can then be used to create a projection of the model which can be observed by the human eye.
 
-All of the approaches to distributional semantics share the quality of learning semantic representations from a corpus in an unsupervised manner. With a sufficiently large corpus, this excludes any but the collective human modelling of the world from the data.
+All of the approaches to distributional semantics share the quality of learning semantic representations from a corpus in an unsupervised manner. Meaning that it is not required for the corpus to be preproccessed by hand.
 % }}}
 
-\subsection{Word vectors}
+\subsection{Distributional representations}
 % {{{
+Distributional representations are mathematic encodings of the distributional properties of words. Typically, in the form of a sequence of numbers. This sequence of numbers can be viewed as a multi-dimensional vector for the purposes of applying to them principles derived from liner algebra.
+
 ``Word vectors represent words as multidimensional continuous floating point numbers where semantically similar words are mapped to proximate points in geometric space'' \parencite{ahireintro}.
 
 In simpler terms, a word vector is a numerical representation of a word in a corpus relative to every other word in that corpus.
 
-``Word vectors are numerical vector representations of word semantics, or meaning, including literal and implied meaning, meaning that word vectors can capture the connotation of words. And they combine all that into a dense vector (no zeros) of floating point values. This dense vector enables queries and logical reasoning'' \parencite[182]{lane2019natural}.
+% ``Word vectors are numerical vector representations of word semantics, or meaning, including literal and implied meaning. So word vectors can capture the connotation of words, like \textit{peopleness,} \textit{animalness,} \textit{placeness,} \textit{thingness,} and even \textit{conceptness.} And they combine all that into a dense vector (no zeros) of floating point values. This dense vector enables queries and logical reasoning'' \parencite[182]{lane2019natural}.
 
-Essentially, word vectors are the means by which the aforementioned semantic distribution of words can be represented numerically. That is, a representation that is easy for a computer to understand and operate on.
+``Vectors have geometrical interpretations: Vectors with n components define points (or arrows) in n-dimensional spaces. Therefore, distributional representations are geometrical representations of the lexicon in the form of a distributional vector space. The positions of lexemes in a distributional semantic space depend on their co-occurrences with linguistic contexts'' \parencite{lenci}.
+
+
+\subsubsection{Context types}
+
+Distributional representations output by a distributional model differ with respect to how the linguistic context is defined.
+
+The contexts can be of the following types \parencite{lenci}:
+
+\begin{itemize}
+  \item \textbf{Undirected window-based collocate.} This context type includes words around the current word. No information as to whether the context words precede or follow after the current word is provided to the model. The window size typically ranges from 2 to 10.
+  \item \textbf{Directed window-based collocate.} Unlike the previous context type, directed window-based contexts provide the direction in which the context word was seen relative to the current word.
+  \item \textbf{Dependency-filtered syntactic collocate.} This context restricted the words which are analysed by the algorithm based on their syntactic roles. This information is hovewer not provided to the model.
+  \item \textbf{Dependency-typed syntactic collocate.} This context type provides the previously omitted syntactic type to the model.
+  \item \textbf{Text region.} A text region context can represent any text sample that is uniquely identifiable: book chapters, web pages, or simply text portions of any fixed size.
+\end{itemize}
+
+The term window provides a physical analogy to a linguistic context. As the algorithm processes the corpus, the window of the context slides across the text, accounting for the words that can be seen through it.
+
 % }}}
 
 \subsubsection{Measuring semantic similarity}
@@ -407,14 +431,14 @@ The primary advantage of using one of these two methods is that they can be calc
 
 \paragraph{Euclidean distance}
 
-The Euclidean distance between two points is the length of a line segment between the two points. It can also be defined as the shortest distance between two points in an n-dimensional space. For the purposes of calculating the Euclidean distance, the vectors are viewed as point coordinates.
+The Euclidean distance between two points is the length of a line segment between the two points. It can also be defined as the shortest distance between two points in an n-dimensional space. For the purposes of calculating the Euclidean distance, the vectors are viewed as point coordinates \parencite{oduntan}.
 
 \medskip
 \[d_{Euc}(p, q) = \sqrt{\displaystyle\sum_{i=1}^{n} (p_i - q_i)^2} = \sqrt{(p_1 - q_1)^2 + (p_2 - q_2)^2 + ... + (p_n - q_n)^2}\]
 
 \paragraph{Cosine similarity}
 
-Cosine similarity is a measurement of similarity between two sequences of numbers. When calculating cosine similarity, the two sequences of numbers are viewed as vectors. Cosine similarity is equal the cosine of the angle between two vectors, that is, the dot product of the vectors devided by the product of their lengths.
+Cosine similarity is a measurement of similarity between two sequences of numbers. When calculating cosine similarity, the two sequences of numbers are viewed as vectors. Cosine similarity is equal the cosine of the angle between two vectors, that is, the dot product of the vectors devided by the product of their lengths \parencite{oduntan}.
 
 Cosine similarity always falls into the interval \([-1, 1]\). Two parallel vectors have 
 a cosine similarity of \(1\), two orthogonal (perpendicular to each other) vectors have a cosine similarity of \(0\), while two opposite vectors have a cosine similarity of \(-1\).
@@ -429,20 +453,17 @@ This method was chosen to simplify the process of comparing similarities between
 
 \subsection{Implementations}
 
-One of the earliest implementations featured a simple counting algorithm. For each word in a corpus, the frequencies of each of the context words were counted. The counts were then normalised by the total number of collected word relationships \parencite{erkkatrin}.
+\subsubsection{Count models}
 
+``In the simplest case, these models just record other words that have been observed in the vicinity of a target word in large text corpora, and form some sort of aggregate over the recorded context items. They then estimate the semantic similarity between words based on contextual similarity'' \parencite{erkkatrin2}. These models are referred to as count models.
 
-% The principles of linear algebra can be applied to operate on word vectors and determine the degrees of similarity between them.
+``Context items are counted only if they appear close to the target word, that is, if they are within the relevant context'' \parencite{erkkatrin2}.
 
-\subsection{Word vectors}
+The context can be defined as a window centered on the current word. The window spans equal word dinstance from the current word to the left and right. The window size can be narrow (2-3 words) or wide (4-8 words up to the size of the document). The window can be allowed to cross the boundaries of sentences or not \parencite{baroni}.
 
-``Word vectors represent words as multidimensional continuous floating point numbers where semantically similar words are mapped to proximate points in geometric space'' \parencite{ahireintro}.
+\subsubsection{Predictive models}
 
-In simpler terms, a word vector is a numerical representation of a word in a corpus relative to every other word in that corpus.
-
-``Word vectors are numerical vector representations of word semantics, or meaning, including literal and implied meaning. So word vectors can capture the connotation of words, like \textit{peopleness,} \textit{animalness,} \textit{placeness,} \textit{thingness,} and even \textit{conceptness.} And they combine all that into a dense vector (no zeros) of floating point values. This dense vector enables queries and logical reasoning'' \parencite[182]{lane2019natural}.
-
-\paragraph{Word embedding}
+\subsubsection{Contextualised embedding models}
 
 
 

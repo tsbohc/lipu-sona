@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  5 MAY 2022 21:24
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  5 MAY 2022 23:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1366,15 +1366,15 @@ Requested font "[Alegreya-Bold.otf]/OT:script=latn;language=dflt;+pnum;+lnum;map
 
 ]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 35.83pt on input line 239.
+(Font)              scaled to size 35.83pt on input line 240.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 35.83pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
-(Font)              scaled to size 35.83pt on input line 239.
+(Font)              scaled to size 35.83pt on input line 240.
 Requested font "[Alegreya-Bold.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 35.83pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Bold.otf
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
-(Font)              scaled to size 20.74pt on input line 239.
+(Font)              scaled to size 20.74pt on input line 240.
 Requested font "[Alegreya-Bold.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 20.74pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Bold.otf
  (./lipu.toc
@@ -1398,16 +1398,16 @@ Requested font "cmex7" scaled 1000
  -> /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 Requested font "cmr12" at 14.4pt
  -> /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-)
+ [2
+
+])
 \tf@toc=\write6
 \openout6 = `lipu.toc'.
 
- [2
-
-] [3]
+ [3]
 Chapter .
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 247.
+(Font)              scaled to size 20.74pt on input line 248.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 20.74pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
 [4
@@ -1418,23 +1418,23 @@ File: ./img//nlpcl.png Graphic file (type bmp)
 <./img//nlpcl.png>
 [7
 
-]
+] [8]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
-(Font)              scaled to size 14.4pt on input line 336.
+(Font)              scaled to size 14.4pt on input line 340.
 Requested font "[Alegreya-Italic.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 12.0pt
- -> ^^^^^^G^^>(V
+ -> ^^ë^^2^^É^^Ï^^éU
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 340.
+(Font)              scaled to size 12.0pt on input line 344.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 12.0pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 340.
+(Font)              scaled to size 8.0pt on input line 344.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 8.0pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 340.
+(Font)              scaled to size 6.0pt on input line 344.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 6.0pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
 Requested font "cmmi12" at 12.0pt
@@ -1454,7 +1454,7 @@ Requested font "cmex10" at 12.0pt
 Requested font "cmex8" at 8.0pt
  -> /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 340.
+(Font)              <6> on input line 344.
 Requested font "cmr12" at 12.0pt
  -> /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 Requested font "cmr8" at 8.0pt
@@ -1462,30 +1462,30 @@ Requested font "cmr8" at 8.0pt
 Requested font "cmr6" at 6.0pt
  -> /usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 
-Underfull \hbox (badness 1205) in paragraph at lines 371--375
+Underfull \hbox (badness 1205) in paragraph at lines 375--379
 [][]\TU/IosevkaCustom(0)/m/n/12 cosine_similarity(sun, moon) = 0.9711 
  []
 
-[8] [9] [10] [11] [12]
+[9] [10] [11] [12] [13] [14]
 Chapter .
-[13
+[15
 
-] [14
+] [16
 
-] [15] (./lipu.aux)
+] [17] (./lipu.aux)
 Package rerunfilecheck Info: File `lipu.out' has not changed.
-(rerunfilecheck)             Checksum: 5623126E15E6CCA12AAF46374250B7B6;3710.
+(rerunfilecheck)             Checksum: 0CA689D83C96EFAB515B7D6A805679DF;4343.
 Package logreq Info: Writing requests to 'lipu.run.xml'.
 \openout1 = `lipu.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32151 strings out of 476919
- 648241 string characters out of 5827662
- 1582726 words of memory out of 5000000
- 51618 multiletter control sequences out of 15000+600000
+ 32162 strings out of 476919
+ 648607 string characters out of 5827662
+ 1584478 words of memory out of 5000000
+ 51629 multiletter control sequences out of 15000+600000
  408921 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 113i,11n,124p,737b,5262s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 113i,11n,124p,737b,5269s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lipu.xdv (15 pages, 191876 bytes).
+Output written on lipu.xdv (17 pages, 218456 bytes).

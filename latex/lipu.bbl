@@ -48,7 +48,89 @@
       \field{volume}{12}
       \range{volume}{1}
     \endentry
-    \entry{erkkatrin}{article}{}
+    \entry{baroni}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=06fd48b6938d182f11c5bf4e2da76f87}{%
+           family={Baroni},
+           familyi={B\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae781f5d08ccad40b8a4e1b1e10c0310}{%
+           family={Dinu},
+           familyi={D\bibinitperiod},
+           given={Georgiana},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8f9a92b64e8eece864795345f744b04}{%
+           family={Kruszewski},
+           familyi={K\bibinitperiod},
+           given={Germán},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b965ba19e60358733938cb1e3c08eb5b}
+      \strng{fullhash}{b965ba19e60358733938cb1e3c08eb5b}
+      \strng{bibnamehash}{b965ba19e60358733938cb1e3c08eb5b}
+      \strng{authorbibnamehash}{b965ba19e60358733938cb1e3c08eb5b}
+      \strng{authornamehash}{b965ba19e60358733938cb1e3c08eb5b}
+      \strng{authorfullhash}{b965ba19e60358733938cb1e3c08eb5b}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{52nd Annual Meeting of the Association for Computational Linguistics, ACL 2014 - Proceedings of the Conference}
+      \field{month}{06}
+      \field{title}{Don't count, predict! A systematic comparison of context-counting vs. context-predicting semantic vectors}
+      \field{year}{2014}
+      \field{pages}{238\bibrangedash 247}
+      \range{pages}{10}
+      \field{volume}{1}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.3115/v1/P14-1023
+      \endverb
+    \endentry
+    \entry{emerson}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5b62522e0009e5d6d150f824d9d22755}{%
+           family={Emerson},
+           familyi={E\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5b62522e0009e5d6d150f824d9d22755}
+      \strng{fullhash}{5b62522e0009e5d6d150f824d9d22755}
+      \strng{bibnamehash}{5b62522e0009e5d6d150f824d9d22755}
+      \strng{authorbibnamehash}{5b62522e0009e5d6d150f824d9d22755}
+      \strng{authornamehash}{5b62522e0009e5d6d150f824d9d22755}
+      \strng{authorfullhash}{5b62522e0009e5d6d150f824d9d22755}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What are the Goals of Distributional Semantics?}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.48550/ARXIV.2005.02982
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2005.02982
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2005.02982
+      \endverb
+      \keyw{Computation and Language (cs.CL),FOS: Computer and information sciences,FOS: Computer and information sciences}
+    \endentry
+    \entry{erkkatrin2}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ff518e81176d3e3d1e38b4de99b95f8c}{%
            family={Erk},
@@ -69,15 +151,11 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Language and Linguistics Compass}
-      \field{month}{10}
-      \field{title}{Vector Space Models of Word Meaning and Phrase Meaning: A Survey}
-      \field{year}{2012}
-      \field{volume}{6}
+      \field{journaltitle}{Semantics and Pragmatics}
+      \field{title}{What do you know about an alligator when you know the company it keeps}
+      \field{year}{2016}
+      \field{volume}{9}
       \range{volume}{1}
-      \verb{doi}
-      \verb 10.1002/lnco.362
-      \endverb
     \endentry
     \entry{firth}{book}{}
       \name{author}{1}{}{%
@@ -189,50 +267,35 @@
       \verb https://doi.org/10.1080/00437956.1954.11659520
       \endverb
     \endentry
-    \entry{lane2019natural}{book}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=18c73692c4d90dfe554faabde26daa11}{%
-           family={Lane},
+    \entry{lenci}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5ca65e378c2b71d06107979d273315ed}{%
+           family={Lenci},
            familyi={L\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2a1b2572d033dce6fe0302f3124748f5}{%
-           family={Hapke},
-           familyi={H\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=601897eb4096061c657093f93779cdf8}{%
-           family={Howard},
-           familyi={H\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Manning Publications}%
-      }
-      \strng{namehash}{032b9143ce58a85413c43aa5bc1ec105}
-      \strng{fullhash}{032b9143ce58a85413c43aa5bc1ec105}
-      \strng{bibnamehash}{032b9143ce58a85413c43aa5bc1ec105}
-      \strng{authorbibnamehash}{032b9143ce58a85413c43aa5bc1ec105}
-      \strng{authornamehash}{032b9143ce58a85413c43aa5bc1ec105}
-      \strng{authorfullhash}{032b9143ce58a85413c43aa5bc1ec105}
+      \strng{namehash}{5ca65e378c2b71d06107979d273315ed}
+      \strng{fullhash}{5ca65e378c2b71d06107979d273315ed}
+      \strng{bibnamehash}{5ca65e378c2b71d06107979d273315ed}
+      \strng{authorbibnamehash}{5ca65e378c2b71d06107979d273315ed}
+      \strng{authornamehash}{5ca65e378c2b71d06107979d273315ed}
+      \strng{authorfullhash}{5ca65e378c2b71d06107979d273315ed}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{9781617294631}
-      \field{title}{Natural Language Processing in Action: Understanding, analyzing, and generating text with Python}
-      \field{year}{2019}
-      \verb{urlraw}
-      \verb https://books.google.ru/books?id=UyHgswEACAAJ
-      \endverb
-      \verb{url}
-      \verb https://books.google.ru/books?id=UyHgswEACAAJ
+      \field{journaltitle}{Annual Review of Linguistics}
+      \field{month}{02}
+      \field{title}{Distributional Models of Word Meaning}
+      \field{year}{2018}
+      \field{volume}{4}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1146/annurev-linguistics-030514-125254
       \endverb
     \endentry
     \entry{mcdonald}{article}{}
@@ -259,6 +322,45 @@
       \field{month}{07}
       \field{title}{Testing the distributional hypothesis: The influence of context on judgements of semantic similarity}
       \field{year}{2008}
+    \endentry
+    \entry{oduntan}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bf65d959e9f82452d8602626d9b094ca}{%
+           family={Oduntan},
+           familyi={O\bibinitperiod},
+           given={Odunayo},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e50b153858d06c87cfdc1075b343b3f0}{%
+           family={Adeyanju},
+           familyi={A\bibinitperiod},
+           given={Olumide},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{35a85d608e4da10bdf45ab6e57e2fce3}
+      \strng{fullhash}{35a85d608e4da10bdf45ab6e57e2fce3}
+      \strng{bibnamehash}{35a85d608e4da10bdf45ab6e57e2fce3}
+      \strng{authorbibnamehash}{35a85d608e4da10bdf45ab6e57e2fce3}
+      \strng{authornamehash}{35a85d608e4da10bdf45ab6e57e2fce3}
+      \strng{authorfullhash}{35a85d608e4da10bdf45ab6e57e2fce3}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Engineering and Applied Sciences}
+      \field{month}{07}
+      \field{title}{A Comparative Analysis of Euclidean Distance and Cosine Similarity Measure for Automated Essay-Type Grading}
+      \field{year}{2018}
+      \field{pages}{4198\bibrangedash 4204}
+      \range{pages}{7}
+      \field{volume}{13}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.3923/jeasci.2018.4198.4204
+      \endverb
     \endentry
     \entry{nlpandcl}{article}{}
       \name{author}{1}{}{%
