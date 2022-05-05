@@ -299,10 +299,10 @@ The Vector Space Model of Toki Pona constructed in the course of this research c
 \chapter{Distributional semantics and~constructed~languages}
 
 \section{Natural language processing}
-
+% {{{
 ``Linguistics is concerned not only with language per se, but must also deal with how humans model the world. The study of semantics, for example, must relate language expressions to their meanings, which reside in the mental models possessed by humans. <...> Whereas computational linguistics, as a subfield of linguistics, is concerned with the formal or computational description of rules that languages follow'' \parencite{nlpandcl}.
 
-The aim of this research is to bridge the gap between the two disciplines, to use computational linguistics to build a model of a constructed language. This model can then be used to explore the nuances of how humans speak the said language. That is, to gain insight into the semantics of the language.
+The aim of this research is to bridge the gap between the two disciplines, to use computational linguistics to build a semantic model of a constructed language. This model can then be used to explore the nuances of how humans speak the said language.
 
 In turn, ``Natural Language Processing is a field at the intersection of computer science, artificial intelligence, and linguistics'' \parencite[7]{practicalnlp}. ``Natural language processing includes a range of algorithms, tasks, and problems that take human-produced text as an input and produce some useful information, such as labels, semantic representations, and so on, as an output'' \parencite[4]{realworldnlp}.
 
@@ -312,32 +312,30 @@ In turn, ``Natural Language Processing is a field at the intersection of compute
 \centering
 \caption{Language-related disciplines \parencite{nlpandcl}}
 \end{figure}
-
+% }}}
 
 \section{Distributional semantics}
-
+% {{{
 The core idea behind distributional semantics has roots in American structuralism (Harris) and British lexicology (Firth) and is known as the distributional hypothesis. In its simplest form, it states that ``similarity in meaning results in similarity of linguistic distribution'' \parencite{harris}.
 
 The reverse of this statement is also true. That is, meaning can be inferred from context. The aim of distributional semantics is exactly that, to learn the meanings of linguistics units from a corpus of text. That is, distributional semantics can be described as the field that reverse-engineers the distributional hypothesis.
 
 Distributional semantics was popularised by Firth in the 1950s. In a 1957 publication he wrote, ``the placing of a text as a constituent in a context of situation contributes to the statement of meaning since situations are set up to recognise use. <...> You shall know a word by the company it keeps!'' \parencite[11]{firth}.
 
-% The last sentence from above excerpt now finds its way into the modern papers on computational linguistics that discuss semantic and linguistics distributions.
+The ideas introduced by the distributional hypothesis have received attention in cognitive science \parencite{mcdonald} and language learning \parencite{yarlett}.% }}}
 
-The ideas introduced by the distributional hypothesis have received attention in cognitive science \parencite{mcdonald} and language learning \parencite{yarlett}.
-
-\paragraph{Implementation}
-
+\paragraph{Overview}
+% {{{
 Distributional semantics has become widespread with the adoption of information technology in the field of linguistic research.
 
 Distributional semantics are most frequently applied by taking large amounts of text as input and pushing it through an abstraction algorithm to produce a distributional model as output.
 
-\begin{figure}[ht]
+\begin{figure}[ht]% {{{
   \bigskip
   \begin{tikzpicture}[>={Classical TikZ Rightarrow[]}]
-    \node[text width=6cm] at (-5,0) {Planets of the solar system are orbiting the \textit{sun}. The \textit{moon} is orbiting the earth. It's his antique \textit{typewriter} clacking. <...>};
-    \draw[line width=1pt, ->] (-0.5,0) -- (0.5,0) node[pos=0.5,below=0.5cm]{algorithm};
-    \node [shape=rectangle] at (5,0) {
+    \node[text width=6cm] at (0,11.5) {Planets of the solar system are orbiting the \textit{sun}. The \textit{moon} is orbiting the earth. It's his antique \textit{typewriter} clacking. <...>};
+    \draw[line width=1pt, ->] (4.5,11.5) -- (5.5,11.5) node[pos=0.5,below=0.5cm]{algorithm};
+    \node [shape=rectangle] at (10,11.5) {
       \ttfamily
       \begin{tabular}{|lcc|}
         \hline
@@ -352,30 +350,6 @@ Distributional semantics are most frequently applied by taking large amounts of 
         \hline
       \end{tabular}
     };
-  \end{tikzpicture}
-  \centering
-  \caption{Producing semantic representations from text}
-\end{figure}
-
-One of the earliest implementations featured a simple counting algorithm. For each word in a corpus, the frequencies of each of the context words were counted. The counts were then normalised by the total number of collected word relationships \parencite{erkkatrin}.
-
-In the model, the semantic representations are stored in the form of vectors. Vectors are essentially lists of numbers that refer to points in a multi-dimensional space. These vectors are referred to as word vectors.
-
-The position of a word in the semantic space is determined by the values in its word vectors, that is, the context it is most commonly used in. Words that are often used together are placed close to each other. The distance between points is a measurement of semantic similarity between the words they represent.
-
-% In Figure .3, the words \textit{sun} and \textit{mooon} are much nearer than \textit{sun} and \textit{typewriter}. The co
-
-% The principles of linear algebra can be applied to operate on word vectors and determine the degrees of similarity between them.
-
-The multi-dimensionality of the word vector encodings can be reduced to only two or three dimensions. The resulting dimensions can then be used to create a projection of the model which can be observed by the human eye.
-
-All of the approaches to distributional semantics share the quality of learning semantic representations from a corpus in an unsupervised manner. With a sufficiently large corpus, this excludes any but the collective human modelling of the world from the data.
-
-\begin{figure}[ht]
-  \bigskip
-  \begin{tikzpicture}[>={Classical TikZ Rightarrow[]}]
-
-    % \node[text width=6cm, color=lightgray] at (5.25,6.5) {NEAREST NEIGHBOURS};
 
     \draw[->, line width=1](0,0) -- (0,8) node[pos=0.58,rotate=90,left=1.5cm]{dim1};
     \draw[->, line width=1](0,0) -- (8,0) node[pos=0.5,below=1cm]{dim2};
@@ -402,8 +376,63 @@ All of the approaches to distributional semantics share the quality of learning 
 
   \end{tikzpicture}
   \centering
-  \caption{Visualising the example distribution}
-\end{figure}
+  \caption{Distributional semantics, an illustrated overview}
+\end{figure}% }}}
+
+In the model, the semantic representations are stored in the form of vectors. Vectors are essentially lists of numbers that refer to points in a multi-dimensional space. These vectors are referred to as word vectors.
+
+The position of a word in the semantic space is determined by the values in its word vectors, that is, the context the word is most commonly used in. This way, words that are often used together are placed close to each other. The distance between points is a measurement of semantic similarity between the words they represent.
+
+The multi-dimensionality of the word vector encodings can be reduced to only two or three dimensions. The resulting dimensions can then be used to create a projection of the model which can be observed by the human eye.
+
+All of the approaches to distributional semantics share the quality of learning semantic representations from a corpus in an unsupervised manner. With a sufficiently large corpus, this excludes any but the collective human modelling of the world from the data.
+% }}}
+
+\subsection{Word vectors}
+% {{{
+``Word vectors represent words as multidimensional continuous floating point numbers where semantically similar words are mapped to proximate points in geometric space'' \parencite{ahireintro}.
+
+In simpler terms, a word vector is a numerical representation of a word in a corpus relative to every other word in that corpus.
+
+``Word vectors are numerical vector representations of word semantics, or meaning, including literal and implied meaning, meaning that word vectors can capture the connotation of words. And they combine all that into a dense vector (no zeros) of floating point values. This dense vector enables queries and logical reasoning'' \parencite[182]{lane2019natural}.
+
+Essentially, word vectors are the means by which the aforementioned semantic distribution of words can be represented numerically. That is, a representation that is easy for a computer to understand and operate on.
+% }}}
+
+\subsubsection{Measuring semantic similarity}
+% {{{
+The semantic similary between two vectors is primary measured in two ways: using cosine similarity or euclidian distance.
+
+The primary advantage of using one of these two methods is that they can be calculated for vectors of any dimensionality.
+
+\paragraph{Euclidean distance}
+
+The Euclidean distance between two points is the length of a line segment between the two points. It can also be defined as the shortest distance between two points in an n-dimensional space. For the purposes of calculating the Euclidean distance, the vectors are viewed as point coordinates.
+
+\medskip
+\[d_{Euc}(p, q) = \sqrt{\displaystyle\sum_{i=1}^{n} (p_i - q_i)^2} = \sqrt{(p_1 - q_1)^2 + (p_2 - q_2)^2 + ... + (p_n - q_n)^2}\]
+
+\paragraph{Cosine similarity}
+
+Cosine similarity is a measurement of similarity between two sequences of numbers. When calculating cosine similarity, the two sequences of numbers are viewed as vectors. Cosine similarity is equal the cosine of the angle between two vectors, that is, the dot product of the vectors devided by the product of their lengths.
+
+Cosine similarity always falls into the interval \([-1, 1]\). Two parallel vectors have 
+a cosine similarity of \(1\), two orthogonal (perpendicular to each other) vectors have a cosine similarity of \(0\), while two opposite vectors have a cosine similarity of \(-1\).
+
+\medskip
+\[s_{cos}(A, B) := cos(\th) = \frac {A \cdot B}{||A|| \cdot ||B||} = \frac {\displaystyle\sum_{i=1}^{n} A_i B_i}{\sqrt{\displaystyle\sum_{i=1}^{n} A_i^2} \sqrt{\displaystyle\sum_{i=1}^{n} B_i^2}}\]
+\medskip
+
+This method was chosen to simplify the process of comparing similarities between vector pairs. Where the Euclidean distance provides an absolute value, the cosine similarity provids a fraction.
+
+% }}}
+
+\subsection{Implementations}
+
+One of the earliest implementations featured a simple counting algorithm. For each word in a corpus, the frequencies of each of the context words were counted. The counts were then normalised by the total number of collected word relationships \parencite{erkkatrin}.
+
+
+% The principles of linear algebra can be applied to operate on word vectors and determine the degrees of similarity between them.
 
 \subsection{Word vectors}
 
@@ -723,3 +752,29 @@ In simpler terms, a word vector is a numerical representation of a word in a cor
 % \printbibliography[heading=bibintoc,title={References}]
 %
 % \end{document}
+
+
+% \begin{figure}[ht]
+%   \bigskip
+%   \begin{tikzpicture}[>={Classical TikZ Rightarrow[]}]
+%     \node[text width=6cm] at (-5,0) {Planets of the solar system are orbiting the \textit{sun}. The \textit{moon} is orbiting the earth. It's his antique \textit{typewriter} clacking. <...>};
+%     \draw[line width=1pt, ->] (-0.5,0) -- (0.5,0) node[pos=0.5,below=0.5cm]{algorithm};
+%     \node [shape=rectangle] at (5,0) {
+%       \ttfamily
+%       \begin{tabular}{|lcc|}
+%         \hline
+%         & dim1    & dim2    \\
+%         \hline
+%         sun      & 0.11023 & 0.53848 \\
+%         % \textbf{seli}    & 0.172305 & 0.824956 \\
+%         moon     & 0.21575 & 0.44034 \\
+%         % \textbf{lete}    & 0.280345 & 0.881492 \\
+%         typewriter & 0.52834 & 0.05389 \\
+%         % \textbf{mu}      & 0.370184 & 0.188725 \\
+%         \hline
+%       \end{tabular}
+%     };
+%   \end{tikzpicture}
+%   \centering
+%   \caption{Producing semantic representations from text}
+% \end{figure}

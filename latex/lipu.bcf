@@ -3484,9 +3484,11 @@
     <bcf:citekey order="6">firth</bcf:citekey>
     <bcf:citekey order="7">mcdonald</bcf:citekey>
     <bcf:citekey order="8">yarlett</bcf:citekey>
-    <bcf:citekey order="9">erkkatrin</bcf:citekey>
-    <bcf:citekey order="10">ahireintro</bcf:citekey>
-    <bcf:citekey order="11">lane2019natural</bcf:citekey>
+    <bcf:citekey order="9">ahireintro</bcf:citekey>
+    <bcf:citekey order="10">lane2019natural</bcf:citekey>
+    <bcf:citekey order="11">erkkatrin</bcf:citekey>
+    <bcf:citekey order="12">ahireintro</bcf:citekey>
+    <bcf:citekey order="13">lane2019natural</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
