@@ -18,7 +18,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.1.1}Context types}{11}{subsubsection.2.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.2}Measuring semantic similarity}{12}{subsubsection.2.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2}Semantic similarity metric}{12}{subsubsection.2.2.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Euclidean distance}{12}{paragraph*.5}%
 \defcounter {refsection}{0}\relax 

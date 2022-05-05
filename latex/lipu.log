@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  5 MAY 2022 23:13
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  5 MAY 2022 23:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1424,7 +1424,7 @@ LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
 Requested font "[Alegreya-Italic.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 12.0pt
- -> ^^Î^^2^^…^^œ^^ÈU
+ -> M^^H^^»^^ÚU
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 344.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 12.0pt
@@ -1474,7 +1474,7 @@ Chapter .
 
 ] [17] (./lipu.aux)
 Package rerunfilecheck Info: File `lipu.out' has not changed.
-(rerunfilecheck)             Checksum: 0CA689D83C96EFAB515B7D6A805679DF;4343.
+(rerunfilecheck)             Checksum: 940EF9F75BD2C5CCA318D1C5F629C782;4328.
 Package logreq Info: Writing requests to 'lipu.run.xml'.
 \openout1 = `lipu.run.xml'.
 
@@ -1482,10 +1482,10 @@ Package logreq Info: Writing requests to 'lipu.run.xml'.
 Here is how much of TeX's memory you used:
  32162 strings out of 476919
  648607 string characters out of 5827662
- 1584478 words of memory out of 5000000
+ 1584463 words of memory out of 5000000
  51629 multiletter control sequences out of 15000+600000
  408921 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  113i,11n,124p,737b,5269s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lipu.xdv (17 pages, 218456 bytes).
+Output written on lipu.xdv (17 pages, 218644 bytes).
