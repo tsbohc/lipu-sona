@@ -93,6 +93,51 @@
       \verb 10.3115/v1/P14-1023
       \endverb
     \endentry
+    \entry{bengio}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=419350ebbeb4eba5351469f378dee007}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dcb65deeb8d2de03d00f0aeeb3499771}{%
+           family={Ducharme},
+           familyi={D\bibinitperiod},
+           given={Réjean},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da21e966c02c3cfd33d74369c7435c1a}{%
+           family={Vincent},
+           familyi={V\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{043deb0548dd602d1df2b2717be27b84}
+      \strng{fullhash}{043deb0548dd602d1df2b2717be27b84}
+      \strng{bibnamehash}{043deb0548dd602d1df2b2717be27b84}
+      \strng{authorbibnamehash}{043deb0548dd602d1df2b2717be27b84}
+      \strng{authornamehash}{043deb0548dd602d1df2b2717be27b84}
+      \strng{authorfullhash}{043deb0548dd602d1df2b2717be27b84}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{month}{01}
+      \field{title}{A Neural Probabilistic Language Model}
+      \field{year}{2000}
+      \field{pages}{932\bibrangedash 938}
+      \range{pages}{7}
+      \field{volume}{3}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1162/153244303322533223
+      \endverb
+    \endentry
     \entry{emerson}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=5b62522e0009e5d6d150f824d9d22755}{%
@@ -267,6 +312,40 @@
       \verb https://doi.org/10.1080/00437956.1954.11659520
       \endverb
     \endentry
+    \entry{pu}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=abb50aa6b4dac78307182a4b8c05743e}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Sonja Lang}%
+      }
+      \strng{namehash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{fullhash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{bibnamehash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{authorbibnamehash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{authornamehash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{authorfullhash}{abb50aa6b4dac78307182a4b8c05743e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780978292300}
+      \field{title}{Toki Pona: The Language of Good}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=5P0ZjwEACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=5P0ZjwEACAAJ
+      \endverb
+    \endentry
     \entry{lenci}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=5ca65e378c2b71d06107979d273315ed}{%
@@ -322,6 +401,46 @@
       \field{month}{07}
       \field{title}{Testing the distributional hypothesis: The influence of context on judgements of semantic similarity}
       \field{year}{2008}
+    \endentry
+    \entry{mikolov}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a2d359b12ca2fadf0b40136a73f021bb}{%
+           family={Mikolov},
+           familyi={M\bibinitperiod},
+           given={Tomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee3f7d7b96add98106db907e189d6c13}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d11e6f2a0d0a1183b2cf62996525afc}{%
+           family={Corrado},
+           familyi={C\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2843fd492927fac5241bd8c238a27da2}
+      \strng{fullhash}{2843fd492927fac5241bd8c238a27da2}
+      \strng{bibnamehash}{2843fd492927fac5241bd8c238a27da2}
+      \strng{authorbibnamehash}{2843fd492927fac5241bd8c238a27da2}
+      \strng{authornamehash}{2843fd492927fac5241bd8c238a27da2}
+      \strng{authorfullhash}{2843fd492927fac5241bd8c238a27da2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of Workshop at ICLR}
+      \field{month}{01}
+      \field{title}{Efficient Estimation of Word Representations in Vector Space}
+      \field{year}{2013}
+      \field{volume}{2013}
+      \range{volume}{1}
     \endentry
     \entry{oduntan}{article}{}
       \name{author}{2}{}{%
@@ -445,6 +564,34 @@
       \endverb
       \verb{url}
       \verb https://books.google.ru/books?id=hPrrDwAAQBAJ
+      \endverb
+    \endentry
+    \entry{venkat}{unknown}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=904831d62e110d6e3bfffb6feb6eca7a}{%
+           family={Venkat},
+           familyi={V\bibinitperiod},
+           given={Naveen},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{904831d62e110d6e3bfffb6feb6eca7a}
+      \strng{fullhash}{904831d62e110d6e3bfffb6feb6eca7a}
+      \strng{bibnamehash}{904831d62e110d6e3bfffb6feb6eca7a}
+      \strng{authorbibnamehash}{904831d62e110d6e3bfffb6feb6eca7a}
+      \strng{authornamehash}{904831d62e110d6e3bfffb6feb6eca7a}
+      \strng{authorfullhash}{904831d62e110d6e3bfffb6feb6eca7a}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{09}
+      \field{title}{The Curse of Dimensionality: Inside Out}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.13140/RG.2.2.29631.36006
       \endverb
     \endentry
     \entry{yarlett}{article}{}

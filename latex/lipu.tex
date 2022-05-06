@@ -20,6 +20,9 @@
 \usepackage{collcell}
 \usepackage{pgf}
 
+\usepackage{longtable}
+\usepackage{multirow}
+
  %The min, mid and max values
 \newcommand*{\MinNumber}{-0.3}%
 \newcommand*{\MidNumber}{0.0} %
@@ -252,22 +255,22 @@ Toki Pona is the second most spoken constructed language in the world. Its core 
 
 This research aims to perform the semantic analysis and classification of the vocabulary of Toki Pona.
 
-Numerous dictionaries of Toki Pona exist, but only the most immediate word definitions are provided. They may be enough for someone learning the language to grasp the general idea, but are insufficient to reflect the way the words are used in all of their shades of meaning. Because of this, the said analysis cannot be performed without studying how the language is spoken.
+% Numerous dictionaries of Toki Pona exist, but only the most immediate word definitions are provided. They may be enough for someone learning the language to grasp the general idea, but are insufficient to reflect the way the words are used in all of their shades of meaning. Because of this, the said analysis cannot be performed without studying how the language is spoken.
 
-One approach to solving this problem would be to develop a system of evaluating the speaker proficiency. The evaluated speakers of the language who passed the test can then be recruited. By the way of discussion every word can then be described in detail.
+% One approach to solving this problem would be to develop a system of evaluating the speaker proficiency. The evaluated speakers of the language who passed the test can then be recruited. By the way of discussion every word can then be described in detail.
 
-The primary difficulty of this approach is that the system which would evaluate speakers has to be created by the proficient speakers. In other words, this is a causality dilemma. This approach would also rely on the judgement of a relatively small sample of the community. With this approach, the results would be based on the perception of the usage patterns of the language and not the usage of the language itself.
+% The primary difficulty of this approach is that the system which would evaluate speakers has to be created by the proficient speakers. In other words, this is a causality dilemma. This approach would also rely on the judgement of a relatively small sample of the community. With this approach, the results would be based on the perception of the usage patterns of the language and not the usage of the language itself.
 
 % Natural languages do not experience this as severely. Natural languages have much longer histories, much closer ties in local culture, and much larger vocabularies. Because of this, are not as volatile as constructed languages.
 
-A different approach is to let the data drive the analysis. An adequately large corpus can be compiled by a single person. Modern approaches to Natural Language Processing can then be used to obtain the data on the language change and the semantic distribution of the vocabulary. Observations made on this data can then serve as the basis for the semantic analysis of the vocabulary.
+% A different approach is to let the data drive the analysis. An adequately large corpus can be compiled by a single person. Modern approaches to Natural Language Processing can then be used to produce the data on the language change and the semantic distribution of the vocabulary. This data can then serve as the basis for the semantic analysis of the vocabulary.
 
 \begin{itemize}
   \item \textbf{Subject.} Semantic analysis and classification of vocabulary.
   \item \textbf{Object.} Toki Pona, a constructed language.
   \item \textbf{Goal.} Perform the semantic analysis and classification of the vocabulary of the language.
   \begin{itemize}
-    \item \textbf{Problem.} Vocabulary cannot be analysed based on the existing resources as they do not contain sufficient information for analysis.
+    \item \textbf{Problem.} Vocabulary cannot be analysed based on the available resources as they do not contain sufficient information for said analysis.
     \item \textbf{Solution.} Use natural language processing techniques to construct a semantic model of the language and base the analysis on it.
   \end{itemize}
   \item \textbf{Methodology.} Distributional semantics and natural language processing, namely language modelling (word embedding).
@@ -296,6 +299,8 @@ The existing dictionaries of Toki Pona can greatly benefit from the findings of 
 
 The Vector Space Model of Toki Pona constructed in the course of this research can find further use in information retrieval, topic modelling, text prediction, sentiment analysis, and many other areas.
 
+
+% --- SMART WORDS A MANY ---
 
 \chapter{Distributional semantics and~constructed~languages}
 
@@ -451,19 +456,70 @@ This method was chosen to simplify the process of comparing similarities between
 
 % }}}
 
+\subsubsection{Curse of dimensionality}
+% {{{
+The curse of dimensionality refers to the phenomena that arise when organising data in high-dimensional spaces.
+
+In the context of distributional models, dimensionality is determined by how many word relationships are accounted for by the model.
+
+As the dimensionality of representations increases, the volume of the space they take up increases so fast that the available data becomes sparse. In other words, it becomes hard to make sense of the data as it becomes spread too thinly across the multi-dimensional space \parencite{venkat}.
+
+A common solution to this is dimensionality reduction.
+% }}}
 \subsection{Implementations}
 
-\subsubsection{Count models}
-
-``In the simplest case, these models just record other words that have been observed in the vicinity of a target word in large text corpora, and form some sort of aggregate over the recorded context items. They then estimate the semantic similarity between words based on contextual similarity'' \parencite{erkkatrin2}. These models are referred to as count models.
+\subsubsection{Count vector model}
+% {{{
+The earliest implementatinos of distributional modeles featured simple counting algorithms. ``<...> these models just record other words that have been observed in the vicinity of a target word in large text corpora, and form some sort of aggregate over the recorded context items. They then estimate the semantic similarity between words based on contextual similarity'' \parencite{erkkatrin2}. These models are referred to as count models.
 
 ``Context items are counted only if they appear close to the target word, that is, if they are within the relevant context'' \parencite{erkkatrin2}.
 
-The context can be defined as a window centered on the current word. The window spans equal word dinstance from the current word to the left and right. The window size can be narrow (2-3 words) or wide (4-8 words up to the size of the document). The window can be allowed to cross the boundaries of sentences or not \parencite{baroni}.
+The count models operate on window-based context. The window size is typically narrow (2-4 words). The window can be allowed to cross the boundaries of sentences or not \parencite{baroni}.
+% }}}
 
-\subsubsection{Predictive models}
+\subsubsection{Neural probabilistic language model}
+% {{{
+In the recent years, the distributional model architecture has seen as notable shift to machine learning algorithms. With the improvements of hardware performance, the training of complex neural networks on corpora of larger sizes has become possible.
 
-\subsubsection{Contextualised embedding models}
+The earlier machine learning based models were plagued by the curse of dimensionality. This problem was solved in the model proposed by \parencite{bengio}. The proposed neural network model learns distributional representations and the generalisation function at the same time. The generalisation function is based on the estimates of probablity of a word appearing in the given context.
+
+The architecture of this model ``consists of input, projection, hidden and output layers. At the input layer, \(N\) previous words are encoded using 1-of-\(V\) coding, where \(V\) is size of the vocabulary. The input layer is then projected to a projection layer \(P\) that has dimensionality \(N \times D\), using a shared projection matrix. As only \(N\) inputs are active at any given time, composition of the projection layer is a relatively cheap operation'' \parencite{mikolov}.
+
+The training complexity of this model is
+
+\[Q = N \times D + N \times D \times H + H \times V\]
+
+where \(H\) is the size of the hidden layer.
+
+% }}}
+
+\subsubsection{Recurrent neural net language model}
+% {{{
+This model artcitecture contains recurrent neural networks, meaning that as the model learns from the input, it produces output that is fed back into the model as input. The recurrent matrix connects hidden layers to itself using time-delayed connections. ``This allows the recurrent model to form some kind of short term memory, as information from the past can be represented by the hidden layer state that gets updated based on the current input and the state of the hidden layer in the previous time step'' \parencite{mikolov}.
+
+This model architecture consists of only input, hidden, and output layers, thus allowing for a reduction of complexity when compared to the neural probabilistic language model \parencite{mikolov}.
+
+The training complexity of this model is
+
+\[Q = H \times H + H \times V\]
+% }}}
+
+\subsubsection{Continuous bag-of-words model}
+
+The first architecture proposed by Mikolov removes the non-linear hidden layer, further reducing complexity. The projection layer is shared for all words \parencite{mikolov}.
+
+The output of this model is not ifluenced by history, like in the previous model. In a continuous bag-of-words model not only the words preceding the current word are used for context, but also the words that follow it.
+
+This model attempts to predict the current word from the sum of the context vectors. This sum of vectors is referred to as a ``bag of words'', giving the name to the model. If the prediction of the word is correct after comparing it with the current word, its distributional representation is reinforced. If the prediction is wrong, the distributional representation is corrected.
+
+The training complexity of this model is
+
+\[Q = N \times D + D \times \log_2{V}\]
+
+\subsubsection{Continuous skip-gram model}
+
+
+% \subsubsection{Contextualised embedding models}
 
 
 
@@ -515,30 +571,167 @@ The context can be defined as a window centered on the current word. The window 
 
 \printbibliography[heading=bibintoc,title={References}]
 
+
+\chapter{Supplementary marterial}
+
+\section{Vector space model}
+
+The two-dimensional projection of the semantic model constructed as a result of this reseach.
+
+% TODO
+
+\section{Dictionaries}
+
+\subsection{nimi pu}
+
+The dictionary of Toki Pona as it appears in Toki Pona: The Language of Good \parencite[125-134]{pu}. This dictionary is licensed under public domain.
+% {{{
+\begin{longtable}{llp{10cm}}
+  \multicolumn{2}{c}{\textbf{Word}} & \textbf{Definition} \\
+  a or kin & PARTICLE & (emphasis, emotion or confirmation) \\
+  akesi & NOUN & non-cute animal; reptile, amphibian \\
+  ala & ADJECTIVE & no, not, zero \\
+  alasa & VERB & to hunt, forage \\
+  \multirow[t]{3}{*}{ale or ali} & ADJECTIVE & all; abundant, countless, bountiful, every, plentiful \\
+  & NOUN & abundance, everything, life, universe \\
+  & NUMBER & 100 \\
+  anpa & ADJECTIVE & bowing down, downward, humble, lowly, dependent \\
+  ante & ADJECTIVE & different, altered, changed, other \\
+  anu & PARTICLE & or \\
+  \multirow[t]{2}{*}{awen} & ADJECTIVE & enduring, kept, protected, safe, waiting, staying \\
+  & PRE-VERB & to continue to \\
+  e & PARTICLE & (before the direct object) \\
+  en & PARTICLE & (between multiple subjects) \\
+  esun & NOUN & market, shop, fair, bazaar, business transaction \\
+  ijo & NOUN & thing, phenomenon, object, matter \\
+  ike & ADJECTIVE & bad, negative; non-essential, irrelevant \\
+  ilo & NOUN & tool, implement, machine, device \\
+  insa & NOUN & centre, content, inside, between; internal organ, stomach \\
+  jaki & ADJECTIVE & disgusting, obscene, sickly, toxic, unclean, unsanitary \\
+  jan & NOUN & human being, person, somebody \\
+  jelo & ADJECTIVE & yellow, yellowish \\
+  jo & VERB & to have, carry, contain, hold \\
+  kala & NOUN & fish, marine animal, sea creature \\
+  kalama & VERB & to produce a sound; recite, utter aloud \\
+  \multirow[t]{2}{*}{kama} & ADJECTIVE & arriving, coming, future, summoned \\
+  & PRE-VERB & to become, manage to, succeed in \\
+  kasi & NOUN & plant, vegetation; herb, leaf \\
+  \multirow[t]{2}{*}{ken} & PRE-VERB & to be able to, be allowed to, can, may \\
+  & ADJECTIVE & possible \\
+  kepeken & PREPOSITION & to use, with, by means of \\
+  kili & NOUN & fruit, vegetable, mushroom \\
+  kiwen & NOUN & hard object, metal, rock, stone \\
+  ko & NOUN & clay, clinging form, dough, semi-solid, paste, powder \\
+  kon & NOUN & air, breath; essence, spirit; hidden reality, unseen agent \\
+  kule & ADJECTIVE & colourful, pigmented, painted \\
+  kulupu & NOUN & community, company, group, nation, society, tribe \\
+  \multirow[t]{2}{*}{kute} & NOUN & ear \\
+  & VERB & to hear, listen; pay attention to, obey \\
+  la & PARTICLE & (between the context phrase and the main sentence) \\
+  lape & ADJECTIVE & sleeping, resting \\
+  laso & ADJECTIVE & blue, green \\
+  \multirow[t]{2}{*}{lawa} & NOUN & head, mind \\
+  & VERB & to control, direct, guide, lead, own, plan, regulate, rule \\
+  len & NOUN & cloth, clothing, fabric, textile; cover, layer of privacy \\
+  lete & ADJECTIVE & cold, cool; uncooked, raw \\
+  li & PARTICLE & (between any subject except mi alone or sina alone and its verb; also to introduce a new verb for the same subject) \\
+  lili & ADJECTIVE & little, small, short; few; a bit; young \\
+  linja & NOUN & long and flexible thing; cord, hair, rope, thread, yarn \\
+  lipu & NOUN & flat object; book, document, card, paper, record, website \\
+  loje & ADJECTIVE & red, reddish \\
+  lon & PREPOSITION & located at, present at, real, true, existing \\
+  \multirow[t]{2}{*}{luka} & NOUN & arm, hand, tactile organ \\
+  & NUMBER & five \\
+  \multirow[t]{3}{*}{lukin or oko} & NOUN & eye \\
+  & VERB & to look at, see, examine, observe, read, watch \\
+  & PRE-VERB & to seek, look for, try to \\
+  lupa & NOUN & door, hole, orifice, window \\
+  ma & NOUN & earth, land; outdoors, world; country, territory; soil \\
+  mama & NOUN & parent, ancestor; creator, originator; caretaker, sustainer \\
+  mani & NOUN & money, cash, savings, wealth; large domesticated animal \\
+  meli & NOUN & woman, female, feminine person; wife \\
+  mi & NOUN & I, me, we, us \\
+  mije & NOUN & man, male, masculine person; husband \\
+  moku & VERB & to eat, drink, consume, swallow, ingest \\
+  moli & ADJECTIVE & dead, dying \\
+  monsi & NOUN & back, behind, rear \\
+  mu & PARTICLE & (animal noise or communication) \\
+  mun & NOUN & moon, night sky object, star \\
+  musi & ADJECTIVE & artistic, entertaining, frivolous, playful, recreational \\
+  \multirow[t]{2}{*}{mute} & ADJECTIVE & many, a lot, more, much, several, very \\
+  & NOUN & quantity \\
+  \multirow[t]{2}{*}{nanpa} & PARTICLE & -th (ordinal number) \\
+  & NOUN & numbers \\
+  nasa & ADJECTIVE & unusual, strange; foolish, crazy; drunk, intoxicated \\
+  nasin & NOUN & way, custom, doctrine, method, path, road \\
+  nena & NOUN & bump, button, hill, mountain, nose, protuberance \\
+  ni & ADJECTIVE & that, this \\
+  nimi & NOUN & name, word \\
+  noka & NOUN & foot, leg, organ of locomotion; bottom, lower part \\
+  o & PARTICLE & hey! O! (vocative or imperative) \\
+  olin & VERB & to love, have compassion for, respect, show affection to \\
+  ona & NOUN & he, she, it, they \\
+  open & VERB & to begin, start; open; turn on \\
+  pakala & ADJECTIVE & botched, broken, damaged, harmed, messed up \\
+  pali & VERB & to do, take action on, work on; build, make, prepare \\
+  palisa & NOUN & long hard thing; branch, rod, stick \\
+  pan & NOUN & cereal, grain; barley, corn, oat, rice, wheat; bread, pasta \\
+  pana & VERB & to give, send, emit, provide, put, release \\
+  pi & PARTICLE & of \\
+  \multirow[t]{2}{*}{pilin} & NOUN & heart (physical or emotional) \\
+  & ADJECTIVE & feeling (an emotion, a direct experience) \\
+  pimeja & ADJECTIVE & black, dark, unlit \\
+  pini & ADJECTIVE & ago, completed, ended, finished, past \\
+  pipi & NOUN & bug, insect, ant, spider \\
+  poka & NOUN & hip, side; next to, nearby, vicinity \\
+  poki & NOUN & container, bag, bowl, box, cup, cupboard, drawer, vessel \\
+  pona & ADJECTIVE & good, positive, useful; friendly, peaceful; simple \\
+  pu & ADJECTIVE & interacting with the official Toki Pona book \\
+  \multirow[t]{2}{*}{sama} & ADJECTIVE & same, similar; each other; sibling, peer, fellow \\
+  & PREPOSITION & as, like \\
+  seli & ADJECTIVE & fire; cooking element, chemical reaction, heat source \\
+  selo & NOUN & outer form, outer layer; bark, peel, shell, skin; boundary \\
+  seme & PARTICLE & what? which? \\
+  \multirow[t]{2}{*}{sewi} & NOUN & area above, highest part, something elevated \\
+  & ADJECTIVE & awe-inspiring, divine, sacred, supernatural \\
+  sijelo & NOUN & body (of person or animal), physical state, torso \\
+  \multirow[t]{2}{*}{sike} & NOUN & round or circular thing; ball, circle, cycle, sphere, wheel \\
+  & ADJECTIVE & of one year \\
+  sin or namako & ADJECTIVE & new, fresh; additional, another, extra \\
+  sina & NOUN & you \\
+  sinpin & NOUN & face, foremost, front, wall \\
+  sitelen & NOUN & image, picture, representation, symbol, mark, writing \\
+  \multirow[t]{2}{*}{sona} & VERB & to know, be skilled in, be wise about, have information on \\
+  & PRE-VERB & to know how to \\
+  soweli & NOUN & animal, beast, land mammal \\
+  suli & ADJECTIVE & big, heavy, large, long, tall; important; adult \\
+  suno & NOUN & sun; light, brightness, glow, radiance, shine; light source \\
+  supa & NOUN & horizontal surface, thing to put or rest something on \\
+  suwi & ADJECTIVE & sweet, fragrant; cute, innocent, adorable \\
+  tan & PREPOSITION & by, from, because of \\
+  \multirow[t]{2}{*}{taso} & PARTICLE & but, however \\
+  & ADJECTIVE & only \\
+  \multirow[t]{2}{*}{tawa} & PREPOSITION & going to, toward; for; from the perspective of \\
+  & ADJECTIVE & moving \\
+  telo & NOUN & water, liquid, fluid, wet substance; beverage \\
+  tenpo & NOUN & time, duration, moment, occasion, period, situation \\
+  toki & VERB & to communicate, say, speak, say, talk, use language, think \\
+  tomo & NOUN & indoor space; building, home, house, room \\
+  tu & NUMBER & two \\
+  unpa & VERB & to have sexual or marital relations with \\
+  uta & NOUN & mouth, lips, oral cavity, jaw \\
+  utala & VERB & to battle, challenge, compete against, struggle against \\
+  walo & ADJECTIVE & white, whitish; light-coloured, pale \\
+  \multirow[t]{2}{*}{wan} & ADJECTIVE & unique, united \\
+  & NUMBER & one \\
+  waso & NOUN & bird, flying creature, winged animal \\
+  wawa & ADJECTIVE & strong, powerful; confident, sure; energetic, intense \\
+  weka & ADJECTIVE & absent, away, ignored \\
+  wile & PRE-VERB & must, need, require, should, want, wish \\
+\end{longtable}
+% }}}
+
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

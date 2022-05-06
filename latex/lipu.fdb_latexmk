@@ -1,17 +1,17 @@
 # Fdb version 3
-["biber lipu"] 1651781604 "lipu.bcf" "lipu.bbl" "lipu" 1651782603
-  "lipu.bcf" 1651782603 154411 6fa24fa2b74652f4739b347c9395e132 "xelatex"
-  "sources.bib" 1651780185 7641 21e29b3018af21129be9861fa56b897d ""
+["biber lipu"] 1651846920 "lipu.bcf" "lipu.bbl" "lipu" 1651847903
+  "lipu.bcf" 1651847902 154754 22c7fb9cc1e3c0f39ec9b4cd40c5fa68 "xelatex"
+  "sources.bib" 1651844818 8573 d45452684b7828a868f7c39ff4d21b7a ""
   (generated)
-  "lipu.blg"
   "lipu.bbl"
-["xdvipdfmx"] 1651782603 "lipu.xdv" "lipu.pdf" "lipu" 1651782603
-  "lipu.xdv" 1651782603 218644 753b61031619cd7147ec70f934ad097d "xelatex"
+  "lipu.blg"
+["xdvipdfmx"] 1651847902 "lipu.xdv" "lipu.pdf" "lipu" 1651847903
+  "lipu.xdv" 1651847902 330608 46a65e9ae006a51d4f4a759c25ef38e3 "xelatex"
   "thesis.xdv" 0 -1 0 ""
   (generated)
   "thesis.pdf"
   "lipu.pdf"
-["xelatex"] 1651782601 "lipu.tex" "lipu.xdv" "lipu" 1651782603
+["xelatex"] 1651847901 "lipu.tex" "lipu.xdv" "lipu" 1651847903
   "/home/tsbohc/.texlive2021/texmf-var/web2c/xetex/xelatex.fmt" 1639984001 5093764 adf13981afd7e2ac1eb1009e3f355c67 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1639192684 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1639192684 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -170,6 +170,7 @@
   "/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty" 1639192684 77022 ee25ce086f4a79d8cf73bac6f94c02a5 ""
   "/usr/share/texmf-dist/tex/latex/logreq/logreq.def" 1639192684 1620 fb1c32b818f2058eca187e5c41dfae77 ""
   "/usr/share/texmf-dist/tex/latex/logreq/logreq.sty" 1639192684 6187 b27afc771af565d3a9ff1ca7d16d0d46 ""
+  "/usr/share/texmf-dist/tex/latex/multirow/multirow.sty" 1639229501 6149 2398eec4faa1ee24ff761581e580ecf1 ""
   "/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty" 1639192684 1090 bae35ef70b3168089ef166db3e66f5b2 ""
   "/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty" 1639192684 410 615550c46f918fcbee37641b02a862d9 ""
   "/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty" 1639192684 21013 f4ff83d25bb56552493b030f27c075ae ""
@@ -186,22 +187,23 @@
   "/usr/share/texmf-dist/tex/latex/tocloft/tocloft.sty" 1639229501 36103 3e78d14f0f4b1a30560fea5e04de805d ""
   "/usr/share/texmf-dist/tex/latex/tools/array.sty" 1639192684 12675 9a7bbb9e485cd81cdcc1d56212b088ff ""
   "/usr/share/texmf-dist/tex/latex/tools/indentfirst.sty" 1639192684 1619 d4cd7231755dd1dfa89af8ceddfb0e4d ""
+  "/usr/share/texmf-dist/tex/latex/tools/longtable.sty" 1639192684 12133 b1e3e65b69714dbfcc5e6c0b19d66b50 ""
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1639192684 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1639192684 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1639192684 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650389668 39967 c1691bf11496e9d6ea53f7eba5c4754e ""
   "img//nlpcl.png" 1651511834 83917 c583f65b8c8d69b0cc02c18a189a20c5 ""
-  "lipu.aux" 1651782603 9639 e38f4f0b76634a82bc5c1564458a8c8d "xelatex"
-  "lipu.bbl" 1651781605 18844 a44ac3bff3fb26605921c2e7e2b746e7 "biber lipu"
-  "lipu.out" 1651782603 4328 940ef9f75bd2c5cca318d1c5f629c782 "xelatex"
-  "lipu.run.xml" 1651782603 2496 b0cfd9152e4777d05223394847237b2c "xelatex"
-  "lipu.tex" 1651782600 35639 1105266f70e92104ec460f01cf89e064 ""
-  "lipu.toc" 1651782603 3866 eb22f505e15a31629227b7a82dbbf0b2 "xelatex"
+  "lipu.aux" 1651847902 11829 b50c05f655b517ec79468227203cbaa8 "xelatex"
+  "lipu.bbl" 1651846921 24510 5b180d0d495fa29601245d9fd59b98ab "biber lipu"
+  "lipu.out" 1651847902 5635 5fdf23f9eaeedaa8bb9b49ceee703cdf "xelatex"
+  "lipu.run.xml" 1651847902 2496 b0cfd9152e4777d05223394847237b2c "xelatex"
+  "lipu.tex" 1651847900 48053 e09a30144426e703821d44f01cfa3fcd ""
+  "lipu.toc" 1651847902 4756 319aafcae3ebef603f6e742f1f0f2550 "xelatex"
   (generated)
-  "lipu.bcf"
-  "lipu.xdv"
-  "lipu.out"
-  "lipu.aux"
-  "lipu.toc"
   "lipu.run.xml"
   "lipu.log"
+  "lipu.out"
+  "lipu.aux"
+  "lipu.xdv"
+  "lipu.toc"
+  "lipu.bcf"
