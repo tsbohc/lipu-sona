@@ -48,6 +48,48 @@
       \field{volume}{12}
       \range{volume}{1}
     \endentry
+    \entry{alshari}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7b6699b66dee181a64856a6caca08a20}{%
+           family={Alshari},
+           familyi={A\bibinitperiod},
+           given={Eissa\bibnamedelima M},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ca2fcdd671b0ab1c547e9886cbc92a3}{%
+           family={Azman},
+           familyi={A\bibinitperiod},
+           given={Azreen},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a19621d8d739c4f2b101eba113dbd47d}{%
+           family={Doraisamy},
+           familyi={D\bibinitperiod},
+           given={Shyamala},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{1fd46b1670f490ce172abd0c237fe65d}
+      \strng{fullhash}{1fd46b1670f490ce172abd0c237fe65d}
+      \strng{bibnamehash}{1fd46b1670f490ce172abd0c237fe65d}
+      \strng{authorbibnamehash}{1fd46b1670f490ce172abd0c237fe65d}
+      \strng{authornamehash}{1fd46b1670f490ce172abd0c237fe65d}
+      \strng{authorfullhash}{1fd46b1670f490ce172abd0c237fe65d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 28th international workshop on database and expert systems applications (DEXA)}
+      \field{title}{Improvement of sentiment analysis based on clustering of Word2Vec features}
+      \field{year}{2017}
+      \field{pages}{123\bibrangedash 126}
+      \range{pages}{4}
+    \endentry
     \entry{baroni}{inproceedings}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=06fd48b6938d182f11c5bf4e2da76f87}{%
@@ -91,6 +133,51 @@
       \range{volume}{1}
       \verb{doi}
       \verb 10.3115/v1/P14-1023
+      \endverb
+    \endentry
+    \entry{bekkerman}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c5c1675c54e8711e4b6ced5b8d50b362}{%
+           family={Bekkerman},
+           familyi={B\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=70f57b4b4bb951a40fa67f4dfbc4440b}{%
+           family={El-Yaniv},
+           familyi={E\bibinithyphendelim Y\bibinitperiod},
+           given={Ran},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e62b78dfc3dad1032ffab359db7276b}{%
+           family={Tishby},
+           familyi={T\bibinitperiod},
+           given={Naftali},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4ac8bc287e0d54bf354068b66f5ba8aa}
+      \strng{fullhash}{4ac8bc287e0d54bf354068b66f5ba8aa}
+      \strng{bibnamehash}{4ac8bc287e0d54bf354068b66f5ba8aa}
+      \strng{authorbibnamehash}{4ac8bc287e0d54bf354068b66f5ba8aa}
+      \strng{authornamehash}{4ac8bc287e0d54bf354068b66f5ba8aa}
+      \strng{authorfullhash}{4ac8bc287e0d54bf354068b66f5ba8aa}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{month}{03}
+      \field{title}{Distributional Word Clusters vs. Words for Text Categorization}
+      \field{year}{2003}
+      \field{pages}{1183\bibrangedash 1208}
+      \range{pages}{26}
+      \field{volume}{3}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1162/153244303322753625
       \endverb
     \endentry
     \entry{bengio}{inproceedings}{}
@@ -137,6 +224,68 @@
       \verb{doi}
       \verb 10.1162/153244303322533223
       \endverb
+    \endentry
+    \entry{dalianis}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b53687b4c886ace362863fedce31cc78}{%
+           family={Dalianis},
+           familyi={D\bibinitperiod},
+           given={Hercules},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{b53687b4c886ace362863fedce31cc78}
+      \strng{fullhash}{b53687b4c886ace362863fedce31cc78}
+      \strng{bibnamehash}{b53687b4c886ace362863fedce31cc78}
+      \strng{authorbibnamehash}{b53687b4c886ace362863fedce31cc78}
+      \strng{authornamehash}{b53687b4c886ace362863fedce31cc78}
+      \strng{authorfullhash}{b53687b4c886ace362863fedce31cc78}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Clinical text mining: Secondary use of electronic patient records}
+      \field{year}{2018}
+    \endentry
+    \entry{desouki}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4dd618f3aefb89356b577a960802e77b}{%
+           family={El\bibnamedelima Desouki},
+           familyi={E\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Mohamed\bibnamedelima I},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=78c1137af96a78d3ddd1e1ba617df8b8}{%
+           family={Gomaa},
+           familyi={G\bibinitperiod},
+           given={Wael\bibnamedelima H},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{31f9193bf3a03d0fc12f8df9e57a3e0d}
+      \strng{fullhash}{31f9193bf3a03d0fc12f8df9e57a3e0d}
+      \strng{bibnamehash}{31f9193bf3a03d0fc12f8df9e57a3e0d}
+      \strng{authorbibnamehash}{31f9193bf3a03d0fc12f8df9e57a3e0d}
+      \strng{authornamehash}{31f9193bf3a03d0fc12f8df9e57a3e0d}
+      \strng{authorfullhash}{31f9193bf3a03d0fc12f8df9e57a3e0d}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computer Applications}
+      \field{title}{Exploring the recent trends of paraphrase detection}
+      \field{year}{2019}
+      \field{number}{S 8887}
+      \range{number}{-1}
+      \field{volume}{975}
+      \range{volume}{1}
     \endentry
     \entry{emerson}{misc}{}
       \name{author}{1}{}{%
@@ -312,6 +461,37 @@
       \verb https://doi.org/10.1080/00437956.1954.11659520
       \endverb
     \endentry
+    \entry{henestroza}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e737be405daa209758a4e06b5e05001e}{%
+           family={Henestroza\bibnamedelima Anguiano},
+           familyi={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Enrique},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3796708e39078da5459911464ef1b510}{%
+           family={Denis},
+           familyi={D\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6b5732e9c95fdb193745fe689c153f64}
+      \strng{fullhash}{6b5732e9c95fdb193745fe689c153f64}
+      \strng{bibnamehash}{6b5732e9c95fdb193745fe689c153f64}
+      \strng{authorbibnamehash}{6b5732e9c95fdb193745fe689c153f64}
+      \strng{authornamehash}{6b5732e9c95fdb193745fe689c153f64}
+      \strng{authorfullhash}{6b5732e9c95fdb193745fe689c153f64}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{06}
+      \field{title}{FreDist: Automatic construction of distributional thesauri for French}
+      \field{year}{2011}
+    \endentry
     \entry{pu}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=abb50aa6b4dac78307182a4b8c05743e}{%
@@ -402,6 +582,34 @@
       \field{title}{Testing the distributional hypothesis: The influence of context on judgements of semantic similarity}
       \field{year}{2008}
     \endentry
+    \entry{iso}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ba10751b248151d8849ae11d2ffe856b}{%
+           family={Meulen},
+           familyi={M\bibinitperiod},
+           given={Spencer\bibnamedelimb van\bibnamedelima der},
+           giveni={S\bibinitperiod\bibinitdelim v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ba10751b248151d8849ae11d2ffe856b}
+      \strng{fullhash}{ba10751b248151d8849ae11d2ffe856b}
+      \strng{bibnamehash}{ba10751b248151d8849ae11d2ffe856b}
+      \strng{authorbibnamehash}{ba10751b248151d8849ae11d2ffe856b}
+      \strng{authornamehash}{ba10751b248151d8849ae11d2ffe856b}
+      \strng{authorfullhash}{ba10751b248151d8849ae11d2ffe856b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ISO 639-3 Registration Authority}
+      \field{month}{08}
+      \field{title}{Request for New Language Code Element in ISO 639-3}
+      \field{year}{2021}
+      \field{volume}{2021}
+      \range{volume}{1}
+    \endentry
     \entry{mikolov}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=a2d359b12ca2fadf0b40136a73f021bb}{%
@@ -442,6 +650,51 @@
       \field{volume}{2013}
       \range{volume}{1}
     \endentry
+    \entry{musto}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=20a01d7357984be6536720f3ae4455b6}{%
+           family={Musto},
+           familyi={M\bibinitperiod},
+           given={Cataldo},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3f2cc121698b08c5aed6b5afb48bc5f0}{%
+           family={Narducci},
+           familyi={N\bibinitperiod},
+           given={Fedelucio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b92443d0bd86e751a09e897c0668e73}{%
+           family={Basile},
+           familyi={B\bibinitperiod},
+           given={Pierpaolo},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{963ecb6793d9c7f881ba59869bf26a76}
+      \strng{fullhash}{963ecb6793d9c7f881ba59869bf26a76}
+      \strng{bibnamehash}{963ecb6793d9c7f881ba59869bf26a76}
+      \strng{authorbibnamehash}{963ecb6793d9c7f881ba59869bf26a76}
+      \strng{authornamehash}{963ecb6793d9c7f881ba59869bf26a76}
+      \strng{authorfullhash}{963ecb6793d9c7f881ba59869bf26a76}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-642-23953-3}
+      \field{month}{09}
+      \field{title}{Cross-Language Information Filtering: Word Sense Disambiguation vs. Distributional Models}
+      \field{year}{2011}
+      \field{pages}{250\bibrangedash 261}
+      \range{pages}{12}
+      \field{volume}{6934}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1007/978-3-642-23954-0_24
+      \endverb
+    \endentry
     \entry{oduntan}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=bf65d959e9f82452d8602626d9b094ca}{%
@@ -480,6 +733,46 @@
       \verb{doi}
       \verb 10.3923/jeasci.2018.4198.4204
       \endverb
+    \endentry
+    \entry{silva}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9c29bb94e3b28767e0de288f69c834d2}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Fabiano\bibnamedelima Tavares},
+           giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0,
+           prefix={da},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=db841ad41ac7246fbf918876f70da2bb}{%
+           family={Maia},
+           familyi={M\bibinitperiod},
+           given={José\bibnamedelima EB},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{72a5e349ba44b7450b9e6657b38a4a4a}
+      \strng{fullhash}{72a5e349ba44b7450b9e6657b38a4a4a}
+      \strng{bibnamehash}{72a5e349ba44b7450b9e6657b38a4a4a}
+      \strng{authorbibnamehash}{72a5e349ba44b7450b9e6657b38a4a4a}
+      \strng{authornamehash}{72a5e349ba44b7450b9e6657b38a4a4a}
+      \strng{authorfullhash}{72a5e349ba44b7450b9e6657b38a4a4a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Digit. Inf. Manag.}
+      \field{title}{Query Expansion in Text Information Retrieval with Local Context and Distributional Model.}
+      \field{year}{2019}
+      \field{number}{6}
+      \range{number}{1}
+      \field{pages}{313}
+      \range{pages}{1}
+      \field{volume}{17}
+      \range{volume}{1}
     \endentry
     \entry{nlpandcl}{article}{}
       \name{author}{1}{}{%

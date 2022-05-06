@@ -252,7 +252,7 @@
 \chapter{Introduction}
 
 % TODO: citation on relative speaker count
-Toki Pona is the second most spoken constructed language in the world. Its core vocabulary consists of only 120-140 words, not including words that are rare and/or considered non-standard by the majority of speakers. Despite the small vocabulary size, Toki Pona can be effectively used to convey a wide range of ideas of varying complexity.
+Toki Pona is the second most spoken constructed language in the world \parencite{iso}. Its core vocabulary consists of only 120-140 words, not including words that are rare and/or considered non-standard by the majority of speakers. Despite the small vocabulary size, Toki Pona can be effectively used to convey a wide range of ideas of varying complexity.
 
 This research aims to perform the semantic analysis and classification of the vocabulary of Toki Pona.
 
@@ -301,7 +301,7 @@ The existing dictionaries of Toki Pona could benefit from the findings of this r
 The Vector Space Model of Toki Pona developed in the course of this research can find further use in information retrieval, topic modelling, text prediction, sentiment analysis, and many other areas.
 
 
-% --- SMART WORDS A MANY ---
+% --- SMART WORDS A-MANY ---
 
 \chapter{Distributional semantics and~constructed~languages}
 
@@ -518,9 +518,10 @@ This model attempts to predict the current word from the sum of the context vect
 
 The training complexity of this model is
 
-\[Q = N \times D + D \times \log_2{V}\]% }}}
+\[Q = N \times D + D \times \log_2{V}\]
 
 Because this model architecture produces the prediction as output, the learned weights of the hidden layer is what represents the word vectors.
+% }}}
 
 \subsubsection{Continuous skip-gram model}
 % {{{
@@ -533,14 +534,21 @@ The training complexity of this model is
 While the complexity of this model is greater, the accuracy is also much greater \parencite{mikolov}. Similar to a continuous bag-of-words model, the weights of the hidden layer are the distributional representations.
 % }}}
 
+\subsection{Applications}
 
-% \subsubsection{Contextualised embedding models}
+The data provided by the distributional model can be used directly to analyse the semantics of a language:
 
-% model dimensionality
+\begin{enumerate}
+  \item \textbf{Semantic similarity.} By definition, distributional models provide data that quantifies semantic relatedness between individual words or expressions. This data can be interpreted by humans to draw conclusions about the meanings of words or used in other areas of natural language processing.
+  \item \textbf{Word clustering.} Semantic representations tend to form groups in the multi-dimensional space. Word clustering refers to the ways and means by which these groups can be extracted as formal clusters \parencite{bekkerman}.
+  \item \textbf{Automatic creation of thesauri.} The semantic similarity data can be further processed to produce lists of homonyms, synonyms, or even antonyms \parencite{henestroza}.
+  \item \textbf{Word sense disambiguation.} This refers to a problem in computational linguitics that is conserned with identifying which sense of a word is used in a particular sentence \parencite{musto}.
+  \item \textbf{Information retrieval.} Distributional models can be used to access semantically similar words to those of a query, expanding the retrieved results from exact word matching to semantically fuzzy matching \parencite{silva}.
+  \item \textbf{Data mining.} In data mining, namely text mining, distributional models can provide means of identifying similar documents, thus narrowing the scope of a search \parencite[89]{dalianis}.
+  \item \textbf{Paraphrasing.} The data provided by distributional models can supply paraphrasing algorithms with vocabulary, or aid in judging the relative semantic similarity between two paraphrases on a sentence level basis \parencite{desouki}.
+  \item \textbf{Sentiment analysis.} Given a small list of words manually tagged with emotive potentials, distributional models can propagate these potentials through a corpus based on the semantic similarity between the tagged words \parencite{alshari}.
+\end{enumerate}
 
-% \subsection{Applications}
-%
-% The data produced via natural language processing has a variety of applications.
 
 \section{Constructed languages}
 
@@ -563,7 +571,7 @@ While the complexity of this model is greater, the accuracy is also much greater
 
 \section{Vector space model}
 
-\subsection{Corpus acquisition}
+\subsection{Text tokenisation}
 
 \subsection{Text normalisation}
 
