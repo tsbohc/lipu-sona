@@ -734,6 +734,52 @@
       \verb 10.3923/jeasci.2018.4198.4204
       \endverb
     \endentry
+    \entry{punske}{book}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=1c3336c93f20a356393332c4933a8669}{%
+           family={Punske},
+           familyi={P\bibinitperiod},
+           given={A.P.D.L.J.},
+           giveni={A\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=752a219d99efc6d2bd57d7b68fdbd8f7}{%
+           family={Punske},
+           familyi={P\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=6248b1da0ead597a7822fed215a20974}{%
+           family={Sanders},
+           familyi={S\bibinitperiod},
+           given={A.P.D.L.N.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d9f9b08b104cea8d15543dd0eeb7db16}
+      \strng{fullhash}{d9f9b08b104cea8d15543dd0eeb7db16}
+      \strng{bibnamehash}{d9f9b08b104cea8d15543dd0eeb7db16}
+      \strng{authorbibnamehash}{d9f9b08b104cea8d15543dd0eeb7db16}
+      \strng{authornamehash}{d9f9b08b104cea8d15543dd0eeb7db16}
+      \strng{authorfullhash}{d9f9b08b104cea8d15543dd0eeb7db16}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780198829874}
+      \field{title}{Language Invention in Linguistics Pedagogy}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=YYLxDwAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=YYLxDwAAQBAJ
+      \endverb
+    \endentry
     \entry{silva}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=9c29bb94e3b28767e0de288f69c834d2}{%
@@ -885,6 +931,40 @@
       \field{year}{2018}
       \verb{doi}
       \verb 10.13140/RG.2.2.29631.36006
+      \endverb
+    \endentry
+    \entry{wilkins}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=da974a95d9be300341a02fc933389fd1}{%
+           family={Wilkins},
+           familyi={W\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Sa: Gellibrand,}%
+        {for John Martyn printer to the Royal Society}%
+      }
+      \strng{namehash}{da974a95d9be300341a02fc933389fd1}
+      \strng{fullhash}{da974a95d9be300341a02fc933389fd1}
+      \strng{bibnamehash}{da974a95d9be300341a02fc933389fd1}
+      \strng{authorbibnamehash}{da974a95d9be300341a02fc933389fd1}
+      \strng{authornamehash}{da974a95d9be300341a02fc933389fd1}
+      \strng{authorfullhash}{da974a95d9be300341a02fc933389fd1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Essay Towards a Real Character, and a Philosophical Language}
+      \field{year}{1668}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=BCCtZjBtiEYC
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=BCCtZjBtiEYC
       \endverb
     \endentry
     \entry{yarlett}{article}{}

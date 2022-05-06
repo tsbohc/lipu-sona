@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  6 MAY 2022 22:38
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  7 MAY 2022 00:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1470,8 +1470,7 @@ LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
 Requested font "[Alegreya-Italic.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 12.0pt
- -> 1^^
-^^ ^^Q^^U
+ -> A
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 351.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 12.0pt
@@ -1513,85 +1512,40 @@ Underfull \hbox (badness 1205) in paragraph at lines 382--386
 [][]\TU/IosevkaCustom(0)/m/n/12 cosine_similarity(sun, moon) = 0.9711 
  []
 
-[8] [9] [10] [11] [12] [13] [14] [15] [16] [17]
+[8] [9] [10] [11] [12] [13] [14] [15] [16]
+LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/sc' will be
+(Font)              scaled to size 14.4pt on input line 566.
+Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;+smcp;mapping=tex-text;" at 14.4pt
+ -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
+ [17] [18]
 Chapter .
-[18
+[19
 
-] [19
+] [20
 
-] [20]
+] [21]
 
 Package biblatex Warning: No driver for entry type 'unknown'.
-(biblatex)                Using fallback driver on input line 593.
+(biblatex)                Using fallback driver on input line 612.
 
-[21]
+[22] [23]
 Chapter .
+[24
 
-Overfull \hbox (12.29471pt too wide) in alignment at lines 610--612
- [] [] [] 
- []
-
-
-Overfull \hbox (12.29471pt too wide) in alignment at lines 612--615
- [] [] [] 
- []
-
-
-Overfull \hbox (12.29471pt too wide) in alignment at lines 615--636
- [] [] [] 
- []
-
-
-Overfull \hbox (12.29471pt too wide) in alignment at lines 636--656
- [] [] [] 
- []
-
-[22
-
-]
-Overfull \hbox (12.29471pt too wide) in alignment at lines 656--676
- [] [] [] 
- []
-
-[23]
-Overfull \hbox (12.29471pt too wide) in alignment at lines 676--696
- [] [] [] 
- []
-
-[24]
-Overfull \hbox (12.29471pt too wide) in alignment at lines 696--716
- [] [] [] 
- []
-
-[25]
-Overfull \hbox (12.29471pt too wide) in alignment at lines 716--736
- [] [] [] 
- []
-
-[26]
-Overfull \hbox (12.29471pt too wide) in alignment at lines 736--756
- [] [] [] 
- []
-
-[27]
-Overfull \hbox (12.29471pt too wide) in alignment at lines 756--756
- [] [] [] 
- []
-
-[28] [29] (./lipu.aux)
+] [25] [26] [27] [28] [29] [30] [31] (./lipu.aux)
 Package rerunfilecheck Info: File `lipu.out' has not changed.
-(rerunfilecheck)             Checksum: C83CB258B73FCC42B715E933CDC036A1;5795.
+(rerunfilecheck)             Checksum: 1B7B0707122B736437C79F327EC85052;6408.
 Package logreq Info: Writing requests to 'lipu.run.xml'.
 \openout1 = `lipu.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33564 strings out of 476919
- 675524 string characters out of 5827662
- 1609663 words of memory out of 5000000
- 53016 multiletter control sequences out of 15000+600000
- 408921 words of font info for 90 fonts, out of 8000000 for 9000
+ 33573 strings out of 476919
+ 675883 string characters out of 5827662
+ 1610386 words of memory out of 5000000
+ 53023 multiletter control sequences out of 15000+600000
+ 408929 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  113i,11n,124p,737b,5269s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lipu.xdv (29 pages, 381592 bytes).
+Output written on lipu.xdv (31 pages, 411264 bytes).
