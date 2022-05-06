@@ -1,17 +1,17 @@
 # Fdb version 3
-["biber lipu"] 1651846920 "lipu.bcf" "lipu.bbl" "lipu" 1651847903
-  "lipu.bcf" 1651847902 154754 22c7fb9cc1e3c0f39ec9b4cd40c5fa68 "xelatex"
-  "sources.bib" 1651844818 8573 d45452684b7828a868f7c39ff4d21b7a ""
+["biber lipu"] 1651854272 "lipu.bcf" "lipu.bbl" "lipu" 1651854967
+  "lipu.bcf" 1651854966 154905 2c22e459698bc923aba593c22b2b88b5 "xelatex"
+  "sources.bib" 1651851334 8574 95511db0c09dc96af4efd166c82e10db ""
   (generated)
   "lipu.bbl"
   "lipu.blg"
-["xdvipdfmx"] 1651847902 "lipu.xdv" "lipu.pdf" "lipu" 1651847903
-  "lipu.xdv" 1651847902 330608 46a65e9ae006a51d4f4a759c25ef38e3 "xelatex"
+["xdvipdfmx"] 1651854967 "lipu.xdv" "lipu.pdf" "lipu" 1651854967
+  "lipu.xdv" 1651854966 341824 4a363073cd03ba764ccd369deb738c94 "xelatex"
   "thesis.xdv" 0 -1 0 ""
   (generated)
   "thesis.pdf"
   "lipu.pdf"
-["xelatex"] 1651847901 "lipu.tex" "lipu.xdv" "lipu" 1651847903
+["xelatex"] 1651854965 "lipu.tex" "lipu.xdv" "lipu" 1651854967
   "/home/tsbohc/.texlive2021/texmf-var/web2c/xetex/xelatex.fmt" 1639984001 5093764 adf13981afd7e2ac1eb1009e3f355c67 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1639192684 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1639192684 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -131,6 +131,9 @@
   "/usr/share/texmf-dist/tex/latex/biblatex/blx-unicode.def" 1639192684 3786 1f89d14780f0ad89ab94652b37f4e9b8 ""
   "/usr/share/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx" 1639192684 3976 2d46354b304f9bc8fda915fe9215de04 ""
   "/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx" 1639192684 38558 7b6b5c4f86b076362a57cfdb9255a6c6 ""
+  "/usr/share/texmf-dist/tex/latex/caption/caption.sty" 1639192684 51746 e89c4da670ba533e6ab38e045ce6d1d9 ""
+  "/usr/share/texmf-dist/tex/latex/caption/caption3.sty" 1639192684 67929 d50ae850e1d9604065e8337a75a41029 ""
+  "/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty" 1639192684 7357 253a530eda3aa18c996f9303e5dc7669 ""
   "/usr/share/texmf-dist/tex/latex/collcell/collcell.sty" 1639229501 5954 9d9a20a129558e1e2bc92ee0caca0fb9 ""
   "/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty" 1639192684 10793 d0af3aa11e27ae35ba4685b17597b122 ""
   "/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1639192684 46845 3b58f70c6e861a13d927bff09d35ecbc ""
@@ -193,17 +196,17 @@
   "/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1639192684 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650389668 39967 c1691bf11496e9d6ea53f7eba5c4754e ""
   "img//nlpcl.png" 1651511834 83917 c583f65b8c8d69b0cc02c18a189a20c5 ""
-  "lipu.aux" 1651847902 11829 b50c05f655b517ec79468227203cbaa8 "xelatex"
-  "lipu.bbl" 1651846921 24510 5b180d0d495fa29601245d9fd59b98ab "biber lipu"
-  "lipu.out" 1651847902 5635 5fdf23f9eaeedaa8bb9b49ceee703cdf "xelatex"
-  "lipu.run.xml" 1651847902 2496 b0cfd9152e4777d05223394847237b2c "xelatex"
-  "lipu.tex" 1651847900 48053 e09a30144426e703821d44f01cfa3fcd ""
-  "lipu.toc" 1651847902 4756 319aafcae3ebef603f6e742f1f0f2550 "xelatex"
+  "lipu.aux" 1651854966 12021 6cec5a898dfd3d5ab4e4d461f6b2143c "xelatex"
+  "lipu.bbl" 1651854273 24510 5b180d0d495fa29601245d9fd59b98ab "biber lipu"
+  "lipu.out" 1651854966 5678 b8e8a0464c29c1ab65c92f4845b45e8f "xelatex"
+  "lipu.run.xml" 1651854966 2496 b0cfd9152e4777d05223394847237b2c "xelatex"
+  "lipu.tex" 1651854964 49113 350a605a65828eb0e293b88621f23d29 ""
+  "lipu.toc" 1651854966 4764 c130fc3be40122b6f2ccfd487123e7b3 "xelatex"
   (generated)
-  "lipu.run.xml"
-  "lipu.log"
-  "lipu.out"
-  "lipu.aux"
   "lipu.xdv"
   "lipu.toc"
   "lipu.bcf"
+  "lipu.log"
+  "lipu.run.xml"
+  "lipu.aux"
+  "lipu.out"

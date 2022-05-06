@@ -21,6 +21,7 @@
 \usepackage{pgf}
 
 \usepackage{longtable}
+\usepackage{caption}
 \usepackage{multirow}
 
  %The min, mid and max values
@@ -270,7 +271,7 @@ This research aims to perform the semantic analysis and classification of the vo
   \item \textbf{Object.} Toki Pona, a constructed language.
   \item \textbf{Goal.} Perform the semantic analysis and classification of the vocabulary of the language.
   \begin{itemize}
-    \item \textbf{Problem.} Vocabulary cannot be analysed based on the available resources as they do not contain sufficient information for said analysis.
+    \item \textbf{Problem.} The available resources do not contain sufficient information for said analysis.
     \item \textbf{Solution.} Use natural language processing techniques to construct a semantic model of the language and base the analysis on it.
   \end{itemize}
   \item \textbf{Methodology.} Distributional semantics and natural language processing, namely language modelling (word embedding).
@@ -295,9 +296,9 @@ This research aims to perform the semantic analysis and classification of the vo
 
 With the rise of the internet, constructed languages now have a place where they can live and thrive. Constructed languages are rapidly gaining popularity. Despite this, the only constructed language that has seen much representation in scientific writing is Esperanto.
 
-The existing dictionaries of Toki Pona can greatly benefit from the findings of this research. This data can also be used as an aid in teaching the language to new speakers.
+The existing dictionaries of Toki Pona could benefit from the findings of this research. This data can also be used as an aid in teaching the language to new speakers.
 
-The Vector Space Model of Toki Pona constructed in the course of this research can find further use in information retrieval, topic modelling, text prediction, sentiment analysis, and many other areas.
+The Vector Space Model of Toki Pona developed in the course of this research can find further use in information retrieval, topic modelling, text prediction, sentiment analysis, and many other areas.
 
 
 % --- SMART WORDS A MANY ---
@@ -319,6 +320,7 @@ In turn, ``Natural Language Processing is a field at the intersection of compute
 \caption{Language-related disciplines \parencite{nlpandcl}}
 \end{figure}
 % }}}
+
 
 \section{Distributional semantics}
 % {{{
@@ -466,11 +468,13 @@ As the dimensionality of representations increases, the volume of the space they
 
 A common solution to this is dimensionality reduction.
 % }}}
-\subsection{Implementations}
+
+
+\subsection{Notable implementations}
 
 \subsubsection{Count vector model}
 % {{{
-The earliest implementatinos of distributional modeles featured simple counting algorithms. ``<...> these models just record other words that have been observed in the vicinity of a target word in large text corpora, and form some sort of aggregate over the recorded context items. They then estimate the semantic similarity between words based on contextual similarity'' \parencite{erkkatrin2}. These models are referred to as count models.
+The simplest implementatinos of distributional modeles feature counting algorithms. ``<...> these models just record other words that have been observed in the vicinity of a target word in large text corpora, and form some sort of aggregate over the recorded context items. They then estimate the semantic similarity between words based on contextual similarity'' \parencite{erkkatrin2}. These models are referred to as count models.
 
 ``Context items are counted only if they appear close to the target word, that is, if they are within the relevant context'' \parencite{erkkatrin2}.
 
@@ -479,7 +483,7 @@ The count models operate on window-based context. The window size is typically n
 
 \subsubsection{Neural probabilistic language model}
 % {{{
-In the recent years, the distributional model architecture has seen as notable shift to machine learning algorithms. With the improvements of hardware performance, the training of complex neural networks on corpora of larger sizes has become possible.
+In the recent years, the distributional model architecture has seen as notable shift to machine learning algorithms. With the improvements of hardware performance, the training of complex neural networks on corpora of larger sizes has become possible. 
 
 The earlier machine learning based models were plagued by the curse of dimensionality. This problem was solved in the model proposed by \parencite{bengio}. The proposed neural network model learns distributional representations and the generalisation function at the same time. The generalisation function is based on the estimates of probablity of a word appearing in the given context.
 
@@ -505,23 +509,32 @@ The training complexity of this model is
 % }}}
 
 \subsubsection{Continuous bag-of-words model}
+% {{{
+The first architecture of Word2vec proposed by Mikolov removes the non-linear hidden layer, further reducing complexity. The projection layer is shared for all words \parencite{mikolov}.
 
-The first architecture proposed by Mikolov removes the non-linear hidden layer, further reducing complexity. The projection layer is shared for all words \parencite{mikolov}.
-
-The output of this model is not ifluenced by history, like in the previous model. In a continuous bag-of-words model not only the words preceding the current word are used for context, but also the words that follow it.
+The continuous bag-of-words model is not ifluenced by history like the previous one. In a continuous bag-of-words model not only the words preceding the current word are used for context, but also the words that follow it.
 
 This model attempts to predict the current word from the sum of the context vectors. This sum of vectors is referred to as a ``bag of words'', giving the name to the model. If the prediction of the word is correct after comparing it with the current word, its distributional representation is reinforced. If the prediction is wrong, the distributional representation is corrected.
 
 The training complexity of this model is
 
-\[Q = N \times D + D \times \log_2{V}\]
+\[Q = N \times D + D \times \log_2{V}\]% }}}
+
+Because this model architecture produces the prediction as output, the learned weights of the hidden layer is what represents the word vectors.
 
 \subsubsection{Continuous skip-gram model}
+% {{{
+The second architecture of Word2vec proposed by Mikolov has the opposite objective of the continuous bag-of-words model. The continuous skip-gram model predicts the surrounding context from the current word. Similar to the continuous bag-of-words model, when the continuous skip-gram model succeedes in predicting the context words, the semantic representation of the current word is reinforced. When it fails, it is corrected \parencite{mikolov}.
+
+The training complexity of this model is
+
+\[Q = N \times D + N \times D \times log_2{V} \]
+
+While the complexity of this model is greater, the accuracy is also much greater \parencite{mikolov}. Similar to a continuous bag-of-words model, the weights of the hidden layer are the distributional representations.
+% }}}
 
 
 % \subsubsection{Contextualised embedding models}
-
-
 
 % model dimensionality
 
@@ -588,6 +601,10 @@ The dictionary of Toki Pona as it appears in Toki Pona: The Language of Good \pa
 % {{{
 \begin{longtable}{llp{10cm}}
   \multicolumn{2}{c}{\textbf{Word}} & \textbf{Definition} \\
+  \endfirsthead
+  \multicolumn{3}{c}{\tablename~\thetable: nimi pu} \\[0.25cm]
+  \multicolumn{2}{c}{\textbf{Word}} & \textbf{Definition} \\
+  \endhead
   a or kin & PARTICLE & (emphasis, emotion or confirmation) \\
   akesi & NOUN & non-cute animal; reptile, amphibian \\
   ala & ADJECTIVE & no, not, zero \\
