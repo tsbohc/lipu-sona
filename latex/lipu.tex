@@ -221,7 +221,7 @@
     \textbf{tsbohc}
 
     \large
-    \textbf{TOKI PONA: DISTRIBUTIONAL APPROACH TO VOCABULARY~ANALYSIS OF A CONSTRUCTED LANGUAGE}
+    \textbf{TOKI PONA: DISTRIBUTIONAL APPROACH TO SEMANTIC~ANALYSIS OF A CONSTRUCTED LANGUAGE}
 
     \normalsize
 
@@ -251,10 +251,11 @@
 
 \chapter{Introduction}
 
-% TODO: citation on relative speaker count
-Toki Pona is the second most spoken constructed language in the world \parencite{iso}. Its core vocabulary consists of only 120-140 words, not including words that are rare and/or considered non-standard by the majority of speakers. Despite the small vocabulary size, Toki Pona can be effectively used to convey a wide range of ideas of varying complexity.
+Toki Pona is the second most spoken constructed language in the world. Its core vocabulary consists of only 120-140 words, not including words that are rare and/or considered non-standard by the majority of speakers. Despite the small vocabulary size, Toki Pona can be used to convey a wide range of ideas of varying complexity \parencite{iso}.
 
-This research aims to perform the semantic analysis and classification of the vocabulary of Toki Pona.
+% This research aims to perform the semantic analysis and classification of the vocabulary of Toki Pona.
+
+% TODO: formulate the problem
 
 % Numerous dictionaries of Toki Pona exist, but only the most immediate word definitions are provided. They may be enough for someone learning the language to grasp the general idea, but are insufficient to reflect the way the words are used in all of their shades of meaning. Because of this, the said analysis cannot be performed without studying how the language is spoken.
 
@@ -266,14 +267,30 @@ This research aims to perform the semantic analysis and classification of the vo
 
 % A different approach is to let the data drive the analysis. An adequately large corpus can be compiled by a single person. Modern approaches to Natural Language Processing can then be used to produce the data on the language change and the semantic distribution of the vocabulary. This data can then serve as the basis for the semantic analysis of the vocabulary.
 
+% TODO: maybe it's better to reformulate the goal to "fill in the gaps in a
+% the dictionary to better reflect the way the language is spoken"
+
+\paragraph{Problem}
+
+While some cases are covered by the lessons present in the original book \parencite{pu}, the definitions provided by the official publicly available dictionary do not fully reflect how the vocabulary is used today.
+
+This could be amended by the way of iquiry of a large enough sample of proficient speakers, but this approach would prove highly subjective. Moreover, there are weak dialectical variations and idiolects present in the language.
+
+A more neutral and less manual approach is to use distributional semantics to construct a model of the language. The data provided by the model can serve as the basis for identifying the undocumented word senses and ranking the existing ones.
+
+% TODO idiolects within communities
+
+% Some dialectical variations in the way the language is spoken also exist. While some speakers do not shy away from the more recent and less adopted additions to the vocabulary (\textit{nimi ku suli} and \textit{nimi ku lili}), others wish to stay true to the original design of the language (\textit{pu-rists}) and intentionally limit their effective vocabulary.
+
+\paragraph{Goals}
+
+The primary goal of this paper is to comment on the semantics of the core Toki Pona vocabulary, as well as to organise individual words into groups based on their semantic relatedness and the context they are most prevalently used in.
+
+The secondary goal is to discuss the semantics of the core vocabulary of Toki Pona --- as it is spoken by the majority of the communety --- in relation to the official dictionary of the language.
+
 \begin{itemize}
-  \item \textbf{Subject.} Semantic analysis and classification of vocabulary.
+  \item \textbf{Subject.} Semantic evaluation and classification of vocabulary.
   \item \textbf{Object.} Toki Pona, a constructed language.
-  \item \textbf{Goal.} Perform the semantic analysis and classification of the vocabulary of the language.
-  \begin{itemize}
-    \item \textbf{Problem.} The available resources do not contain sufficient information for said analysis.
-    \item \textbf{Solution.} Use natural language processing techniques to construct a semantic model of the language and base the analysis on it.
-  \end{itemize}
   \item \textbf{Methodology.} Distributional semantics and natural language processing, namely language modelling (word embedding).
 \end{itemize}
 
@@ -281,24 +298,23 @@ This research aims to perform the semantic analysis and classification of the vo
 \paragraph{Objectives}
 
 \begin{enumerate}
+  \item Define natural language processing and distributional semantics, discuss modern implementations as well as other related concepts.
   \item Define and classify constructed languages.
-  \item Describe toki pona, its philosophy, history, and unique features.
-  \item Define distributional semantics.
-  \item Define modern approaches to Natural Language Processing applicable to the research.
+  \item Describe Toki Pona, its philosophy, history, and unique features.
   \item Obtain the necessary corpora.
   \item Construct a vector space model of the language.
   \item Make observations on the model.
-  \item Classify the vocabulary based on the observed semantic relationships between the words of the vocabulary.
+  \item Classify the words of the vocabulary based on the observed semantic relationships between them.
 \end{enumerate}
 
 
 \paragraph{Relevance}
 
-With the rise of the internet, constructed languages now have a place where they can live and thrive. Constructed languages are rapidly gaining popularity. Despite this, the only constructed language that has seen much representation in scientific writing is Esperanto.
+Constructed languages are rapidly gaining popularity. Despite this, the only constructed language that has seen much representation in scientific writing is Esperanto.
 
-The existing dictionaries of Toki Pona could benefit from the findings of this research. This data can also be used as an aid in teaching the language to new speakers.
+The existing dictionaries or other resources concerned with teaching Toki Pona to new speakers could benefit from the findings of this research. New tools can be developed which will aid newcomers to the language.
 
-The Vector Space Model of Toki Pona developed in the course of this research can find further use in information retrieval, topic modelling, text prediction, sentiment analysis, and many other areas.
+The vector space model of Toki Pona developed in the course of this research can find further use in machine translation, topic modelling, text prediction, sentiment analysis, and many other areas.
 
 
 % --- SMART WORDS A-MANY ---
@@ -569,7 +585,7 @@ The concept of a constructed language was first mentioned in writing by Athenaeu
 
 ``The belief in the connection between language creation and divinity shaped many early conlangs. If gods created languages, what would it mean for a human to dabble in this enterprise?'' \parencite{punske}.
 
-From this view arose the notion that languages inherited by humans from gods became impure through use and now were causing confusion among the scholars and philosophers. In his essay, Wilkins proposed a universal philosopical language to replace Latin. This language was to be unambiguous and to encompass every concept in the universe \parencite[16]{wilkins}.
+From this view arose the notion that languages inherited by humans from gods became corrupted through use and now were causing confusion among the scholars and philosophers. In his essay, Wilkins proposed a universal philosopical language to replace Latin. This language was to be unambiguous and to encompass every concept in the universe \parencite[ch. 2, p. 1]{wilkins}.
 
 \subsection{Reasons for creation}
 
