@@ -50,48 +50,60 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Brief history}{18}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1}Ancient times}{18}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1}Antiquity}{18}{subsubsection.2.3.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.2}Linguistic mysticism}{19}{subsubsection.2.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Motivation}{20}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {3.2.3}Early artistic languages}{21}{subsubsection.2.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Classification}{20}{subsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {3.2.4}Early modern constructed languages}{21}{subsubsection.2.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Notable languages}{20}{subsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {3.2.5}J. R. R. Tolkien}{21}{subsubsection.2.3.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Language modelling and Toki Pona}{21}{chapter.3}%
+\contentsline {subsubsection}{\numberline {3.2.6}Modern constructed languages}{21}{subsubsection.2.3.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Toki Pona}{21}{section.3.1}%
+\contentsline {subsection}{\numberline {3.3}Motivation}{21}{subsection.2.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}History}{21}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.4}Classification}{21}{subsection.2.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Phonology}{21}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.4.1}Structure and source material}{21}{subsubsection.2.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3}Grammar}{21}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.4.2}Purpose}{21}{subsubsection.2.3.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4}Vocabulary}{21}{subsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.4.3}Blanke's functional classification}{21}{subsubsection.2.3.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5}Tokiponidos}{21}{subsection.3.1.5}%
+\contentsline {chapter}{\numberline {}Language modelling and Toki Pona}{22}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Vector space model}{21}{section.3.2}%
+\contentsline {section}{\numberline {1}Toki Pona}{22}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Text tokenisation}{21}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {1.1}History}{22}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Text normalisation}{21}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {1.2}Phonology}{22}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Model construction}{21}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {1.3}Grammar}{22}{subsection.3.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Projection and visualisation}{21}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {1.4}Vocabulary}{22}{subsection.3.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}Observations}{21}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {1.5}Tokiponidos}{22}{subsection.3.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{22}{chapter*.11}%
+\contentsline {section}{\numberline {2}Vector space model}{22}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Supplementary marterial}{26}{chapter.4}%
+\contentsline {subsection}{\numberline {2.1}Text tokenisation}{22}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Vector space model}{26}{section.4.1}%
+\contentsline {subsection}{\numberline {2.2}Text normalisation}{22}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Dictionaries}{26}{section.4.2}%
+\contentsline {subsection}{\numberline {2.3}Model construction}{22}{subsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}nimi pu}{26}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {2.4}Projection and visualisation}{22}{subsection.3.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5}Observations}{22}{subsection.3.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{References}{23}{chapter*.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {}Supplementary marterial}{27}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Vector space model}{27}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Dictionaries}{27}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}nimi pu}{27}{subsection.4.2.1}%

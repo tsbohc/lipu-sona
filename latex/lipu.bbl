@@ -929,6 +929,35 @@
       \field{volume}{44}
       \range{volume}{1}
     \endentry
+    \entry{stria}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=74168ba27a882176597528415fc593db}{%
+           family={Stria},
+           familyi={S\bibinitperiod},
+           given={Ida},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{74168ba27a882176597528415fc593db}
+      \strng{fullhash}{74168ba27a882176597528415fc593db}
+      \strng{bibnamehash}{74168ba27a882176597528415fc593db}
+      \strng{authorbibnamehash}{74168ba27a882176597528415fc593db}
+      \strng{authornamehash}{74168ba27a882176597528415fc593db}
+      \strng{authorfullhash}{74168ba27a882176597528415fc593db}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-83-947609-1-5}
+      \field{month}{01}
+      \field{title}{Inventing languages, inventing worlds. Towards a linguistic worldview for artificial languages}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.14746/9788394760915
+      \endverb
+    \endentry
     \entry{nlpandcl}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=86965abedf4e93b7be8759d4be48e34e}{%
