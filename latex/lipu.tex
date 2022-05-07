@@ -226,7 +226,12 @@
     \normalsize
 
     \bigskip
-    (tenpo ni la, lipu ni li pona ala) 
+    \bigskip
+    \bigskip
+    \bigskip
+    tenpo ni la, lipu ni li pona ala
+
+    (spelling and general unenglishness will be corrected at a later date)
 
     \bigskip
 
@@ -253,23 +258,6 @@
 
 Toki Pona is the second most spoken constructed language in the world. Its core vocabulary consists of only 120-140 words, not including words that are rare and/or considered non-standard by the majority of speakers. Despite the small vocabulary size, Toki Pona can be used to convey a wide range of ideas of varying complexity \parencite{iso}.
 
-% This research aims to perform the semantic analysis and classification of the vocabulary of Toki Pona.
-
-% TODO: formulate the problem
-
-% Numerous dictionaries of Toki Pona exist, but only the most immediate word definitions are provided. They may be enough for someone learning the language to grasp the general idea, but are insufficient to reflect the way the words are used in all of their shades of meaning. Because of this, the said analysis cannot be performed without studying how the language is spoken.
-
-% One approach to solving this problem would be to develop a system of evaluating the speaker proficiency. The evaluated speakers of the language who passed the test can then be recruited. By the way of discussion every word can then be described in detail.
-
-% The primary difficulty of this approach is that the system which would evaluate speakers has to be created by the proficient speakers. In other words, this is a causality dilemma. This approach would also rely on the judgement of a relatively small sample of the community. With this approach, the results would be based on the perception of the usage patterns of the language and not the usage of the language itself.
-
-% Natural languages do not experience this as severely. Natural languages have much longer histories, much closer ties in local culture, and much larger vocabularies. Because of this, are not as volatile as constructed languages.
-
-% A different approach is to let the data drive the analysis. An adequately large corpus can be compiled by a single person. Modern approaches to Natural Language Processing can then be used to produce the data on the language change and the semantic distribution of the vocabulary. This data can then serve as the basis for the semantic analysis of the vocabulary.
-
-% TODO: maybe it's better to reformulate the goal to "fill in the gaps in a
-% the dictionary to better reflect the way the language is spoken"
-
 \paragraph{Problem}
 
 While some cases are covered by the lessons present in the original book \parencite{pu}, the definitions provided by the official publicly available dictionary do not fully reflect how the vocabulary is used today.
@@ -277,10 +265,6 @@ While some cases are covered by the lessons present in the original book \parenc
 This could be amended by the way of iquiry of a large enough sample of proficient speakers, but this approach would prove highly subjective. Moreover, there are weak dialectical variations and idiolects present in the language.
 
 A more neutral and less manual approach is to use distributional semantics to construct a model of the language. The data provided by the model can serve as the basis for identifying the undocumented word senses and ranking the existing ones.
-
-% TODO idiolects within communities
-
-% Some dialectical variations in the way the language is spoken also exist. While some speakers do not shy away from the more recent and less adopted additions to the vocabulary (\textit{nimi ku suli} and \textit{nimi ku lili}), others wish to stay true to the original design of the language (\textit{pu-rists}) and intentionally limit their effective vocabulary.
 
 \paragraph{Goals}
 
@@ -323,11 +307,11 @@ The vector space model of Toki Pona developed in the course of this research can
 
 \section{Natural language processing}
 % {{{
-``Linguistics is concerned not only with language per se, but must also deal with how humans model the world. The study of semantics, for example, must relate language expressions to their meanings, which reside in the mental models possessed by humans. <...> Whereas computational linguistics, as a subfield of linguistics, is concerned with the formal or computational description of rules that languages follow'' \parencite{nlpandcl}.
+``Linguistics is concerned not only with language per se, but must also deal with how humans model the world. The study of semantics, for example, must relate language expressions to their meanings, which reside in the mental models possessed by humans. <...> Whereas computational linguistics, as a subfield of linguistics, is concerned with the formal or computational description of rules that languages follow \parencite{nlpandcl}''.
 
 The aim of this research is to bridge the gap between the two disciplines, to use computational linguistics to build a semantic model of a constructed language. This model can then be used to explore the nuances of how humans speak the said language.
 
-In turn, ``Natural Language Processing is a field at the intersection of computer science, artificial intelligence, and linguistics'' \parencite[7]{practicalnlp}. ``Natural language processing includes a range of algorithms, tasks, and problems that take human-produced text as an input and produce some useful information, such as labels, semantic representations, and so on, as an output'' \parencite[4]{realworldnlp}.
+In turn, ``Natural Language Processing is a field at the intersection of computer science, artificial intelligence, and linguistics \parencite[7]{practicalnlp}''. ``Natural language processing includes a range of algorithms, tasks, and problems that take human-produced text as an input and produce some useful information, such as labels, semantic representations, and so on, as an output \parencite[4]{realworldnlp}''.
 
 \begin{figure}[ht]
 \bigskip
@@ -341,11 +325,11 @@ In turn, ``Natural Language Processing is a field at the intersection of compute
 \section{Distributional semantics}
 % {{{
 
-The core idea behind distributional semantics has roots in American structuralism (Harris) and British lexicology (Firth) and is known as the distributional hypothesis. In its simplest form, it states that ``similarity in meaning results in similarity of linguistic distribution'' \parencite{harris}.
+The core idea behind distributional semantics has roots in American structuralism (Harris) and British lexicology (Firth) and is known as the distributional hypothesis. In its simplest form, it states that ``similarity in meaning results in similarity of linguistic distribution \parencite{harris}''.
 
-The reverse of this statement is also true. Meaning that ``the statistical distribution of linguistic items in context plays a key role in characterizing their semantic behavior'' \parencite{lenci}. The aim of distributional semantics is exactly that, to learn the meanings of linguistics units from a corpus of text.
+The reverse of this statement is also true. Meaning that ``the statistical distribution of linguistic items in context plays a key role in characterizing their semantic behavior \parencite{lenci}''. The aim of distributional semantics is exactly that, to learn the meanings of linguistics units from a corpus of text.
 
-Distributional semantics was popularised by Firth in the 1950s. In a 1957 publication he wrote, ``the placing of a text as a constituent in a context of situation contributes to the statement of meaning since situations are set up to recognise use. <...> You shall know a word by the company it keeps!'' \parencite[11]{firth}.
+Distributional semantics was popularised by Firth in the 1950s. In a 1957 publication he wrote, ``the placing of a text as a constituent in a context of situation contributes to the statement of meaning since situations are set up to recognise use. <...> You shall know a word by the company it keeps! \parencite[11]{firth}''.
 
 The ideas introduced by the distributional hypothesis have received attention in cognitive science \parencite{mcdonald} and language learning \parencite{yarlett}.% }}}
 
@@ -419,13 +403,13 @@ All of the approaches to distributional semantics share the quality of learning 
 % {{{
 Distributional representations are mathematic encodings of the distributional properties of words. Typically, in the form of a sequence of numbers. This sequence of numbers can be viewed as a multi-dimensional vector for the purposes of applying to them principles derived from liner algebra.
 
-``Word vectors represent words as multidimensional continuous floating point numbers where semantically similar words are mapped to proximate points in geometric space'' \parencite{ahireintro}.
+``Word vectors represent words as multidimensional continuous floating point numbers where semantically similar words are mapped to proximate points in geometric space \parencite{ahireintro}''.
 
 In simpler terms, a word vector is a numerical representation of a word in a corpus relative to every other word in that corpus.
 
 % ``Word vectors are numerical vector representations of word semantics, or meaning, including literal and implied meaning. So word vectors can capture the connotation of words, like \textit{peopleness,} \textit{animalness,} \textit{placeness,} \textit{thingness,} and even \textit{conceptness.} And they combine all that into a dense vector (no zeros) of floating point values. This dense vector enables queries and logical reasoning'' \parencite[182]{lane2019natural}.
 
-``Vectors have geometrical interpretations: Vectors with n components define points (or arrows) in n-dimensional spaces. Therefore, distributional representations are geometrical representations of the lexicon in the form of a distributional vector space. The positions of lexemes in a distributional semantic space depend on their co-occurrences with linguistic contexts'' \parencite{lenci}.
+``Vectors have geometrical interpretations: Vectors with n components define points (or arrows) in n-dimensional spaces. Therefore, distributional representations are geometrical representations of the lexicon in the form of a distributional vector space. The positions of lexemes in a distributional semantic space depend on their co-occurrences with linguistic contexts \parencite{lenci}''.
 
 
 \subsubsection{Context types}
@@ -490,9 +474,9 @@ A common solution to this is dimensionality reduction.
 
 \subsubsection{Count vector model}
 % {{{
-The simplest implementatinos of distributional modeles feature counting algorithms. ``<...> these models just record other words that have been observed in the vicinity of a target word in large text corpora, and form some sort of aggregate over the recorded context items. They then estimate the semantic similarity between words based on contextual similarity'' \parencite{erkkatrin2}. These models are referred to as count models.
+The simplest implementatinos of distributional modeles feature counting algorithms. ``<...> these models just record other words that have been observed in the vicinity of a target word in large text corpora, and form some sort of aggregate over the recorded context items. They then estimate the semantic similarity between words based on contextual similarity \parencite{erkkatrin2}''. These models are referred to as count models.
 
-``Context items are counted only if they appear close to the target word, that is, if they are within the relevant context'' \parencite{erkkatrin2}.
+``Context items are counted only if they appear close to the target word, that is, if they are within the relevant context \parencite{erkkatrin2}''.
 
 The count models operate on window-based context. The window size is typically narrow (2-4 words). The window can be allowed to cross the boundaries of sentences or not \parencite{baroni}.
 % }}}
@@ -503,7 +487,7 @@ In the recent years, the distributional model architecture has seen as notable s
 
 The earlier machine learning based models were plagued by the curse of dimensionality. This problem was solved in the model proposed by \parencite{bengio}. The proposed neural network model learns distributional representations and the generalisation function at the same time. The generalisation function is based on the estimates of probablity of a word appearing in the given context.
 
-The architecture of this model ``consists of input, projection, hidden and output layers. At the input layer, \(N\) previous words are encoded using 1-of-\(V\) coding, where \(V\) is size of the vocabulary. The input layer is then projected to a projection layer \(P\) that has dimensionality \(N \times D\), using a shared projection matrix. As only \(N\) inputs are active at any given time, composition of the projection layer is a relatively cheap operation'' \parencite{mikolov}.
+The architecture of this model ``consists of input, projection, hidden and output layers. At the input layer, \(N\) previous words are encoded using 1-of-\(V\) coding, where \(V\) is size of the vocabulary. The input layer is then projected to a projection layer \(P\) that has dimensionality \(N \times D\), using a shared projection matrix. As only \(N\) inputs are active at any given time, composition of the projection layer is a relatively cheap operation \parencite{mikolov}''.
 
 The training complexity of this model is
 
@@ -515,7 +499,7 @@ where \(H\) is the size of the hidden layer.
 
 \subsubsection{Recurrent neural net language model}
 % {{{
-This model artcitecture contains recurrent neural networks, meaning that as the model learns from the input, it produces output that is fed back into the model as input. The recurrent matrix connects hidden layers to itself using time-delayed connections. ``This allows the recurrent model to form some kind of short term memory, as information from the past can be represented by the hidden layer state that gets updated based on the current input and the state of the hidden layer in the previous time step'' \parencite{mikolov}.
+This model artcitecture contains recurrent neural networks, meaning that as the model learns from the input, it produces output that is fed back into the model as input. The recurrent matrix connects hidden layers to itself using time-delayed connections. ``This allows the recurrent model to form some kind of short term memory, as information from the past can be represented by the hidden layer state that gets updated based on the current input and the state of the hidden layer in the previous time step \parencite{mikolov}''.
 
 This model architecture consists of only input, hidden, and output layers, thus allowing for a reduction of complexity when compared to the neural probabilistic language model \parencite{mikolov}.
 
@@ -550,6 +534,7 @@ The training complexity of this model is
 While the complexity of this model is greater, the accuracy is also much greater \parencite{mikolov}. Similar to a continuous bag-of-words model, the weights of the hidden layer are the distributional representations.
 % }}}
 
+% TODO: this could be extended later with more formal definitons.
 \subsection{Applications}
 % {{{
 The data provided by the distributional model can be used directly to analyse the semantics of a language:
@@ -570,26 +555,36 @@ The data provided by the distributional model can be used directly to analyse th
 \section{Constructed languages}
 
 \subsection{The notion of a constructed language}
+% {{{
+In linguistics, the term \textit{artificial} can denote several types of languages. The subject of this research are languages that have been constructed to be similar or comparable in function to natural languages. ``A constructed language is a language whose phonology, grammar, and vocabulary are consciously devised instead of having developed naturally \parencite{jazayeri}''. In regards to this paper, the term \textit{constructed} was chosen consciously because it follows the convention set by the community and excludes computer programming languages such as Lisp and C++ from the discussion.
 
-The term \textit{artificial} can denote several types of languages. The subject of this research are languages that have been constructed to be similar or comparable in function to natural languages. The term \textit{constructed} was chosen because it follows the convention set by the community and in the interest of excluding computer programming languages such as Lisp and C++ from the discussion.
+Within the community, these languages are often referred to as \textit{conlangs} for the sake of briefness. ``This term was coined by Danish linguist Otto Jespersen when he debuted his own conlang Novial in 1928 \parencite{sanders}''.
 
-Within the community these languages are often referred to as \textit{conlangs} for the sake of briefness. ``This term was coined by Danish linguist Otto Jespersen when he debuted his own conlang Novial in 1928'' \parencite{punske}.
+% }}}
 
 \subsection{Brief history}
 
+``The dream of a perfect language did not only obsess European culture. The story of the confusion of tongues, and of the attempt to redeem its loss through the rediscovery or invention of a language common to all humanity, can be found in every culture \parencite[1]{eco}''.
+
 \subsubsection{Ancient times}
 
-The concept of a constructed language was first mentioned in writing by Athenaeus of Naucratis in his \textit{Deipnosophistae} (\textit{circa} \textsc{AD} 230). The languages he presented were not full languages, but languages of rudimentary type known as a \textit{naming language}. These languages were collections of neologisms that could be used to replace existing vocabulary or to refer to things that otherwise had no name. Athenaeus further writes of other people who invented their own words \parencite{punske}.
+The concept of a constructed language was first mentioned in writing by Athenaeus of Naucratis in his \textit{Deipnosophistae} (\textit{circa} \textsc{AD} 230). The languages he presented were not full languages, but languages of rudimentary type known as a naming language. These languages were collections of neologisms that could be used to replace existing vocabulary or to refer to things that otherwise had no name. Athenaeus further writes of other people who invented their own words \parencite{sanders}.
 
 \subsubsection{Linguistic mysticism}
 
-``The belief in the connection between language creation and divinity shaped many early conlangs. If gods created languages, what would it mean for a human to dabble in this enterprise?'' \parencite{punske}.
+Irish myths of the seventh century described the origin of Gaelic. According to \textit{Auraicept na n-Éces}, King Fénius Farsaid of Scythia traveled to the Tower of Babel after God fragmented human language. King Fénius and his many scholars studied the remains of the human language and combined its best fragments into a new and more perfect language, Gaelic \parencite{williams}.
 
-From this view arose the notion that languages inherited by humans from gods became corrupted through use and now were causing confusion among the scholars and philosophers. In his essay, Wilkins proposed a universal philosopical language to replace Latin. This language was to be unambiguous and to encompass every concept in the universe \parencite[ch. 2, p. 1]{wilkins}.
+The earliest attempt at language creation was Lingua Ignota by Hildegard of Bingen, a German Benedictine abbess and polymath, in the eleventh century. The underlying structure of the language was Latin, but the spelling was significantly altered. ``She did compose one macaronic antiphon, ``O orzchis Ecclesia,'' in which Latin and Lingua Ignota vocabulary alternate <...> Alternatively, Lingua could have had a second use as a secret language (possibly in the presence of outsiders) for Hildegard and her nuns \parencite{higley}''.
 
-\subsection{Reasons for creation}
+``Hildegard also created Litteraæ Ignotæ 'unknown letters', a constructed writing system or \textit{neography}, which she used to represent Lingua Ignota \parencite{sanders}''. Despite the lack in grammatical degth by comparison to modern constructed languages, Lingua Ignota is widely praised as the first constructed language ever created.
+
+From the belief in the connection between language creation and the divine arose the notion that languages inherited by humans from gods had become corrupted and now were causing confusion among the scholars and philosophers, impeding scientific progress. In his essay, Wilkins proposed a universal philosopical language to replace Latin. This language was to be unambiguous and to encompass every concept in the universe, to overcome the curse of Babel \parencite[ch. 2, p. 1]{wilkins}. Despite the initial acclaim and the interest it received from the king, the language soon fell into obscurity \parencite[25]{okrent}.
+
+\subsection{Motivation}
 
 \subsection{Classification}
+
+\subsection{Notable languages}
 
 
 \chapter{Language modelling and Toki Pona}
@@ -603,6 +598,8 @@ From this view arose the notion that languages inherited by humans from gods bec
 \subsection{Grammar}
 
 \subsection{Vocabulary}
+
+\subsection{Tokiponidos}
 
 \section{Vector space model}
 
@@ -648,11 +645,11 @@ The dictionary of Toki Pona as it appears in Toki Pona: The Language of Good \pa
   \multicolumn{3}{c}{\tablename~\thetable: nimi pu} \\[0.25cm]
   \multicolumn{2}{c}{\textbf{Word}} & \textbf{Definition} \\
   \endhead
-  a or kin & \textit{particle} & (emphasis, emotion or confirmation) \\
+  a \textit{or} kin & \textit{particle} & (emphasis, emotion or confirmation) \\
   akesi & \textit{noun} & non-cute animal; reptile, amphibian \\
   ala & \textit{adjective} & no, not, zero \\
   alasa & \textit{verb} & to hunt, forage \\
-  \multirow[t]{3}{*}{ale or ali} & \textit{adjective} & all; abundant, countless, bountiful, every, plentiful \\
+  \multirow[t]{3}{*}{ale \textit{or} ali} & \textit{adjective} & all; abundant, countless, bountiful, every, plentiful \\
   & \textit{noun} & abundance, everything, life, universe \\
   & \textit{number} & 100 \\
   anpa & \textit{adjective} & bowing down, downward, humble, lowly, dependent \\
@@ -702,7 +699,7 @@ The dictionary of Toki Pona as it appears in Toki Pona: The Language of Good \pa
   lon & \textit{preposition} & located at, present at, real, true, existing \\
   \multirow[t]{2}{*}{luka} & \textit{noun} & arm, hand, tactile organ \\
   & \textit{number} & five \\
-  \multirow[t]{3}{*}{lukin or oko} & \textit{noun} & eye \\
+  \multirow[t]{3}{*}{lukin \textit{or} oko} & \textit{noun} & eye \\
   & \textit{verb} & to look at, see, examine, observe, read, watch \\
   & \textit{pre-verb} & to seek, look for, try to \\
   lupa & \textit{noun} & door, hole, orifice, window \\
@@ -757,7 +754,7 @@ The dictionary of Toki Pona as it appears in Toki Pona: The Language of Good \pa
   sijelo & \textit{noun} & body (of person or animal), physical state, torso \\
   \multirow[t]{2}{*}{sike} & \textit{noun} & round or circular thing; ball, circle, cycle, sphere, wheel \\
   & \textit{adjective} & of one year \\
-  sin or namako & \textit{adjective} & new, fresh; additional, another, extra \\
+  sin \textit{or} namako & \textit{adjective} & new, fresh; additional, another, extra \\
   sina & \textit{noun} & you \\
   sinpin & \textit{noun} & face, foremost, front, wall \\
   sitelen & \textit{noun} & image, picture, representation, symbol, mark, writing \\

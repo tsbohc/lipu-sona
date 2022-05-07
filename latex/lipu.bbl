@@ -252,6 +252,33 @@
       \field{title}{Clinical text mining: Secondary use of electronic patient records}
       \field{year}{2018}
     \endentry
+    \entry{eco}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=eeb9256075038567a106101346ca2995}{%
+           family={Eco},
+           familyi={E\bibinitperiod},
+           given={Umberto},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Search}%
+      }
+      \strng{namehash}{eeb9256075038567a106101346ca2995}
+      \strng{fullhash}{eeb9256075038567a106101346ca2995}
+      \strng{bibnamehash}{eeb9256075038567a106101346ca2995}
+      \strng{authorbibnamehash}{eeb9256075038567a106101346ca2995}
+      \strng{authornamehash}{eeb9256075038567a106101346ca2995}
+      \strng{authorfullhash}{eeb9256075038567a106101346ca2995}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The search for the perfect language}
+      \field{year}{1995}
+    \endentry
     \entry{desouki}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=4dd618f3aefb89356b577a960802e77b}{%
@@ -491,6 +518,34 @@
       \field{month}{06}
       \field{title}{FreDist: Automatic construction of distributional thesauri for French}
       \field{year}{2011}
+    \endentry
+    \entry{jazayeri}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=384f0df06bec65bdc3225570a1318d31}{%
+           family={Jazayeri},
+           familyi={J\bibinitperiod},
+           given={Mehrdad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {KURMANJ, THE JOURNAL OF CULTURE, HUMANITIES}%
+        {SOCIAL SCIENCE}%
+      }
+      \strng{namehash}{384f0df06bec65bdc3225570a1318d31}
+      \strng{fullhash}{384f0df06bec65bdc3225570a1318d31}
+      \strng{bibnamehash}{384f0df06bec65bdc3225570a1318d31}
+      \strng{authorbibnamehash}{384f0df06bec65bdc3225570a1318d31}
+      \strng{authornamehash}{384f0df06bec65bdc3225570a1318d31}
+      \strng{authorfullhash}{384f0df06bec65bdc3225570a1318d31}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Easy Way to Become a Polyglot}
+      \field{year}{2021}
     \endentry
     \entry{pu}{book}{}
       \name{author}{1}{}{%
@@ -734,50 +789,70 @@
       \verb 10.3923/jeasci.2018.4198.4204
       \endverb
     \endentry
-    \entry{punske}{book}{}
-      \name{author}{3}{}{%
-        {{un=1,uniquepart=given,hash=1c3336c93f20a356393332c4933a8669}{%
-           family={Punske},
-           familyi={P\bibinitperiod},
-           given={A.P.D.L.J.},
-           giveni={A\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=752a219d99efc6d2bd57d7b68fdbd8f7}{%
-           family={Punske},
-           familyi={P\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=6248b1da0ead597a7822fed215a20974}{%
-           family={Sanders},
-           familyi={S\bibinitperiod},
-           given={A.P.D.L.N.},
+    \entry{okrent}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2aeae2d631bebcfc44bb8a47d3d86286}{%
+           family={Okrent},
+           familyi={O\bibinitperiod},
+           given={A.},
            giveni={A\bibinitperiod},
            givenun=0}}%
       }
       \list{publisher}{1}{%
-        {Oxford University Press}%
+        {Random House Publishing Group}%
       }
-      \strng{namehash}{d9f9b08b104cea8d15543dd0eeb7db16}
-      \strng{fullhash}{d9f9b08b104cea8d15543dd0eeb7db16}
-      \strng{bibnamehash}{d9f9b08b104cea8d15543dd0eeb7db16}
-      \strng{authorbibnamehash}{d9f9b08b104cea8d15543dd0eeb7db16}
-      \strng{authornamehash}{d9f9b08b104cea8d15543dd0eeb7db16}
-      \strng{authorfullhash}{d9f9b08b104cea8d15543dd0eeb7db16}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \strng{namehash}{2aeae2d631bebcfc44bb8a47d3d86286}
+      \strng{fullhash}{2aeae2d631bebcfc44bb8a47d3d86286}
+      \strng{bibnamehash}{2aeae2d631bebcfc44bb8a47d3d86286}
+      \strng{authorbibnamehash}{2aeae2d631bebcfc44bb8a47d3d86286}
+      \strng{authornamehash}{2aeae2d631bebcfc44bb8a47d3d86286}
+      \strng{authorfullhash}{2aeae2d631bebcfc44bb8a47d3d86286}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780812980899}
+      \field{series}{Spiegel \& Grau trade paperbacks}
+      \field{title}{In the Land of Invented Languages: Adventures in Linguistic Creativity, Madness, and Genius}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=3anWeY0G2moC
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=3anWeY0G2moC
+      \endverb
+    \endentry
+    \entry{sanders}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f26ba8758c7f0e6551a4fb8bd590ffeb}{%
+           family={Sanders},
+           familyi={S\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f26ba8758c7f0e6551a4fb8bd590ffeb}
+      \strng{fullhash}{f26ba8758c7f0e6551a4fb8bd590ffeb}
+      \strng{bibnamehash}{f26ba8758c7f0e6551a4fb8bd590ffeb}
+      \strng{authorbibnamehash}{f26ba8758c7f0e6551a4fb8bd590ffeb}
+      \strng{authornamehash}{f26ba8758c7f0e6551a4fb8bd590ffeb}
+      \strng{authorfullhash}{f26ba8758c7f0e6551a4fb8bd590ffeb}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780198829874}
-      \field{title}{Language Invention in Linguistics Pedagogy}
+      \field{month}{08}
+      \field{title}{A primer on constructed languages}
       \field{year}{2020}
-      \verb{urlraw}
-      \verb https://books.google.ru/books?id=YYLxDwAAQBAJ
-      \endverb
-      \verb{url}
-      \verb https://books.google.ru/books?id=YYLxDwAAQBAJ
+      \field{pages}{6\bibrangedash 26}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1093/oso/9780198829874.003.0002
       \endverb
     \endentry
     \entry{silva}{article}{}
@@ -818,6 +893,40 @@
       \field{pages}{313}
       \range{pages}{1}
       \field{volume}{17}
+      \range{volume}{1}
+    \endentry
+    \entry{higley}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0540b7cd0e3763d34a8ca4d57a265124}{%
+           family={Straubhaar},
+           familyi={S\bibinitperiod},
+           given={Sandra\bibnamedelima Ballif},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Society for Medieval Feminist Scholarship}%
+      }
+      \strng{namehash}{0540b7cd0e3763d34a8ca4d57a265124}
+      \strng{fullhash}{0540b7cd0e3763d34a8ca4d57a265124}
+      \strng{bibnamehash}{0540b7cd0e3763d34a8ca4d57a265124}
+      \strng{authorbibnamehash}{0540b7cd0e3763d34a8ca4d57a265124}
+      \strng{authornamehash}{0540b7cd0e3763d34a8ca4d57a265124}
+      \strng{authorfullhash}{0540b7cd0e3763d34a8ca4d57a265124}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Medieval Feminist Forum: A Journal of Gender and Sexuality}
+      \field{title}{Sarah Higley, Hildegard of Bingen's Unknown Language: An Edition, Translation and Discussion.(The New Middle Ages series.) Palgrave Macmillan, 2007}
+      \field{year}{2008}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{158\bibrangedash 161}
+      \range{pages}{4}
+      \field{volume}{44}
       \range{volume}{1}
     \endentry
     \entry{nlpandcl}{article}{}
@@ -965,6 +1074,40 @@
       \endverb
       \verb{url}
       \verb https://books.google.ru/books?id=BCCtZjBtiEYC
+      \endverb
+    \endentry
+    \entry{williams}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=47de50c700474f5fe3d790071340e85d}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{47de50c700474f5fe3d790071340e85d}
+      \strng{fullhash}{47de50c700474f5fe3d790071340e85d}
+      \strng{bibnamehash}{47de50c700474f5fe3d790071340e85d}
+      \strng{authorbibnamehash}{47de50c700474f5fe3d790071340e85d}
+      \strng{authornamehash}{47de50c700474f5fe3d790071340e85d}
+      \strng{authorfullhash}{47de50c700474f5fe3d790071340e85d}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781400883325}
+      \field{title}{Ireland's Immortals: A History of the Gods of Irish Myth}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=o5cTDAAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=o5cTDAAAQBAJ
       \endverb
     \endentry
     \entry{yarlett}{article}{}
