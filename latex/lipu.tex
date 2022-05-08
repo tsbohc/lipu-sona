@@ -210,6 +210,13 @@
 \fontdimen3\font=2em % base word stretch
 \fontdimen4\font=0em % base word squeeze
 
+\renewcommand{\contentsname}{\let\clearpage\relax\chapter*{Contents}} % chapter* doesn't appear in toc
+% }}}
+
+
+% --- TITLE PAGE ---
+
+% {{{
 \begin{titlepage}
   \newgeometry{left=20mm, top=20mm, right=20mm, bottom=20mm}
   \begin{center}
@@ -242,33 +249,26 @@
 
   \end{center}
 \end{titlepage}
-
 \setcounter{page}{2}
 \restoregeometry
-
-\renewcommand{\contentsname}{\let\clearpage\relax\chapter*{Contents}} % chapter* doesn't appear in toc
 \tableofcontents
-
 % }}}
-
-% TODO: you know what would be cool? a sample density graph that shows how much corpus I have per year.
-
-% ---
 
 \chapter{Introduction}
 
+% {{{
 Toki Pona is the second most spoken constructed language in the world. Its core vocabulary consists of only 120-140 words, not including words that are rare and/or considered non-standard by the majority of speakers. Despite the small vocabulary size, Toki Pona can be used to convey a wide range of ideas of varying complexity \parencite{iso}.
-
+% }}}
 \paragraph{Problem}
-
+% {{{
 While some cases are covered by the lessons present in the original book \parencite{pu}, the definitions provided by the official publicly available dictionary do not fully reflect how the vocabulary is used today.
 
 This could be amended by the way of iquiry of a large enough sample of proficient speakers, but this approach would prove highly subjective. Moreover, there are weak dialectical variations and idiolects present in the language.
 
 A more neutral and less manual approach is to use distributional semantics to construct a model of the language. The data provided by the model can serve as the basis for identifying the undocumented word senses and ranking the existing ones.
-
+% }}}
 \paragraph{Goals}
-
+% {{{
 The primary goal of this paper is to comment on the semantics of the core Toki Pona vocabulary, as well as to organise individual words into groups based on their semantic relatedness and the context they are most prevalently used in.
 
 The secondary goal is to discuss the semantics of the core vocabulary of Toki Pona --- as it is spoken by the majority of the communety --- in relation to the official dictionary of the language.
@@ -278,10 +278,9 @@ The secondary goal is to discuss the semantics of the core vocabulary of Toki Po
   \item \textbf{Object.} Toki Pona, a constructed language.
   \item \textbf{Methodology.} Distributional semantics and natural language processing, namely language modelling (word embedding).
 \end{itemize}
-
-
+% }}}
 \paragraph{Objectives}
-
+% {{{
 \begin{enumerate}
   \item Define natural language processing and distributional semantics, discuss modern implementations as well as other related concepts.
   \item Define and classify constructed languages.
@@ -291,22 +290,20 @@ The secondary goal is to discuss the semantics of the core vocabulary of Toki Po
   \item Make observations on the model.
   \item Classify the words of the vocabulary based on the observed semantic relationships between them.
 \end{enumerate}
-
-
+% }}}
 \paragraph{Relevance}
-
+% {{{
 Constructed languages are rapidly gaining popularity. Despite this, the only constructed language that has seen much representation in scientific writing is Esperanto.
 
 The existing dictionaries or other resources concerned with teaching Toki Pona to new speakers could benefit from the findings of this research. New tools can be developed which will aid newcomers to the language.
 
 The vector space model of Toki Pona developed in the course of this research can find further use in machine translation, topic modelling, text prediction, sentiment analysis, and many other areas.
-
+% }}}
 
 % --- SMART WORDS A-MANY ---
 
 \chapter{Distributional semantics and~constructed~languages}
-
-\section{Natural language processing}
+  \section{Natural language processing}
 % {{{
 ``Linguistics is concerned not only with language per se, but must also deal with how humans model the world. The study of semantics, for example, must relate language expressions to their meanings, which reside in the mental models possessed by humans. <...> Whereas computational linguistics, as a subfield of linguistics, is concerned with the formal or computational description of rules that languages follow \parencite{nlpandcl}''.
 
@@ -321,9 +318,7 @@ In turn, ``Natural Language Processing is a field at the intersection of compute
 \caption{Language-related disciplines \parencite{nlpandcl}}
 \end{figure}
 % }}}
-
-
-\section{Distributional semantics}
+  \section{Distributional semantics}
 % {{{
 
 The core idea behind distributional semantics has roots in American structuralism (Harris) and British lexicology (Firth) and is known as the distributional hypothesis. In its simplest form, it states that ``similarity in meaning results in similarity of linguistic distribution \parencite{harris}''.
@@ -333,8 +328,7 @@ The reverse of this statement is also true. Meaning that ``the statistical distr
 Distributional semantics was popularised by Firth in the 1950s. In a 1957 publication he wrote, ``the placing of a text as a constituent in a context of situation contributes to the statement of meaning since situations are set up to recognise use. <...> You shall know a word by the company it keeps! \parencite[11]{firth}''.
 
 The ideas introduced by the distributional hypothesis have received attention in cognitive science \parencite{mcdonald} and language learning \parencite{yarlett}.% }}}
-
-\paragraph{Overview}
+      \paragraph{Overview}
 % {{{
 Distributional semantics has become widespread with the adoption of information technology in the field of linguistic research.
 
@@ -397,10 +391,9 @@ In the illustrated example, the model only has the dimensionality of two and thu
 
 If this is not the case, the multi-dimensionality of the word vector encodings can be reduced to only two or three dimensions. The resulting dimensions can then be used to create a projection of the model which can be observed by the human eye.
 
-All of the approaches to distributional semantics share the quality of learning semantic representations from a corpus in an unsupervised manner. Meaning that it is not required for the corpus to be preproccessed by hand.
+All of the approaches to distributional semantics share the quality of learning semantic representations from a corpus in an unsupervised manner, without the involvement of humans.
 % }}}
-
-\subsection{Distributional representations}
+    \subsection{Distributional representations}
 % {{{
 Distributional representations are mathematic encodings of the distributional properties of words. Typically, in the form of a sequence of numbers. This sequence of numbers can be viewed as a multi-dimensional vector for the purposes of applying to them principles derived from liner algebra.
 
@@ -430,8 +423,7 @@ The contexts can be of the following types \parencite{lenci}:
 The term window provides a physical analogy to a linguistic context. As the algorithm processes the corpus, the window of the context slides across the text, accounting for the words that can be seen through it.
 
 % }}}
-
-\subsubsection{Semantic similarity metric}
+    \subsubsection{Semantic similarity metric}
 % {{{
 The semantic similary between two vectors is primary measured in two ways: using cosine similarity or the Euclidean distance.
 
@@ -458,8 +450,7 @@ a cosine similarity of \(1\), two orthogonal (perpendicular to each other) vecto
 This method was chosen to simplify the process of comparing similarities between vector pairs. Where the Euclidean distance provides an absolute value, the cosine similarity provids a fraction.
 
 % }}}
-
-\subsubsection{Curse of dimensionality}
+    \subsubsection{Curse of dimensionality}
 % {{{
 The curse of dimensionality refers to the phenomena that arise when organising data in high-dimensional spaces.
 
@@ -470,10 +461,8 @@ As the dimensionality of representations increases, the volume of the space they
 A common solution to this is dimensionality reduction.
 % }}}
 
-
-\subsection{Notable implementations}
-
-\subsubsection{Count vector model}
+    \subsection{Notable implementations}
+      \subsubsection{Count vector model}
 % {{{
 The simplest implementatinos of distributional modeles feature counting algorithms. ``<...> these models just record other words that have been observed in the vicinity of a target word in large text corpora, and form some sort of aggregate over the recorded context items. They then estimate the semantic similarity between words based on contextual similarity \parencite{erkkatrin2}''. These models are referred to as count models.
 
@@ -481,8 +470,7 @@ The simplest implementatinos of distributional modeles feature counting algorith
 
 The count models operate on window-based context. The window size is typically narrow (2-4 words). The window can be allowed to cross the boundaries of sentences or not \parencite{baroni}.
 % }}}
-
-\subsubsection{Neural probabilistic language model}
+      \subsubsection{Neural probabilistic language model}
 % {{{
 In the recent years, the distributional model architecture has seen as notable shift to machine learning algorithms. With the improvements of hardware performance, the training of complex neural networks on corpora of larger sizes has become possible. 
 
@@ -497,8 +485,7 @@ The training complexity of this model is
 where \(H\) is the size of the hidden layer.
 
 % }}}
-
-\subsubsection{Recurrent neural net language model}
+      \subsubsection{Recurrent neural net language model}
 % {{{
 This model artcitecture contains recurrent neural networks, meaning that as the model learns from the input, it produces output that is fed back into the model as input. The recurrent matrix connects hidden layers to itself using time-delayed connections. ``This allows the recurrent model to form some kind of short term memory, as information from the past can be represented by the hidden layer state that gets updated based on the current input and the state of the hidden layer in the previous time step \parencite{mikolov}''.
 
@@ -508,8 +495,7 @@ The training complexity of this model is
 
 \[Q = H \times H + H \times V\]
 % }}}
-
-\subsubsection{Continuous bag-of-words model}
+      \subsubsection{Continuous bag-of-words model}
 % {{{
 The first architecture of Word2vec proposed by Mikolov removes the non-linear hidden layer, further reducing complexity. The projection layer is shared for all words \parencite{mikolov}.
 
@@ -523,8 +509,7 @@ The training complexity of this model is
 
 Because this model architecture produces the prediction as output, the learned weights of the hidden layer is what represents the word vectors.
 % }}}
-
-\subsubsection{Continuous skip-gram model}
+      \subsubsection{Continuous skip-gram model}
 % {{{
 The second architecture of Word2vec proposed by Mikolov has the opposite objective of the continuous bag-of-words model. The continuous skip-gram model predicts the surrounding context from the current word. Similar to the continuous bag-of-words model, when the continuous skip-gram model succeedes in predicting the context words, the semantic representation of the current word is reinforced. When it fails, it is corrected \parencite{mikolov}.
 
@@ -535,8 +520,8 @@ The training complexity of this model is
 While the complexity of this model is greater, the accuracy is also much greater \parencite{mikolov}. Similar to a continuous bag-of-words model, the weights of the hidden layer are the distributional representations.
 % }}}
 
-% TODO: this could be extended later with more formal definitons.
-\subsection{Applications}
+% this could be extended later with more formal definitons.
+    \subsection{Applications}
 % {{{
 The data provided by the distributional model can be used directly to analyse the semantics of a language:
 
@@ -552,32 +537,29 @@ The data provided by the distributional model can be used directly to analyse th
 \end{enumerate}
 % }}}
 
+  \section{Artificial languages}
+% {{{
+The term `artificial' is used to broadly refer to all languages that have been created through deliberate and conscious planning \parencite[41]{stria}. Under the broad umbreall of the term `artificial' reside predicate calculus and programming languages such as Lisp and C++.
 
-\section{Artificial languages}
+``In the interlinguistic literature the term `artificial' as opposed to `natural' is regarded as `crudely misleading' (Schubert 1989) because it suggests that languages created to facilitate international communication are in fact identical to machine or formulaic languages \parencite[45]{stria}''.
 
-% Moreover, as artificiality is a gradable property, so is the possibility of applying diverse linguistic frameworks to various artificial systems \parencite[11]{stria}.
+In an effort to avoid confusion with artifical languages of technical nature, the currently popular term `constructed' will be used throughout the rest of this paper.
+
+It should be noted that the abbreviation `conlang' is also widely spread among the members of the community surrounding constructed languages.
 
 \subsection{The notion of a constructed language}
 
-% FIXME
-
-% {{{
-% In linguistics, the term \textit{artificial} can denote several types of languages. The subject of this research are languages that have been constructed to be similar or comparable in function to natural languages. ``A constructed language is a language whose phonology, grammar, and vocabulary are consciously devised instead of having developed naturally \parencite{jazayeri}''. In regards to this paper, the term \textit{constructed} was chosen consciously because it follows the convention set by the community and excludes computer programming languages such as Lisp and C++ from the discussion.
-%
-% Within the community, these languages are often referred to as \textit{conlangs} for the sake of briefness. ``This term was coined by Danish linguist Otto Jespersen when he debuted his own conlang Novial in 1928 \parencite{sanders}''.
+Constructed languages are languages that have been purposely created to be similar or comparable in function to natural languages. The purpose behind the creation of constructed languages tends to vary greatly, ranging from the aim to create an auxiliary means of international communication, to artistic and philosophical expression.
 % }}}
-
-\subsection{Brief history}
+    \subsection{Brief history}
 % {{{
 ``The dream of a perfect language did not only obsess European culture. The story of the confusion of tongues, and of the attempt to redeem its loss through the rediscovery or invention of a language common to all humanity, can be found in every culture \parencite[1]{eco}''.
 % }}}
-
-\subsubsection{Antiquity}
+        \subsubsection{Antiquity}
 % {{{
 The concept of a constructed language was first mentioned in writing by Athenaeus of Naucratis in his \textit{Deipnosophistae} (\textit{circa} \textsc{AD} 230). The languages he presented were not full languages, but languages of rudimentary type known as a naming language. These languages were collections of neologisms that could be used to replace existing vocabulary or to refer to things that otherwise had no name. Athenaeus further writes of other people who invented their own words \parencite{sanders}.
 % }}}
-
-\subsubsection{Linguistic mysticism}
+        \subsubsection{Linguistic mysticism}
 % {{{
 Irish myths of the seventh century described the origin of Gaelic. According to \textit{Auraicept na n-Éces}, King Fénius Farsaid of Scythia traveled to the Tower of Babel after God fragmented human language. King Fénius and his many scholars studied the remains of the human language and combined its best fragments into a new and more perfect language, Gaelic \parencite{williams}.
 
@@ -593,22 +575,15 @@ Wilkins constructed a table of 40 major genera, which he then divided further in
 
 Despite the initial acclaim and the interest it received from the king, the language soon fell into obscurity \parencite[25]{okrent}. This style of language creation continued into the seventeenth century and then was abandoned.
 % }}}
+        \subsubsection{Early artistic languages}
+        \subsubsection{Early modern constructed languages}
+        \subsubsection{J. R. R. Tolkien}
+        \subsubsection{Modern constructed languages}
+    \subsection{Motivation}
+    \subsection{Classification}
 
-\subsubsection{Early artistic languages}
-
-\subsubsection{Early modern constructed languages}
-
-\subsubsection{J. R. R. Tolkien}
-
-\subsubsection{Modern constructed languages}
-
-\subsection{Motivation}
-
-
-\subsection{Classification}
-
-\subsubsection{Traditional: structure and source material}
-% TODO stria fp.93, more proposed classifications of this nature
+% stria fp.93, more proposed classifications of this nature
+      \subsubsection{Traditional: structure and source material}
 % {{{
 The classification proposed by Couturat and Leau groups constructed languages based on their relationship with source material or a lack there of \parencite{couturat}:
 
@@ -640,8 +615,7 @@ Several linguists have adopted this classification, most notably Janton, who pro
 
 This classification presents a scale of artificiality, with languages derived from natural languages on one end and deliberately designed languages on the other. It is also primarily concerned with morphological and syntactic natures of derivation, not the intention with which the language was created.
 % }}}
-
-\subsubsection{Traditional: purpose}
+      \subsubsection{Traditional: purpose}
 % {{{
 ``Another type of classification categorises artificial languages according to the purpose of creation \parencite[93]{stria}''. Kennaway provides the following division: universal languages (from a strive for perfection), international languages, languages of fiction, languages as recreation \parencite{kennaway}.
 
@@ -692,8 +666,7 @@ Constructed languages placed on the Gnoli triangle can be characterised as a gra
   \item \textbf{Engelang.} A language whose grammar or other feature is based on logic (a loglang) or a language which was created to as an experiment or to prove a hypothesis of how languages function.
 \end{itemize}
 % }}}
-
-\subsubsection{Blanke's functional classification}
+      \subsubsection{Blanke's functional classification}
 % {{{
 The classification proposed by Blanke divides artificial languages into into invented projects and fully-fledged languages \parencite{stria}:
 
@@ -704,61 +677,45 @@ The classification proposed by Blanke divides artificial languages into into inv
   \item \textbf{Exerimental languages.} Languages created to exercise a philosophical idea.
 \end{itemize}
 % }}}
-
-\paragraph{Final note on classifications}
+        \paragraph{Final note on classifications}
 % {{{
 Within the conlanging community, the terms from the above classifications are used by the principles of compositionality. Individual constructed languages are often described by having particular qualities borrowed from multiple classification systems.
 % }}}
 
 
 
-% figure 10 from p.120, quote on p.118
+    \section{Summary}
 
-\section{Summary}
+
+
 
 
 \chapter{Language modelling and Toki Pona}
+  \section{Toki Pona}
+    \subsection{History}
+    \subsection{Phonology}
+    \subsection{Grammar}
+    \subsection{Vocabulary}
+    \subsection{Tokiponidos}
+  \section{Vector space model}
+    \subsection{Text tokenisation}
+    \subsection{Text normalisation}
+    \subsection{Model construction}
+    \subsection{Projection and visualisation}
+    \subsection{Observations}
+  \section{Summary}
 
-\section{Toki Pona}
 
-\subsection{History}
 
-\subsection{Phonology}
-
-\subsection{Grammar}
-
-\subsection{Vocabulary}
-
-\subsection{Tokiponidos}
-
-\section{Vector space model}
-
-\subsection{Text tokenisation}
-
-\subsection{Text normalisation}
-
-\subsection{Model construction}
-
-\subsection{Projection and visualisation}
-
-\subsection{Observations}
-
-\section{Summary}
 
 
 \chapter{Conclusion}
 
-% \paragraph{Polysemy}
-%
-% ``Related senses are called polysemous: for example, school can refer to a building or an institution. In contrast, homonymous senses are unrelated: for example, a school of fish. All of the above senses of school are also lexicalised – established uses that a speaker would have committed to memory, rather than inferring from context'' \parencite[4]{emerson}.
-%
-% Toki Pona is highly resistant to lexicalisation. Because the vocabulary contains a very small number of words, they are inherently context-dependent. Any word can be used in any suitable context.
 
 
 \printbibliography[heading=bibintoc, title={References}, nottype=online]
-
-
 \printbibliography[heading=bibintoc, title={Online resources}, type=online]
+
 
 
 \chapter{Supplementary marterial}
@@ -1209,4 +1166,9 @@ The dictionary of Toki Pona as it appears in Toki Pona: The Language of Good \pa
 %   programming languages & formalised systems based on ethnic languages \\
 %   predicate calculus & formal languages \\
 % \end{longtable}
+% \paragraph{Polysemy}
+%
+% ``Related senses are called polysemous: for example, school can refer to a building or an institution. In contrast, homonymous senses are unrelated: for example, a school of fish. All of the above senses of school are also lexicalised – established uses that a speaker would have committed to memory, rather than inferring from context'' \parencite[4]{emerson}.
+%
+% Toki Pona is highly resistant to lexicalisation. Because the vocabulary contains a very small number of words, they are inherently context-dependent. Any word can be used in any suitable context.
 % }}}
