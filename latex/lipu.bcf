@@ -3523,16 +3523,19 @@
     <bcf:citekey order="45">eco</bcf:citekey>
     <bcf:citekey order="46">okrent</bcf:citekey>
     <bcf:citekey order="47">couturat</bcf:citekey>
-    <bcf:citekey order="48">janton</bcf:citekey>
-    <bcf:citekey order="49">janton</bcf:citekey>
+    <bcf:citekey order="48">bianco</bcf:citekey>
+    <bcf:citekey order="49">bianco</bcf:citekey>
     <bcf:citekey order="50">janton</bcf:citekey>
-    <bcf:citekey order="51">stria</bcf:citekey>
-    <bcf:citekey order="52">kennaway</bcf:citekey>
+    <bcf:citekey order="51">janton</bcf:citekey>
+    <bcf:citekey order="52">janton</bcf:citekey>
     <bcf:citekey order="53">stria</bcf:citekey>
-    <bcf:citekey order="54">gobbo</bcf:citekey>
+    <bcf:citekey order="54">kennaway</bcf:citekey>
     <bcf:citekey order="55">stria</bcf:citekey>
-    <bcf:citekey order="56">reed</bcf:citekey>
-    <bcf:citekey order="57">pu</bcf:citekey>
+    <bcf:citekey order="56">gobbo</bcf:citekey>
+    <bcf:citekey order="57">stria</bcf:citekey>
+    <bcf:citekey order="58">reed</bcf:citekey>
+    <bcf:citekey order="59">stria</bcf:citekey>
+    <bcf:citekey order="60">pu</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

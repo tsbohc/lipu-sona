@@ -764,6 +764,43 @@
       \verb https://oxfordre.com/linguistics/view/10.1093/acrefore/9780199384655.001.0001/acrefore-9780199384655-e-11
       \endverb
     \endentry
+    \entry{bianco}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=45291dfd09524cbe80304483a3efaee4}{%
+           family={Lo\bibnamedelima Bianco},
+           familyi={L\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{45291dfd09524cbe80304483a3efaee4}
+      \strng{fullhash}{45291dfd09524cbe80304483a3efaee4}
+      \strng{bibnamehash}{45291dfd09524cbe80304483a3efaee4}
+      \strng{authorbibnamehash}{45291dfd09524cbe80304483a3efaee4}
+      \strng{authornamehash}{45291dfd09524cbe80304483a3efaee4}
+      \strng{authorfullhash}{45291dfd09524cbe80304483a3efaee4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{English Today}
+      \field{title}{Invented languages and new worlds}
+      \field{year}{2004}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{8\bibrangedash 18}
+      \range{pages}{11}
+      \field{volume}{20}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1017/S0266078404002032
+      \endverb
+    \endentry
     \entry{mcdonald}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c8b98a0a9abe5b6948a13999a492bafd}{%
