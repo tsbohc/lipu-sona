@@ -141,7 +141,8 @@
     ibidtracker=false, % removes "там же"
     hyperref=true,
     bibstyle=gost-numeric,
-    citestyle=authoryear
+    citestyle=authoryear,
+    defernumbers=true, % keep numbering continuous
 ]{biblatex}
 
 \addbibresource{sources.bib}
@@ -552,14 +553,18 @@ The data provided by the distributional model can be used directly to analyse th
 % }}}
 
 
-\section{Constructed languages}
+\section{Artificial languages}
+
+% Moreover, as artificiality is a gradable property, so is the possibility of applying diverse linguistic frameworks to various artificial systems \parencite[11]{stria}.
 
 \subsection{The notion of a constructed language}
-% FIXME UUUGHHH I don't like this part
-% {{{
-In linguistics, the term \textit{artificial} can denote several types of languages. The subject of this research are languages that have been constructed to be similar or comparable in function to natural languages. ``A constructed language is a language whose phonology, grammar, and vocabulary are consciously devised instead of having developed naturally \parencite{jazayeri}''. In regards to this paper, the term \textit{constructed} was chosen consciously because it follows the convention set by the community and excludes computer programming languages such as Lisp and C++ from the discussion.
 
-Within the community, these languages are often referred to as \textit{conlangs} for the sake of briefness. ``This term was coined by Danish linguist Otto Jespersen when he debuted his own conlang Novial in 1928 \parencite{sanders}''.
+% FIXME
+
+% {{{
+% In linguistics, the term \textit{artificial} can denote several types of languages. The subject of this research are languages that have been constructed to be similar or comparable in function to natural languages. ``A constructed language is a language whose phonology, grammar, and vocabulary are consciously devised instead of having developed naturally \parencite{jazayeri}''. In regards to this paper, the term \textit{constructed} was chosen consciously because it follows the convention set by the community and excludes computer programming languages such as Lisp and C++ from the discussion.
+%
+% Within the community, these languages are often referred to as \textit{conlangs} for the sake of briefness. ``This term was coined by Danish linguist Otto Jespersen when he debuted his own conlang Novial in 1928 \parencite{sanders}''.
 % }}}
 
 \subsection{Brief history}
@@ -600,13 +605,90 @@ Despite the initial acclaim and the interest it received from the king, the lang
 \subsection{Motivation}
 
 
-
-
 \subsection{Classification}
 
-\subsubsection{Structure and source material}
+\subsubsection{Traditional: structure and source material}
+% TODO stria fp.93, more proposed classifications of this nature
+% {{{
+The classification proposed by Couturat and Leau groups constructed languages based on their relationship with source material or a lack there of \parencite{couturat}:
 
-\subsubsection{Purpose}
+\begin{itemize}
+  \item \textbf{A priori.} Constructed languaget that are not based on the elements of natural languages.
+  \item \textbf{A posteriori.} Constructed languages that borrow elements from natural languages.
+  \item \textbf{Mixed.} A combination of the two.
+\end{itemize}
+
+Several linguists have adopted this classification, most notably Janton, who provided several additions \parencite[5]{janton}:
+
+\begin{enumerate}
+  \item \textbf{A priori.} Metalanguages, schematic languages. These constructed languages are ``characterized by largely artificial, nonethnic word roots, schematic derivation, and fixed word categories (i.e., philosophical languages) \parencite[6]{janton}''.
+  \item \textbf{A posteriori.} Naturalistic languages, pseudolanguages. ``These languages consciously imitate, in varying degrees, natural languages \parencite[5]{janton}''.
+  \begin{itemize}
+    \item \textbf{Minimal languages.} Simplified natural languages, living or dead.
+    \item \textbf{Mixed languages.} Languages that use natural and non-natural roots.
+      \begin{itemize}
+        \item Languages that were schematically derived with natural word roots in distorted form (Volapük, 1880) or with both artistic and natural word roots (Perio, 1904).
+        \item Languages that are partly schematic and partly naturalistic. Natural word roots in this group are rarely distorted (Esperanto, 1887).
+      \end{itemize}
+  \item \textbf{Naturalistic languages.}
+    \begin{itemize}
+      \item Languages with some schematic traits (Unial, 1903; Novial, 1928)
+      \item Languages with natural derivation (Interlingua, 1940s).
+    \end{itemize}
+  \end{itemize}
+\end{enumerate}
+
+This classification presents a scale of artificiality, with languages derived from natural languages on one end and deliberately designed languages on the other. It is also primarily concerned with morphological and syntactic natures of derivation, not the intention with which the language was created.
+% }}}
+
+\subsubsection{Traditional: purpose}
+
+``Another type of classification categorises artificial languages according to the purpose of creation \parencite[93]{stria}''. Kennaway provides the following division: universal languages (from a strive for perfection), international languages, languages of fiction, languages as recreation \parencite{kennaway}.
+
+The primary concern with this way of classifying constructed languages this way lies in the fact that purpose is rarely binary. The prominent example are the languages which were constructed as recreation and later served as a tool in fictional worldbuilding.
+
+\begin{figure}[ht]% {{{
+  \bigskip
+  \begin{tikzpicture}[>={Classical TikZ Rightarrow[]}]
+    \draw[<->, line width=1](-4,0) -- (4,0)
+      node[pos=0.0,left=0.5cm]{secret}
+      node[pos=1.0,right=0.5cm]{public};
+    \draw[<->, line width=1](0,-4) -- (0,4)
+      node[pos=0.0,below=0.5cm]{fictional purposes}
+      node[pos=1.0,above=0.5cm]{auxiliary purposes};
+    \foreach \Point/\PointLabel in {
+      (-3,-2.5)/Tolkien's,
+      (3.5, 3.8)/Esperanto,
+      (2.2, 2.8)/Interlingua,
+      (2, -2)/Dothraki,
+      (3.5, 1.5)/{Toki\ Pona}
+    }
+    \draw[draw=gray,fill=gray] \Point circle (0.08) node[above right] {$\PointLabel$};
+  \end{tikzpicture}
+  \centering
+  \caption{Federico Gobbo's coordinate system}
+\end{figure}% }}}
+
+What followed were classifications that took a far more granular approach. ``A detailed typology is proposed by Albani and Buonarotti (1994), where a division is made into sacred and non-sacred languages. Sacred languages are further divided into structured (Bālaibalan) and non-structured with six subdivisions. Nonsacred languages split into languages with communicative and expressive goals both with further detailed subdivisions \parencite[93]{stria}''.
+
+The classifications that followed saw a decrease in complexity and a shift to a more visual approach. Gobbo proposed a coordinate system which placed constructed languages between the "secret" and "public" extremes on the \textit{x axis} and "auxiliary purposes" and "fictional purposes" on the \textit{y axis} \parencite{gobbo}. This however, is also not ideal, as the publicity of languages tends to shift greatly over time.
+
+\begin{figure}[ht]% {{{
+  \bigskip
+  \begin{tikzpicture}[>={Classical TikZ Rightarrow[]}]
+    \draw[line width=1](0,0) node[pos=0, left=0.8cm, below=0.2cm]{engelang} coordinate (a)--+(5,0) node[pos=1, right=0.8cm, below=0.2cm]{auxlang} coordinate (b)--+(60:5) node[pos=1, above=0.2cm]{artlang} coordinate (c) --cycle;
+  \end{tikzpicture}
+  \centering
+  \caption{The modified Gnoli triangle}
+\end{figure}% }}}
+
+``One of the newest propositions widely spread on the Internet is the so-called Gnoli triangle. Claudio Gnoli, dissatisfied with the fact that his constructed language Liva was not easily classified, came up with an idea of a triangle whose vertices were labelled ‘artlang’ (artistic language), ‘auxlang’ (auxiliary language) and ‘loglang’ (logical language; the term ‘engelang’ was proposed later by And Rosta, apparently in 2001) \parencite[97]{stria}''.
+
+\begin{itemize}
+  \item \textbf{Auxlang.} An international auxiliary language, that is, a language which was devised with the intention of beaing a means of international communication. The majority of international auxiliary languages are meant to be second languages and not to replace native languages \parencite{reed}.
+  \item \textbf{Artlang.} A language created as a form of artistic expression or to fill an artistic role. Artistic languages often have irregular grammar systems, much like natural languages.
+  \item \textbf{Engelang.} A language whose grammar or other feature is based on logic (a loglang) or a language which was created to as an experiment or to prove a hypothesis of how languages function.
+\end{itemize}
 
 \subsubsection{Blanke's functional classification}
 
@@ -647,9 +729,10 @@ Despite the initial acclaim and the interest it received from the king, the lang
 % Toki Pona is highly resistant to lexicalisation. Because the vocabulary contains a very small number of words, they are inherently context-dependent. Any word can be used in any suitable context.
 
 
+\printbibliography[heading=bibintoc, title={REFERENCES}, nottype=online]
 
 
-\printbibliography[heading=bibintoc,title={References}]
+\printbibliography[heading=bibintoc, title={ONLINE RESOURCES}, type=online]
 
 
 \chapter{Supplementary marterial}

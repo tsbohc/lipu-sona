@@ -225,6 +225,46 @@
       \verb 10.1162/153244303322533223
       \endverb
     \endentry
+    \entry{couturat}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3c40adc004e4272f2c06938275a8c617}{%
+           family={Couturat},
+           familyi={C\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e526fd66e51965d146f8c17f4adcb97}{%
+           family={Leau},
+           familyi={L\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Literary Licensing, LLC}%
+      }
+      \strng{namehash}{bb016b58e92920da7b2aa6dc338ee764}
+      \strng{fullhash}{bb016b58e92920da7b2aa6dc338ee764}
+      \strng{bibnamehash}{bb016b58e92920da7b2aa6dc338ee764}
+      \strng{authorbibnamehash}{bb016b58e92920da7b2aa6dc338ee764}
+      \strng{authornamehash}{bb016b58e92920da7b2aa6dc338ee764}
+      \strng{authorfullhash}{bb016b58e92920da7b2aa6dc338ee764}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781498147248}
+      \field{title}{Histoire de La Langue Universelle (1903)}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=s2\_poQEACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=s2%5C_poQEACAAJ
+      \endverb
+    \endentry
     \entry{dalianis}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b53687b4c886ace362863fedce31cc78}{%
@@ -408,6 +448,37 @@
       \verb https://books.google.ru/books?id=T8LDtgAACAAJ
       \endverb
     \endentry
+    \entry{gobbo}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=980a53b897e34ea0316306f651fa3b98}{%
+           family={Gobbo},
+           familyi={G\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{fullhash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{bibnamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authorbibnamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authornamehash}{980a53b897e34ea0316306f651fa3b98}
+      \strng{authorfullhash}{980a53b897e34ea0316306f651fa3b98}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{InKoj}
+      \field{month}{09}
+      \field{title}{Alan Turing creator of Artificial Languages}
+      \field{year}{2012}
+      \field{volume}{3}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.13130/2037-4550/2385
+      \endverb
+    \endentry
     \entry{realworldnlp}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=6c736ab2eebffc3686ce55bc25b7ab31}{%
@@ -519,33 +590,77 @@
       \field{title}{FreDist: Automatic construction of distributional thesauri for French}
       \field{year}{2011}
     \endentry
-    \entry{jazayeri}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=384f0df06bec65bdc3225570a1318d31}{%
-           family={Jazayeri},
+    \entry{janton}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=0f99b51483efbe0c18903444d78d13d5}{%
+           family={Janton},
            familyi={J\bibinitperiod},
-           given={Mehrdad},
-           giveni={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=846e4f670728bbaa8d206cc8e8ae58ba}{%
+           family={Tonkin},
+           familyi={T\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89ec3d917e64ae74ff7f1e27b258dbfb}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{2}{%
-        {KURMANJ, THE JOURNAL OF CULTURE, HUMANITIES}%
-        {SOCIAL SCIENCE}%
+      \list{publisher}{1}{%
+        {State University of New York Press}%
       }
-      \strng{namehash}{384f0df06bec65bdc3225570a1318d31}
-      \strng{fullhash}{384f0df06bec65bdc3225570a1318d31}
-      \strng{bibnamehash}{384f0df06bec65bdc3225570a1318d31}
-      \strng{authorbibnamehash}{384f0df06bec65bdc3225570a1318d31}
-      \strng{authornamehash}{384f0df06bec65bdc3225570a1318d31}
-      \strng{authorfullhash}{384f0df06bec65bdc3225570a1318d31}
+      \strng{namehash}{455e64a237ebb07a2dea6ed549a71e6b}
+      \strng{fullhash}{455e64a237ebb07a2dea6ed549a71e6b}
+      \strng{bibnamehash}{455e64a237ebb07a2dea6ed549a71e6b}
+      \strng{authorbibnamehash}{455e64a237ebb07a2dea6ed549a71e6b}
+      \strng{authornamehash}{455e64a237ebb07a2dea6ed549a71e6b}
+      \strng{authorfullhash}{455e64a237ebb07a2dea6ed549a71e6b}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{An Easy Way to Become a Polyglot}
-      \field{year}{2021}
+      \field{isbn}{9781438407807}
+      \field{title}{Esperanto: Language, Literature, and Community}
+      \field{year}{1993}
+      \verb{urlraw}
+      \verb https://books.google.sk/books?id=R\_ZGfG2a1tIC
+      \endverb
+      \verb{url}
+      \verb https://books.google.sk/books?id=R%5C_ZGfG2a1tIC
+      \endverb
+    \endentry
+    \entry{kennaway}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1204e6753fc5bf852de92d7dadf43708}{%
+           family={Kennaway},
+           familyi={K\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1204e6753fc5bf852de92d7dadf43708}
+      \strng{fullhash}{1204e6753fc5bf852de92d7dadf43708}
+      \strng{bibnamehash}{1204e6753fc5bf852de92d7dadf43708}
+      \strng{authorbibnamehash}{1204e6753fc5bf852de92d7dadf43708}
+      \strng{authornamehash}{1204e6753fc5bf852de92d7dadf43708}
+      \strng{authorfullhash}{1204e6753fc5bf852de92d7dadf43708}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-415-42432-5}
+      \field{month}{05}
+      \field{title}{Artificial Languages}
+      \field{year}{2013}
     \endentry
     \entry{pu}{book}{}
       \name{author}{1}{}{%
@@ -610,6 +725,43 @@
       \range{volume}{1}
       \verb{doi}
       \verb 10.1146/annurev-linguistics-030514-125254
+      \endverb
+    \endentry
+    \entry{reed}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7cb718e7b96d94ae2888f9ccac121fb3}{%
+           family={Libert},
+           familyi={L\bibinitperiod},
+           given={Alan\bibnamedelima Reed},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{7cb718e7b96d94ae2888f9ccac121fb3}
+      \strng{fullhash}{7cb718e7b96d94ae2888f9ccac121fb3}
+      \strng{bibnamehash}{7cb718e7b96d94ae2888f9ccac121fb3}
+      \strng{authorbibnamehash}{7cb718e7b96d94ae2888f9ccac121fb3}
+      \strng{authornamehash}{7cb718e7b96d94ae2888f9ccac121fb3}
+      \strng{authorfullhash}{7cb718e7b96d94ae2888f9ccac121fb3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{06}
+      \field{title}{Artificial Languages}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1093/acrefore/9780199384655.013.11
+      \endverb
+      \verb{urlraw}
+      \verb https://oxfordre.com/linguistics/view/10.1093/acrefore/9780199384655.001.0001/acrefore-9780199384655-e-11
+      \endverb
+      \verb{url}
+      \verb https://oxfordre.com/linguistics/view/10.1093/acrefore/9780199384655.001.0001/acrefore-9780199384655-e-11
       \endverb
     \endentry
     \entry{mcdonald}{article}{}

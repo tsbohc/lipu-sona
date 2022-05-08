@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  8 MAY 2022 01:17
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  8 MAY 2022 19:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1131,7 +1131,7 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-Package biblatex Info: Redefining '\parencite' on input line 150.
+Package biblatex Info: Redefining '\parencite' on input line 151.
  (/usr/share/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count467
 \lst@gtempboxa=\box67
@@ -1180,42 +1180,42 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 Requested font "cmex10" scaled 1095
  -> /usr/share/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 )
-LaTeX Info: Redefining \ttfamily on input line 198.
+LaTeX Info: Redefining \ttfamily on input line 199.
 \@quotelevel=\count486
 \@quotereset=\count487
 
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                '<namepart>inits' conflicts with 'uniquename=full'.
-(biblatex)                Setting 'uniquename=init' on input line 205.
+(biblatex)                Setting 'uniquename=init' on input line 206.
 
 (./lipu.aux)
 \openout1 = `lipu.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 205.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 205.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 206.
+LaTeX Font Info:    ... okay on input line 206.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 206.
+LaTeX Font Info:    ... okay on input line 206.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 206.
+LaTeX Font Info:    ... okay on input line 206.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 206.
+LaTeX Font Info:    ... okay on input line 206.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 206.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 206.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    ... okay on input line 206.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 206.
+LaTeX Font Info:    ... okay on input line 206.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 206.
+LaTeX Font Info:    ... okay on input line 206.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 206.
+LaTeX Font Info:    ... okay on input line 206.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 206.
+LaTeX Font Info:    ... okay on input line 206.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 206.
+LaTeX Font Info:    ... okay on input line 206.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -1226,57 +1226,57 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 205.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 205.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 205.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 205.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 205.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 205.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 205.
-LaTeX Font Info:    Redeclaring math accent \check on input line 205.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 205.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 205.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 205.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 205.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 205.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 205.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 205.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 205.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 205.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 205.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 205.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 205.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 205.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 205.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 205.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 205.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 205.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 206.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 206.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 206.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 206.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 206.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 206.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 206.
+LaTeX Font Info:    Redeclaring math accent \check on input line 206.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 206.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 206.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 206.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 206.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 205.
+(Font)              `operators' in the math version `normal' on input line 206.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Alegreya(0)/m/n on input line 205.
+(Font)                  OT1/cmr/m/n --> TU/Alegreya(0)/m/n on input line 206.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 205.
+(Font)              `operators' in the math version `bold' on input line 206.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Alegreya(0)/m/n on input line 205.
+(Font)                  OT1/cmr/bx/n --> TU/Alegreya(0)/m/n on input line 206.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Alegreya(0)/m/n --> TU/Alegreya(0)/m/n on input line 205.
+(Font)                  TU/Alegreya(0)/m/n --> TU/Alegreya(0)/m/n on input line 206.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Alegreya(0)/m/it on input line 205.
+(Font)                  OT1/cmr/m/it --> TU/Alegreya(0)/m/it on input line 206.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Alegreya(0)/b/n on input line 205.
+(Font)                  OT1/cmr/bx/n --> TU/Alegreya(0)/b/n on input line 206.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 205.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 206.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/IosevkaCustom(0)/m/n on input line 205.
+(Font)                  OT1/cmtt/m/n --> TU/IosevkaCustom(0)/m/n on input line 206.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Alegreya(0)/m/n --> TU/Alegreya(0)/b/n on input line 205.
+(Font)                  TU/Alegreya(0)/m/n --> TU/Alegreya(0)/b/n on input line 206.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Alegreya(0)/b/it on input line 205.
+(Font)                  OT1/cmr/bx/it --> TU/Alegreya(0)/b/it on input line 206.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 205.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 206.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/IosevkaCustom(0)/b/n on input line 205.
+(Font)                  OT1/cmtt/m/n --> TU/IosevkaCustom(0)/b/n on input line 206.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1312,7 +1312,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 205.
+Package hyperref Info: Link coloring ON on input line 206.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1322,9 +1322,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count488
 )
-LaTeX Info: Redefining \ref on input line 205.
-LaTeX Info: Redefining \pageref on input line 205.
-LaTeX Info: Redefining \nameref on input line 205.
+LaTeX Info: Redefining \ref on input line 206.
+LaTeX Info: Redefining \pageref on input line 206.
+LaTeX Info: Redefining \nameref on input line 206.
  (./lipu.out) (./lipu.out)
 \@outlinefile=\write5
 \openout5 = `lipu.out'.
@@ -1360,8 +1360,8 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'lipu.bbl' found.
  (./lipu.bbl)
-Package biblatex Info: Reference section=0 on input line 205.
-Package biblatex Info: Reference segment=0 on input line 205.
+Package biblatex Info: Reference section=0 on input line 206.
+Package biblatex Info: Reference segment=0 on input line 206.
 \c@lstlisting=\count489
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
@@ -1396,15 +1396,15 @@ Package biblatex Info: Reference segment=0 on input line 205.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 221.
+(Font)              scaled to size 14.4pt on input line 222.
 Requested font "[Alegreya-Bold.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Bold.otf
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 223.
+(Font)              scaled to size 17.28pt on input line 224.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 17.28pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 224.
+(Font)              scaled to size 17.28pt on input line 225.
 Requested font "[Alegreya-Bold.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 17.28pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Bold.otf
  [1
@@ -1412,15 +1412,15 @@ Requested font "[Alegreya-Bold.otf]/OT:script=latn;language=dflt;+pnum;+lnum;map
 
 ]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 35.83pt on input line 249.
+(Font)              scaled to size 35.83pt on input line 250.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 35.83pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
-(Font)              scaled to size 35.83pt on input line 249.
+(Font)              scaled to size 35.83pt on input line 250.
 Requested font "[Alegreya-Bold.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 35.83pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Bold.otf
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
-(Font)              scaled to size 20.74pt on input line 249.
+(Font)              scaled to size 20.74pt on input line 250.
 Requested font "[Alegreya-Bold.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 20.74pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Bold.otf
  (./lipu.toc
@@ -1453,7 +1453,7 @@ Requested font "cmr12" at 14.4pt
  [3]
 Chapter .
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 257.
+(Font)              scaled to size 20.74pt on input line 258.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 20.74pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
 [4
@@ -1466,21 +1466,21 @@ File: ./img//nlpcl.png Graphic file (type bmp)
 
 ] [8]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
-(Font)              scaled to size 14.4pt on input line 347.
+(Font)              scaled to size 14.4pt on input line 348.
 Requested font "[Alegreya-Italic.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 12.0pt
- -> v^^2;^^^^XV
+ -> M^^0^^^^ñU
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 351.
+(Font)              scaled to size 12.0pt on input line 352.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 12.0pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 351.
+(Font)              scaled to size 8.0pt on input line 352.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 8.0pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 351.
+(Font)              scaled to size 6.0pt on input line 352.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 6.0pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
 Requested font "cmmi12" at 12.0pt
@@ -1500,7 +1500,7 @@ Requested font "cmex10" at 12.0pt
 Requested font "cmex8" at 8.0pt
  -> /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 351.
+(Font)              <6> on input line 352.
 Requested font "cmr12" at 12.0pt
  -> /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 Requested font "cmr8" at 8.0pt
@@ -1508,44 +1508,51 @@ Requested font "cmr8" at 8.0pt
 Requested font "cmr6" at 6.0pt
  -> /usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 
-Underfull \hbox (badness 1205) in paragraph at lines 382--386
+Underfull \hbox (badness 1205) in paragraph at lines 383--387
 [][]\TU/IosevkaCustom(0)/m/n/12 cosine_similarity(sun, moon) = 0.9711 
  []
 
 [9] [10] [11] [12] [13] [14] [15] [16] [17]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/sc' will be
-(Font)              scaled to size 14.4pt on input line 572.
+(Font)              scaled to size 14.4pt on input line 577.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;+smcp;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
- [18] [19] [20] [21]
+ [18] [19] [20] [21] [22] [23] [24]
 Chapter .
-[22
+[25
 
-] [23
+] [26
 
-] [24] [25]
+] [27] [28]
 
 Package biblatex Warning: No driver for entry type 'unknown'.
-(biblatex)                Using fallback driver on input line 652.
+(biblatex)                Using fallback driver on input line 732.
 
-[26]
+[29]
+
+Package biblatex Warning: Type 'online' not found on input line 735.
+
+
+LaTeX Warning: Empty bibliography on input line 735.
+
+[30]
 Chapter .
-[27
+[31
 
-] [28] [29] [30] [31] [32] [33] [34] (./lipu.aux)
+] [32] [33] [34] [35] [36] [37] [38] (./lipu.aux)
 Package rerunfilecheck Info: File `lipu.out' has not changed.
-(rerunfilecheck)             Checksum: 6B377E64E4338657D59AB512F3AFD74D;7856.
+(rerunfilecheck)             Checksum: 1A28024F97C64EEF83D80D17B8E72074;7987.
 Package logreq Info: Writing requests to 'lipu.run.xml'.
 \openout1 = `lipu.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33587 strings out of 476919
- 676382 string characters out of 5827662
- 1612123 words of memory out of 5000000
- 53037 multiletter control sequences out of 15000+600000
+ 33723 strings out of 476919
+ 680110 string characters out of 5827662
+ 1613391 words of memory out of 5000000
+ 53173 multiletter control sequences out of 15000+600000
  408929 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  113i,11n,124p,835b,5269s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lipu.xdv (34 pages, 474728 bytes).
+Output written on lipu.xdv (38 pages, 535532 bytes).
