@@ -418,6 +418,35 @@
       \field{volume}{9}
       \range{volume}{1}
     \endentry
+    \entry{fimi}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bd2bed75f929e212c713fa3aa5dacd3e}{%
+           family={Fimi},
+           familyi={F\bibinitperiod},
+           given={Dimitra},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{bd2bed75f929e212c713fa3aa5dacd3e}
+      \strng{fullhash}{bd2bed75f929e212c713fa3aa5dacd3e}
+      \strng{bibnamehash}{bd2bed75f929e212c713fa3aa5dacd3e}
+      \strng{authorbibnamehash}{bd2bed75f929e212c713fa3aa5dacd3e}
+      \strng{authornamehash}{bd2bed75f929e212c713fa3aa5dacd3e}
+      \strng{authorfullhash}{bd2bed75f929e212c713fa3aa5dacd3e}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tolkien, race, and cultural history: from fairies to Hobbits}
+      \field{year}{2009}
+      \field{volume}{146}
+      \range{volume}{1}
+    \endentry
     \entry{firth}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=8f4e558692cd8257e0b3f3afb83483ab}{%
