@@ -1147,6 +1147,128 @@
       \verb 10.14746/9788394760915
       \endverb
     \endentry
+    \entry{tolkien83}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=84577d441f5fc56c5c3ee96ac6871395}{%
+           family={Tolkien},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi R.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=32acd4b5a9d4d7351efe6853ee204f1d}{%
+           family={Tolkien},
+           familyi={T\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{6482ee632a1fda02ed1a8bfa530cf62f}
+      \strng{fullhash}{6482ee632a1fda02ed1a8bfa530cf62f}
+      \strng{bibnamehash}{6482ee632a1fda02ed1a8bfa530cf62f}
+      \strng{authorbibnamehash}{6482ee632a1fda02ed1a8bfa530cf62f}
+      \strng{authornamehash}{6482ee632a1fda02ed1a8bfa530cf62f}
+      \strng{authorfullhash}{6482ee632a1fda02ed1a8bfa530cf62f}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Monsters and the Critics, and Other Essays}
+      \field{year}{1983}
+    \endentry
+    \entry{letters}{book}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=84577d441f5fc56c5c3ee96ac6871395}{%
+           family={Tolkien},
+           familyi={T\bibinitperiod},
+           given={J.R.R.},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=265bcd0e1ac9ac4af29dc9558ba260ce}{%
+           family={Carpenter},
+           familyi={C\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=37b91385893766fb2b3db8b45b8bd518}{%
+           family={Tolkien},
+           familyi={T\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {Houghton Mifflin Company}%
+      }
+      \strng{namehash}{5a13648b7b4e82b3fa4599ff7c49e22f}
+      \strng{fullhash}{5a13648b7b4e82b3fa4599ff7c49e22f}
+      \strng{bibnamehash}{5a13648b7b4e82b3fa4599ff7c49e22f}
+      \strng{authorbibnamehash}{5a13648b7b4e82b3fa4599ff7c49e22f}
+      \strng{authornamehash}{5a13648b7b4e82b3fa4599ff7c49e22f}
+      \strng{authorfullhash}{5a13648b7b4e82b3fa4599ff7c49e22f}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780618056996}
+      \field{title}{The Letters of J.R.R. Tolkien: A Selection}
+      \field{year}{2000}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=pw4nlr1ieVEC
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=pw4nlr1ieVEC
+      \endverb
+    \endentry
+    \entry{tolkien19}{book}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=84577d441f5fc56c5c3ee96ac6871395}{%
+           family={Tolkien},
+           familyi={T\bibinitperiod},
+           given={J.R.R.},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=28dec35bffd50374224540f18840b06d}{%
+           family={Fimi},
+           familyi={F\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6924cc9d5ed3f2eb255c3252205ce02d}{%
+           family={Higgins},
+           familyi={H\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {HarperCollins Publishers}%
+      }
+      \strng{namehash}{7286f1800c7aa91e364a6165ec59ca34}
+      \strng{fullhash}{7286f1800c7aa91e364a6165ec59ca34}
+      \strng{bibnamehash}{7286f1800c7aa91e364a6165ec59ca34}
+      \strng{authorbibnamehash}{7286f1800c7aa91e364a6165ec59ca34}
+      \strng{authornamehash}{7286f1800c7aa91e364a6165ec59ca34}
+      \strng{authorfullhash}{7286f1800c7aa91e364a6165ec59ca34}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780008348090}
+      \field{title}{A Secret Vice: Tolkien on Invented Languages}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=iRokwQEACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=iRokwQEACAAJ
+      \endverb
+    \endentry
     \entry{nlpandcl}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=86965abedf4e93b7be8759d4be48e34e}{%

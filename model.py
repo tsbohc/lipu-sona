@@ -17,7 +17,12 @@ from gensim.models import Word2Vec
 model = gensim.models.Word2Vec.load('model.wv')
 wv = model.wv
 
-print(wv.most_similar('palisa'))
+print(wv.similarity('pimeja', 'tenpo'))
+print(wv.similarity('pimeja', 'kule'))
+
+print(wv.similarity('loje', 'tenpo'))
+print(wv.similarity('loje', 'kule'))
+
 # print('---')
 # print(wv.most_similar(positive=['suno', 'lete'], negative=['seli']))
 
