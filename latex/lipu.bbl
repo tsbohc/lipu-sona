@@ -691,6 +691,76 @@
       \field{title}{Artificial Languages}
       \field{year}{2013}
     \endentry
+    \entry{firstdraft}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=abb50aa6b4dac78307182a4b8c05743e}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{fullhash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{bibnamehash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{authorbibnamehash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{authornamehash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{authorfullhash}{abb50aa6b4dac78307182a4b8c05743e}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Toki Pona Word List}
+      \field{urlday}{10}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2001}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20070818031155/http://bknight0.myweb.uga.edu/toki/about/olddict.html
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20070818031155/http://bknight0.myweb.uga.edu/toki/about/olddict.html
+      \endverb
+    \endentry
+    \entry{enkinkan}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=abb50aa6b4dac78307182a4b8c05743e}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{fullhash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{bibnamehash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{authorbibnamehash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{authornamehash}{abb50aa6b4dac78307182a4b8c05743e}
+      \strng{authorfullhash}{abb50aa6b4dac78307182a4b8c05743e}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{the words "en", "kin" and "kan"}
+      \field{urlday}{10}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2002}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://forums.tokipona.org/viewtopic.php?f=33&t=81&sid=2a993bc8cd0daccec16ca43739ad5c89
+      \endverb
+      \verb{url}
+      \verb http://forums.tokipona.org/viewtopic.php?f=33&t=81&sid=2a993bc8cd0daccec16ca43739ad5c89
+      \endverb
+    \endentry
     \entry{pu}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=abb50aa6b4dac78307182a4b8c05743e}{%
@@ -709,6 +779,7 @@
       \strng{authorbibnamehash}{abb50aa6b4dac78307182a4b8c05743e}
       \strng{authornamehash}{abb50aa6b4dac78307182a4b8c05743e}
       \strng{authorfullhash}{abb50aa6b4dac78307182a4b8c05743e}
+      \field{extraname}{3}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
@@ -723,6 +794,47 @@
       \endverb
       \verb{url}
       \verb https://books.google.ru/books?id=5P0ZjwEACAAJ
+      \endverb
+    \endentry
+    \entry{ku}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=abb50aa6b4dac78307182a4b8c05743e}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b92ec3edaaab7209c32d546953e03939}{%
+           family={Sartirani},
+           familyi={S\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Amazon Digital Services LLC - KDP Print US}%
+      }
+      \strng{namehash}{7f68a6be660ff894452c5f0a5bf1495d}
+      \strng{fullhash}{7f68a6be660ff894452c5f0a5bf1495d}
+      \strng{bibnamehash}{7f68a6be660ff894452c5f0a5bf1495d}
+      \strng{authorbibnamehash}{7f68a6be660ff894452c5f0a5bf1495d}
+      \strng{authornamehash}{7f68a6be660ff894452c5f0a5bf1495d}
+      \strng{authorfullhash}{7f68a6be660ff894452c5f0a5bf1495d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780978292362}
+      \field{series}{Official Toki Pona}
+      \field{title}{Toki Pona Dictionary}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=ybqPzgEACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=ybqPzgEACAAJ
       \endverb
     \endentry
     \entry{lenci}{article}{}
@@ -880,6 +992,8 @@
       \field{month}{08}
       \field{title}{Request for New Language Code Element in ISO 639-3}
       \field{year}{2021}
+      \field{pages}{15}
+      \range{pages}{1}
       \field{volume}{2021}
       \range{volume}{1}
     \endentry
@@ -1042,6 +1156,40 @@
       \verb https://books.google.ru/books?id=3anWeY0G2moC
       \endverb
     \endentry
+    \entry{evo}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=12ebe54e7e2214659bb3a35f7eb1ed2b}{%
+           family={Pake},
+           familyi={P\bibinitperiod},
+           given={kapesi},
+           giveni={k\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{12ebe54e7e2214659bb3a35f7eb1ed2b}
+      \strng{fullhash}{12ebe54e7e2214659bb3a35f7eb1ed2b}
+      \strng{bibnamehash}{12ebe54e7e2214659bb3a35f7eb1ed2b}
+      \strng{authorbibnamehash}{12ebe54e7e2214659bb3a35f7eb1ed2b}
+      \strng{authornamehash}{12ebe54e7e2214659bb3a35f7eb1ed2b}
+      \strng{authorfullhash}{12ebe54e7e2214659bb3a35f7eb1ed2b}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Evolution of Toki Pona}
+      \field{urlday}{10}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.reddit.com/r/tokipona/comments/iw2xp6/the_evolution_of_toki_pona/
+      \endverb
+      \verb{url}
+      \verb https://www.reddit.com/r/tokipona/comments/iw2xp6/the_evolution_of_toki_pona/
+      \endverb
+    \endentry
     \entry{sanders}{inbook}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f26ba8758c7f0e6551a4fb8bd590ffeb}{%
@@ -1071,6 +1219,37 @@
       \range{pages}{21}
       \verb{doi}
       \verb 10.1093/oso/9780198829874.003.0002
+      \endverb
+    \endentry
+    \entry{isoproof}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d33e8b4153c9ede949666e198817642d}{%
+           family={{SIL International}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d33e8b4153c9ede949666e198817642d}
+      \strng{fullhash}{d33e8b4153c9ede949666e198817642d}
+      \strng{bibnamehash}{d33e8b4153c9ede949666e198817642d}
+      \strng{authorbibnamehash}{d33e8b4153c9ede949666e198817642d}
+      \strng{authornamehash}{d33e8b4153c9ede949666e198817642d}
+      \strng{authorfullhash}{d33e8b4153c9ede949666e198817642d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ISO 639 Code Tables}
+      \field{urlday}{10}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://iso639-3.sil.org/code_tables/639/data/t?title=tok&field_iso639_cd_st_mmbrshp_639_1_tid=All&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=All&items_per_page=200
+      \endverb
+      \verb{url}
+      \verb https://iso639-3.sil.org/code_tables/639/data/t?title=tok&field_iso639_cd_st_mmbrshp_639_1_tid=All&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=All&items_per_page=200
       \endverb
     \endentry
     \entry{silva}{article}{}
@@ -1112,6 +1291,40 @@
       \range{pages}{1}
       \field{volume}{17}
       \range{volume}{1}
+    \endentry
+    \entry{liputenpo}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7adf7bf599d93efc7ddfb4ac3777bfb7}{%
+           family={Sonatan},
+           familyi={S\bibinitperiod},
+           given={jan},
+           giveni={j\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7adf7bf599d93efc7ddfb4ac3777bfb7}
+      \strng{fullhash}{7adf7bf599d93efc7ddfb4ac3777bfb7}
+      \strng{bibnamehash}{7adf7bf599d93efc7ddfb4ac3777bfb7}
+      \strng{authorbibnamehash}{7adf7bf599d93efc7ddfb4ac3777bfb7}
+      \strng{authornamehash}{7adf7bf599d93efc7ddfb4ac3777bfb7}
+      \strng{authorfullhash}{7adf7bf599d93efc7ddfb4ac3777bfb7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{lipu tenpo li lon}
+      \field{urlday}{10}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.reddit.com/r/tokipona/comments/la0owt/lipu_tenpo_li_lon/
+      \endverb
+      \verb{url}
+      \verb https://www.reddit.com/r/tokipona/comments/la0owt/lipu_tenpo_li_lon/
+      \endverb
     \endentry
     \entry{higley}{inproceedings}{}
       \name{author}{1}{}{%

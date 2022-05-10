@@ -263,9 +263,9 @@ Toki Pona is the second most spoken constructed language in the world. Its core 
 % {{{
 While some cases are covered by the lessons present in the original book \parencite{pu}, the definitions provided by the official publicly available dictionary do not fully reflect how the vocabulary is used today.
 
-This could be amended by the way of iquiry of a large enough sample of proficient speakers, but this approach would prove highly subjective. Moreover, there are weak dialectical variations and idiolects present in the language.
+This was amended with the publication of the second Toki Pona book \parencite{ku}, a two-way Toki Pona -- English dictionary. The second book primarily documents the compounds that can be used to convery certain ideas in Toki Pona.
 
-A more neutral and less manual approach is to use distributional semantics to construct a model of the language. The data provided by the model can serve as the basis for identifying the undocumented word senses and ranking the existing ones.
+While this paper also deals with the semantics of the Toki Pona vocabulary, it is different in nature. This research aims to identify the semantic compositions of individual words in the Toki Pona vocabulary, independently from the published books.
 % }}}
 \paragraph{Goals}
 % {{{
@@ -537,6 +537,8 @@ The data provided by the distributional model can be used directly to analyse th
 \end{enumerate}
 % }}}
 
+
+  % TODO note about the term 'invented'
   \section{Artificial languages}
 % {{{
 The term `artificial' is used to broadly refer to all languages that have been created through deliberate and conscious planning \parencite[41]{stria}. Under the broad umbreall of the term `artificial' reside predicate calculus and programming languages such as Lisp and C++.
@@ -547,8 +549,6 @@ In an effort to avoid confusion with artifical languages of technical nature, th
 
 It should be noted that the abbreviation `conlang' is also widely spread among the members of the community surrounding constructed languages.
 % }}}
-
-% TODO note about the term 'invented'
 \subsection{The notion of a constructed language}
 % {{{
 Constructed languages are languages that have been purposely created to be similar or comparable in function to natural languages. The purpose behind the creation of constructed languages tends to vary greatly, ranging from the aim to create an auxiliary means of international communication, to artistic and philosophical expression.
@@ -676,7 +676,7 @@ The primary concern with this way of classifying constructed languages this way 
       (-3,-2.5)/Tolkien's,
       (3.5, 3.8)/Esperanto,
       (2.2, 2.8)/Interlingua,
-      (2, -2)/Dothraki,
+      (2, -2.5)/Dothraki,
       (3.5, 1.5)/{Toki\ Pona}
     }
     \draw[draw=gray,fill=gray] \Point circle (0.08) node[above right] {$\PointLabel$};
@@ -724,18 +724,61 @@ The classification proposed by Blanke divides artificial languages into into inv
 % {{{
 Within the conlanging community, the terms from the above classifications are used by the principles of compositionality. Individual constructed languages are often described by having particular qualities borrowed from multiple classification systems.
 % }}}
-    % \section{Semantic division}
-    %   \subsection{Semantic field}
-
     \section{Summary}
 
 
 \chapter{Language modelling and Toki Pona}
   \section{Toki Pona}
+% {{{
+Toki Pona is an a priori philosophical artistic language created by Sonja Lang, a Canadian linguist and translator. The core vocabulary of Toki Pona consists of around 120 words and focuses on simple, near-universal concepts. Although Lang herself never planned the language as an international auxiliary language, it might indeed be considered as such \parencite[100]{stria}.
+
+Lang has published two official books on Toki Pona. The first one, \textit{Toki Pona: The Language of Good} was published in May 2014 and is known as \textit{pu}. The second one, \textit{Toki Pona Dictionary} was published in July 2021 and is known as \textit{ku}.
+% }}}
     \subsection{History}
-      % \subsubsection{Pre-pu}
-      % \subsubsection{Post-pu}
-      % \subsubsection{Post-ku}
+      \subsubsection{Pre-pu}
+% {{{
+In the early days of Toki Pona, Lang experimented with both grammr and vocabulary. Numerous words from this period would be discarded before the online publication of the first draft of Toki Pona \parencite{evo}.
+
+Lang first revealed the language to the public in a 2001 draft \parencite{firstdraft}. Multiple words are removed, replaced, and added. Toki Pona gains a small online following. The ``community primarily meets to discuss the language on Yahoo Groups, experimenting with and fleshing out the language \parencite{evo}''.
+
+% In an early post titled ``why toki pona?'' Lang outlines the primary characteristics of the philosophy of the language. Below are some of them \parencite{char}:
+%
+% \begin{itemize}
+%   \item ``Toki Pona is semantically, lexically, and phonetically \textit{minimal}. The simplest and fewest elements are used to create the maximum effect''.
+%   \item ``In many ways, Toki Pona resembles a \textit{pidgin}. When people from different cultures need to communicate, they must focus on the concrete, simple things that are most universal to humanity''.
+%   \item ``Toki Pona follows the principles of \textit{Taoism}, which advocates a simple, honest life and noninterference with the course of natural events''.
+%   \item ``According to \textit{reductionism}, complex ideas and systems can be completely understood in terms of their simpler parts or components''.
+%   \item ``Toki Pona can lead to an interesting game of \textit{semantic decomposition}. Just as one can decompose a mathematical fraction such as 4/8 to 1/2, we can break down language to its most basic and tangible units of meaning and discover what things really mean''.
+%   \item ``Since Toki Pona expresses things in their most natural and simple way, an inherent idea of \textit{goodness} is transparent throughout the language. Health is good body. Happiness is feel good. Toki Pona itself means good language''.
+%   \item ``Above all, Toki Pona must be \textit{fun and cute}''.
+% \end{itemize}
+
+Around this time, Lang performs the first grammatical reform of Toki Pona. ``The words `en', `kin', `kan' and the concept of `and' have been relatively unstable and confusing in Toki Pona, as I have been experimenting to find the best system <...> There is no longer a way to divide between modifiers. This is no longer necessary. A `tall and good' person is simply a tall `good person' or a good `tall person', as you will. \parencite{enkinkan}''.
+
+The community surrounding Toki Pona grows, as well its corpus. This times sees the appearance of many early translations.
+
+After more words are removed, for a while ``the total word count stabilises at 118 \parencite{evo}''.  ``The word \textit{pu} makes its first appearance but remains undefined until the publishing of \textit{Toki Pona: The Language of Good} \parencite{evo}''.
+
+The preface of the book reads: ``Toki Pona is my philosopical attempt to understand the meaning of life in 120 words \parencite{pu}''. Lang continues to further outline the primary characteristics of the language:
+
+\begin{itemize}
+  \item ``Toki Pona is semantically, lexically, and phonetically minimalist''.
+  \item ``In many ways, Toki Pona resembles a pidgin. When people from different cultures need to communicated, they must focus on the elements that are most universal to our human experience''.
+  \item ``Toki Pona offers a path for semantic reduction. <...> we can distill our thoughts to their most fundamental units to discover what things really mean. We can understand complex ideas in terms of their smaller parts''.
+  \item ``An inherent idea of goodness is transparent throughout the language.''
+\end{itemize}
+
+% }}}
+      \subsubsection{Post-pu}
+% {{{
+After the publication of the first book, a few new words become official. Some portions of the grammar undergo significant changes, and many words receive new or altered definitons \parencite{evo}.
+
+As the Toki Pona community rapidly grows, many idiolects permeate the way the language is spoken. Over a hundred of new words is invented by the community. Most of them are relatively well adopted.
+
+The first issue of the \textit{lipu tenpo} magazine is published online \parencite{liputenpo}. The second official Toki Pona book \textit{Toki Pona Dictionary} is published \parencite{ku}. Toki Pona is officially recognised by the ISO 639-3 registry under the code \textit{tok} \parencite{isoproof}.
+
+The official Toki Pona subreddit sees an influx of members, reaching almost 11.000 subscribers at the time of writing. The largest Discord server has over 8.000 members. While longer directly influencing the language, Lang remains an active member of the community.
+% }}}
     \subsection{Phonology}
     \subsection{Grammar}
     \subsection{Vocabulary}
@@ -744,7 +787,8 @@ Within the conlanging community, the terms from the above classifications are us
     \subsection{Text tokenisation}
     \subsection{Text normalisation}
     \subsection{Model construction}
-    \subsection{Projection and visualisation}
+    \subsection{Projection}
+    \subsection{Visualisation}
     \subsection{Observations}
   \section{Summary}
 

@@ -80,36 +80,44 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1}History}{30}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Phonology}{30}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.1}Pre-pu}{30}{subsubsection.3.1.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3}Grammar}{30}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.2}Post-pu}{31}{subsubsection.3.1.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4}Vocabulary}{30}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {1.2}Phonology}{32}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5}Tokiponidos}{30}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {1.3}Grammar}{32}{subsection.3.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Vector space model}{30}{section.3.2}%
+\contentsline {subsection}{\numberline {1.4}Vocabulary}{32}{subsection.3.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Text tokenisation}{30}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {1.5}Tokiponidos}{32}{subsection.3.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Text normalisation}{30}{subsection.3.2.2}%
+\contentsline {section}{\numberline {2}Vector space model}{32}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Model construction}{30}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {2.1}Text tokenisation}{32}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Projection and visualisation}{30}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {2.2}Text normalisation}{32}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}Observations}{30}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {2.3}Model construction}{32}{subsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Summary}{30}{section.3.3}%
+\contentsline {subsection}{\numberline {2.4}Projection}{32}{subsection.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Conclusion}{31}{chapter.4}%
+\contentsline {subsection}{\numberline {2.5}Visualisation}{32}{subsection.3.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}nimi mute li pini la}{32}{chapter.5}%
+\contentsline {subsection}{\numberline {2.6}Observations}{32}{subsection.3.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{33}{chapter*.20}%
+\contentsline {section}{\numberline {3}Summary}{32}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Supplementary marterial}{38}{chapter.6}%
+\contentsline {chapter}{\numberline {}Conclusion}{33}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Model vectors}{38}{section.6.1}%
+\contentsline {chapter}{\numberline {}nimi mute li pini la}{34}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Toki Pona dictionary}{38}{section.6.2}%
+\contentsline {chapter}{References}{35}{chapter*.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Online resources}{40}{chapter*.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {}Supplementary marterial}{41}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Model vectors}{41}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Toki Pona dictionary}{41}{section.6.2}%
