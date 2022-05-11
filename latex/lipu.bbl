@@ -714,8 +714,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Toki Pona Word List}
-      \field{urlday}{10}
-      \field{urlmonth}{5}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
       \field{urlyear}{2022}
       \field{year}{2001}
       \field{urldateera}{ce}
@@ -749,8 +749,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{the words "en", "kin" and "kan"}
-      \field{urlday}{10}
-      \field{urlmonth}{5}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
       \field{urlyear}{2022}
       \field{year}{2002}
       \field{urldateera}{ce}
@@ -1082,6 +1082,37 @@
       \verb 10.1007/978-3-642-23954-0_24
       \endverb
     \endentry
+    \entry{nltk}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a91f972438efc8804dcdcc9edc9a983f}{%
+           family={{NLTK Team}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{a91f972438efc8804dcdcc9edc9a983f}
+      \strng{fullhash}{a91f972438efc8804dcdcc9edc9a983f}
+      \strng{bibnamehash}{a91f972438efc8804dcdcc9edc9a983f}
+      \strng{authorbibnamehash}{a91f972438efc8804dcdcc9edc9a983f}
+      \strng{authornamehash}{a91f972438efc8804dcdcc9edc9a983f}
+      \strng{authorfullhash}{a91f972438efc8804dcdcc9edc9a983f}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Natural Language Toolkit}
+      \field{urlday}{5}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://iso639-3.sil.org/code_tables/639/data/t?title=tok&field_iso639_cd_st_mmbrshp_639_1_tid=All&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=All&items_per_page=200
+      \endverb
+      \verb{url}
+      \verb https://iso639-3.sil.org/code_tables/639/data/t?title=tok&field_iso639_cd_st_mmbrshp_639_1_tid=All&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=All&items_per_page=200
+      \endverb
+    \endentry
     \entry{oduntan}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=bf65d959e9f82452d8602626d9b094ca}{%
@@ -1178,8 +1209,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Evolution of Toki Pona}
-      \field{urlday}{10}
-      \field{urlmonth}{5}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
       \field{urlyear}{2022}
       \field{year}{2019}
       \field{urldateera}{ce}
@@ -1240,8 +1271,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{ISO 639 Code Tables}
-      \field{urlday}{10}
-      \field{urlmonth}{5}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
       \field{urlyear}{2022}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -1314,8 +1345,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{lipu tenpo li lon}
-      \field{urlday}{10}
-      \field{urlmonth}{5}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
       \field{urlyear}{2022}
       \field{year}{2021}
       \field{urldateera}{ce}
@@ -1580,6 +1611,52 @@
       \strng{authorbibnamehash}{16eff2eebf618530571820c90ea1dd82}
       \strng{authornamehash}{16eff2eebf618530571820c90ea1dd82}
       \strng{authorfullhash}{16eff2eebf618530571820c90ea1dd82}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781492054009}
+      \field{title}{Practical Natural Language Processing: A Comprehensive Guide to Building Real-World NLP Systems}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=hPrrDwAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=hPrrDwAAQBAJ
+      \endverb
+    \endentry
+    \entry{vajjala}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e04c8911911bd5bd793c3ecf5db45004}{%
+           family={Vajjala},
+           familyi={V\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b801edbf9748261571653f913ef2eb34}{%
+           family={Majumder},
+           familyi={M\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=29941a55ce9570d3258751081c4834e7}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{bff6b1cdd3a3199e35a761adc30170c3}
+      \strng{fullhash}{bff6b1cdd3a3199e35a761adc30170c3}
+      \strng{bibnamehash}{bff6b1cdd3a3199e35a761adc30170c3}
+      \strng{authorbibnamehash}{bff6b1cdd3a3199e35a761adc30170c3}
+      \strng{authornamehash}{bff6b1cdd3a3199e35a761adc30170c3}
+      \strng{authorfullhash}{bff6b1cdd3a3199e35a761adc30170c3}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{extradatescope}{labelyear}

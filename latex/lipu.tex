@@ -182,6 +182,7 @@
     framerule=0mm,
     aboveskip=1em,
     belowskip=1em,
+    basewidth=0.5em,
 }
 
 \lstset{style=mystyle}
@@ -212,7 +213,6 @@
 
 \renewcommand{\contentsname}{\let\clearpage\relax\chapter*{Contents}} % chapter* doesn't appear in toc
 % }}}
-
 
 % --- TITLE PAGE ---
 
@@ -786,12 +786,75 @@ The official Toki Pona subreddit sees an influx of members, reaching almost 11.0
     \subsection{Vocabulary}
     \subsection{Tokiponidos}
   \section{Vector space model}
-    \subsection{Text normalisation}
+
+    \subsection{Pre-processing}
+
+In the context of machine learning, noise contained within the input data is detrimental to the output. Before the data can be used as input, it has to be thoroughly cleaned from noise. This process is referred to as text pre-processing \parencite[49]{vajjala}.
+
+The noise includes leftover formatting and HTML (HyperText Markup Language) tags, raw Unicode sequences, emojis, emoticons, punctuation, text in other languages, etc.
+
+The Natural Language Toolkit Python library was used for the majority of text pre-processing tasks. ``NLTK is a leading platform for building Python programs to work with human language data \parencite{nltk}''.
+
+Below is an example of a corpus entry at this stage:
+
+\begin{lstlisting}
+Pilin mi la, ni li pona: i<em>think</em> lon li lon is a goood way of saying c'est la vie :)  \n\n*also* TOKI!!! pan suwi &#xe339 li pona mute tawa mi a a a! :D &amp mi pali pona e pan suwi !! \n
+\end{lstlisting}
+
       \subsubsection{Tokenisation}
-      \subsubsection{Filtering}
-      \subsubsection{Spelling normalisation}
-      % removal of capitalisation, ale/ali
+
+Tokenisation is the process of splitting text into individual tokens, usually representing words and punctuation marks \parencite[49]{vajjala}.
+
+Usually, this step is performed after the text has been split into sentences. The choice to perform tokenisation at this stage is supported by the fact that the source data contains an unusually large amount of text in other languages. Often, there is no separation between Toki Pona and other languages. If text tokenisation is performed first, it will prove easier to create custom rules for sentence segmentation at a later stage.
+
+After being tokenised, the example entry takes the shape of an array:
+
+\begin{lstlisting}
+['Pilin', 'mi', 'la', ',', 'ni', 'li', 'pona', ':', 'i', '<', 'em', '>', 'think', '<', '/em', '>', 'lon', 'li', 'lon', 'is', 'a', 'goood', 'way', 'of', 'saying', "c'est", 'la', 'vie', ':', ')', '*', 'also', '*', 'TOKI', '!', '!', '!', 'pan', 'suwi', '&', '#', 'xe339', 'li', 'pona', 'mute', 'tawa', 'mi', 'a', 'a', 'a', '!', ':', 'D', '&', 'amp', 'mi', 'pali', 'pona', 'e', 'pan', 'suwi', '!', '!']
+\end{lstlisting}
+
+      \subsubsection{Noise removal}
+
+Every sequence that only contains symbols or a mixture of letters and symbols that is longer than one characters is removed. The tokens which consist of only one punctuation mark are treated differently. Exclamation points and question marks are replaced with periods. The rest of the punctuation marks are removed
+
+The tokens of the entry are then compared with a whitelist of allowed tokens. The whitelist includes all of the Toki Pona words, including the vocabulary that is not considered core vocabulary. When the matching is case-insensitive, meaning that it converts each token to lowercase before matching. The case is preserved.
+
+The words were not found to be in the Toki Pona vocabulary, are replaced with a period. The consecutive duplicate tokens which are not found in the whitelist are then removed from the sequence.
+
+After this is done, the entry looks like this:
+
+\begin{lstlisting}
+['Pilin', 'mi', 'la', 'ni', 'li', 'pona', '.', 'lon', 'li', 'lon', '.', 'a', '.', 'la', '.', 'TOKI', '.', 'pan', 'suwi', 'li', 'pona', 'mute', 'tawa', 'mi', 'a', 'a', 'a', '.', 'mi', 'pali', 'pona', 'e', 'pan', 'suwi', '.']
+\end{lstlisting}
+
       \subsubsection{Sentence segmentation}
+
+Sentence tokenisation is the process of splitting text based on the presence of punctuation marks \parencite[51]{vajjala}.
+
+Because there are no punctuation marks left in the entry except for the periods, the entry can be split naively on them:
+
+\begin{lstlisting}
+[['Pilin', 'mi', 'la', 'ni', 'li', 'pona'], ['lon', 'li', 'lon'], ['a'], ['la'], ['TOKI'], ['pan', 'suwi', 'li', 'pona', 'mute', 'tawa', 'mi', 'a', 'a', 'a'], ['mi', 'pali', 'pona', 'e', 'pan', 'suwi']]
+\end{lstlisting}
+
+      \subsubsection{Normalisation}
+
+The first word of each sentence is brought to lowercase and compared with the whitelist. If there is a match, the word is replaced with its lowercase. Same is done for fully uppercase words in any part of the sentence.
+
+The vocabulary of Toki Pona includes the word `ali', which is an alternative spelling of the word `ale'. Within the corpus, all `ali' are replace with `ale'.
+
+All of the proper names are removed from the corpus. All of the sentences shorter than three tokens are removed from the corpus as well.
+
+The resulting entry takes the following shape:
+
+\begin{lstlisting}
+pilin mi la ni li pona
+lon li lon
+pan suwi li pona mute tawa mi a a a
+mi pali pona e pan suwi
+\end{lstlisting}
+
+      % removal of capitalisation, ale/ali
     \subsection{Model construction}
     \subsection{Projection}
     \subsection{Visualisation}
@@ -802,7 +865,7 @@ The official Toki Pona subreddit sees an influx of members, reaching almost 11.0
 
 \chapter{Conclusion}
 
-\chapter{nimi mute li pini la}
+% \chapter{nimi mute li pini la}
 
 
 
