@@ -1,14 +1,14 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Introduction}{4}{chapter.1}%
+\contentsline {chapter}{\numberline {}Introduction}{5}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Problem}{4}{paragraph*.2}%
+\contentsline {paragraph}{Problem}{5}{paragraph*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Goals}{4}{paragraph*.3}%
+\contentsline {paragraph}{Goals}{5}{paragraph*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Objectives}{5}{paragraph*.4}%
+\contentsline {paragraph}{Objectives}{6}{paragraph*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Relevance}{5}{paragraph*.5}%
+\contentsline {paragraph}{Relevance}{6}{paragraph*.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {}Distributional semantics and\nobreakspace {}constructed\nobreakspace {}languages}{7}{chapter.2}%
 \defcounter {refsection}{0}\relax 
@@ -84,40 +84,46 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.1.2}Post-pu}{31}{subsubsection.3.1.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Phonology}{32}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {1.2}Phonology}{33}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3}Grammar}{32}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {1.3}Grammar}{33}{subsection.3.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4}Vocabulary}{32}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {1.4}Vocabulary}{33}{subsection.3.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5}Tokiponidos}{32}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {1.5}Tokiponidos}{33}{subsection.3.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Vector space model}{32}{section.3.2}%
+\contentsline {section}{\numberline {2}Vector space model}{33}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Text tokenisation}{32}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {2.1}Text normalisation}{33}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Text normalisation}{32}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.1}Tokenisation}{33}{subsubsection.3.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Model construction}{32}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {2.1.2}Filtering}{33}{subsubsection.3.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Projection}{32}{subsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {2.1.3}Spelling normalisation}{33}{subsubsection.3.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}Visualisation}{32}{subsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {2.1.4}Sentence segmentation}{33}{subsubsection.3.2.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6}Observations}{32}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {2.2}Model construction}{33}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Summary}{32}{section.3.3}%
+\contentsline {subsection}{\numberline {2.3}Projection}{33}{subsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Conclusion}{33}{chapter.4}%
+\contentsline {subsection}{\numberline {2.4}Visualisation}{33}{subsection.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}nimi mute li pini la}{34}{chapter.5}%
+\contentsline {subsection}{\numberline {2.5}Observations}{33}{subsection.3.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{35}{chapter*.20}%
+\contentsline {section}{\numberline {3}Summary}{33}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Online resources}{40}{chapter*.21}%
+\contentsline {chapter}{\numberline {}Conclusion}{34}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Supplementary marterial}{41}{chapter.6}%
+\contentsline {chapter}{\numberline {}nimi mute li pini la}{35}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Model vectors}{41}{section.6.1}%
+\contentsline {chapter}{References}{36}{chapter*.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Toki Pona dictionary}{41}{section.6.2}%
+\contentsline {chapter}{Online resources}{41}{chapter*.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {}Supplementary marterial}{42}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Model vectors}{42}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Toki Pona dictionary}{42}{section.6.2}%

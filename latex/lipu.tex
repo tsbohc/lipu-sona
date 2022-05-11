@@ -261,20 +261,22 @@ Toki Pona is the second most spoken constructed language in the world. Its core 
 % }}}
 \paragraph{Problem}
 % {{{
-While some cases are covered by the lessons present in the original book \parencite{pu}, the definitions provided by the official publicly available dictionary do not fully reflect how the vocabulary is used today.
+% While some cases are covered by the lessons present in the original book \parencite{pu}, the definitions provided by the official publicly available dictionary do not fully reflect how the vocabulary is used today.
 
-This was amended with the publication of the second Toki Pona book \parencite{ku}, a two-way Toki Pona -- English dictionary. The second book primarily documents the compounds that can be used to convey particular ideas in Toki Pona.
+The publicly available dictionaries of Toki Pona are primarily based on the original official dictionary \parencite{pu} and do not fully reflect how the language is spoken today.
 
-While this paper also deals with the semantics of the Toki Pona vocabulary, it is different in nature. This research aims to identify the semantic compositions of individual words in the Toki Pona vocabulary, independently from the published books. The comparisons are drawn between the original dictionary and the current usage pattersn of the vocabulary.
+% This was amended with the publication of the second Toki Pona book \parencite{ku}, a two-way Toki Pona -- English dictionary. The second book primarily documents the compounds that can be used to convey particular ideas in Toki Pona.
+
+% While this paper also deals with the semantics of the Toki Pona vocabulary, it is different in nature. This research aims to identify the semantic compositions of individual words in the Toki Pona vocabulary, independently from the published books. The comparisons are drawn between the original dictionary and the current usage pattersn of the vocabulary.
 % }}}
 \paragraph{Goals}
 % {{{
 The primary goal of this paper is to comment on the semantics of the core Toki Pona vocabulary, as well as to organise individual words into groups based on their semantic relatedness and the context they are most prevalently used in.
 
-The secondary goal is to discuss the semantics of the core vocabulary of Toki Pona --- as it is spoken by the majority of the communety --- in relation to the official dictionary of the language.
+The secondary goal is to discuss the semantics of the core vocabulary of Toki Pona --- as it is spoken by the majority of the communety --- in relation to the first official dictionary of the language.
 
 \begin{itemize}
-  \item \textbf{Subject.} Semantic evaluation and classification of vocabulary.
+  \item \textbf{Subject.} Semantic analysis and classification of vocabulary.
   \item \textbf{Object.} Toki Pona, a constructed language.
   \item \textbf{Methodology.} Distributional semantics and natural language processing, namely language modelling (word embedding).
 \end{itemize}
@@ -282,7 +284,7 @@ The secondary goal is to discuss the semantics of the core vocabulary of Toki Po
 \paragraph{Objectives}
 % {{{
 \begin{enumerate}
-  \item Define natural language processing and distributional semantics, discuss modern implementations as well as other related concepts.
+  \item Define natural language processing and distributional semantics, discuss modern implementations as well as other concepts.
   \item Define and classify constructed languages.
   \item Describe Toki Pona, its philosophy, history, and unique features.
   \item Obtain the necessary corpora.
@@ -630,7 +632,7 @@ From the 70s and well into the 2000s, the world saw the airing of many televisio
 The classification proposed by Couturat and Leau groups constructed languages based on their relationship with source material or a lack there of \parencite{couturat}:
 
 \begin{itemize}
-  \item \textbf{A priori.} Constructed languaget that are not based on the elements of natural languages. ``A priori languages start from scratch with new symbols, signs or other elements devised to represent essential concepts \parencite{bianco}''.
+  \item \textbf{A priori.} Constructed languages that are not based on the elements of natural languages. ``A priori languages start from scratch with new symbols, signs or other elements devised to represent essential concepts \parencite{bianco}''.
   \item \textbf{A posteriori.} Constructed languages are based on the elements of natural languages. ``A posteriori languages draw their building blocks from existing languages  \parencite{bianco}''.
   \item \textbf{Mixed.} A combination of the two.
 \end{itemize}
@@ -730,7 +732,7 @@ Within the conlanging community, the terms from the above classifications are us
 \chapter{Language modelling and Toki Pona}
   \section{Toki Pona}
 % {{{
-Toki Pona is an a priori philosophical artistic language created by Sonja Lang, a Canadian linguist and translator. The core vocabulary of Toki Pona consists of around 120 words and focuses on simple, near-universal concepts. Although Lang herself never planned the language as an international auxiliary language, it might indeed be considered as such \parencite[100]{stria}.
+Toki Pona is a philosophical artistic language created by Sonja Lang, a Canadian linguist and translator. The core vocabulary of Toki Pona consists of around 120 words and focuses on simple, near-universal concepts. Although Lang herself never planned the language as an international auxiliary language, it might indeed be considered as such \parencite[100]{stria}.
 
 Lang has published two official books on Toki Pona. The first one, \textit{Toki Pona: The Language of Good} was published in May 2014 and is known as \textit{pu}. The second one, \textit{Toki Pona Dictionary} was published in July 2021 and is known as \textit{ku}.
 % }}}
@@ -777,15 +779,19 @@ As the Toki Pona community rapidly grows, many idiolects permeate the way the la
 
 The first issue of the \textit{lipu tenpo} magazine is published online \parencite{liputenpo}. The second official Toki Pona book \textit{Toki Pona Dictionary} is published \parencite{ku}. Toki Pona is officially recognised by the ISO 639-3 registry under the code \textit{tok} \parencite{isoproof}.
 
-The official Toki Pona subreddit sees an influx of members, reaching almost 11.000 subscribers at the time of writing. The largest Discord server has over 8.000 members. While longer directly influencing the language, Lang remains an active member of the community.
+The official Toki Pona subreddit sees an influx of members, reaching almost 11.000 subscribers at the time of writing. While longer directly influencing the language, Lang remains an active member of the community.
 % }}}
     \subsection{Phonology}
     \subsection{Grammar}
     \subsection{Vocabulary}
     \subsection{Tokiponidos}
   \section{Vector space model}
-    \subsection{Text tokenisation}
     \subsection{Text normalisation}
+      \subsubsection{Tokenisation}
+      \subsubsection{Filtering}
+      \subsubsection{Spelling normalisation}
+      % removal of capitalisation, ale/ali
+      \subsubsection{Sentence segmentation}
     \subsection{Model construction}
     \subsection{Projection}
     \subsection{Visualisation}
