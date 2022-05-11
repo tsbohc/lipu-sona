@@ -841,7 +841,7 @@ Because there are no punctuation marks left in the entry except for the periods,
 
 The first word of each sentence is brought to lowercase and compared with the whitelist. If there is a match, the word is replaced with its lowercase. Same is done for fully uppercase words in any part of the sentence.
 
-The vocabulary of Toki Pona includes the word `ali', which is an alternative spelling of the word `ale'. Within the corpus, all `ali' are replace with `ale'.
+The vocabulary of Toki Pona includes the word `ali', which is an alternative spelling of the word `ale'. Within the corpus, in all cases where `ali' appears, it is replaced with `ale'.
 
 All of the proper names are removed from the corpus. All of the sentences shorter than three tokens are removed from the corpus as well.
 
@@ -854,8 +854,11 @@ pan suwi li pona mute tawa mi a a a
 mi pali pona e pan suwi
 \end{lstlisting}
 
-      % removal of capitalisation, ale/ali
     \subsection{Model construction}
+
+% all of the non-pu words are removed, all of the particles are removed as well.
+% and don't forget spelling normalisation
+
     \subsection{Projection}
     \subsection{Visualisation}
     \subsection{Observations}

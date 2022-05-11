@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  11 MAY 2022 20:54
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  11 MAY 2022 20:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1470,7 +1470,7 @@ LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
 Requested font "[Alegreya-Italic.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 12.0pt
- -> ^^Bg^^Ù@^^KV
+ -> ^^ ^^Ø^^Ë^^P^^U
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 348.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 12.0pt
@@ -1523,7 +1523,7 @@ Chapter .
 
 ] [30]
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 14.4pt
- -> ^^?^^#n@^^KV
+ -> ^^?:^^$^^P^^U
  [31] [32] [33] [34]
 Chapter .
 [35
@@ -1533,7 +1533,7 @@ Chapter .
 ] [37] [38] [39]
 
 Package biblatex Warning: No driver for entry type 'unknown'.
-(biblatex)                Using fallback driver on input line 872.
+(biblatex)                Using fallback driver on input line 875.
 
 [40] [41
 
@@ -1557,4 +1557,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  113i,11n,124p,835b,5269s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lipu.xdv (49 pages, 749516 bytes).
+Output written on lipu.xdv (49 pages, 749784 bytes).
