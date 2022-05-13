@@ -4,6 +4,17 @@
 \documentclass[14pt, a4paper]{extreport}
 \usepackage[table, dvipsnames]{xcolor}
 
+\usepackage{datatool}
+\DTLsetseparator{=}
+\DTLloaddb[noheader, keys={thekey,thevalue}]{mydata}{pu.dat}
+\newcommand{\var}[1]{\DTLfetch{mydata}{thekey}{#1}{thevalue}}
+\newenvironment{tp}[1]{\textbf{#1} (\var{#1})}
+
+\newenvironment{tb}[2]{\textbf{#1} (#2)}
+
+\newenvironment{cs}[3]{\texttt{cs(#1, #2) = #3}}
+
+% \newenvironment{cs}[3]{\ttfamily{\(S_{cos}(#1, #2) = #3\)}}
 
 % force figure position
 % \renewcommand{\textfraction}{0.05} 
@@ -15,7 +26,7 @@
 \definecolor{blue}{rgb}{0,0.3,1}
 
 \usepackage{tikz}
-\usetikzlibrary{arrows.meta, positioning}
+\usetikzlibrary{arrows.meta, positioning, backgrounds}
 
 \usepackage{collcell}
 \usepackage{pgf}
@@ -781,10 +792,11 @@ The first issue of the \textit{lipu tenpo} magazine is published online \parenci
 
 The official Toki Pona subreddit sees an influx of members, reaching almost 11.000 subscribers at the time of writing. While longer directly influencing the language, Lang remains an active member of the community.
 % }}}
-    \subsection{Phonology}
-    \subsection{Grammar}
-    \subsection{Vocabulary}
-    \subsection{Tokiponidos}
+    % \subsection{Phonology}
+    % \subsection{Grammar}
+    % \subsection{Vocabulary}
+    % \subsection{Tokiponidos}
+      \subsection{Etymology}
 
   \section{Distributional model}
     \subsection{Pre-processing}
@@ -877,7 +889,7 @@ The model is trained with the following parameters:
 % {{{
 The Scikit-learn library is used to reduce the dimensionality of the model to two dimensions. Scikit-learn ``features various classification, regression and clustering algorithms including support-vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy \parencite{scikit}''.
 
-Scikit-learn provides several methods for dimensionality reduction \parencite{tsne}. The best separation was achieved using T-distributed Stochastic Neighbor Embedding (t-SNE), which ``takes a high dimensional data set and reduces it to a low dimensional graph that retains a lot of the original information \parencite{dimred}''.
+Scikit-learn provides several methods for dimensionality reduction \parencite{tsne}. Among truncated singular value decomposition (Truncated SVD), principal component analysis (PCA), and t-distributed stochastic neighbor embedding (t-SNE) the best separation was achieved using t-SNE. Moreover, t-SNE ``takes a high dimensional data set and reduces it to a low dimensional graph that retains a lot of the original information \parencite{dimred}''.
 
 The following parameters were used:
 
@@ -887,11 +899,15 @@ The following parameters were used:
   \item \textbf{Number of iterations.} 2500, for a higher degree of optimisation.
 \end{itemize}
 % }}}
-      \subsubsection{K-means clustering}
 
+      \subsubsection{K-means clustering}
 \begin{figure}[ht]% {{{
   \bigskip
-  \begin{tikzpicture}[scale=0.046]
+  \begin{tikzpicture}[scale=0.045]
+    \begin{scope}
+      \clip (-170, -170) rectangle (210, 150);
+      \draw[lightgray] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
+    \end{scope}
     \foreach \Point/\PointLabel/\Colo in {
       (-1.99,-27.58)/sama/34,
       (-102.6,-40.84)/nasin/16,
@@ -1013,7 +1029,7 @@ The following parameters were used:
   \centering
   \caption{Toki Pona vector space model in two-dimensional space}
 \end{figure}% }}}
-
+% {{{
 The primary objective of K-means clustering is to group similar data points in multi-dimensional space. These groups can then be assigned colours. The colours can then be used to draw the data points in any dimensionality, preserving the patters.
 
 The KMeansClusterer module from NLTK is used to achieve this. ``The K-means clusterer starts with k arbitrary chosen means then allocates each vector to the cluster with the closest mean. It then recalculates the means of each cluster as the centroid of the vectors in the cluster. This process repeats until the cluster memberships stabilise \parencite{kmeans}''.
@@ -1024,8 +1040,56 @@ The following parameters were used:
   \item \textbf{Number of clusters.} 13, roughly 10 words in each cluster.
   \item \textbf{Distance.} Cosine distance.
 \end{itemize}
-
+% }}}
     \subsection{Observations}
+
+
+
+      \subsubsection{kule}
+
+      There are only five words in Toki Pona that can denote \tb{kule}{colors}: \tp{pimeja}, \tp{walo}, \tp{loje}, \tp{jelo}, \tp{laso}. For the rest of the colours, the rules of colour mixing apply: \textbf{jelo loje} can be used to mean \textit{orange}. Some of these words have broader meanings that describe not only the colour, but its vibrance, e.g \textbf{loje pimeja} can be used to mean \textit{dark red}.
+
+\tikzset{%
+  mybackground/.style={%
+    tight background, % 0pt margins around figure
+    background grid/.style={draw=lightgray, step=1cm, rotate=140},
+    show background grid
+  }%
+}%
+
+
+\begin{figure}[ht]% {{{
+  \bigskip
+  \begin{tikzpicture}[scale=0.046]
+    \begin{scope}
+      \clip (-160, -140) rectangle (190, -30);
+      \draw[lightgray, rotate=-40] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
+    \end{scope}
+    \foreach \Point/\PointLabel/\Colo in {
+      (157.36,70.82)/kule/40,
+      (129.82,-58.54)/pimeja/64,
+      (148.29,38.6)/walo/64,
+      (164.97,40.21)/jelo/64,
+      (167.44,49.91)/loje/64,
+      (161.47,62.08)/laso/64,
+      (-79.3,-130.08)/tenpo/28,
+      (166.25,20.75)/kasi/64
+    }
+    \draw[draw=black!\Colo,fill=black!\Colo, rotate=-40] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
+  \end{tikzpicture}
+  \centering
+  \caption{kule}
+\end{figure}% }}}
+
+The presence of \tp{kasi} among the colours can be attributed to the fact that Toki Pona has only one word for blue and green -- \textbf{laso}. Despite the existence of many languages that also have one word for blue and green, the distribution is evident of the fact that many Toki Pona speakers opt to refer to the color green unambiguously \cs{kasi}{kule}{0.51}.
+
+The word \textbf{pimeja} is considerably separated from the rest of the colours. This is explained by it often appearing near \tp{tenpo}. In turn, \textbf{tenpo pimeja} is a common way of referring to \textit{nighttime}. Among words for colours, this property is unique to \textbf{pimeja}. In fact, it experiences an even split between \textbf{kule} and \textbf{tenpo}: \cs{pimeja}{kule}{0.24}, \cs{pimeja}{tenpo}{0.24}.
+
+
+
+      \subsubsection{tenpo}
+
+      \subsubsection{ike}
 
 
   \section{Summary}
@@ -1495,7 +1559,6 @@ The dictionary of Toki Pona as it appears in Toki Pona: The Language of Good \pa
 % ``Related senses are called polysemous: for example, school can refer to a building or an institution. In contrast, homonymous senses are unrelated: for example, a school of fish. All of the above senses of school are also lexicalised – established uses that a speaker would have committed to memory, rather than inferring from context'' \parencite[4]{emerson}.
 %
 % Toki Pona is highly resistant to lexicalisation. Because the vocabulary contains a very small number of words, they are inherently context-dependent. Any word can be used in any suitable context.
-% }}}
 
 % I've been thinking about semantics again
 %
@@ -1506,3 +1569,4 @@ The dictionary of Toki Pona as it appears in Toki Pona: The Language of Good \pa
 % the third approach is to represent words by their contextual roles. for example, we could determine the strengths of the contextual connections between the word pairs `pimeja/tenpo` and `pimeja/kule`, and compare them to those of `walo/tenpo` and `walo/kule`. from that, we get the semantic splits between `tenpo/kule` in `pimeja` and `walo`, and thus their relative `kule-ness` and `tenpo-ness`
 %
 % *how temporal are your colours*
+% }}}

@@ -8,22 +8,26 @@ wv = model.wv
 
 def similarity(x, y):
     s = wv.similarity(x, y)
-    print(x + '-' + y, str(round((s + 1)/2 * 100)) + '%', s)
+    print(x + '-' + y, str(round((s + 1)/2 * 100)) + '%', round(s, 2))
 
-similarity('pimeja', 'tenpo')
-similarity('pimeja', 'kule')
+def most_similar(x):
+    s = wv.most_similar(x)
+    for k in s:
+        print(k[0], str(round((k[1] + 1)/2 * 100)) + '%', round(k[1], 2))
 
-similarity('walo', 'tenpo')
-similarity('walo', 'kule')
+kule = ['pimeja', 'walo', 'jelo', 'loje', 'laso', 'kasi']
+
+for x in kule:
+    similarity(x, 'tenpo')
+    similarity(x, 'kule')
+    print(' ')
+
+# for x in kule:
+#     most_similar(x)
+#     print(' ')
 
 
-similarity('kasi', 'kule')
-similarity('kasi', 'tenpo')
-
-# print('---')
-# print(wv.most_similar(positive=['suno', 'lete'], negative=['seli']))
-
-
+# most_similar('pimeja')
 
 
 
