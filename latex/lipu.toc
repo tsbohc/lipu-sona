@@ -1,127 +1,129 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Introduction}{4}{chapter.1}%
+\contentsline {chapter}{\numberline {}Introduction}{5}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Problem}{4}{paragraph*.2}%
+\contentsline {paragraph}{Problem}{5}{paragraph*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Goals}{4}{paragraph*.3}%
+\contentsline {paragraph}{Goals}{5}{paragraph*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Objectives}{5}{paragraph*.4}%
+\contentsline {paragraph}{Objectives}{6}{paragraph*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Relevance}{5}{paragraph*.5}%
+\contentsline {paragraph}{Relevance}{6}{paragraph*.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Distributional semantics and\nobreakspace {}constructed\nobreakspace {}languages}{6}{chapter.2}%
+\contentsline {chapter}{\numberline {}Distributional semantics and\nobreakspace {}constructed\nobreakspace {}languages}{7}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Natural language processing}{6}{section.2.1}%
+\contentsline {section}{\numberline {1}Natural language processing}{7}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Distributional semantics}{6}{section.2.2}%
+\contentsline {section}{\numberline {2}Distributional semantics}{7}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Overview}{7}{paragraph*.7}%
+\contentsline {paragraph}{Overview}{8}{paragraph*.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Distributional representations}{9}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.1}Distributional representations}{10}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.1}Context types}{10}{subsubsection.2.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Context types}{11}{subsubsection.2.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.2}Semantic similarity metric}{11}{subsubsection.2.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2}Semantic similarity metric}{12}{subsubsection.2.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Euclidean distance}{11}{paragraph*.9}%
+\contentsline {paragraph}{Euclidean distance}{12}{paragraph*.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Cosine similarity}{11}{paragraph*.10}%
+\contentsline {paragraph}{Cosine similarity}{12}{paragraph*.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.3}Curse of dimensionality}{12}{subsubsection.2.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.3}Curse of dimensionality}{13}{subsubsection.2.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Notable implementations}{12}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2}Notable implementations}{13}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.1}Count vector model}{12}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1}Count vector model}{13}{subsubsection.2.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2}Neural probabilistic language model}{13}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2}Neural probabilistic language model}{14}{subsubsection.2.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.3}Recurrent neural net language model}{14}{subsubsection.2.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3}Recurrent neural net language model}{15}{subsubsection.2.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.4}Continuous bag-of-words model}{14}{subsubsection.2.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.4}Continuous bag-of-words model}{15}{subsubsection.2.2.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.5}Continuous skip-gram model}{15}{subsubsection.2.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.5}Continuous skip-gram model}{16}{subsubsection.2.2.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Applications}{15}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Applications}{16}{subsection.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Artificial languages}{17}{section.2.3}%
+\contentsline {section}{\numberline {3}Artificial languages}{18}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}The notion of a constructed language}{17}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {3.1}The notion of a constructed language}{18}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Notable constructed languages throughout history}{18}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {3.2}Notable constructed languages throughout history}{19}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Antiquity}{18}{paragraph*.11}%
+\contentsline {paragraph}{Antiquity}{19}{paragraph*.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Linguistic mysticism}{18}{paragraph*.12}%
+\contentsline {paragraph}{Linguistic mysticism}{19}{paragraph*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Early artistic languages}{20}{paragraph*.13}%
+\contentsline {paragraph}{Early artistic languages}{21}{paragraph*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Early modern constructed languages}{20}{paragraph*.14}%
+\contentsline {paragraph}{Early modern constructed languages}{21}{paragraph*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{J. R. R. Tolkien}{21}{paragraph*.15}%
+\contentsline {paragraph}{J. R. R. Tolkien}{22}{paragraph*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Modern constructed languages}{23}{paragraph*.16}%
+\contentsline {paragraph}{Modern constructed languages}{24}{paragraph*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Classification}{23}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {3.3}Classification}{24}{subsection.2.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Traditional: structure and source material}{23}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1}Traditional: structure and source material}{24}{subsubsection.2.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2}Traditional: purpose}{25}{subsubsection.2.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2}Traditional: purpose}{26}{subsubsection.2.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3}Blanke's functional classification}{27}{subsubsection.2.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3}Blanke's functional classification}{28}{subsubsection.2.3.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Final note on classifications}{27}{paragraph*.19}%
+\contentsline {paragraph}{Final note on classifications}{28}{paragraph*.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Summary}{28}{section.2.4}%
+\contentsline {section}{\numberline {4}Summary}{29}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Language modelling and Toki Pona}{29}{chapter.3}%
+\contentsline {chapter}{\numberline {}Language modelling and Toki Pona}{30}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Toki Pona}{29}{section.3.1}%
+\contentsline {section}{\numberline {1}Toki Pona}{30}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}History}{29}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {1.1}History}{30}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.1}Pre-pu}{29}{subsubsection.3.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Pre-pu}{30}{subsubsection.3.1.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.2}Post-pu}{30}{subsubsection.3.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.2}Post-pu}{31}{subsubsection.3.1.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Phonology}{31}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {1.2}Phonology}{32}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3}Grammar}{31}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {1.3}Grammar}{32}{subsection.3.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4}Vocabulary}{31}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {1.4}Vocabulary}{32}{subsection.3.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5}Tokiponidos}{31}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {1.5}Tokiponidos}{32}{subsection.3.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Vector space model}{31}{section.3.2}%
+\contentsline {section}{\numberline {2}Distributional model}{32}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Pre-processing}{31}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {2.1}Pre-processing}{32}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.1}Tokenisation}{32}{subsubsection.3.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Tokenisation}{33}{subsubsection.3.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.2}Noise removal}{32}{subsubsection.3.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2}Noise removal}{33}{subsubsection.3.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.3}Sentence segmentation}{33}{subsubsection.3.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.3}Sentence segmentation}{34}{subsubsection.3.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.4}Normalisation}{34}{subsubsection.3.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.4}Normalisation}{35}{subsubsection.3.2.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Model construction}{34}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {2.2}Vector space model}{35}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Projection}{34}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.1}Training}{35}{subsubsection.3.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Visualisation}{34}{subsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.2}Dimensionality reduction}{36}{subsubsection.3.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}Observations}{34}{subsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.3}K-means clustering}{37}{subsubsection.3.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Summary}{34}{section.3.3}%
+\contentsline {subsection}{\numberline {2.3}Observations}{38}{subsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Conclusion}{35}{chapter.4}%
+\contentsline {section}{\numberline {3}Summary}{38}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{36}{chapter*.20}%
+\contentsline {chapter}{\numberline {}Conclusion}{39}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Online resources}{41}{chapter*.21}%
+\contentsline {chapter}{References}{40}{chapter*.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Supplementary marterial}{42}{chapter.5}%
+\contentsline {chapter}{Online resources}{45}{chapter*.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Model vectors}{42}{section.5.1}%
+\contentsline {chapter}{\numberline {}Supplementary marterial}{47}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Toki Pona dictionary}{42}{section.5.2}%
+\contentsline {section}{\numberline {1}Model vectors}{47}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Toki Pona dictionary}{47}{section.5.2}%

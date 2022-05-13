@@ -1,6 +1,4 @@
 
-
-
 with open('corpus') as f:
     lines = f.readlines()
 

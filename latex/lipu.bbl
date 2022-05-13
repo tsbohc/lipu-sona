@@ -1082,6 +1082,34 @@
       \verb 10.1007/978-3-642-23954-0_24
       \endverb
     \endentry
+    \entry{kmeans}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8f59c09fef3cc0e651777f51085113d7}{%
+           family={{NLP APIs}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f59c09fef3cc0e651777f51085113d7}
+      \strng{fullhash}{8f59c09fef3cc0e651777f51085113d7}
+      \strng{bibnamehash}{8f59c09fef3cc0e651777f51085113d7}
+      \strng{authorbibnamehash}{8f59c09fef3cc0e651777f51085113d7}
+      \strng{authornamehash}{8f59c09fef3cc0e651777f51085113d7}
+      \strng{authorfullhash}{8f59c09fef3cc0e651777f51085113d7}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{nltk.cluster.KMeansClusterer}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://tedboy.github.io/nlps/generated/generated/nltk.cluster.KMeansClusterer.html
+      \endverb
+      \verb{url}
+      \verb https://tedboy.github.io/nlps/generated/generated/nltk.cluster.KMeansClusterer.html
+      \endverb
+      \warn{\item Entry 'kmeans' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring}
+    \endentry
     \entry{nltk}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=a91f972438efc8804dcdcc9edc9a983f}{%
@@ -1221,6 +1249,37 @@
       \verb https://www.reddit.com/r/tokipona/comments/iw2xp6/the_evolution_of_toki_pona/
       \endverb
     \endentry
+    \entry{gensim}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b18678c3d1080b2d17429891ff481948}{%
+           family={Řehůřek},
+           familyi={Ř\bibinitperiod},
+           given={Radim},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b18678c3d1080b2d17429891ff481948}
+      \strng{fullhash}{b18678c3d1080b2d17429891ff481948}
+      \strng{bibnamehash}{b18678c3d1080b2d17429891ff481948}
+      \strng{authorbibnamehash}{b18678c3d1080b2d17429891ff481948}
+      \strng{authornamehash}{b18678c3d1080b2d17429891ff481948}
+      \strng{authorfullhash}{b18678c3d1080b2d17429891ff481948}
+      \field{sortinit}{Ř}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What is Gensim?}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://radimrehurek.com/gensim/intro.html#what-is-gensim
+      \endverb
+      \verb{url}
+      \verb https://radimrehurek.com/gensim/intro.html#what-is-gensim
+      \endverb
+      \warn{\item Entry 'gensim' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring}
+    \endentry
     \entry{sanders}{inbook}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f26ba8758c7f0e6551a4fb8bd590ffeb}{%
@@ -1251,6 +1310,34 @@
       \verb{doi}
       \verb 10.1093/oso/9780198829874.003.0002
       \endverb
+    \endentry
+    \entry{tsne}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2ad72e574157d613a63fe8732cf468a8}{%
+           family={{scikit-learn developers}},
+           familyi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{fullhash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{bibnamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authorbibnamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authornamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authorfullhash}{2ad72e574157d613a63fe8732cf468a8}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{sklearn.manifold.TSNE}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html
+      \endverb
+      \verb{url}
+      \verb https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html
+      \endverb
+      \warn{\item Entry 'tsne' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring}
     \endentry
     \entry{isoproof}{online}{}
       \name{author}{1}{}{%
@@ -1322,6 +1409,37 @@
       \range{pages}{1}
       \field{volume}{17}
       \range{volume}{1}
+    \endentry
+    \entry{dimred}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=02a7c1d85d401d46ba4dc7e0c175aff1}{%
+           family={Sivarajah},
+           familyi={S\bibinitperiod},
+           given={Sivakar},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{02a7c1d85d401d46ba4dc7e0c175aff1}
+      \strng{fullhash}{02a7c1d85d401d46ba4dc7e0c175aff1}
+      \strng{bibnamehash}{02a7c1d85d401d46ba4dc7e0c175aff1}
+      \strng{authorbibnamehash}{02a7c1d85d401d46ba4dc7e0c175aff1}
+      \strng{authornamehash}{02a7c1d85d401d46ba4dc7e0c175aff1}
+      \strng{authorfullhash}{02a7c1d85d401d46ba4dc7e0c175aff1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dimensionality Reduction for Data Visualization: PCA vs TSNE vs UMAP vs LDA}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://towardsdatascience.com/dimensionality-reduction-for-data-visualization-pca-vs-tsne-vs-umap-be4aa7b1cb29
+      \endverb
+      \verb{url}
+      \verb https://towardsdatascience.com/dimensionality-reduction-for-data-visualization-pca-vs-tsne-vs-umap-be4aa7b1cb29
+      \endverb
+      \warn{\item Entry 'dimred' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring}
     \endentry
     \entry{liputenpo}{online}{}
       \name{author}{1}{}{%
@@ -1700,6 +1818,34 @@
       \verb{doi}
       \verb 10.13140/RG.2.2.29631.36006
       \endverb
+    \endentry
+    \entry{scikit}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c677286866aad38f8e9b660f5411814}{%
+           family={{Wikipedia}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{scikit-learn}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Scikit-learn
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Scikit-learn
+      \endverb
+      \warn{\item Entry 'scikit' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring}
     \endentry
     \entry{wilkins}{book}{}
       \name{author}{1}{}{%

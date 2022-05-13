@@ -3,25 +3,22 @@ from gensim import utils
 import gensim.models
 from gensim.models import Word2Vec
 
-# class corpus_iterator:
-#     def __iter__(self):
-#         corpus_path = 'corpus'
-#         for line in open(corpus_path):
-#             yield utils.simple_preprocess(line)
-#
-# corpus = corpus_iterator()
-# model = Word2Vec(sentences=corpus, vector_size=190)
-#
-# model.save('model.wv')
-
-model = gensim.models.Word2Vec.load('model.wv')
+model = gensim.models.Word2Vec.load('model_pu.wv')
 wv = model.wv
 
-print(wv.similarity('pimeja', 'tenpo'))
-print(wv.similarity('pimeja', 'kule'))
+def similarity(x, y):
+    s = wv.similarity(x, y)
+    print(x + '-' + y, str(round((s + 1)/2 * 100)) + '%', s)
 
-print(wv.similarity('walo', 'tenpo'))
-print(wv.similarity('walo', 'kule'))
+similarity('pimeja', 'tenpo')
+similarity('pimeja', 'kule')
+
+similarity('walo', 'tenpo')
+similarity('walo', 'kule')
+
+
+similarity('kasi', 'kule')
+similarity('kasi', 'tenpo')
 
 # print('---')
 # print(wv.most_similar(positive=['suno', 'lete'], negative=['seli']))

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  11 MAY 2022 20:59
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  13 MAY 2022 22:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1359,7 +1359,33 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'lipu.bbl' found.
- (./lipu.bbl)
+ (./lipu.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'kmeans':
+(biblatex)                - Entry 'kmeans' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'gensim':
+(biblatex)                - Entry 'gensim' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'tsne':
+(biblatex)                - Entry 'tsne' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'dimred':
+(biblatex)                - Entry 'dimred' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'scikit':
+(biblatex)                - Entry 'scikit' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring.
+
+)
 Package biblatex Info: Reference section=0 on input line 207.
 Package biblatex Info: Reference segment=0 on input line 207.
 \c@lstlisting=\count489
@@ -1450,27 +1476,27 @@ Requested font "cmr12" at 14.4pt
 \tf@toc=\write6
 \openout6 = `lipu.toc'.
 
- [3]
+ [3] [4]
 Chapter .
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
 (Font)              scaled to size 20.74pt on input line 257.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 20.74pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
-[4
+[5
 
-] [5]
+] [6]
 Chapter .
 File: ./img//nlpcl.png Graphic file (type bmp)
 <./img//nlpcl.png>
-[6
+[7
 
-] [7]
+] [8]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
 (Font)              scaled to size 14.4pt on input line 344.
 Requested font "[Alegreya-Italic.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 12.0pt
- -> ^^ ^^Ø^^Ë^^P^^U
+ -> *}(^^ê^^QV
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 348.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 12.0pt
@@ -1512,49 +1538,54 @@ Underfull \hbox (badness 1205) in paragraph at lines 379--383
 [][]\TU/IosevkaCustom(0)/m/n/12 cosine_similarity(sun, moon) = 0.9711 
  []
 
-[8] [9] [10] [11] [12] [13] [14] [15] [16] [17]
+[9] [10] [11] [12] [13] [14] [15] [16] [17] [18]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/sc' will be
 (Font)              scaled to size 14.4pt on input line 564.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;+smcp;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
- [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28]
+ [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29]
 Chapter .
-[29
+[30
 
-] [30]
+] [31]
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 14.4pt
- -> ^^?:^^$^^P^^U
- [31] [32] [33] [34]
+ -> ^^æ^^;^^ê^^QV
+ [32] [33] [34] [35]
+Overfull \hbox (1.7498pt too wide) in paragraph at lines 1012--1014
+ [][] 
+ []
+
+[36] [37] [38]
 Chapter .
-[35
+[39
 
-] [36
+] [40
 
-] [37] [38] [39]
+] [41] [42] [43]
 
 Package biblatex Warning: No driver for entry type 'unknown'.
-(biblatex)                Using fallback driver on input line 875.
+(biblatex)                Using fallback driver on input line 1041.
 
-[40] [41
+[44] [45
 
-]
+] [46]
 Chapter .
-[42
+[47
 
-] [43] [44] [45] [46] [47] [48] [49] (./lipu.aux)
+] [48] [49] [50] [51] [52] [53] [54] (./lipu.aux)
 Package rerunfilecheck Info: File `lipu.out' has not changed.
-(rerunfilecheck)             Checksum: 82BBCE6888834A0714C6D536898953BF;7916.
+(rerunfilecheck)             Checksum: 66B9606FC8E7A56B902E37C49AE6893D;8159.
 Package logreq Info: Writing requests to 'lipu.run.xml'.
 \openout1 = `lipu.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33783 strings out of 476919
- 682179 string characters out of 5827662
- 1736258 words of memory out of 5000000
- 53232 multiletter control sequences out of 15000+600000
+ 33959 strings out of 476919
+ 685747 string characters out of 5827662
+ 1736822 words of memory out of 5000000
+ 53408 multiletter control sequences out of 15000+600000
  408937 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  113i,11n,124p,835b,5269s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lipu.xdv (49 pages, 749784 bytes).
+Output written on lipu.xdv (54 pages, 896048 bytes).
