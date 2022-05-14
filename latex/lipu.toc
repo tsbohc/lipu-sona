@@ -112,15 +112,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.2}tenpo}{39}{subsubsection.3.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3}ike}{39}{subsubsection.3.2.3.3}%
+\contentsline {subsection}{\numberline {2.4}sinpin}{39}{subsection.3.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1}nanpa}{39}{subsubsection.3.2.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.2}ike}{39}{subsubsection.3.2.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Summary}{39}{section.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {}Conclusion}{40}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{41}{chapter*.22}%
+\contentsline {chapter}{References}{41}{chapter*.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Online resources}{46}{chapter*.23}%
+\contentsline {chapter}{Online resources}{46}{chapter*.24}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {}Supplementary marterial}{48}{chapter.5}%
 \defcounter {refsection}{0}\relax 

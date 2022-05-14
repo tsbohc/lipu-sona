@@ -1057,14 +1057,9 @@ The following parameters were used:
   }%
 }%
 
-
 \begin{figure}[ht]% {{{
   \bigskip
   \begin{tikzpicture}[scale=0.046]
-    \begin{scope}
-      \clip (-160, -140) rectangle (190, -30);
-      \draw[lightgray, rotate=-40] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
-    \end{scope}
     \foreach \Point/\PointLabel/\Colo in {
       (157.36,70.82)/kule/40,
       (129.82,-58.54)/pimeja/64,
@@ -1075,19 +1070,52 @@ The following parameters were used:
       (-79.3,-130.08)/tenpo/28,
       (166.25,20.75)/kasi/64
     }
-    \draw[draw=black!\Colo,fill=black!\Colo, rotate=-40] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
+    \tikzset{shift={(160,130)}}
+    \draw[draw=black!\Colo,fill=black!\Colo, rotate=-35] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
+    \begin{scope}[on background layer]
+      \clip ([shift={(-20,-20)}] current bounding box.south west) rectangle ([shift={(20, 20)}] current bounding box.north east);
+      \draw[lightgray, rotate=-35] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
+    \end{scope}
   \end{tikzpicture}
   \centering
   \caption{kule}
 \end{figure}% }}}
 
-The presence of \tp{kasi} among the colours can be attributed to the fact that Toki Pona has only one word for blue and green -- \textbf{laso}. Despite the existence of many languages that also have one word for blue and green, the distribution is evident of the fact that many Toki Pona speakers opt to refer to the color green unambiguously \cs{kasi}{kule}{0.51}.
+The presence of \tp{kasi} among the colours can be attributed to Toki Pona having only one word for blue and green -- \textbf{laso}. Despite the existence of many languages that also have one word for blue and green, the distribution is evident of the fact that many Toki Pona speakers opt to refer to the color green unambiguously \cs{kasi}{kule}{0.51}.
 
-The word \textbf{pimeja} is considerably separated from the rest of the colours. This is explained by it often appearing near \tp{tenpo}. In turn, \textbf{tenpo pimeja} is a common way of referring to \textit{nighttime}. Among words for colours, this property is unique to \textbf{pimeja}. In fact, it experiences an even split between \textbf{kule} and \textbf{tenpo}: \cs{pimeja}{kule}{0.24}, \cs{pimeja}{tenpo}{0.24}.
-
-
+The word \textbf{pimeja} is considerably separated from the rest of the colours. This is explained by it often appearing near \tp{tenpo}. In turn, \textbf{tenpo pimeja} is a common way of referring to \textit{nighttime}. Among words for colours, this property is unique to \textbf{pimeja}: \cs{walo}{tenpo}{-0.03}, \cs{loje}{tenpo}{-0.07}, \cs{jelo}{tenpo}{-0.11}, \cs{laso}{tenpo}{-0.06}. Interestingly, \textbf{pimeja} experiences an even semantic split between \textbf{kule} and \textbf{tenpo}: \cs{pimeja}{kule}{0.24}, \cs{pimeja}{tenpo}{0.24}.
 
       \subsubsection{tenpo}
+
+      \subsection{sinpin}
+
+      \subsubsection{nanpa}
+
+\begin{figure}[ht]% {{{
+  \bigskip
+  \begin{tikzpicture}[scale=0.046]
+    \begin{scope}[rotate=30]
+      \foreach \Point/\PointLabel/\Colo in {
+        (-156.04,-114.84)/nanpa/70,
+        (-143.63,-116.52)/wan/70,
+        (-150.56,-123.77)/tu/70,
+        (-144.45,-133.36)/luka/70
+      }
+      \tikzset{shift={(160,140)}}
+      \draw[draw=black!\Colo,fill=black!\Colo] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
+    \end{scope}
+    \begin{scope}[on background layer]
+      \clip ([shift={(-20,-20)}] current bounding box.south west) rectangle ([shift={(20, 20)}] current bounding box.north east);
+      \draw[lightgray, rotate=30] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
+    \end{scope}
+  \end{tikzpicture}
+  \centering
+  \caption{nanpa}
+\end{figure}% }}}
+
+      There are only three words which can denote \textbf{nanpa} (numerals) in the vocabulary of Toki Pona: \tp{wan} (used to mean \textit{one}), \tp{tu} (used to mean \textit{two}), \tp{luka} (used to mean \textit{five}). These words form an independent cluster in the lower left corner of the projection.
+
+% compare luka with noka and other body parts
 
       \subsubsection{ike}
 

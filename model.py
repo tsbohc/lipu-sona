@@ -6,7 +6,7 @@ from gensim.models import Word2Vec
 model = gensim.models.Word2Vec.load('model_pu.wv')
 wv = model.wv
 
-def similarity(x, y):
+def sc(x, y):
     s = wv.similarity(x, y)
     print(x + '-' + y, str(round((s + 1)/2 * 100)) + '%', round(s, 2))
 
@@ -15,16 +15,14 @@ def most_similar(x):
     for k in s:
         print(k[0], str(round((k[1] + 1)/2 * 100)) + '%', round(k[1], 2))
 
-kule = ['pimeja', 'walo', 'jelo', 'loje', 'laso', 'kasi']
-
-for x in kule:
-    similarity(x, 'tenpo')
-    similarity(x, 'kule')
-    print(' ')
-
+# kule = ['pimeja', 'walo', 'jelo', 'loje', 'laso', 'kasi']
+#
 # for x in kule:
-#     most_similar(x)
+#     sc(x, 'tenpo')
+#     sc(x, 'kule')
 #     print(' ')
+
+sc('kili', 'kule')
 
 
 # most_similar('pimeja')
