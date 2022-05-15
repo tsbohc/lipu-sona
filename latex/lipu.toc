@@ -110,24 +110,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.1}kule}{38}{subsubsection.3.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2}tenpo}{39}{subsubsection.3.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2}nanpa}{39}{subsubsection.3.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}sinpin}{39}{subsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {2.3.3}soweli}{41}{subsubsection.3.2.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.1}nanpa}{39}{subsubsection.3.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.3.4}kalama}{42}{subsubsection.3.2.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.2}ike}{39}{subsubsection.3.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.3.5}lawa}{42}{subsubsection.3.2.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Summary}{39}{section.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.6}sijelo}{42}{subsubsection.3.2.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Conclusion}{40}{chapter.4}%
+\contentsline {subsubsection}{\numberline {2.3.7}sijelo}{43}{subsubsection.3.2.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{41}{chapter*.23}%
+\contentsline {subsubsection}{\numberline {2.3.8}sinpin}{43}{subsubsection.3.2.3.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Online resources}{46}{chapter*.24}%
+\contentsline {subsubsection}{\numberline {2.3.9}ike}{43}{subsubsection.3.2.3.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Supplementary marterial}{48}{chapter.5}%
+\contentsline {section}{\numberline {3}Summary}{43}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Model vectors}{48}{section.5.1}%
+\contentsline {chapter}{\numberline {}Conclusion}{44}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Toki Pona dictionary}{48}{section.5.2}%
+\contentsline {chapter}{References}{45}{chapter*.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Online resources}{50}{chapter*.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {}Supplementary marterial}{52}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Model vectors}{52}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Toki Pona dictionary}{54}{section.5.2}%

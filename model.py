@@ -8,12 +8,14 @@ wv = model.wv
 
 def sc(x, y):
     s = wv.similarity(x, y)
-    print(x + '-' + y, str(round((s + 1)/2 * 100)) + '%', round(s, 2))
+    print(x + '-' + y, round(s, 2))
 
-def most_similar(x):
+def ms(x):
     s = wv.most_similar(x)
+    print(' ')
+    print(x, 'most similar:')
     for k in s:
-        print(k[0], str(round((k[1] + 1)/2 * 100)) + '%', round(k[1], 2))
+        print(k[0], round(k[1], 2))
 
 # kule = ['pimeja', 'walo', 'jelo', 'loje', 'laso', 'kasi']
 #
@@ -22,10 +24,32 @@ def most_similar(x):
 #     sc(x, 'kule')
 #     print(' ')
 
-sc('kili', 'kule')
+# sc('pana', 'esun')
+# sc('pana', 'sona')
+
+# sc('tenpo', 'open')
+#
+# sc('tenpo', 'pini')
+# sc('tenpo', 'kama')
+#
+# sc('pini', 'kama')
+# sc('pini', 'open')
+# sc('kama', 'weka')
+
+sc('mu', 'kalama')
+sc('musi', 'kalama')
+
+# sc('lawa', 'ike')
+
+ms('ike')
 
 
-# most_similar('pimeja')
+# print(wv.most_similar(positive=['jan', 'mu'], negative=['kalama']))
+
+
+# ms('tenpo')
+
+# print(wv.n_similarity(['nanpa', 'wan'], ['pona', 'mute']))
 
 
 

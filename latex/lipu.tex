@@ -901,6 +901,8 @@ The following parameters were used:
 % }}}
 
       \subsubsection{K-means clustering}
+% {{{
+
 \begin{figure}[ht]% {{{
   \bigskip
   \begin{tikzpicture}[scale=0.045]
@@ -1029,7 +1031,7 @@ The following parameters were used:
   \centering
   \caption{Toki Pona vector space model in two-dimensional space}
 \end{figure}% }}}
-% {{{
+
 The primary objective of K-means clustering is to group similar data points in multi-dimensional space. These groups can then be assigned colours. The colours can then be used to draw the data points in any dimensionality, preserving the patters.
 
 The KMeansClusterer module from NLTK is used to achieve this. ``The K-means clusterer starts with k arbitrary chosen means then allocates each vector to the cluster with the closest mean. It then recalculates the means of each cluster as the centroid of the vectors in the cluster. This process repeats until the cluster memberships stabilise \parencite{kmeans}''.
@@ -1042,22 +1044,22 @@ The following parameters were used:
 \end{itemize}
 % }}}
     \subsection{Observations}
+% {{{
+\begin{enumerate}
+  \item The projection of the model is observed. The relative positions of words and their assigned clusters are noted down.
+  \item For each analysed group, words are exctracted from the projection as a semantic field based on their expected distribution.
+  \item The semantic similarities between the words in the semantic field are calculated via cosine similarity from the perspective of the model, not the projection.
+  \item The deviations of cosine similarity values returned by the model are correlated with the patterns of the vocabulary use and the dictionary definitions.
+\end{enumerate}
 
-
-
+    The cosine similarity between the vector of the \texttt{word_a} and the vector of the \texttt{word_b} is shown as \cs{word_a}{word_b}{cosine similarity}. Cosine similarity ranges from \([-1]\) to \([1]\).
+% }}}
       \subsubsection{kule}
-
-      There are only five words in Toki Pona that can denote \tb{kule}{colors}: \tp{pimeja}, \tp{walo}, \tp{loje}, \tp{jelo}, \tp{laso}. For the rest of the colours, the rules of colour mixing apply: \textbf{jelo loje} can be used to mean \textit{orange}. Some of these words have broader meanings that describe not only the colour, but its vibrance, e.g \textbf{loje pimeja} can be used to mean \textit{dark red}.
-
-\tikzset{%
-  mybackground/.style={%
-    tight background, % 0pt margins around figure
-    background grid/.style={draw=lightgray, step=1cm, rotate=140},
-    show background grid
-  }%
-}%
+% {{{
+There are only five words in Toki Pona that can denote \tb{kule}{colors}: \tp{pimeja}, \tp{walo}, \tp{loje}, \tp{jelo}, \tp{laso}. For the rest of the colours, the rules of colour mixing apply: \textbf{jelo loje} can be used to mean \textit{orange}. Some of these words have broader meanings that describe not only the colour, but its vibrance, e.g \textbf{loje pimeja} can be used to mean \textit{dark red}.
 
 \begin{figure}[ht]% {{{
+  \def\angle{-45}
   \bigskip
   \begin{tikzpicture}[scale=0.046]
     \foreach \Point/\PointLabel/\Colo in {
@@ -1070,52 +1072,287 @@ The following parameters were used:
       (-79.3,-130.08)/tenpo/28,
       (166.25,20.75)/kasi/64
     }
-    \tikzset{shift={(160,130)}}
-    \draw[draw=black!\Colo,fill=black!\Colo, rotate=-35] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
+    \draw[draw=black!\Colo,fill=black!\Colo, rotate=\angle] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
     \begin{scope}[on background layer]
-      \clip ([shift={(-20,-20)}] current bounding box.south west) rectangle ([shift={(20, 20)}] current bounding box.north east);
-      \draw[lightgray, rotate=-35] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
+      \clip ([shift={(-10,-10)}] current bounding box.south west) rectangle ([shift={(10, 10)}] current bounding box.north east);
+      \draw[lightgray, rotate=\angle] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
     \end{scope}
   \end{tikzpicture}
   \centering
-  \caption{kule}
+  \caption{kule, \(\angle\textdegree\)}
 \end{figure}% }}}
 
 The presence of \tp{kasi} among the colours can be attributed to Toki Pona having only one word for blue and green -- \textbf{laso}. Despite the existence of many languages that also have one word for blue and green, the distribution is evident of the fact that many Toki Pona speakers opt to refer to the color green unambiguously \cs{kasi}{kule}{0.51}.
 
-The word \textbf{pimeja} is considerably separated from the rest of the colours. This is explained by it often appearing near \tp{tenpo}. In turn, \textbf{tenpo pimeja} is a common way of referring to \textit{nighttime}. Among words for colours, this property is unique to \textbf{pimeja}: \cs{walo}{tenpo}{-0.03}, \cs{loje}{tenpo}{-0.07}, \cs{jelo}{tenpo}{-0.11}, \cs{laso}{tenpo}{-0.06}. Interestingly, \textbf{pimeja} experiences an even semantic split between \textbf{kule} and \textbf{tenpo}: \cs{pimeja}{kule}{0.24}, \cs{pimeja}{tenpo}{0.24}.
+The word \textbf{pimeja} is considerably separated from the rest of the colours. This is explained by it often appearing near \tp{tenpo}. In turn, \textbf{tenpo pimeja} is a common way of referring to \textit{nighttime}:
 
-      \subsubsection{tenpo}
+\begin{exe}
+  \ex
+  \gll tenpo pimeja la, mi lape. \\
+       time black $cm$ I sleep \\
+  \glt I sleep at night.
+\end{exe}
 
-      \subsection{sinpin}
-
+Among words for colours, this property is unique to \textbf{pimeja}: \cs{walo}{tenpo}{-0.03}, \cs{loje}{tenpo}{-0.07}, \cs{jelo}{tenpo}{-0.11}, \cs{laso}{tenpo}{-0.06}. Interestingly, \textbf{pimeja} experiences an even semantic split between \textbf{kule} and \textbf{tenpo}: \cs{pimeja}{kule}{0.24}, \cs{pimeja}{tenpo}{0.24}.
+% }}}
       \subsubsection{nanpa}
+% {{{
+There are only four words which are related to \textbf{nanpa} (numerals) in the vocabulary of Toki Pona: \tp{wan} used to mean \textit{one}, \tp{tu} used to mean \textit{two}, \tp{luka} used to mean \textit{five}, and \tp{mute}. With the exception of \textbf{mute}, which can be used to denote any large quantity, these words form an independent cluster in the lower left corner of the projection.
 
 \begin{figure}[ht]% {{{
+  \def\angle{-45}
   \bigskip
   \begin{tikzpicture}[scale=0.046]
-    \begin{scope}[rotate=30]
+    \begin{scope}[rotate=\angle]
       \foreach \Point/\PointLabel/\Colo in {
         (-156.04,-114.84)/nanpa/70,
         (-143.63,-116.52)/wan/70,
+        (-23.28,-13.83)/mute/40,
         (-150.56,-123.77)/tu/70,
         (-144.45,-133.36)/luka/70
       }
-      \tikzset{shift={(160,140)}}
       \draw[draw=black!\Colo,fill=black!\Colo] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
     \end{scope}
     \begin{scope}[on background layer]
-      \clip ([shift={(-20,-20)}] current bounding box.south west) rectangle ([shift={(20, 20)}] current bounding box.north east);
-      \draw[lightgray, rotate=30] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
+      \clip ([shift={(-10,-10)}] current bounding box.south west) rectangle ([shift={(10, 10)}] current bounding box.north east);
+      \draw[lightgray, rotate=\angle] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
     \end{scope}
   \end{tikzpicture}
   \centering
-  \caption{nanpa}
+  \caption{nanpa, \(\angle\textdegree\)}
 \end{figure}% }}}
 
-      There are only three words which can denote \textbf{nanpa} (numerals) in the vocabulary of Toki Pona: \tp{wan} (used to mean \textit{one}), \tp{tu} (used to mean \textit{two}), \tp{luka} (used to mean \textit{five}). These words form an independent cluster in the lower left corner of the projection.
+The word \textbf{luka} is semantically detached from its lower body counterpart, \tp{noka}: \cs{luka}{noka}{0.35}, \cs{luka}{nanpa}{0.76}. This highlights the unique ability of \textbf{luka} to denote numerals among other words that indicate parts of the body.
 
-% compare luka with noka and other body parts
+Despite one of the word sense of \textbf{mute} being \textit{quantity}, it experiences little semantic similarity with \textbf{nanpa}: \cs{mute}{nanpa}{0.25}, as \textbf{mute} is most commonly used for specifying \textit{intensity}:
+
+\begin{exe}
+  \ex
+  \gll mi pilin pona mute a. \\
+       I feel good very $em$ \\
+  \glt I am feeling very good!
+\end{exe}
+
+One of the secondary uses of \textbf{nanpa} and \textbf{wan} is involved in expressing high degree of positivity towards something:
+
+\begin{exe}
+  \ex
+  \gll kili ma li pona nanpa wan. \\
+       vegetable land $pm$ good number one \\
+  \glt Potatoes are the best.
+\end{exe}
+
+The distribution shows that this use of \textbf{nanpa wan} is farily uncommon: \cs{[nanpa, wan]}{[pona, mute]}{0.14}.
+% }}}
+      % TODO alasa-soweli
+      \subsubsection{soweli}
+% {{{
+The cluster \tp{soweli} contains words that refer to animals: \tp{akesi}, \tp{kala}, \tp{waso}, \tp{pipi}, \tp{akesi}.
+
+\begin{figure}[ht]% {{{
+  \def\angle{-45}
+  \bigskip
+  \begin{tikzpicture}[scale=0.046]
+    \begin{scope}[rotate=\angle]
+      \foreach \Point/\PointLabel/\Colo in {
+        (23.99,124.68)/soweli/76,
+        (28.83,114.46)/kala/76,
+        (36.51,108.0)/waso/76,
+        (43.36,120.13)/pipi/76,
+        (36.91,130.0)/akesi/76,
+        (9.62,122.35)/mu/76,
+        (-44.53,44.8)/mani/58
+      }
+      \draw[draw=black!\Colo,fill=black!\Colo] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
+    \end{scope}
+    \begin{scope}[on background layer]
+      \clip ([shift={(-10,-10)}] current bounding box.south west) rectangle ([shift={(10, 10)}] current bounding box.north east);
+      \draw[lightgray, rotate=\angle] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
+    \end{scope}
+  \end{tikzpicture}
+  \centering
+  \caption{soweli, \(\angle\textdegree\)}
+\end{figure}% }}}
+
+The onomatopoeia \tp{mu} is also present in this cluster: \cs{soweli}{mu}{0.54}. Among other words in the cluster, \textbf{pipi} is the least semantically related to \textbf{mu}: \cs{pipi}{mu}{0.29}.
+
+The dictionary entry for \textbf{akesi} contains the now considered outdated \textit{non-cute animal} word sense. The fact that this definition was in use at a time is evident from the semantic similarity between \tp{suwi} and \textbf{akesi}: \cs{akesi}{suwi}{0.27}; compared to the other members of the cluster: \cs{soweli}{suwi}{0.53}, \cs{kala}{suwi}{0.51}, \cs{waso}{suwi}{0.49}, \cs{pipi}{suwi}{0.45}.
+
+The word \tp{mani} has the secondary definition of a \textit{large domenticated animal}. This could be attributed to the themes of hunter-gatherer culture that permeate the language. In the model, only a very weak semantic connection between \textbf{mani} and \textbf{soweli} is present: \cs{mani}{soweli}{0.18}.
+% }}}
+
+      \subsubsection{kalama}
+
+% also mu
+
+% master plan: pick not the clusters on the model, but what you would expect to
+% be a cluster that in reality isn't
+
+% like lawa should be next to sijelo, but isn't because another word sense is
+% dominanting it
+
+A small cluster of \tp{kalama} includes words related to sound production and perception: \tp{uta}, \tp{kute}. The earlier discussed \textbf{mu} is also in the close proximity of this cluster.
+
+\begin{figure}[ht]% {{{
+  \def\angle{135}
+  \bigskip
+  \begin{tikzpicture}[scale=0.046]
+    \begin{scope}[rotate=\angle]
+      \foreach \Point/\PointLabel/\Colo in {
+        (-79.08,110.8)/kalama/52,
+        (-75.53,96.95)/musi/52,
+        (-47.99,106.82)/uta/64,
+        (9.62,122.35)/mu/76,
+        (-68.3,102.37)/kute/52
+      }
+      \draw[draw=black!\Colo,fill=black!\Colo] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
+    \end{scope}
+    \begin{scope}[on background layer]
+      \clip ([shift={(-10,-10)}] current bounding box.south west) rectangle ([shift={(10, 10)}] current bounding box.north east);
+      \draw[lightgray, rotate=\angle] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
+    \end{scope}
+  \end{tikzpicture}
+  \centering
+  \caption{kalama, \(\angle\textdegree\)}
+\end{figure}% }}}
+
+The presense of \tp{musi} in the cluster is expected due to \textit{music} being often described as \textbf{kalama musi}:
+
+\begin{exe}
+  \ex
+  \gll mi kute e kalama musi la, mi wile tawa musi. \\
+       I hear $do$ sound entertaining $cm$ I want move entertainingly. \\
+  \glt When I'm listening to music, I want to dance.
+\end{exe}
+
+Music is among the most universal forms of entertainment that is often discussed online, and the semantic distribution is the evidence of that. The semantic similarity between the two words is \cs{kalama}{musi}{0.66}.
+
+
+      \subsubsection{lawa}
+
+
+      \subsubsection{sijelo}
+
+% maybe should take shapes instead? like palisa, linja, kiwen, lipu
+
+% luka is away cause it's a number
+% lawa and sijelo because ike things
+% kute and uta because kalama, also kute means ears
+
+% the close proximity
+
+\begin{figure}[ht]% {{{
+  \def\angle{-45}
+  \bigskip
+  \begin{tikzpicture}[scale=0.046]
+    \begin{scope}[rotate=\angle]
+      \foreach \Point/\PointLabel/\Colo in {
+        (18.3,-95.59)/sijelo/46,
+        (-144.45,-133.36)/luka/70,
+        (75.25,-3.53)/noka/82,
+        (-29.5,-58.17)/lawa/40,
+        (74.41,28.67)/monsi/82,
+        (81.2,36.12)/sinpin/82,
+        (79.68,48.74)/linja/76,
+        (98.3,38.36)/nena/40,
+        (119.44,42.33)/kiwen/64,
+        (115.81,29.9)/selo/64,
+        (-47.99,106.82)/uta/64,
+        (-72.61,47.81)/lukin/28,
+        (-68.3,102.37)/kute/52
+      }
+      \draw[draw=black!\Colo,fill=black!\Colo] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
+    \end{scope}
+    \begin{scope}[on background layer]
+      \clip ([shift={(-10,-10)}] current bounding box.south west) rectangle ([shift={(10, 10)}] current bounding box.north east);
+      \draw[lightgray, rotate=\angle] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
+    \end{scope}
+  \end{tikzpicture}
+  \centering
+  \caption{sijelo, \(\angle\textdegree\)}
+\end{figure}% }}}
+
+
+
+
+
+
+%       \subsubsection{tenpo}
+%
+% The words related to \textbf{tenpo} (time) can be divided into the following groups:
+%
+% \paragraph{nanpa}
+%
+% The words from the \textbf{nanpa} cluster are often used to quantify time. The numerals are listen in the descending order of magnitude and are added together:
+%
+% \begin{exe}
+%   \ex
+%   \gll tenpo suno pini luka tu la, mi lukin e sitelen tawa ni. \\
+%        time sun finished five two $cm$ I look $do$ picture moving this \\
+%   \glt I watched this movie a week ago.
+% \end{exe}
+%
+% This explains the high degree of semantic relatedness between the words that belong to these two clusters. Moreover, \textbf{tenpo wan} is sometimes used to mean \textit{once}.
+%
+% \begin{figure}[ht]% {{{
+%   \def\angle{-22.5}
+%   \bigskip
+%   \begin{tikzpicture}[scale=0.046]
+%     \begin{scope}[rotate=\angle]
+%       \foreach \Point/\PointLabel/\Colo in {
+%         (-77.21,-108.26)/pini/28,
+%         (-69.58,-114.3)/open/28,
+%         (-91.8,-117.79)/suno/28,
+%         (-108.03,-125.53)/sike/70,
+%         (-96.53,-127.01)/mun/70,
+%         (-79.3,-130.08)/tenpo/28,
+%         (-15.71,-23.53)/lili/34,
+%         (47.63,-3.41)/suli/40,
+%         (-23.28,-13.83)/mute/40,
+%         (23.59,-3.83)/poka/22,
+%         (129.82,-58.54)/pimeja/64,
+%         (-156.04,-114.84)/nanpa/70,
+%         (-150.56,-123.77)/tu/70,
+%         (-143.63,-116.52)/wan/70,
+%         (-144.45,-133.36)/luka/70,
+%         (-31.34,-1.38)/kama/10
+%       }
+%       \draw[draw=black!\Colo,fill=black!\Colo] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
+%     \end{scope}
+%     \begin{scope}[on background layer]
+%       \clip ([shift={(-10,-10)}] current bounding box.south west) rectangle ([shift={(10, 10)}] current bounding box.north east);
+%       \draw[lightgray, rotate=\angle] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
+%     \end{scope}
+%   \end{tikzpicture}
+%   \centering
+%   \caption{tenpo, \(\angle\textdegree\)}
+% \end{figure}% }}}
+%
+% \paragraph{pini and kama}
+%
+% In terms of \textbf{tenpo}, the words \tp{pini} and \tp{kama} are antonyms used to refer to the \textit{past} and \textit{future} time respectively. Similar contexts hint at their semantic relatedness: \cs{pini}{kama}{0.47}. The true antonym of \textbf{pini} is \tp{open}
+%
+% The words \textbf{pini} and \textbf{open} are higly related due to their usage of pre-verbs to mean \textit{finish doing something} and \textit{begin doing something} respectively: \cs{pini}{open}{0.67}.
+
+
+
+% , while \textbf{kama} contrasts with \tp{tawa} and \tp{weka}.
+%
+% However, the words \textbf{kama} and \textbf{tawa} share barely any semantic relatedness: \cs{kama}{tawa}{-0.07}. This is explained by the fact that \textbf{tawa} is characterised by its primary sense of \textit{physical movement} or its use as a preposition \textit{to}. On the other hand, \textbf{kama} is often used as a pre-verb to express a change of state, for example:
+%
+% \begin{exe}
+%   \ex
+%   \gll mi sona ala e ni. taso, mi kama sona e ni. \\
+%        I know not $do$ this but I become know $do$ this. \\
+%   \glt I don't know this, but I'm learning about it.
+% \end{exe}
+
+
+
+      % \subsubsection{selo}
+      \subsubsection{sijelo}
+      \subsubsection{sinpin}
+
 
       \subsubsection{ike}
 
@@ -1128,22 +1365,79 @@ The word \textbf{pimeja} is considerably separated from the rest of the colours.
 
 % \chapter{nimi mute li pini la}
 
-
-
 \printbibliography[heading=bibintoc, title={References}, nottype=online]
 \printbibliography[heading=bibintoc, title={Online resources}, type=online]
 
-
-
 \chapter{Supplementary marterial}
   \section{Model vectors}
-
-The two-dimensional projection of the semantic model constructed as a result of this reseach.
-
-% TODO
-
+The two-dimensional projection of the semantic model constructed in the course of this reseach.
+% {{{
+\begin{longtable}{lcclcc}
+  \textbf{word} & \textbf{x} & \textbf{y} & \textbf{word} & \textbf{x} & \textbf{y} \\
+  \endfirsthead
+  \multicolumn{6}{c}{\tablename~\thetable: Toki Pona model projection} \\[0.25cm]
+  \textbf{word} & \textbf{x} & \textbf{y} & \textbf{word} & \textbf{x} & \textbf{y} \\
+  \endhead
+akesi & 36.91 & 130.0 & ala & -62.14 & -0.54 \\
+alasa & 5.03 & 88.39 & ale & -50.87 & -67.04 \\
+anpa & 62.62 & -6.07 & ante & -84.8 & -32.24 \\
+anu & -86.88 & 18.78 & awen & 13.16 & 7.89 \\
+esun & -44.08 & 33.71 & ijo & -83.83 & -49.42 \\
+ike & -7.69 & -76.89 & ilo & -83.9 & 83.32 \\
+insa & 113.5 & 17.01 & jaki & 7.45 & -109.57 \\
+jan & -43.02 & -50.94 & jelo & 164.97 & 40.21 \\
+jo & -27.19 & 20.31 & kala & 28.83 & 114.46 \\
+kalama & -79.08 & 110.8 & kama & -31.34 & -1.38 \\
+kasi & 166.25 & 20.75 & ken & -79.34 & -12.56 \\
+kepeken & -119.69 & -27.41 & kili & 177.77 & 23.11 \\
+kiwen & 119.44 & 42.33 & ko & 179.06 & -22.28 \\
+kon & 128.95 & -25.61 & kule & 157.36 & 70.82 \\
+kulupu & -60.73 & -49.2 & kute & -68.3 & 102.37 \\
+lape & 5.43 & 22.77 & laso & 161.47 & 62.08 \\
+lawa & -29.5 & -58.17 & len & 92.35 & -13.35 \\
+lete & 149.66 & -38.36 & lili & -15.71 & -23.53 \\
+linja & 79.68 & 48.74 & lipu & -95.93 & 47.91 \\
+loje & 167.44 & 49.91 & lon & 7.24 & -1.58 \\
+luka & -144.45 & -133.36 & lukin & -72.61 & 47.81 \\
+lupa & 90.7 & 16.62 & ma & 37.1 & 3.31 \\
+mama & 71.76 & -86.55 & mani & -44.53 & 44.8 \\
+meli & 45.97 & 27.63 & mi & -38.46 & -32.59 \\
+mije & 61.15 & -71.23 & moku & 180.11 & -1.72 \\
+moli & 13.62 & -71.54 & monsi & 74.41 & 28.67 \\
+mu & 9.62 & 122.35 & mun & -96.53 & -127.01 \\
+musi & -75.53 & 96.95 & mute & -23.28 & -13.83 \\
+nanpa & -156.04 & -114.84 & nasa & 11.77 & -43.15 \\
+nasin & -102.6 & -40.84 & nena & 98.3 & 38.36 \\
+ni & -49.09 & -10.0 & nimi & -125.47 & 3.03 \\
+noka & 75.25 & -3.53 & olin & 75.11 & -57.03 \\
+ona & -29.25 & -37.71 & open & -69.58 & -114.3 \\
+pakala & 4.48 & -81.85 & pali & -53.25 & 18.4 \\
+palisa & 118.49 & 52.76 & pan & 188.76 & 9.02 \\
+pana & -19.28 & 42.64 & pilin & -16.63 & -81.64 \\
+pimeja & 129.82 & -58.54 & pini & -77.21 & -108.26 \\
+pipi & 43.36 & 120.13 & poka & 23.59 & -3.83 \\
+poki & 125.1 & 11.05 & pona & -58.67 & -17.45 \\
+pu & -127.39 & 12.73 & sama & -1.99 & -27.58 \\
+seli & 150.71 & -28.95 & selo & 115.81 & 29.9 \\
+seme & -67.16 & -28.94 & sewi & 59.0 & -17.91 \\
+sijelo & 18.3 & -95.59 & sike & -108.03 & -125.53 \\
+sin & -47.87 & 5.46 & sina & -78.22 & 9.0 \\
+sinpin & 81.2 & 36.12 & sitelen & -86.58 & 50.03 \\
+sona & -98.38 & -9.31 & soweli & 23.99 & 124.68 \\
+suli & 47.63 & -3.41 & suno & -91.8 & -117.79 \\
+supa & 66.88 & 12.01 & suwi & 186.86 & -7.83 \\
+tan & -11.37 & -52.37 & taso & -36.77 & -17.58 \\
+tawa & -8.77 & -3.88 & telo & 158.72 & -16.5 \\
+tenpo & -79.3 & -130.08 & toki & -99.01 & -21.74 \\
+tomo & 25.01 & 17.09 & tu & -150.56 & -123.77 \\
+unpa & 65.85 & -54.5 & uta & -47.99 & 106.82 \\
+utala & 26.33 & -70.54 & walo & 148.29 & 38.6 \\
+wan & -143.63 & -116.52 & waso & 36.51 & 108.0 \\
+wawa & 29.68 & -40.05 & weka & -3.92 & -96.7 \\
+wile & -70.47 & -8.29 \\
+\end{longtable}
+% }}}
   \section{Toki Pona dictionary}
-
 The dictionary of Toki Pona as it appears in Toki Pona: The Language of Good \parencite[125-134]{pu}. This dictionary is licensed under public domain.
 % {{{
 \begin{longtable}{llp{10cm}}
@@ -1294,10 +1588,7 @@ The dictionary of Toki Pona as it appears in Toki Pona: The Language of Good \pa
   wile & \textit{pre-verb} & must, need, require, should, want, wish \\
 \end{longtable}
 % }}}
-
 \end{document}
-
-
 
 % {{{
 % \chapter{Introduction}
