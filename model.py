@@ -6,7 +6,7 @@ from gensim.models import Word2Vec
 model = gensim.models.Word2Vec.load('model_pu.wv')
 wv = model.wv
 
-def sc(x, y):
+def cs(x, y):
     s = wv.similarity(x, y)
     print(x + '-' + y, round(s, 2))
 
@@ -24,34 +24,28 @@ def ms(x):
 #     sc(x, 'kule')
 #     print(' ')
 
-# sc('pana', 'esun')
-# sc('pana', 'sona')
+# ---
 
-# sc('tenpo', 'open')
-#
-# sc('tenpo', 'pini')
-# sc('tenpo', 'kama')
-#
-# sc('pini', 'kama')
-# sc('pini', 'open')
-# sc('kama', 'weka')
+# cs('suwi', 'soweli')
 
-sc('mu', 'kalama')
-sc('musi', 'kalama')
+# ms('sitelen')
+# ms('lukin')
+# cs('telo', 'seli')
+# cs('telo', 'lete')
+# ms('mama')
+# ms('jan')
 
-# sc('lawa', 'ike')
+# cs('jan', 'ona')
 
-ms('ike')
+# cs('sijelo', 'palisa')
+# cs('uta', 'kiwen')
 
+# ms('ilo')
+
+ms('poki')
 
 # print(wv.most_similar(positive=['jan', 'mu'], negative=['kalama']))
-
-
-# ms('tenpo')
-
 # print(wv.n_similarity(['nanpa', 'wan'], ['pona', 'mute']))
-
-
 
 # ---
 

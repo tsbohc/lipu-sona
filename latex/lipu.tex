@@ -170,16 +170,16 @@
 
 \usepackage{listings}
 
-\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
+% \definecolor{backcolour}{rgb}{0.96,0.96,0.96}
 
 \lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},
+    % backgroundcolor=\color{backcolour},
     basicstyle=\ttfamily\small,
 %     breakatwhitespace=false,         
     breaklines=true,
 %     captionpos=b,                    
 %     keepspaces=true,                 
-    % numbers=left,
+    numbers=left,
     % numbersep=10pt,
 %     showspaces=false,                
 %     showstringspaces=false,
@@ -190,7 +190,7 @@
     framextopmargin=5pt,
     framexbottommargin=5pt,
     frame=tb,
-    framerule=0mm,
+    framerule=0.08mm,
     aboveskip=1em,
     belowskip=1em,
     basewidth=0.5em,
@@ -796,7 +796,7 @@ The official Toki Pona subreddit sees an influx of members, reaching almost 11.0
     % \subsection{Grammar}
     % \subsection{Vocabulary}
     % \subsection{Tokiponidos}
-      \subsection{Etymology}
+      % \subsection{Etymology}
 
   \section{Distributional model}
     \subsection{Pre-processing}
@@ -819,11 +819,11 @@ Tokenisation is the process of splitting text into individual tokens, usually re
 
 Usually, this step is performed after the text has been split into sentences. The choice to perform tokenisation at this stage is supported by the fact that the source data contains an unusually large amount of text in other languages. Often, there is no separation between Toki Pona and other languages. If text tokenisation is performed first, it will prove easier to create custom rules for sentence segmentation at a later stage.
 
-After being tokenised, the example entry takes the shape of an array:
-
-\begin{lstlisting}
-['Pilin', 'mi', 'la', ',', 'ni', 'li', 'pona', ':', 'i', '<', 'em', '>', 'think', '<', '/em', '>', 'lon', 'li', 'lon', 'is', 'a', 'goood', 'way', 'of', 'saying', "c'est", 'la', 'vie', ':', ')', '*', 'also', '*', 'TOKI', '!', '!', '!', 'pan', 'suwi', '&', '#', 'xe339', 'li', 'pona', 'mute', 'tawa', 'mi', 'a', 'a', 'a', '!', ':', 'D', '&', 'amp', 'mi', 'pali', 'pona', 'e', 'pan', 'suwi', '!', '!']
-\end{lstlisting}
+% After being tokenised, the example entry takes the shape of an array:
+%
+% \begin{lstlisting}
+% ['Pilin', 'mi', 'la', ',', 'ni', 'li', 'pona', ':', 'i', '<', 'em', '>', 'think', '<', '/em', '>', 'lon', 'li', 'lon', 'is', 'a', 'goood', 'way', 'of', 'saying', "c'est", 'la', 'vie', ':', ')', '*', 'also', '*', 'TOKI', '!', '!', '!', 'pan', 'suwi', '&', '#', 'xe339', 'li', 'pona', 'mute', 'tawa', 'mi', 'a', 'a', 'a', '!', ':', 'D', '&', 'amp', 'mi', 'pali', 'pona', 'e', 'pan', 'suwi', '!', '!']
+% \end{lstlisting}
 % }}}
       \subsubsection{Noise removal}
 % {{{
@@ -833,21 +833,21 @@ The tokens of the entry are then compared with a whitelist of allowed tokens. Th
 
 The words were not found to be in the Toki Pona vocabulary, are replaced with a period. The consecutive duplicate tokens which are not found in the whitelist are then removed from the sequence.
 
-After this is done, the entry looks like this:
-
-\begin{lstlisting}
-['Pilin', 'mi', 'la', 'ni', 'li', 'pona', '.', 'lon', 'li', 'lon', '.', 'a', '.', 'la', '.', 'TOKI', '.', 'pan', 'suwi', 'li', 'pona', 'mute', 'tawa', 'mi', 'a', 'a', 'a', '.', 'mi', 'pali', 'pona', 'e', 'pan', 'suwi', '.']
-\end{lstlisting}
+% After this is done, the entry looks like this:
+%
+% \begin{lstlisting}
+% ['Pilin', 'mi', 'la', 'ni', 'li', 'pona', '.', 'lon', 'li', 'lon', '.', 'a', '.', 'la', '.', 'TOKI', '.', 'pan', 'suwi', 'li', 'pona', 'mute', 'tawa', 'mi', 'a', 'a', 'a', '.', 'mi', 'pali', 'pona', 'e', 'pan', 'suwi', '.']
+% \end{lstlisting}
 % }}}
       \subsubsection{Sentence segmentation}
 % {{{
 Sentence tokenisation is the process of splitting text based on the presence of punctuation marks \parencite[51]{vajjala}.
 
-Because there are no punctuation marks left in the entry except for the periods, the entry can be split naively on them:
+Because there are no punctuation marks left in the entry except for the periods, the entry can be split naively on them.
 
-\begin{lstlisting}
-[['Pilin', 'mi', 'la', 'ni', 'li', 'pona'], ['lon', 'li', 'lon'], ['a'], ['la'], ['TOKI'], ['pan', 'suwi', 'li', 'pona', 'mute', 'tawa', 'mi', 'a', 'a', 'a'], ['mi', 'pali', 'pona', 'e', 'pan', 'suwi']]
-\end{lstlisting}
+% \begin{lstlisting}
+% [['Pilin', 'mi', 'la', 'ni', 'li', 'pona'], ['lon', 'li', 'lon'], ['a'], ['la'], ['TOKI'], ['pan', 'suwi', 'li', 'pona', 'mute', 'tawa', 'mi', 'a', 'a', 'a'], ['mi', 'pali', 'pona', 'e', 'pan', 'suwi']]
+% \end{lstlisting}
 % }}}
       \subsubsection{Normalisation}
 % {{{
@@ -1043,6 +1043,13 @@ The following parameters were used:
   \item \textbf{Distance.} Cosine distance.
 \end{itemize}
 % }}}
+
+% master plan: pick not the clusters on the model, but what you would expect to
+% be a cluster that in reality isn't
+
+% like lawa should be next to sijelo, but isn't because another word sense is
+% dominanting it
+
     \subsection{Observations}
 % {{{
 \begin{enumerate}
@@ -1054,7 +1061,7 @@ The following parameters were used:
 
     The cosine similarity between the vector of the \texttt{word_a} and the vector of the \texttt{word_b} is shown as \cs{word_a}{word_b}{cosine similarity}. Cosine similarity ranges from \([-1]\) to \([1]\).
 % }}}
-      \subsubsection{kule}
+      \paragraph{kule}
 % {{{
 There are only five words in Toki Pona that can denote \tb{kule}{colors}: \tp{pimeja}, \tp{walo}, \tp{loje}, \tp{jelo}, \tp{laso}. For the rest of the colours, the rules of colour mixing apply: \textbf{jelo loje} can be used to mean \textit{orange}. Some of these words have broader meanings that describe not only the colour, but its vibrance, e.g \textbf{loje pimeja} can be used to mean \textit{dark red}.
 
@@ -1095,9 +1102,9 @@ The word \textbf{pimeja} is considerably separated from the rest of the colours.
 
 Among words for colours, this property is unique to \textbf{pimeja}: \cs{walo}{tenpo}{-0.03}, \cs{loje}{tenpo}{-0.07}, \cs{jelo}{tenpo}{-0.11}, \cs{laso}{tenpo}{-0.06}. Interestingly, \textbf{pimeja} experiences an even semantic split between \textbf{kule} and \textbf{tenpo}: \cs{pimeja}{kule}{0.24}, \cs{pimeja}{tenpo}{0.24}.
 % }}}
-      \subsubsection{nanpa}
+      \paragraph{nanpa}
 % {{{
-There are only four words which are related to \textbf{nanpa} (numerals) in the vocabulary of Toki Pona: \tp{wan} used to mean \textit{one}, \tp{tu} used to mean \textit{two}, \tp{luka} used to mean \textit{five}, and \tp{mute}. With the exception of \textbf{mute}, which can be used to denote any large quantity, these words form an independent cluster in the lower left corner of the projection.
+      There are a number of words which are related to \textbf{nanpa} (numerals) in the vocabulary of Toki Pona: \tp{wan} used to mean \textit{one}, \tp{tu} used to mean \textit{two}, \tp{luka} used to mean \textit{five}, \tp{ale} used to mean \textit{one hundred}, \tp{ala} used to mean \textit{zero}, and \tp{mute}.
 
 \begin{figure}[ht]% {{{
   \def\angle{-45}
@@ -1109,6 +1116,8 @@ There are only four words which are related to \textbf{nanpa} (numerals) in the 
         (-143.63,-116.52)/wan/70,
         (-23.28,-13.83)/mute/40,
         (-150.56,-123.77)/tu/70,
+        (-50.87,-67.04)/ale/22,
+        (-62.14,-0.54)/ala/10,
         (-144.45,-133.36)/luka/70
       }
       \draw[draw=black!\Colo,fill=black!\Colo] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
@@ -1133,6 +1142,8 @@ Despite one of the word sense of \textbf{mute} being \textit{quantity}, it exper
   \glt I am feeling very good!
 \end{exe}
 
+The position of \textbf{ale} and \textbf{ala} are exlained by their more frequent usage as a pronouns and a negation particle in the case of \textbf{ala}.
+
 One of the secondary uses of \textbf{nanpa} and \textbf{wan} is involved in expressing high degree of positivity towards something:
 
 \begin{exe}
@@ -1145,7 +1156,7 @@ One of the secondary uses of \textbf{nanpa} and \textbf{wan} is involved in expr
 The distribution shows that this use of \textbf{nanpa wan} is farily uncommon: \cs{[nanpa, wan]}{[pona, mute]}{0.14}.
 % }}}
       % TODO alasa-soweli
-      \subsubsection{soweli}
+      \paragraph{soweli}
 % {{{
 The cluster \tp{soweli} contains words that refer to animals: \tp{akesi}, \tp{kala}, \tp{waso}, \tp{pipi}, \tp{akesi}.
 
@@ -1161,6 +1172,7 @@ The cluster \tp{soweli} contains words that refer to animals: \tp{akesi}, \tp{ka
         (43.36,120.13)/pipi/76,
         (36.91,130.0)/akesi/76,
         (9.62,122.35)/mu/76,
+        (5.03,88.39)/alasa/76,
         (-44.53,44.8)/mani/58
       }
       \draw[draw=black!\Colo,fill=black!\Colo] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
@@ -1174,24 +1186,17 @@ The cluster \tp{soweli} contains words that refer to animals: \tp{akesi}, \tp{ka
   \caption{soweli, \(\angle\textdegree\)}
 \end{figure}% }}}
 
-The onomatopoeia \tp{mu} is also present in this cluster: \cs{soweli}{mu}{0.54}. Among other words in the cluster, \textbf{pipi} is the least semantically related to \textbf{mu}: \cs{pipi}{mu}{0.29}.
+The onomatopoeia \tp{mu} is also present in this cluster: \cs{soweli}{mu}{0.54}. Among other words in the cluster, \textbf{pipi} is the least semantically related to \textbf{mu} by a substantial margin: \cs{pipi}{mu}{0.29}. This is perhaps related to the fact that \textit{bugs} do not produce sound with their mouths.
 
-The dictionary entry for \textbf{akesi} contains the now considered outdated \textit{non-cute animal} word sense. The fact that this definition was in use at a time is evident from the semantic similarity between \tp{suwi} and \textbf{akesi}: \cs{akesi}{suwi}{0.27}; compared to the other members of the cluster: \cs{soweli}{suwi}{0.53}, \cs{kala}{suwi}{0.51}, \cs{waso}{suwi}{0.49}, \cs{pipi}{suwi}{0.45}.
+The dictionary entry for \textbf{akesi} contains the now considered outdated \textit{non-cute animal} word sense. The fact that this definition was in use at a time is evident from the semantic similarity between \tp{suwi} and \textbf{akesi}: \cs{akesi}{suwi}{0.27}; compared to the other members of the cluster: \cs{soweli}{suwi}{0.53}, \cs{kala}{suwi}{0.51}, \cs{waso}{suwi}{0.49}, \cs{pipi}{suwi}{0.45}. Also, \textbf{akesi} is the most semantically related to \tp{ike} among other words to animals.
 
 The word \tp{mani} has the secondary definition of a \textit{large domenticated animal}. This could be attributed to the themes of hunter-gatherer culture that permeate the language. In the model, only a very weak semantic connection between \textbf{mani} and \textbf{soweli} is present: \cs{mani}{soweli}{0.18}.
+
+Keeping with the theme of hunter-gatherer culture, \tp{alasa} is also in the proximity of the cluster, despite sometimes being used as a pre-verb to mean \textit{to try to}. The closest pair within the cluster is \cs{alasa}{kala}{0.56}, used to mean \textit{fishing}. The connection between \tp{kili} and \textbf{alasa} is also present: \cs{alasa}{kili}{0.14}, albeit a much weaker one.
 % }}}
-
-      \subsubsection{kalama}
-
-% also mu
-
-% master plan: pick not the clusters on the model, but what you would expect to
-% be a cluster that in reality isn't
-
-% like lawa should be next to sijelo, but isn't because another word sense is
-% dominanting it
-
-A small cluster of \tp{kalama} includes words related to sound production and perception: \tp{uta}, \tp{kute}. The earlier discussed \textbf{mu} is also in the close proximity of this cluster.
+      \paragraph{kalama}
+% {{{
+A small cluster of \tp{kalama} includes words related to sound production and perception: \tp{uta}, \tp{kute}. The earlier discussed \textbf{mu} is also in the vicinity of this cluster: \cs{mu}{kalama}{0.3}.
 
 \begin{figure}[ht]% {{{
   \def\angle{135}
@@ -1222,44 +1227,33 @@ The presense of \tp{musi} in the cluster is expected due to \textit{music} being
   \ex
   \gll mi kute e kalama musi la, mi wile tawa musi. \\
        I hear $do$ sound entertaining $cm$ I want move entertainingly. \\
-  \glt When I'm listening to music, I want to dance.
+  \glt Listening to music makes me want to dance.
 \end{exe}
 
 Music is among the most universal forms of entertainment that is often discussed online, and the semantic distribution is the evidence of that. The semantic similarity between the two words is \cs{kalama}{musi}{0.66}.
+% }}}
+      \paragraph{selo}
+% {{{
+There are multiple words in Toki Pona whose primary or secondary purpose is related to describing the general \textbf{selo} (shape) of an object. The cluster primarily includes words which refer to parts of the body: \tp{linja}, \tp{nena}, \tp{selo}.
 
+While not immediately recognisable by the dictionary entry, \tp{kiwen} can be used to refer to \textit{teeth} as \textbf{kiwen uta}, \tp{uta}: \cs{kiwen}{uta}{0.47}.
 
-      \subsubsection{lawa}
-
-
-      \subsubsection{sijelo}
-
-% maybe should take shapes instead? like palisa, linja, kiwen, lipu
-
-% luka is away cause it's a number
-% lawa and sijelo because ike things
-% kute and uta because kalama, also kute means ears
-
-% the close proximity
+Likewise, the word \tp{palisa} can be combined with \tp{sijelo} to refer to \textit{bones}, albeit the distribution shows that it is a less frequent pattern \cs{palisa}{sijelo}{0.24}.
 
 \begin{figure}[ht]% {{{
-  \def\angle{-45}
+  \def\angle{-35}
   \bigskip
   \begin{tikzpicture}[scale=0.046]
     \begin{scope}[rotate=\angle]
       \foreach \Point/\PointLabel/\Colo in {
-        (18.3,-95.59)/sijelo/46,
-        (-144.45,-133.36)/luka/70,
-        (75.25,-3.53)/noka/82,
-        (-29.5,-58.17)/lawa/40,
-        (74.41,28.67)/monsi/82,
-        (81.2,36.12)/sinpin/82,
-        (79.68,48.74)/linja/76,
-        (98.3,38.36)/nena/40,
-        (119.44,42.33)/kiwen/64,
+        (-95.93,47.91)/lipu/16,
         (115.81,29.9)/selo/64,
-        (-47.99,106.82)/uta/64,
-        (-72.61,47.81)/lukin/28,
-        (-68.3,102.37)/kute/52
+        (125.1,11.05)/poki/58,
+        (-108.03,-125.53)/sike/70,
+        (118.49,52.76)/palisa/40,
+        (119.44,42.33)/kiwen/64,
+        (79.68,48.74)/linja/76,
+        (98.3,38.36)/nena/40
       }
       \draw[draw=black!\Colo,fill=black!\Colo] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
     \end{scope}
@@ -1269,53 +1263,148 @@ Music is among the most universal forms of entertainment that is often discussed
     \end{scope}
   \end{tikzpicture}
   \centering
-  \caption{sijelo, \(\angle\textdegree\)}
+  \caption{selo, \(\angle\textdegree\)}
 \end{figure}% }}}
 
+The word sense of \tp{lipu} signifying a \textit{flat object} is overshadowed by the word sense \textit{book}. The semantic similarity between \textbf{lipu} and \textbf{palisa} is \cs{lipu}{palisa}{0.0}.
 
+The position of \tp{sike} is explained by it primarily being used to describe time \cs{sike}{tenpo}{0.43}:
 
+\begin{exe}
+  \ex
+  \gll suno sike sina o pona a! \\
+       sun round you $im$ good $em$ \\
+  \glt Have a Happy New Year!
+\end{exe}
+% }}}
+      \paragraph{moku}
+% {{{
+The \tp{moku} cluster includes the following words: \tp{pan}, \tp{kili}, \tp{telo}, as well as \tp{suwi}.
 
+\begin{figure}[ht]% {{{
+  \def\angle{-45}
+  \bigskip
+  \begin{tikzpicture}[scale=0.046]
+    \begin{scope}[rotate=\angle]
+      \foreach \Point/\PointLabel/\Colo in {
+(158.72,-16.5)/telo/64,
+(150.71,-28.95)/seli/64,
+(149.66,-38.36)/lete/64,
+(177.77,23.11)/kili/64,
+(188.76,9.02)/pan/64,
+(180.11,-1.72)/moku/64,
+(186.86,-7.83)/suwi/64,
+(148.29,38.6)/walo/64
+      }
+      \draw[draw=black!\Colo,fill=black!\Colo] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
+    \end{scope}
+    \begin{scope}[on background layer]
+      \clip ([shift={(-10,-10)}] current bounding box.south west) rectangle ([shift={(10, 10)}] current bounding box.north east);
+      \draw[lightgray, rotate=\angle] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
+    \end{scope}
+  \end{tikzpicture}
+  \centering
+  \caption{moku, \(\angle\textdegree\)}
+\end{figure}% }}}
 
+The position of \textbf{suwi} in the distribution hints at it commonly being used to specify taste: \cs{suwi}{moku}{0.67}. The word sense \textit{cute} is hovewer also popular, as the semantic similarity between \textbf{suwi} and \textbf{soweli} is \cs{suwi}{soweli}{0.53}. The most \textbf{suwi} food related word is \textbf{pan}, as \textbf{pan suwi} is a common way of referring to \textit{sweet backed goods}.
 
-%       \subsubsection{tenpo}
+The semantic similarity between \textbf{moku} and \tp{ko} is \cs{moku}{ko}{0.54}, suggesting that \textbf{ko} is commonly used to describe food, from \textit{sauces} to \textit{cheeses}.
+
+The words \textbf{telo} and \tp{walo} are also closely related: \cs{telo}{walo}{0.64}, as \textbf{telo walo} is a common way of referring to \textit{milk}.
+
+The word \tp{seli} is more semantically related to \textbf{telo} than \tp{telo}: \cs{telo}{seli}{0.67}, \cs{telo}{lete}{0.53}, suggesting that \textbf{seli} is used to describe the process of \textit{cooking}.
+% }}}
+      \paragraph{ike}
+% {{{
+The vocabulary cluster \tp{ike} mainly consists of words that are percieved as something \textit{bad}: \tp{pakala}, \tp{moli}, \tp{utala}, \tp{jaki}, as well as \tp{weka}.
+
+\begin{figure}[ht]% {{{
+  \def\angle{-10}
+  \bigskip
+  \begin{tikzpicture}[scale=0.046]
+    \begin{scope}[rotate=\angle]
+      \foreach \Point/\PointLabel/\Colo in {
+        (-16.63,-81.64)/pilin/46,
+        (4.48,-81.85)/pakala/46,
+        (18.3,-95.59)/sijelo/46,
+        (7.45,-109.57)/jaki/46,
+        (-3.92,-96.7)/weka/46,
+        (26.33,-70.54)/utala/40,
+        (-29.5,-58.17)/lawa/40,
+        (13.62,-71.54)/moli/76
+      }
+      \draw[draw=black!\Colo,fill=black!\Colo] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
+    \end{scope}
+    \begin{scope}[on background layer]
+      \clip ([shift={(-10,-10)}] current bounding box.south west) rectangle ([shift={(10, 10)}] current bounding box.north east);
+      \draw[lightgray, rotate=\angle] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
+    \end{scope}
+  \end{tikzpicture}
+  \centering
+  \caption{ike, \(\angle\textdegree\)}
+\end{figure}% }}}
+
+The presense of \tp{sijelo} and \tp{pilin} in the cluster can be explained by them often appearing in sentences related to injury, sickness, or general physical state:
+
+\begin{exe}
+  \ex
+  \gll sijelo mi li pilin ike. \\
+       body I $pm$ feel bad $em$ \\
+  \glt I'm not feeling well.
+\end{exe}
+
+The proximity of \tp{lawa} to the cluster may be related to negative undertones surrounding the idea of \textit{control}: \cs{lawa}{pona}{0.0}, \cs{lawa}{ike}{0.23}, where \tp{pona} is the antonym of \textbf{ike}.
+% }}}
+      \paragraph{nimi sama ijo}
+% {{{
+The cluster of \textbf{nimi sama ijo} or pronouns includes the words \tp{mi}, \tp{sina}, \tp{ona}. The words \tp{ni}, \tp{ale}, and \tp{ala}.
+
+\begin{figure}[ht]% {{{
+  \def\angle{-135}
+  \bigskip
+  \begin{tikzpicture}[scale=0.046]
+    \begin{scope}[rotate=\angle]
+      \foreach \Point/\PointLabel/\Colo in {
+(-38.46,-32.59)/mi/10,
+(-78.22,9.0)/sina/16,
+(-29.25,-37.71)/ona/34,
+(-49.09,-10.0)/ni/16,
+(-43.02,-50.94)/jan/22,
+(-62.14,-0.54)/ala/10,
+(-50.87,-67.04)/ale/22
+      }
+      \draw[draw=black!\Colo,fill=black!\Colo] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
+    \end{scope}
+    \begin{scope}[on background layer]
+      \clip ([shift={(-10,-10)}] current bounding box.south west) rectangle ([shift={(10, 10)}] current bounding box.north east);
+      \draw[lightgray, rotate=\angle] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
+    \end{scope}
+  \end{tikzpicture}
+  \centering
+  \caption{ike, \(\angle\textdegree\)}
+\end{figure}% }}}
+
+Interestingly, \tp{jan} is also part of this cluster. Syntactically, proper nouns behave like adjectives in Toki Pona. This explaines the semantic similarity between \textbf{jan} and \textbf{ona}: \cs{jan}{ona}{0.53}. In fact, they are the closest neighbors within the model.
+% }}}
+
+%       \paragraph{sitelen}
 %
-% The words related to \textbf{tenpo} (time) can be divided into the following groups:
-%
-% \paragraph{nanpa}
-%
-% The words from the \textbf{nanpa} cluster are often used to quantify time. The numerals are listen in the descending order of magnitude and are added together:
-%
-% \begin{exe}
-%   \ex
-%   \gll tenpo suno pini luka tu la, mi lukin e sitelen tawa ni. \\
-%        time sun finished five two $cm$ I look $do$ picture moving this \\
-%   \glt I watched this movie a week ago.
-% \end{exe}
-%
-% This explains the high degree of semantic relatedness between the words that belong to these two clusters. Moreover, \textbf{tenpo wan} is sometimes used to mean \textit{once}.
+%       The cluster \tp{sitelen} includes the words that refer to the reception of visual information and the ones that describe it, whether by character or location: \tp{lukin}, \tp{lipu}, \tp{nimi}, \tp{ilo}, \tp{nanpa}, \tp{toki}.
 %
 % \begin{figure}[ht]% {{{
-%   \def\angle{-22.5}
+%   \def\angle{-135}
 %   \bigskip
 %   \begin{tikzpicture}[scale=0.046]
 %     \begin{scope}[rotate=\angle]
 %       \foreach \Point/\PointLabel/\Colo in {
-%         (-77.21,-108.26)/pini/28,
-%         (-69.58,-114.3)/open/28,
-%         (-91.8,-117.79)/suno/28,
-%         (-108.03,-125.53)/sike/70,
-%         (-96.53,-127.01)/mun/70,
-%         (-79.3,-130.08)/tenpo/28,
-%         (-15.71,-23.53)/lili/34,
-%         (47.63,-3.41)/suli/40,
-%         (-23.28,-13.83)/mute/40,
-%         (23.59,-3.83)/poka/22,
-%         (129.82,-58.54)/pimeja/64,
-%         (-156.04,-114.84)/nanpa/70,
-%         (-150.56,-123.77)/tu/70,
-%         (-143.63,-116.52)/wan/70,
-%         (-144.45,-133.36)/luka/70,
-%         (-31.34,-1.38)/kama/10
+% (-86.58,50.03)/sitelen/52,
+% (-72.61,47.81)/lukin/28,
+% (-95.93,47.91)/lipu/16,
+% (-156.04,-114.84)/nanpa/70,
+% (-125.47,3.03)/nimi/16,
+% (-83.9,83.32)/ilo/52,
+% (-156.04,-114.84)/nanpa/70,
 %       }
 %       \draw[draw=black!\Colo,fill=black!\Colo] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
 %     \end{scope}
@@ -1325,16 +1414,85 @@ Music is among the most universal forms of entertainment that is often discussed
 %     \end{scope}
 %   \end{tikzpicture}
 %   \centering
-%   \caption{tenpo, \(\angle\textdegree\)}
+%   \caption{ike, \(\angle\textdegree\)}
 % \end{figure}% }}}
 %
-% \paragraph{pini and kama}
-%
-% In terms of \textbf{tenpo}, the words \tp{pini} and \tp{kama} are antonyms used to refer to the \textit{past} and \textit{future} time respectively. Similar contexts hint at their semantic relatedness: \cs{pini}{kama}{0.47}. The true antonym of \textbf{pini} is \tp{open}
-%
-% The words \textbf{pini} and \textbf{open} are higly related due to their usage of pre-verbs to mean \textit{finish doing something} and \textit{begin doing something} respectively: \cs{pini}{open}{0.67}.
 
 
+% luka is away cause it's a number
+% lawa and sijelo because ike things
+% kute and uta because kalama, also kute means ears
+% lawa is more ike while pona is neutral due to the association with the government
+
+% the close proximity
+
+      \paragraph{tenpo}
+% {{{
+The words from the \textbf{nanpa} cluster are often used to quantify time. The numerals are listen in the descending order of magnitude and are added together:
+
+\begin{exe}
+  \ex
+  \gll tenpo suno pini luka tu la, mi lukin e sitelen tawa ni. \\
+       time sun finished five two $cm$ I look $do$ picture moving this \\
+  \glt I watched this movie a week ago.
+\end{exe}
+
+This explains the high degree of semantic relatedness between the words that belong to these two clusters. Moreover, \textbf{tenpo wan} is sometimes used to mean \textit{once}.
+
+\begin{figure}[ht]% {{{
+  \def\angle{-22.5}
+  \bigskip
+  \begin{tikzpicture}[scale=0.046]
+    \begin{scope}[rotate=\angle]
+      \foreach \Point/\PointLabel/\Colo in {
+        (-77.21,-108.26)/pini/28,
+        (-69.58,-114.3)/open/28,
+        (-91.8,-117.79)/suno/28,
+        (-108.03,-125.53)/sike/70,
+        (-96.53,-127.01)/mun/70,
+        (-79.3,-130.08)/tenpo/28,
+        (-15.71,-23.53)/lili/34,
+        (47.63,-3.41)/suli/40,
+        (-23.28,-13.83)/mute/40,
+        (23.59,-3.83)/poka/22,
+        (129.82,-58.54)/pimeja/64,
+        (-156.04,-114.84)/nanpa/70,
+        (-150.56,-123.77)/tu/70,
+        (-143.63,-116.52)/wan/70,
+        (-144.45,-133.36)/luka/70,
+        (-31.34,-1.38)/kama/10
+      }
+      \draw[draw=black!\Colo,fill=black!\Colo] \Point circle (2.4) node[above] {\ttfamily\PointLabel};
+    \end{scope}
+    \begin{scope}[on background layer]
+      \clip ([shift={(-10,-10)}] current bounding box.south west) rectangle ([shift={(10, 10)}] current bounding box.north east);
+      \draw[lightgray, rotate=\angle] (-500, -500) grid[xstep=20, ystep=20] (500, 500);
+    \end{scope}
+  \end{tikzpicture}
+  \centering
+  \caption{tenpo, \(\angle\textdegree\)}
+\end{figure}% }}}
+
+In terms of \textbf{tenpo}, the words \tp{pini} and \tp{kama} are antonyms used to refer to the \textit{past} and \textit{future} time respectively. Similar contexts hint at their semantic relatedness: \cs{pini}{kama}{0.47}. The words \textbf{pini} and \textbf{open} are higly related due to their usage of pre-verbs to mean \textit{finish} and \textit{begin doing something} respectively: \cs{pini}{open}{0.67}, \textbf{tenpo open} can mean \textit{in the beginning} as well.
+
+As was discussed earlier, \tp{sike} refers to a \textit{season} or a \textit{year} in the context of time.
+
+The word \tp{suno} is also highly temporal due to being used to describe \textit{days} or \textit{daytime}: \cs{tenpo}{suno}{0.56}. Its counterpart \tp{mun} refers to a \textit{month} in the context of time: \cs{tenpo}{mun}{0.59}.
+
+The words \tp{mute} and \tp{lili} are used to quantify frequency or infreuency of repeated actions in the specified time.
+
+Sometimes, \tp{poka} is used to specify time not too far removed from the present: \cs{tenpo}{poka}{0.26}.
+% }}}
+\paragraph{mama}
+% {{{
+The word cluster centered around \tp{mama} includes words related to the concept of family: \tp{meli}, \tp{mije}, \tp{unpa}, \tp{olin}, \tp{sama}, \tp{lili}.
+
+The presense of \textbf{lili} is explained by \textbf{jan lili} being a common way to refer to a \textit{child}: \cs{mama}{lili}{0.34}.
+% }}}
+\paragraph{esun}
+% {{{
+The small cluster centered around \tp{esun} represents words that are related to the idea of \textit{commerce}: \tp{mani}, \tp{pali}, \tp{jo}, \tp{moku}.
+% }}}
 
 % , while \textbf{kama} contrasts with \tp{tawa} and \tp{weka}.
 %
@@ -1348,13 +1506,6 @@ Music is among the most universal forms of entertainment that is often discussed
 % \end{exe}
 
 
-
-      % \subsubsection{selo}
-      \subsubsection{sijelo}
-      \subsubsection{sinpin}
-
-
-      \subsubsection{ike}
 
 
   \section{Summary}
