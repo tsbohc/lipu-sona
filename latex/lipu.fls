@@ -784,7 +784,6 @@ INPUT /usr/share/texmf-dist/tex/latex/fontspec/fontspec.cfg
 INPUT /usr/share/texmf-dist/tex/latex/fontspec/fontspec.cfg
 INPUT /usr/share/texmf-dist/tex/latex/fontspec/fontspec.cfg
 INPUT /usr/share/texmf-dist/tex/latex/fontspec/fontspec.cfg
-INPUT /usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/share/texmf-dist/tex/latex/alegreya/Alegreya.sty
 INPUT /usr/share/texmf-dist/tex/latex/alegreya/Alegreya.sty
 INPUT /usr/share/texmf-dist/tex/latex/alegreya/Alegreya.sty
@@ -843,6 +842,7 @@ INPUT /usr/share/texmf-dist/tex/latex/base/textcomp.sty
 INPUT /usr/share/texmf-dist/tex/latex/base/textcomp.sty
 INPUT /usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 INPUT /usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty
+INPUT /usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/share/texmf-dist/tex/latex/geometry/geometry.sty
