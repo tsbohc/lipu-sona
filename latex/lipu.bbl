@@ -1101,14 +1101,17 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{nltk.cluster.KMeansClusterer}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
       \field{year}{2016}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://tedboy.github.io/nlps/generated/generated/nltk.cluster.KMeansClusterer.html
       \endverb
       \verb{url}
       \verb https://tedboy.github.io/nlps/generated/generated/nltk.cluster.KMeansClusterer.html
       \endverb
-      \warn{\item Entry 'kmeans' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring}
     \endentry
     \entry{nltk}{online}{}
       \name{author}{1}{}{%
@@ -1271,14 +1274,17 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{What is Gensim?}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
       \field{year}{2022}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://radimrehurek.com/gensim/intro.html#what-is-gensim
       \endverb
       \verb{url}
       \verb https://radimrehurek.com/gensim/intro.html#what-is-gensim
       \endverb
-      \warn{\item Entry 'gensim' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring}
     \endentry
     \entry{sanders}{inbook}{}
       \name{author}{1}{}{%
@@ -1330,14 +1336,17 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{sklearn.manifold.TSNE}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
       \field{year}{2022}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html
       \endverb
       \verb{url}
       \verb https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html
       \endverb
-      \warn{\item Entry 'tsne' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring}
     \endentry
     \entry{isoproof}{online}{}
       \name{author}{1}{}{%
@@ -1432,14 +1441,17 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Dimensionality Reduction for Data Visualization: PCA vs TSNE vs UMAP vs LDA}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
       \field{year}{2020}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://towardsdatascience.com/dimensionality-reduction-for-data-visualization-pca-vs-tsne-vs-umap-be4aa7b1cb29
       \endverb
       \verb{url}
       \verb https://towardsdatascience.com/dimensionality-reduction-for-data-visualization-pca-vs-tsne-vs-umap-be4aa7b1cb29
       \endverb
-      \warn{\item Entry 'dimred' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring}
     \endentry
     \entry{liputenpo}{online}{}
       \name{author}{1}{}{%
@@ -1838,14 +1850,17 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{scikit-learn}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
       \field{year}{2022}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://en.wikipedia.org/wiki/Scikit-learn
       \endverb
       \verb{url}
       \verb https://en.wikipedia.org/wiki/Scikit-learn
       \endverb
-      \warn{\item Entry 'scikit' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring}
     \endentry
     \entry{wilkins}{book}{}
       \name{author}{1}{}{%

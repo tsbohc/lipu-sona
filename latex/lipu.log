@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  17 MAY 2022 19:09
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  26 MAY 2022 15:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -813,31 +813,32 @@ Package fontspec Info: Font family 'Alegreya(8)' created for font 'Alegreya'
 
 )
 Requested font "Iosevka Custom" at 14.39996pt
- -> ^^ð^^5^^æ^^^E
+ -> q?^^ßX^^E
 Requested font "Iosevka Custom/OT" at 14.40002pt
- -> ^^ñ^^5^^æ^^^E
+ -> ^^È?^^ßX^^E
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^^^5^^æ^^^E
+ -> ^^Þ?^^ßX^^E
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^3^^5^^æ^^^E
+ -> ^^õ?^^ßX^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^3^^5^^æ^^^E
+ -> ^^õ?^^ßX^^E
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^3^^5^^æ^^^E
+ -> ^^õ?^^ßX^^E
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 14.40002pt
- -> 9^^6^^æ^^^E
+ -> ^^;?^^ßX^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40002pt
- -> Q^^6^^æ^^^E
+ -> ^^S@^^ßX^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40002pt
- -> Q^^6^^æ^^^E
+ -> ^^S@^^ßX^^E
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40002pt
- -> Ab^^ 1^^/U
+ -> ^^^^.^^Ý^^ì^^ÌU
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40002pt
- -> j^^6^^æ^^^E
+ -> ,@^^ßX^^E
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^^^^^1^^/U
+ -> L
+^^Û^^ì^^ÌU
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40002pt
- -> j^^6^^æ^^^E
+ -> ,@^^ßX^^E
 
 Package fontspec Info: Font family 'IosevkaCustom(0)' created for font
 (fontspec)             'Iosevka Custom' with options
@@ -1535,33 +1536,7 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'lipu.bbl' found.
- (./lipu.bbl
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'kmeans':
-(biblatex)                - Entry 'kmeans' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'gensim':
-(biblatex)                - Entry 'gensim' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'tsne':
-(biblatex)                - Entry 'tsne' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'dimred':
-(biblatex)                - Entry 'dimred' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'scikit':
-(biblatex)                - Entry 'scikit' (sources.bib): Invalid format '2022-13-05' of date field 'urldate' - ignoring.
-
-)
+ (./lipu.bbl)
 Package biblatex Info: Reference section=0 on input line 158.
 Package biblatex Info: Reference segment=0 on input line 158.
 \c@lstlisting=\count535
@@ -1670,7 +1645,7 @@ LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
 Requested font "[Alegreya-Italic.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 12.0pt
- -> ^^)^^â,1^^/U
+ -> ^^6^^ù^^ì^^ÌU
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 294.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 12.0pt
@@ -1817,10 +1792,10 @@ Package logreq Info: Writing requests to 'lipu.run.xml'.
 Here is how much of TeX's memory you used:
  36420 strings out of 476919
  718848 string characters out of 5827662
- 1726959 words of memory out of 5000000
+ 1727959 words of memory out of 5000000
  55795 multiletter control sequences out of 15000+600000
  409156 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  113i,11n,124p,835b,5044s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lipu.xdv (66 pages, 1188888 bytes).
+Output written on lipu.xdv (66 pages, 1190156 bytes).
