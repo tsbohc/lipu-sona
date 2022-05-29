@@ -28,6 +28,16 @@ def ms(x):
 
 # cs('suwi', 'soweli')
 
+# cs('pimeja', 'linja')
+# cs('walo', 'linja')
+# cs('jelo', 'linja')
+# cs('laso', 'linja')
+# cs('loje', 'linja')
+#
+# print(wv['tenpo'])
+
+ms('kule')
+
 # ms('sitelen')
 # ms('lukin')
 # cs('telo', 'seli')
@@ -42,7 +52,7 @@ def ms(x):
 
 # ms('ilo')
 
-ms('poki')
+# ms('poki')
 
 # print(wv.most_similar(positive=['jan', 'mu'], negative=['kalama']))
 # print(wv.n_similarity(['nanpa', 'wan'], ['pona', 'mute']))

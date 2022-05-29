@@ -305,8 +305,8 @@ Distributional models rely on context to produce semantic representations. In ot
       \end{tabular}
     };
 
-    \draw[->, line width=1](0,0) -- (0,8) node[pos=0.58,rotate=90,left=1.5cm]{dim1};
-    \draw[->, line width=1](0,0) -- (8,0) node[pos=0.5,below=1cm]{dim2};
+    \draw[->, line width=1](0,0) -- (8,0) node[pos=0.5,below=1cm]{dim1};
+    \draw[->, line width=1](0,0) -- (0,8) node[pos=0.58,rotate=90,left=1.5cm]{dim2};
 
     \foreach \x in {0,0.2,0.4,0.6}
         \draw (\x*10 cm,1pt) -- (\x*10 cm,-3pt)
@@ -392,17 +392,6 @@ Cosine similarity always falls into the interval \([-1, 1]\). Two parallel vecto
 
 This method was chosen to simplify the process of comparing similarities between vector pairs. Where the Euclidean distance provides an absolute value, the cosine similarity provides a fraction.
 % }}}
-      \subsubsection{Curse of dimensionality}
-% {{{
-The curse of dimensionality refers to the phenomena that arise when organising data in high-dimensional spaces.
-
-In the context of distributional models, dimensionality is determined by how many word relationships are accounted for by the model.
-
-As the dimensionality of representations increases, the volume of the space they take up increases so fast that the available data becomes sparse. In other words, it becomes hard to make sense of the data as it becomes spread too thinly across the multi-dimensional space \parencite{venkat}.
-
-A common solution to this is dimensionality reduction.
-% }}}
-
     \subsection{Notable implementations}
       \subsubsection{Count vector model}
 % {{{
@@ -460,7 +449,6 @@ The training complexity of this model is
 
 While the complexity of this model is greater, the accuracy is also much greater \parencite{mikolov}. Similar to a continuous bag-of-words model, the weights of the hidden layer are the distributional representations.
 % }}}
-
     \subsection{Applications}
 % {{{
 The data provided by the distributional model can be used directly to analyse the semantics of a language:
@@ -476,7 +464,28 @@ The data provided by the distributional model can be used directly to analyse th
   \item \textbf{Sentiment analysis.} Given a small list of words manually tagged with emotive potentials, distributional models can propagate these potentials through a corpus based on the semantic similarity between the tagged words \parencite{alshari}.
 \end{enumerate}
 % }}}
+    \subsection{Curse of dimensionality}
+% {{{
+The curse of dimensionality refers to the phenomena that arise when organising data in high-dimensional spaces.
 
+In the context of distributional models, dimensionality is determined by how many word relationships are accounted for each word by the model.
+
+As the dimensionality of representations increases, the volume of the space they take up increases so fast that the available data becomes sparse. In other words, it becomes hard to make sense of the data as it becomes spread too thinly across the multi-dimensional space \parencite{venkat}.
+
+A common solution to this is dimensionality reduction. ``Dimensionality reduction techniques transform dataset X with dimensionality D into a new dataset Y with dimensionality d, while retaining the geometry of the data as much as possible \parencite{sorzano}''.
+% }}}
+      \subsubsection{Principal component analysis}
+% {{{
+Principal component analysis aims to reduce the dimensionality of the distribution by finding a new set of variables that maximise variance and minimise information loss when compared to the original set of numbers. This is done through the process of determining the principal components and pushing the data towards them \parencite{richardson}.
+
+The main limitation of principal component analysis is that it ``assumes a linear relationship between the features \parencite{hoz}'' of the items within the dataset. This causes it to struggle with classifying outliners.
+% }}}
+      \subsubsection{T-distributed stochastic neighbor embedding}
+% {{{
+T-distributed stochastic neighbor embedding reduces the dimensionality by examining the relative proximity between data points. In other words, it primarily attempts to preserve the local clusters present within the data as the dimensionality of the representation is reduced \parencite{van}.
+
+This technique is better suited for working with data that does not lend itself well to principal components.
+% }}}
   \section{Artificial languages}
 % {{{
 The term `artificial' is used to broadly refer to all languages that have been created through deliberate and conscious planning \parencite[41]{stria}. Under the broad umbrella of the term `artificial' reside predicate calculus and programming languages such as Lisp and C++.
@@ -545,13 +554,13 @@ In a 1958 letter to his son, Tolkien wrote about \textit{The Lord of the Rings}:
 
 In a draft of a letter from 1967, Tolkien summed up his language invention: ``It must be emphasized that this process of invention was/is a private enterprise undertaken to give pleasure to myself by giving expression to my personal linguistic 'aesthetic' or taste and its fluctuations \parencite[411]{letters}''.
 
-The constructed languages of the time reflected their intended practical use. Artistic languages were akin to flourishes added to a larger work of fiction, while auxiliary languages were conceived to support the full range of human communication. ``Tolkien bridged the gap between these two extremes by creating fully formed languages, but without any larger functionality or purpose beyond the sheer intellectual you of doing so. However, he believed that his `secret vice` would not be taken seriously on its own, so he wrote his Middle-earth novels as a way to showcase them. Thus, while other writers created conlangs for their fiction, Tolkien created fiction for his conlangs \parencite{sanders}''.
+The constructed languages of the time reflected their intended practical use. Artistic languages were akin to flourishes added to a larger work of fiction, while auxiliary languages were conceived to support the full range of human communication. ``Tolkien bridged the gap between these two extremes by creating fully formed languages, but without any larger functionality or purpose beyond the sheer intellectual joy of doing so. However, he believed that his `secret vice` would not be taken seriously on its own, so he wrote his Middle-earth novels as a way to showcase them. Thus, while other writers created conlangs for their fiction, Tolkien created fiction for his conlangs \parencite{sanders}''.
 
 Tolkien first revealed his love for language invention to the public in a 1931 essay entitled `A secret vice'. The essay concludes with poems in Qenya and a fragment in Noldorin (which later became known as Quenya and Sindarin), \parencite{tolkien83}.
 
 Tolkien was a prolific language inventor. In his time, he created at least fifteen languages and dialects. His work did not stop merely at language creation but involved establishing both the detailed histories and the intricate interconnections between the languages of the Middle-earth. To an extent that Tolkien's `Tree of Tongues' was meant to reproduce an Indo-European genealogical tree model \parencite[101]{fimi}.
 
-It is worth mentioning that within the lore of Middle-earth, the Black Speech was created by Sauron in mockery of the Elvish languages \parencite[20]{tolkien19}, ``to unite the forces of Morder, making it one of the most notable examples of a conlang designed to be understood within its associated fictional setting as an actual conlang \parencite{sanders},'' rather than a natural language.
+It is worth mentioning that within the lore of Middle-earth, the Black Speech was created by Sauron in mockery of the Elvish languages \parencite[20]{tolkien19}, ``to unite the forces of Mordor, making it one of the most notable examples of a conlang designed to be understood within its associated fictional setting as an actual conlang \parencite{sanders},'' rather than a natural language.
 % }}}
         \paragraph{Modern constructed languages}
 % {{{
@@ -664,6 +673,26 @@ Within the conlanging community, the terms from the above classifications are us
 % }}}
     \section{Summary}
 
+This chapter discusses the following points related to the subjects of computational linguistics and constructed languages:
+
+\paragraph{Distributional semantics}
+
+\begin{itemize}
+  \item The definition of computational linguistics, natural language processing, and distributional semantics.
+  \item An overview of the main principles behind distributional semantics.
+  \item A comparative evaluation of various distributional model implementations and their computational complexities.
+  \item A comparison between two most widely used similarity metrics.
+  \item A discussion of the primary problem of working with high-dimensional data, as well as widely used dimensionality reduction techniques.
+\end{itemize}
+
+\paragraph{Constructed languages}
+
+\begin{itemize}
+  \item The notion of a constructed language.
+  \item A brief overview of the history of constructed languages.
+  \item A number of approaches to classifying constructed languages.
+\end{itemize}
+
 
 \chapter{Language modelling and Toki Pona}
   \section{Toki Pona}
@@ -738,7 +767,7 @@ Every sequence that only contains symbols or a mixture of letters and symbols th
 
 The tokens of the entry are then compared with a whitelist of allowed tokens. The whitelist includes all of the Toki Pona words, including the vocabulary that is not considered core vocabulary. When the matching is case-insensitive, meaning that it converts each token to lowercase before matching. The case is preserved.
 
-The words were not found to be in the Toki Pona vocabulary, are replaced with a period. The consecutive duplicate tokens which are not found in the whitelist are then removed from the sequence.
+The words which were not found to be in the Toki Pona vocabulary, are replaced with a period. The consecutive duplicate tokens which are not found in the whitelist are then removed from the sequence.
 
 % After this is done, the entry looks like this:
 %
@@ -1069,7 +1098,7 @@ The distribution shows that this use of \textbf{nanpa wan} is farily uncommon: \
         \paragraph{soweli}
 % {{{
 % TODO alasa-soweli?
-The cluster \tp{soweli} contains words that refer to animals: \tp{akesi}, \tp{kala}, \tp{waso}, \tp{pipi}, \tp{akesi}.
+The cluster \tp{soweli} contains words that refer to the members of the animal kingdom: \tp{akesi}, \tp{kala}, \tp{waso}, \tp{pipi}.
 
 \begin{figure}[ht]% {{{
   \def\angle{-45}
@@ -1368,9 +1397,27 @@ The small cluster centered around \tp{esun} represents words that are related to
 
   \section{Summary}
 
-\chapter{Conclusion}
+This chapter provides a short history of Toki Pona, as well as the following steps of the applied research:
 
-% \chapter{nimi mute li pini la}
+\begin{itemize}
+  \item The pre-processing, tokenisation, noise removal, sentence segmentation, and normalisation of textual corpora.
+  \item The details of how the distributional model of Toki Pona was constructed: the notes on the training process, dimensionality reduction, and K-means clustering.
+  \item A detailed analysis of the vocabulary of Toki Pona based on the data obtain via the constructed distributional model.
+\end{itemize}
+
+\chapter{Conclusion}
+% {{{
+The small size of the Toki Pona vocabulary and the low precision of word definitions encourage the use of semantic decomposition when speaking about concepts of higher degrees of complexity. While this feature of the language broadens the range of contexts in which a particular word can appear, certain patterns within the vocabulary were found to be clearly defined.
+
+The use of the principles behind distributional semantics in a semantic analysis of a language remains a novel approach. The results greatly depend one the size of the available corpora and the lexical and morphological complexity of the language being analysed. In the case of Toki Pona, which is neither inflected nor contains a large number of lexemes, it has proved to be an extremely effective means of analysing word senses of individual vocabulary items.
+
+The analysis showed that Toki Pona substantially differs from the language which was originally published back in 2014. Some word senses have largely fallen out of use, some asserted dominance over others. With the help of the distributional model created in the course of this research, predominant word senses were separated from secondary ones.
+
+The scope of the analysis did not only involve discerning word senses, but delved into the subject of attributing words to the conversational contexts in which these words tend to appear in. Through this processes, certain obscure relationships between word pairs were brought to light.
+
+The author hopes that this research will serve as the groundwork for further academic studies of conlangs; and, of course, Toki Pona, one truly fascinating language.
+% }}}
+\chapter{nimi mute li pini la}
 
 \printbibliography[heading=bibintoc, title={References}, nottype=online]
 \printbibliography[heading=bibintoc, title={Online resources}, type=online]
@@ -1595,4 +1642,33 @@ The dictionary of Toki Pona as it appears in Toki Pona: The Language of Good \pa
   wile & \textit{pre-verb} & must, need, require, should, want, wish \\
 \end{longtable}
 % }}}
+
+
+% \begin{figure}[ht]% {{{
+%   \begin{tikzpicture}[>={Classical TikZ Rightarrow[]}]
+%     \draw[lightgray] (0, 0) grid[xstep=1, ystep=1] (10, 10);
+%     \draw[->, line width=1.5](0,0) -- (10,0)
+%       node[pos=0.5,below=1.4cm]{\ttfamily\large tenpo};
+%     \draw[->, line width=1.5](0,0) -- (0,10)
+%       node[pos=0.58,left=2cm,rotate=90]{\ttfamily\large kule};
+%     \foreach \Point/\PointLabel in {
+%       (5.10, 4.90)/pimeja,
+%       (0.80, 9.20)/walo,
+%       (1.10, 8.90)/jelo,
+%       (0.70, 9.30)/laso,
+%       (0.90, 9.10)/loje
+%     }
+%     \draw[draw=gray,fill=gray] \Point circle (0.18) node[above] {\ttfamily\large\PointLabel};
+%     \foreach \x in {0,0.2,0.4,0.6,0.8}
+%         \draw (\x*10 cm,1pt) -- (\x*10 cm,-3pt)
+%             node[anchor=north] {\ttfamily\x};
+%
+%     \foreach \y in {0,0.2,0.4,0.6,0.8}
+%         \draw (1pt,\y*10 cm) -- (-3pt,\y*10 cm)
+%             node[anchor=east] {\ttfamily\y};
+%   \end{tikzpicture}
+% \end{figure}% }}}
+
+
+
 \end{document}
