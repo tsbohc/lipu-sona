@@ -142,7 +142,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {}Conclusion}{53}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}nimi mute li pini la}{54}{chapter.5}%
+\contentsline {chapter}{\numberline {}pini la}{54}{chapter.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{References}{55}{chapter*.44}%
 \defcounter {refsection}{0}\relax 
@@ -152,4 +152,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Model vectors}{63}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Toki Pona dictionary}{65}{section.6.2}%
+\contentsline {section}{\numberline {2}Toki Pona dictionary}{67}{section.6.2}%
