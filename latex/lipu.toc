@@ -152,4 +152,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Model vectors}{63}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Toki Pona dictionary}{67}{section.6.2}%
+\contentsline {section}{\numberline {2}Toki Pona dictionary}{65}{section.6.2}%

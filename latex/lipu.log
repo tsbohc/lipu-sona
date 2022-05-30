@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  30 MAY 2022 02:15
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  30 MAY 2022 04:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -813,31 +813,33 @@ Package fontspec Info: Font family 'Alegreya(8)' created for font 'Alegreya'
 
 )
 Requested font "Iosevka Custom" at 14.39996pt
- -> ^^WCy[^^E
+ -> U^^ó^^a^^E
 Requested font "Iosevka Custom/OT" at 14.40002pt
- -> ^^WCy[^^E
+ -> U^^ó^^a^^E
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 14.40001pt
- -> CCy[^^E
+ -> ^^Á^^ó^^a^^E
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40001pt
- -> ZCy[^^E
+ -> ^^Ø^^ó^^a^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40001pt
- -> ZCy[^^E
+ -> ^^Ø^^ó^^a^^E
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40001pt
- -> ZCy[^^E
+ -> ^^Ø^^ó^^a^^E
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^ßCy[^^E
+ -> ^^^^ó^^a^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^÷Cy[^^E
+ -> ^^6^^ó^^a^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^÷Cy[^^E
+ -> ^^6^^ó^^a^^E
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40002pt
- -> W^^ûE^^^^òU
+ -> 6o^^Ú^^
+^^XV
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^Cy[^^E
+ -> ^^O^^ô^^a^^E
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40002pt
- -> P^^G^^^^òU
+ -> o^^^^Ø^^
+^^XV
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^Cy[^^E
+ -> ^^O^^ô^^a^^E
 
 Package fontspec Info: Font family 'IosevkaCustom(0)' created for font
 (fontspec)             'Iosevka Custom' with options
@@ -1644,7 +1646,8 @@ LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
 Requested font "[Alegreya-Italic.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 12.0pt
- -> a^^Ç^^X^^^^òU
+ -> ^^?^^P^^ÿ^^
+^^XV
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 294.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 12.0pt
@@ -1771,37 +1774,47 @@ Chapter .
 ]
 Chapter .
 Requested font "linja pona 4.9" at 14.39996pt
- -> ^^1Y^^O^^^^òU
+ -> ^^H^^ã^^
+^^XV
 Requested font "linja pona 4.9/OT" at 14.40002pt
- -> ^^ð^^è^^L^^^^òU
+ -> ^^Îe^^ã^^
+^^XV
 Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^	I^^O^^^^òU
+ -> ^^Z^^ã^^
+^^XV
 Requested font "linja pona 4.9/BI/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^I^^ö^^L^^^^òU
+ -> ^^ß^^'^^ã^^
+^^XV
 
 Package fontspec Info: Could not resolve font "linja pona 4.9/BI" (it probably
 (fontspec)             doesn't exist).
 
 Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^I^^ö^^L^^^^òU
+ -> ^^ß^^'^^ã^^
+^^XV
 Requested font "linja pona 4.9/B/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^I^^ö^^L^^^^òU
+ -> ^^ß^^'^^ã^^
+^^XV
 
 Package fontspec Info: Could not resolve font "linja pona 4.9/B" (it probably
 (fontspec)             doesn't exist).
 
 Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^I^^ö^^L^^^^òU
+ -> ^^ß^^'^^ã^^
+^^XV
 Requested font "linja pona 4.9/I/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^I^^ö^^L^^^^òU
+ -> ^^ß^^'^^ã^^
+^^XV
 
 Package fontspec Info: Could not resolve font "linja pona 4.9/I" (it probably
 (fontspec)             doesn't exist).
 
 Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^I^^ö^^L^^^^òU
+ -> ^^ß^^'^^ã^^
+^^XV
 Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40002pt
- -> 9a^^O^^^^òU
+ -> ^^Ï^^ò^^à^^
+^^XV
 
 Package fontspec Info: Font family 'linjapona4.9(0)' created for font 'linja
 (fontspec)             pona 4.9' with options [].
@@ -1814,13 +1827,16 @@ Package fontspec Info: Font family 'linjapona4.9(0)' created for font 'linja
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.4pt
- -> 9a^^O^^^^òU
-Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 24.88pt
- -> ^^é^^÷^^L^^^^òU
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 1432.
-Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 24.88pt
- -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
+ -> ^^Ï^^ò^^à^^
+^^XV
+Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 20.74pt
+ -> ^^ÿ^^^^ã^^
+^^XV
+
+Underfull \hbox (badness 10000) in paragraph at lines 1428--1429
+[]\TU/linjapona4.9(0)/m/n/20.74 lipu sona ni la mi toki e toki pona kepeken nasin pi kama sona mi. wile mi la sina pilin ala tan ni. toki
+ []
+
 [54
 
 ] [55
@@ -1828,353 +1844,15 @@ Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;
 ] [56] [57] [58] [59]
 
 Package biblatex Warning: No driver for entry type 'unknown'.
-(biblatex)                Using fallback driver on input line 1434.
+(biblatex)                Using fallback driver on input line 1435.
 
 [60] [61
 
 ] [62]
 Chapter .
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 1442.
-Requested font "[Alegreya-Bold.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 24.88pt
- -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Bold.otf
-
-Overfull \hbox (35.74518pt too wide) in alignment at lines 1441--1443
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (35.74518pt too wide) in alignment at lines 1443--1446
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (35.74518pt too wide) in alignment at lines 1446--1467
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (35.74518pt too wide) in alignment at lines 1467--1487
- [] [] [] [] [] [] 
- []
-
 [63
 
-]
-Overfull \hbox (35.74518pt too wide) in alignment at lines 1487--1504
- [] [] [] [] [] [] 
- []
-
-[64] [65] [66]
-Overfull \hbox (80.15714pt too wide) in alignment at lines 1509--1511
- [] [] [] 
- []
-
-
-Overfull \hbox (80.15714pt too wide) in alignment at lines 1511--1514
- [] [] [] 
- []
-
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
-(Font)              scaled to size 24.88pt on input line 1515.
-Requested font "[Alegreya-Italic.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 24.88pt
- -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf
-
-Underfull \hbox (badness 10000) in paragraph at lines 1516--1517
-[]|\TU/Alegreya(0)/m/n/24.88 non-cute animal; reptile,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1519--1520
-[]|\TU/Alegreya(0)/m/n/24.88 all; abundant, countless,
- []
-
-
-Underfull \hbox (badness 5274) in paragraph at lines 1522--1523
-[]|\TU/Alegreya(0)/m/n/24.88 bowing down, downward,
- []
-
-
-Underfull \hbox (badness 1990) in paragraph at lines 1525--1526
-[]|\TU/Alegreya(0)/m/n/24.88 enduring, kept, protected,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1531--1532
-[]|\TU/Alegreya(0)/m/n/24.88 bad, negative; non-
- []
-
-
-Underfull \hbox (badness 1365) in paragraph at lines 1532--1533
-[]|\TU/Alegreya(0)/m/n/24.88 tool, implement, machine,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1533--1534
-[]|\TU/Alegreya(0)/m/n/24.88 centre, content, inside,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1533--1534
-\TU/Alegreya(0)/m/n/24.88 between; internal organ,
- []
-
-
-Overfull \hbox (80.15714pt too wide) in alignment at lines 1514--1535
- [] [] [] 
- []
-
-[67]
-Underfull \hbox (badness 10000) in paragraph at lines 1535--1536
-[]|\TU/Alegreya(0)/m/n/24.88 human being, person,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1538--1539
-[]|\TU/Alegreya(0)/m/n/24.88 fish, marine animal, sea
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1540--1541
-[]|\TU/Alegreya(0)/m/n/24.88 arriving, coming, future,
- []
-
-
-Underfull \hbox (badness 7777) in paragraph at lines 1547--1548
-[]|\TU/Alegreya(0)/m/n/24.88 hard object, metal, rock,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1550--1551
-[]|\TU/Alegreya(0)/m/n/24.88 colourful, pigmented,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1551--1552
-[]|\TU/Alegreya(0)/m/n/24.88 community, company,
- []
-
-
-Overfull \hbox (80.15714pt too wide) in alignment at lines 1535--1555
- [] [] [] 
- []
-
-[68] [69]
-Underfull \hbox (badness 10000) in paragraph at lines 1558--1559
-[]|\TU/Alegreya(0)/m/n/24.88 to control, direct, guide,
- []
-
-
-Underfull \hbox (badness 2884) in paragraph at lines 1558--1559
-\TU/Alegreya(0)/m/n/24.88 lead, own, plan, regulate,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1573--1574
-[]|\TU/Alegreya(0)/m/n/24.88 earth, land; outdoors,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1573--1574
-\TU/Alegreya(0)/m/n/24.88 world; country, territory;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1574--1575
-[]|\TU/Alegreya(0)/m/n/24.88 parent, ancestor; creator,
- []
-
-
-Underfull \hbox (badness 3449) in paragraph at lines 1574--1575
-\TU/Alegreya(0)/m/n/24.88 originator; caretaker, sus-
- []
-
-
-Overfull \hbox (80.15714pt too wide) in alignment at lines 1555--1575
- [] [] [] 
- []
-
-[70] [71]
-Underfull \hbox (badness 10000) in paragraph at lines 1575--1576
-[]|\TU/Alegreya(0)/m/n/24.88 money, cash, savings,
- []
-
-
-Underfull \hbox (badness 6559) in paragraph at lines 1576--1577
-[]|\TU/Alegreya(0)/m/n/24.88 woman, female, feminine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1579--1580
-[]|\TU/Alegreya(0)/m/n/24.88 to eat, drink, consume,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1584--1585
-[]|\TU/Alegreya(0)/m/n/24.88 artistic, entertaining,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1584--1585
-\TU/Alegreya(0)/m/n/24.88 frivolous, playful, recre-
- []
-
-
-Underfull \hbox (badness 1990) in paragraph at lines 1585--1586
-[]|\TU/Alegreya(0)/m/n/24.88 many, a lot, more, much,
- []
-
-
-Underfull \hbox (badness 6461) in paragraph at lines 1589--1590
-[]|\TU/Alegreya(0)/m/n/24.88 unusual, strange; foolish,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1590--1591
-[]|\TU/Alegreya(0)/m/n/24.88 way, custom, doctrine,
- []
-
-
-Overfull \hbox (80.15714pt too wide) in alignment at lines 1575--1595
- [] [] [] 
- []
-
-[72] [73] [74]
-Underfull \hbox (badness 10000) in paragraph at lines 1601--1602
-[]|\TU/Alegreya(0)/m/n/24.88 long hard thing; branch,
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 1602--1603
-[]|\TU/Alegreya(0)/m/n/24.88 cereal, grain; barley, corn,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1602--1603
-\TU/Alegreya(0)/m/n/24.88 oat, rice, wheat; bread,
- []
-
-
-Underfull \hbox (badness 1681) in paragraph at lines 1610--1611
-[]|\TU/Alegreya(0)/m/n/24.88 hip, side; next to, nearby,
- []
-
-
-Underfull \hbox (badness 1721) in paragraph at lines 1611--1612
-[]|\TU/Alegreya(0)/m/n/24.88 container, bag, bowl, box,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1612--1613
-[]|\TU/Alegreya(0)/m/n/24.88 good, positive, useful;
- []
-
-
-Underfull \hbox (badness 1939) in paragraph at lines 1614--1615
-[]|\TU/Alegreya(0)/m/n/24.88 same, similar; each other;
- []
-
-
-Overfull \hbox (80.15714pt too wide) in alignment at lines 1595--1615
- [] [] [] 
- []
-
-[75] [76]
-Underfull \hbox (badness 10000) in paragraph at lines 1616--1617
-[]|\TU/Alegreya(0)/m/n/24.88 fire; cooking element,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1616--1617
-\TU/Alegreya(0)/m/n/24.88 chemical reaction, heat
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1617--1618
-[]|\TU/Alegreya(0)/m/n/24.88 outer form, outer layer;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1617--1618
-\TU/Alegreya(0)/m/n/24.88 bark, peel, shell, skin;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1619--1620
-[]|\TU/Alegreya(0)/m/n/24.88 area above, highest part,
- []
-
-
-Underfull \hbox (badness 6047) in paragraph at lines 1620--1621
-[]|\TU/Alegreya(0)/m/n/24.88 awe-inspiring, divine, sa-
- []
-
-
-Underfull \hbox (badness 1968) in paragraph at lines 1628--1629
-[]|\TU/Alegreya(0)/m/n/24.88 to know, be skilled in, be
- []
-
-
-Underfull \hbox (badness 1584) in paragraph at lines 1628--1629
-\TU/Alegreya(0)/m/n/24.88 wise about, have informa-
- []
-
-
-Underfull \hbox (badness 2103) in paragraph at lines 1630--1631
-[]|\TU/Alegreya(0)/m/n/24.88 animal, beast, land mam-
- []
-
-
-Overfull \hbox (80.15714pt too wide) in alignment at lines 1615--1635
- [] [] [] 
- []
-
-[77] [78] [79]
-Underfull \hbox (badness 10000) in paragraph at lines 1641--1642
-[]|\TU/Alegreya(0)/m/n/24.88 time, duration, moment,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1642--1643
-\TU/Alegreya(0)/m/n/24.88 say, talk, use language,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1643--1644
-[]|\TU/Alegreya(0)/m/n/24.88 indoor space; building,
- []
-
-
-Underfull \hbox (badness 3977) in paragraph at lines 1647--1648
-[]|\TU/Alegreya(0)/m/n/24.88 to battle, challenge, com-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1647--1648
-\TU/Alegreya(0)/m/n/24.88 pete against, struggle
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1648--1649
-[]|\TU/Alegreya(0)/m/n/24.88 white, whitish; light-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1651--1652
-[]|\TU/Alegreya(0)/m/n/24.88 bird, flying creature,
- []
-
-
-Overfull \hbox (80.15714pt too wide) in alignment at lines 1635--1655
- [] [] [] 
- []
-
-[80] [81] [82]
-Overfull \hbox (80.15714pt too wide) in alignment at lines 1655--1655
- [] [] [] 
- []
-
-[83] [84] [85] (./lipu.aux)
+] [64] [65] [66] [67] [68] [69] [70] [71] [72] (./lipu.aux)
 Package rerunfilecheck Info: File `lipu.out' has not changed.
 (rerunfilecheck)             Checksum: A23E459A8C902D8BE383E9703DAB8B15;8312.
 Package logreq Info: Writing requests to 'lipu.run.xml'.
@@ -2182,12 +1860,12 @@ Package logreq Info: Writing requests to 'lipu.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36465 strings out of 476919
- 720327 string characters out of 5827662
- 1727843 words of memory out of 5000000
- 55825 multiletter control sequences out of 15000+600000
- 409228 words of font info for 101 fonts, out of 8000000 for 9000
+ 36459 strings out of 476919
+ 720015 string characters out of 5827662
+ 1727841 words of memory out of 5000000
+ 55822 multiletter control sequences out of 15000+600000
+ 409204 words of font info for 98 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 113i,11n,124p,835b,5054s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 113i,11n,124p,835b,5048s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lipu.xdv (85 pages, 1261176 bytes).
+Output written on lipu.xdv (72 pages, 1249400 bytes).
