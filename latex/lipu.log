@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  30 MAY 2022 04:05
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  30 MAY 2022 17:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -813,33 +813,31 @@ Package fontspec Info: Font family 'Alegreya(8)' created for font 'Alegreya'
 
 )
 Requested font "Iosevka Custom" at 14.39996pt
- -> U^^ó^^a^^E
+ -> ]m^^>_^^E
 Requested font "Iosevka Custom/OT" at 14.40002pt
- -> U^^ó^^a^^E
+ -> ]m^^>_^^E
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^Á^^ó^^a^^E
+ -> ^^Ém^^>_^^E
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^Ø^^ó^^a^^E
+ -> ^^àm^^>_^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^Ø^^ó^^a^^E
+ -> ^^àm^^>_^^E
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^Ø^^ó^^a^^E
+ -> ^^àm^^>_^^E
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^^^ó^^a^^E
+ -> ^^%m^^>_^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^6^^ó^^a^^E
+ -> ^^>m^^>_^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^6^^ó^^a^^E
+ -> ^^>m^^>_^^E
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40002pt
- -> 6o^^Ú^^
-^^XV
+ -> ^^7^^_^^ù^^:U
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^O^^ô^^a^^E
+ -> ^^Vn^^>_^^E
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40002pt
- -> o^^^^Ø^^
-^^XV
+ -> ^^^^Û^^\^^ù^^:U
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^O^^ô^^a^^E
+ -> ^^Vn^^>_^^E
 
 Package fontspec Info: Font family 'IosevkaCustom(0)' created for font
 (fontspec)             'Iosevka Custom' with options
@@ -1626,28 +1624,27 @@ Requested font "cmr12" at 14.4pt
 \tf@toc=\write7
 \openout7 = `lipu.toc'.
 
- [3] [4]
+ [3]
 Chapter .
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
 (Font)              scaled to size 20.74pt on input line 206.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 20.74pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
-[5
+[4
 
-] [6]
+] [5]
 Chapter .
 File: ./img//nlpcl.png Graphic file (type bmp)
 <./img//nlpcl.png>
-[7
+[6
 
-] [8]
+] [7]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
 (Font)              scaled to size 14.4pt on input line 290.
 Requested font "[Alegreya-Italic.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 12.0pt
- -> ^^?^^P^^ÿ^^
-^^XV
+ -> ^^Ý?^^;^^ø^^:U
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 294.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 12.0pt
@@ -1689,21 +1686,21 @@ Underfull \hbox (badness 1205) in paragraph at lines 325--329
 [][]\TU/IosevkaCustom(0)/m/n/12 cosine_similarity(sun, moon) = 0.9711 
  []
 
-[9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19]
+[8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/sc' will be
 (Font)              scaled to size 14.4pt on input line 509.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;+smcp;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf
- [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31]
+ [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30]
 Chapter .
-[32
+[31
 
-] [33] [34] [35] [36] [37]
+] [32] [33] [34] [35] [36]
 Overfull \hbox (4.75142pt too wide) in paragraph at lines 965--967
  [][] 
  []
 
-[38] [39] [40]
+[37] [38] [39]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 1029.
 
@@ -1712,160 +1709,159 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 1029.
 
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
 (Font)              scaled to size 14.4pt on input line 1039.
+[40]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1071.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1071.
+
 [41]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1071.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1126.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1071.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1126.
 
 [42]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1126.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1161.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1126.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1161.
 
 [43]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1161.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1161.
-
-[44]
-
 LaTeX Warning: Command \textdegree invalid in math mode on input line 1206.
 
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 1206.
 
-[45] [46]
+[44] [45]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 1247.
 
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 1247.
+
+[46]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1285.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1285.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1325.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1325.
 
 [47]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1285.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1285.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1325.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1325.
-
-[48]
-
 LaTeX Warning: Command \textdegree invalid in math mode on input line 1374.
 
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 1374.
 
-[49] [50] [51] [52]
+[48] [49] [50] [51]
 Chapter .
-[53
+Requested font "linja sike 5" at 14.39996pt
+ -> %H^^$^^ø^^:U
+Requested font "linja sike 5/OT" at 14.40002pt
+ -> &L^^$^^ø^^:U
+Requested font "linja sike 5/OT:script=latn;language=dflt;" at 14.40001pt
+ -> ^^ö^^P^^$^^ø^^:U
+Requested font "linja sike 5/BI/OT:script=latn;language=dflt;" at 14.40001pt
+ -> f^^Þ^^'^^ø^^:U
 
-]
-Chapter .
-Requested font "linja pona 4.9" at 14.39996pt
- -> ^^H^^ã^^
-^^XV
-Requested font "linja pona 4.9/OT" at 14.40002pt
- -> ^^Îe^^ã^^
-^^XV
-Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^Z^^ã^^
-^^XV
-Requested font "linja pona 4.9/BI/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^ß^^'^^ã^^
-^^XV
-
-Package fontspec Info: Could not resolve font "linja pona 4.9/BI" (it probably
+Package fontspec Info: Could not resolve font "linja sike 5/BI" (it probably
 (fontspec)             doesn't exist).
 
-Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^ß^^'^^ã^^
-^^XV
-Requested font "linja pona 4.9/B/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^ß^^'^^ã^^
-^^XV
+Requested font "linja sike 5/OT:script=latn;language=dflt;" at 14.40001pt
+ -> ^^Î^^3^^$^^ø^^:U
+Requested font "linja sike 5/B/OT:script=latn;language=dflt;" at 14.40001pt
+ -> ^^ø^^0^^$^^ø^^:U
 
-Package fontspec Info: Could not resolve font "linja pona 4.9/B" (it probably
+Package fontspec Info: Could not resolve font "linja sike 5/B" (it probably
 (fontspec)             doesn't exist).
 
-Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^ß^^'^^ã^^
-^^XV
-Requested font "linja pona 4.9/I/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^ß^^'^^ã^^
-^^XV
+Requested font "linja sike 5/OT:script=latn;language=dflt;" at 14.40001pt
+ -> 8^^N^^$^^ø^^:U
+Requested font "linja sike 5/I/OT:script=latn;language=dflt;" at 14.40001pt
+ -> ^^Wj^^$^^ø^^:U
 
-Package fontspec Info: Could not resolve font "linja pona 4.9/I" (it probably
+Package fontspec Info: Could not resolve font "linja sike 5/I" (it probably
 (fontspec)             doesn't exist).
 
-Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^ß^^'^^ã^^
-^^XV
-Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^Ï^^ò^^à^^
-^^XV
+Requested font "linja sike 5/OT:script=latn;language=dflt;" at 14.40002pt
+ -> ^^Á^^W^^$^^ø^^:U
+Requested font "linja sike 5/OT:script=latn;language=dflt;" at 14.40002pt
+ -> a^^P^^'^^ø^^:U
 
-Package fontspec Info: Font family 'linjapona4.9(0)' created for font 'linja
-(fontspec)             pona 4.9' with options [].
+Package fontspec Info: Font family 'linjasike5(0)' created for font 'linja
+(fontspec)             sike 5' with options [].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"linja pona
-(fontspec)             4.9/OT:script=latn;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"linja sike
+(fontspec)             5/OT:script=latn;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.4pt
- -> ^^Ï^^ò^^à^^
-^^XV
-Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 20.74pt
- -> ^^ÿ^^^^ã^^
-^^XV
+Requested font "linja sike 5/OT:script=latn;language=dflt;" at 14.4pt
+ -> a^^P^^'^^ø^^:U
+Requested font "linja sike 5/OT:script=latn;language=dflt;" at 20.74pt
+ -> !L^^$^^ø^^:U
 
-Underfull \hbox (badness 10000) in paragraph at lines 1428--1429
-[]\TU/linjapona4.9(0)/m/n/20.74 lipu sona ni la mi toki e toki pona kepeken nasin pi kama sona mi. wile mi la sina pilin ala tan ni. toki
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1440
+[]\TU/linjasike5(0)/m/n/20.74 lipu ni li pali suli pi sona musi mi. lipu ni la mi toki e nimi sona suli e ijo
  []
 
-[54
 
-] [55
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1440
+\TU/linjasike5(0)/m/n/20.74 ante mute e pilin mi. ni li tan ni: jan suli pi pana sona la mi awen e lipu
+ []
 
-] [56] [57] [58] [59]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1443--1444
+[]\TU/linjasike5(0)/m/n/20.74 wile mi la sina pilin ike ala tan nasin sona mi. toki+pona li pona mute tawa mi. tan ni la
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1451--1452
+[]\TU/linjasike5(0)/m/n/20.74 o pona tawa meli mi. mi toki mute e toki+pona la ona li pilin lape. taso ona li kama sona
+ []
+
+[52
+
+] [53] [54
+
+] [55] [56] [57] [58]
 
 Package biblatex Warning: No driver for entry type 'unknown'.
-(biblatex)                Using fallback driver on input line 1435.
+(biblatex)                Using fallback driver on input line 1467.
 
-[60] [61
+[59] [60
 
-] [62]
+] [61]
 Chapter .
-[63
+[62
 
-] [64] [65] [66] [67] [68] [69] [70] [71] [72] (./lipu.aux)
+] [63] [64] [65] [66] [67] [68] [69] [70] [71] (./lipu.aux)
 Package rerunfilecheck Info: File `lipu.out' has not changed.
-(rerunfilecheck)             Checksum: A23E459A8C902D8BE383E9703DAB8B15;8312.
+(rerunfilecheck)             Checksum: E019A855D0E9722BD5967BFADC3758BE;8230.
 Package logreq Info: Writing requests to 'lipu.run.xml'.
 \openout1 = `lipu.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36459 strings out of 476919
- 720015 string characters out of 5827662
- 1727841 words of memory out of 5000000
+ 36458 strings out of 476919
+ 719921 string characters out of 5827662
+ 1728740 words of memory out of 5000000
  55822 multiletter control sequences out of 15000+600000
  409204 words of font info for 98 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  113i,11n,124p,835b,5048s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lipu.xdv (72 pages, 1249400 bytes).
+Output written on lipu.xdv (71 pages, 1250628 bytes).
