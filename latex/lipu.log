@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  30 MAY 2022 17:37
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  30 MAY 2022 17:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -813,31 +813,31 @@ Package fontspec Info: Font family 'Alegreya(8)' created for font 'Alegreya'
 
 )
 Requested font "Iosevka Custom" at 14.39996pt
- -> ]m^^>_^^E
+ -> ^^í^^È^^ØX^^E
 Requested font "Iosevka Custom/OT" at 14.40002pt
- -> ]m^^>_^^E
+ -> ^^í^^È^^ØX^^E
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^Ém^^>_^^E
+ -> ^^^^È^^ØX^^E
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^àm^^>_^^E
+ -> ^^/^^È^^ØX^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^àm^^>_^^E
+ -> ^^/^^È^^ØX^^E
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^àm^^>_^^E
+ -> ^^/^^È^^ØX^^E
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^%m^^>_^^E
+ -> 5^^É^^ØX^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^>m^^>_^^E
+ -> M^^É^^ØX^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^>m^^>_^^E
+ -> M^^É^^ØX^^E
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^7^^_^^ù^^:U
+ -> ^^Í^^^^N^^^^ÌU
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^Vn^^>_^^E
+ -> f^^É^^ØX^^E
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^^^Û^^\^^ù^^:U
+ -> ^^Fx^^O^^^^ÌU
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^Vn^^>_^^E
+ -> f^^É^^ØX^^E
 
 Package fontspec Info: Font family 'IosevkaCustom(0)' created for font
 (fontspec)             'Iosevka Custom' with options
@@ -1644,7 +1644,7 @@ LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
 Requested font "[Alegreya-Italic.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 12.0pt
- -> ^^Ý?^^;^^ø^^:U
+ -> ^^-^^ "^^^^ÌU
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 294.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 12.0pt
@@ -1766,71 +1766,71 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 1374.
 
 [48] [49] [50] [51]
 Chapter .
-Requested font "linja sike 5" at 14.39996pt
- -> %H^^$^^ø^^:U
-Requested font "linja sike 5/OT" at 14.40002pt
- -> &L^^$^^ø^^:U
-Requested font "linja sike 5/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^ö^^P^^$^^ø^^:U
-Requested font "linja sike 5/BI/OT:script=latn;language=dflt;" at 14.40001pt
- -> f^^Þ^^'^^ø^^:U
+Requested font "linja pona 4.9" at 14.39996pt
+ -> ^^^^ßW^^^^ÌU
+Requested font "linja pona 4.9/OT" at 14.40002pt
+ -> ^^Ö^^-W^^^^ÌU
+Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40001pt
+ -> ^^Æ^^,W^^^^ÌU
+Requested font "linja pona 4.9/BI/OT:script=latn;language=dflt;" at 14.40001pt
+ -> ^^Ö^^ÆW^^^^ÌU
 
-Package fontspec Info: Could not resolve font "linja sike 5/BI" (it probably
+Package fontspec Info: Could not resolve font "linja pona 4.9/BI" (it probably
 (fontspec)             doesn't exist).
 
-Requested font "linja sike 5/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^Î^^3^^$^^ø^^:U
-Requested font "linja sike 5/B/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^ø^^0^^$^^ø^^:U
+Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40001pt
+ -> ^^Ñ^^1W^^^^ÌU
+Requested font "linja pona 4.9/B/OT:script=latn;language=dflt;" at 14.40001pt
+ -> ^^ATW^^^^ÌU
 
-Package fontspec Info: Could not resolve font "linja sike 5/B" (it probably
+Package fontspec Info: Could not resolve font "linja pona 4.9/B" (it probably
 (fontspec)             doesn't exist).
 
-Requested font "linja sike 5/OT:script=latn;language=dflt;" at 14.40001pt
- -> 8^^N^^$^^ø^^:U
-Requested font "linja sike 5/I/OT:script=latn;language=dflt;" at 14.40001pt
- -> ^^Wj^^$^^ø^^:U
+Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40001pt
+ -> ^^FTW^^^^ÌU
+Requested font "linja pona 4.9/I/OT:script=latn;language=dflt;" at 14.40001pt
+ -> ^^^^!W^^^^ÌU
 
-Package fontspec Info: Could not resolve font "linja sike 5/I" (it probably
+Package fontspec Info: Could not resolve font "linja pona 4.9/I" (it probably
 (fontspec)             doesn't exist).
 
-Requested font "linja sike 5/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^Á^^W^^$^^ø^^:U
-Requested font "linja sike 5/OT:script=latn;language=dflt;" at 14.40002pt
- -> a^^P^^'^^ø^^:U
+Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40002pt
+ -> ^^Ö^^$H^^^^ÌU
+Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40002pt
+ -> f^^V^^^^ÌU
 
-Package fontspec Info: Font family 'linjasike5(0)' created for font 'linja
-(fontspec)             sike 5' with options [].
+Package fontspec Info: Font family 'linjapona4.9(0)' created for font 'linja
+(fontspec)             pona 4.9' with options [].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"linja sike
-(fontspec)             5/OT:script=latn;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"linja pona
+(fontspec)             4.9/OT:script=latn;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-Requested font "linja sike 5/OT:script=latn;language=dflt;" at 14.4pt
- -> a^^P^^'^^ø^^:U
-Requested font "linja sike 5/OT:script=latn;language=dflt;" at 20.74pt
- -> !L^^$^^ø^^:U
+Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.4pt
+ -> f^^V^^^^ÌU
+Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 20.74pt
+ -> ^^Ö^^-W^^^^ÌU
 
 Underfull \hbox (badness 10000) in paragraph at lines 1439--1440
-[]\TU/linjasike5(0)/m/n/20.74 lipu ni li pali suli pi sona musi mi. lipu ni la mi toki e nimi sona suli e ijo
+[]\TU/linjapona4.9(0)/m/n/20.74 lipu ni li pali suli pi sona musi mi. lipu ni la mi toki e nimi sona suli
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1439--1440
-\TU/linjasike5(0)/m/n/20.74 ante mute e pilin mi. ni li tan ni: jan suli pi pana sona la mi awen e lipu
+\TU/linjapona4.9(0)/m/n/20.74 e ijo ante mute e pilin mi. ni li tan ni: jan suli pi pana sona la
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1443--1444
-[]\TU/linjasike5(0)/m/n/20.74 wile mi la sina pilin ike ala tan nasin sona mi. toki+pona li pona mute tawa mi. tan ni la
+[]\TU/linjapona4.9(0)/m/n/20.74 wile mi la sina pilin ike ala tan nasin sona mi. toki+pona li pona mute tawa mi.
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1451--1452
-[]\TU/linjasike5(0)/m/n/20.74 o pona tawa meli mi. mi toki mute e toki+pona la ona li pilin lape. taso ona li kama sona
+[]\TU/linjapona4.9(0)/m/n/20.74 o pona tawa meli mi. mi toki mute e toki+pona la ona li pilin lape. taso ona
  []
 
 [52
@@ -1856,12 +1856,12 @@ Package logreq Info: Writing requests to 'lipu.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36458 strings out of 476919
- 719921 string characters out of 5827662
+ 36459 strings out of 476919
+ 720015 string characters out of 5827662
  1728740 words of memory out of 5000000
  55822 multiletter control sequences out of 15000+600000
  409204 words of font info for 98 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  113i,11n,124p,835b,5048s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lipu.xdv (71 pages, 1250628 bytes).
+Output written on lipu.xdv (71 pages, 1250840 bytes).
