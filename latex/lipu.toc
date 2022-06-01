@@ -32,7 +32,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.1}Count vector model}{12}{subsubsection.2.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2}Neural probabilistic language model}{12}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2}Neural probabilistic language model}{13}{subsubsection.2.2.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.3}Recurrent neural net language model}{13}{subsubsection.2.2.2.3}%
 \defcounter {refsection}{0}\relax 
@@ -46,11 +46,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.4.1}Principal component analysis}{17}{subsubsection.2.2.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.2}T-distributed stochastic neighbor embedding}{17}{subsubsection.2.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2}T-distributed stochastic neighbor embedding}{18}{subsubsection.2.2.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Artificial languages}{18}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}The notion of a constructed language}{18}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {3.1}The notion of a constructed language}{19}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Notable constructed languages throughout history}{19}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
@@ -60,27 +60,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Early artistic languages}{21}{paragraph*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Early modern constructed languages}{21}{paragraph*.14}%
+\contentsline {paragraph}{Early modern constructed languages}{22}{paragraph*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{J. R. R. Tolkien}{22}{paragraph*.15}%
+\contentsline {paragraph}{J. R. R. Tolkien}{23}{paragraph*.15}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Modern constructed languages}{24}{paragraph*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Classification}{24}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {3.3}Classification}{25}{subsection.2.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Traditional: structure and source material}{24}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1}Traditional: structure and source material}{25}{subsubsection.2.3.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.2}Traditional: purpose}{26}{subsubsection.2.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3}Blanke's functional classification}{28}{subsubsection.2.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3}Blanke's functional classification}{29}{subsubsection.2.3.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Final note on classifications}{29}{paragraph*.19}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Summary}{29}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Distributional semantics}{29}{paragraph*.20}%
+\contentsline {paragraph}{Distributional semantics}{30}{paragraph*.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Constructed languages}{29}{paragraph*.21}%
+\contentsline {paragraph}{Constructed languages}{30}{paragraph*.21}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {}Language modelling and Toki Pona}{31}{chapter.3}%
 \defcounter {refsection}{0}\relax 
@@ -134,20 +134,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{tenpo}{48}{paragraph*.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{mama}{50}{paragraph*.42}%
+\contentsline {paragraph}{mama}{49}{paragraph*.42}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{esun}{50}{paragraph*.43}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Summary}{50}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Conclusion}{52}{chapter.4}%
+\contentsline {chapter}{\numberline {}Conclusion}{51}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{54}{chapter*.44}%
+\contentsline {chapter}{References}{53}{chapter*.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Online resources}{60}{chapter*.45}%
+\contentsline {chapter}{Online resources}{59}{chapter*.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}Supplementary marterial}{62}{chapter.5}%
+\contentsline {chapter}{\numberline {}Supplementary marterial}{61}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Model vectors}{62}{section.5.1}%
+\contentsline {section}{\numberline {1}Model vectors}{61}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Toki Pona dictionary}{64}{section.5.2}%
+\contentsline {section}{\numberline {2}Toki Pona dictionary}{63}{section.5.2}%

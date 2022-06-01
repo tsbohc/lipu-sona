@@ -343,13 +343,13 @@ All of the approaches to distributional semantics share the quality of learning 
 % }}}
     \subsection{Distributional representations}
 % {{{
-Distributional representations are mathematic encodings of the distributional properties of words. Typically, in the form of a sequence of numbers. This sequence of numbers can be viewed as a multi-dimensional vector for the purposes of applying to them principles derived from liner algebra.
+Distributional representations are mathematic encodings of the distributional properties of words. Typically, in the form of a sequence of numbers. These sequences of numbers can be viewed as multi-dimensional vectors for the purposes of applying to them principles derived from liner algebra.
 
 ``Word vectors represent words as multidimensional continuous floating-point numbers where semantically similar words are mapped to proximate points in geometric space \parencite{ahireintro}''.
 
-In simpler terms, a word vector is a numerical representation of a word in a corpus relative to every other word in that corpus.
+In simpler terms, a word vector is a numerical representation of a word in a corpus relative to every other word in that corpus. Words that are found to be semantically related are assigned similar numerical representations.
 
-``Vectors have geometrical interpretations: Vectors with n components define points (or arrows) in n-dimensional spaces. Therefore, distributional representations are geometrical representations of the lexicon in the form of a distributional vector space. The positions of lexemes in a distributional semantic space depend on their co-occurrences with linguistic contexts \parencite{lenci}''.
+``Distributional representations are geometrical representations of the lexicon in the form of a distributional vector space. The positions of lexemes in a distributional semantic space depend on their co-occurrences with linguistic contexts \parencite{lenci}''.
 % }}}
       \subsubsection{Context types}
 % {{{
@@ -358,9 +358,9 @@ Distributional representations output by a distributional model differ with resp
 The contexts can be of the following types \parencite{lenci}:
 
 \begin{itemize}
-  \item \textbf{Undirected window-based collocate.} This context type includes words around the current word. No information as to whether the context words precede or follow after the current word is provided to the model. The window size typically ranges from 2 to 10.
+  \item \textbf{Undirected window-based collocate.} This context type includes words around the current word. No information as to whether the context words precede or follow after the current word is provided to the model. The window size typically ranges from 2 to 10 words.
   \item \textbf{Directed window-based collocate.} Unlike the previous context type, directed window-based contexts provide the direction in which the context word was seen relative to the current word.
-  \item \textbf{Dependency-filtered syntactic collocate.} This context restricted the words which are analysed by the algorithm based on their syntactic roles. This information is however not provided to the model.
+  \item \textbf{Dependency-filtered syntactic collocate.} This context restricts the words which are analysed by the algorithm based on their syntactic roles. This information is however not passed to the model.
   \item \textbf{Dependency-typed syntactic collocate.} This context type provides the previously omitted syntactic type to the model.
   \item \textbf{Text region.} A text region context can represent any uniquely identifiable text sample: book chapters, web pages, or simply text portions of any fixed size.
 \end{itemize}
@@ -371,7 +371,7 @@ The term window provides a physical analogy to a linguistic context. As the algo
 % {{{
 The semantic similarity between two vectors is primarily measured in two ways: using cosine similarity or the Euclidean distance.
 
-The primary advantage of using one of these two methods is that they can be calculated for vectors of any dimensionality.
+The primary advantage of using these methods is that they can be calculated for vectors of any dimensionality.
 
 \paragraph{Euclidean distance}
 
@@ -390,7 +390,7 @@ Cosine similarity always falls into the interval \([-1, 1]\). Two parallel vecto
 \[s_{cos}(A, B) := cos(\th) = \frac {A \cdot B}{||A|| \cdot ||B||} = \frac {\displaystyle\sum_{i=1}^{n} A_i B_i}{\sqrt{\displaystyle\sum_{i=1}^{n} A_i^2} \sqrt{\displaystyle\sum_{i=1}^{n} B_i^2}}\]
 \medskip
 
-This method was chosen to simplify the process of comparing similarities between vector pairs. Where the Euclidean distance provides an absolute value, the cosine similarity provides a fraction.
+This method was chosen to simplify the process of comparing similarities between vector pairs. Where Euclidean distance produces an absolute value, cosine similarity provides a fraction.
 % }}}
     \subsection{Notable implementations}
       \subsubsection{Count vector model}
@@ -399,13 +399,13 @@ The simplest implementations of distributional models feature counting algorithm
 
 ``Context items are counted only if they appear close to the target word, that is, if they are within the relevant context \parencite{erkkatrin2}''.
 
-Count models operate on a window-based context. The window size is typically narrow (2-4 words). The window can be allowed to cross the boundaries of sentences or not \parencite{baroni}.
+Count models operate on a window-based context. The window size is typically narrow (2-4 words). The window can be allowed to cross the boundaries of sentences or remain restricted to them \parencite{baroni}.
 % }}}
       \subsubsection{Neural probabilistic language model}
 % {{{
 In recent years, the distributional model architecture has seen a notable shift to machine learning algorithms. With the improvements in hardware performance, the training of complex neural networks on corpora of larger sizes has become possible. 
 
-The earlier machine learning-based models were plagued by the curse of dimensionality. This problem was solved in the model proposed by \parencite{bengio}. The proposed neural network model learns distributional representations and the generalisation function at the same time. The generalisation function is based on the estimates of the probability of a word appearing in the given context.
+The earlier machine learning-based models were plagued by the curse of dimensionality. This problem was alleviated in the model proposed by \parencite{bengio}. The proposed neural network model learns distributional representations and the generalisation function at the same time. The generalisation function is based on the estimates of the probability of a word appearing in the given context.
 
 The architecture of this model ``consists of input, projection, hidden and output layers. At the input layer, \(N\) previous words are encoded using 1-of-\(V\) coding, where \(V\) is the size of the vocabulary. The input layer is then projected to a projection layer \(P\) that has dimensionality \(N \times D\), using a shared projection matrix. As only \(N\) inputs are active at any given time, composition of the projection layer is a relatively cheap operation \parencite{mikolov}''.
 
@@ -441,17 +441,17 @@ Because this model architecture produces the prediction as output, the learned w
 % }}}
       \subsubsection{Continuous skip-gram model}
 % {{{
-The second architecture of Word2vec proposed by Mikolov has the opposite objective of the continuous bag-of-words model. The continuous skip-gram model predicts the surrounding context from the current word. Similar to the continuous bag-of-words model, when the continuous skip-gram model succeeds in predicting the context words, the semantic representation of the current word is reinforced. When it fails, it is corrected \parencite{mikolov}.
+The second architecture of Word2vec proposed by Mikolov has the opposite objective of the continuous bag-of-words model. The continuous skip-gram model predicts the surrounding context from the current word. Similar to the continuous bag-of-words model, when the continuous skip-gram model succeeds in predicting the context words, the semantic representation of the current word is reinforced. When it fails, the semantic representation is corrected \parencite{mikolov}.
 
 The training complexity of this model is
 
 \[Q = N \times D + N \times D \times log_2{V} \]
 
-While the complexity of this model is greater, the accuracy is also much greater \parencite{mikolov}. Similar to a continuous bag-of-words model, the weights of the hidden layer are the distributional representations.
+While this model has a greater complexity, the accuracy is also much greater \parencite{mikolov}. Similar to a continuous bag-of-words model, the weights of the hidden layer are the distributional representations.
 % }}}
     \subsection{Applications}
 % {{{
-The data provided by the distributional model can be used directly to analyse the semantics of a language:
+The data provided by the distributional model can be used in the following areas:
 
 \begin{enumerate}
   \item \textbf{Semantic similarity.} By definition, distributional models provide data that quantifies semantic relatedness between individual words or expressions. This data can be interpreted by humans to draw conclusions about the meanings of words or used in other areas of natural language processing.
@@ -470,7 +470,7 @@ The curse of dimensionality refers to the phenomena that arise when organising d
 
 In the context of distributional models, dimensionality is determined by how many word relationships are accounted for each word by the model.
 
-As the dimensionality of representations increases, the volume of the space they take up increases so fast that the available data becomes sparse. In other words, it becomes hard to make sense of the data as it becomes spread too thinly across the multi-dimensional space \parencite{venkat}.
+As the dimensionality of representations increases, the volume of the space they take up increases so fast that the available data becomes sparse. In other words, it becomes hard to make sense of the data as it tends to be spread too thinly across the multi-dimensional space \parencite{venkat}.
 
 A common solution to this is dimensionality reduction. ``Dimensionality reduction techniques transform dataset X with dimensionality D into a new dataset Y with dimensionality d, while retaining the geometry of the data as much as possible \parencite{sorzano}''.
 % }}}
@@ -484,7 +484,7 @@ The main limitation of principal component analysis is that it ``assumes a linea
 % {{{
 T-distributed stochastic neighbor embedding reduces the dimensionality by examining the relative proximity between data points. In other words, it primarily attempts to preserve the local clusters present within the data as the dimensionality of the representation is reduced \parencite{van}.
 
-This technique is better suited for working with data that does not lend itself well to principal components.
+This technique is better suited for working with data that does not lend itself well to principal components, such as semantic distributions.
 % }}}
   \section{Artificial languages}
 % {{{
@@ -498,7 +498,7 @@ It should be noted that the abbreviation `conlang' is also widely spread among t
 % }}}
 \subsection{The notion of a constructed language}
 % {{{
-Constructed languages are languages that have been purposely created to be similar or comparable in function to natural languages. The purpose behind the creation of constructed languages tends to vary greatly, ranging from the aim to create an auxiliary means of international communication, to artistic and philosophical expression.
+Constructed languages are languages that have been purposely created to be similar or comparable in function to natural languages. The purpose behind the creation of constructed languages can be vastly different, ranging from the aim to create an auxiliary means of international communication, to a desire of artistic or philosophical expression.
 % }}}
     \subsection{Notable constructed languages throughout history}
 % {{{
@@ -522,7 +522,7 @@ In his essay, Wilkins proposed one such universal philosophical language to repl
 
 Wilkins constructed a table of 40 major genera, which he then divided further into 251 characteristic differences. From them, he derived 2030 species, which appear in pairs. For example, ``starting from the major genus of Beasts, after having divided them into viviparous and oviparous, and after having subdivided the viviparous ones into whole footed, cloven footed and clawed, Wilkins arrives at the species Dog/Wolf \parencite[239]{eco}''.
 
-Despite the initial acclaim and the interest it received from the king, the language soon fell into obscurity \parencite[25]{okrent}. This style of language creation continued into the seventeenth century and then was abandoned.
+Despite the initial acclaim and the interest it received from the king, the language soon fell into obscurity \parencite[25]{okrent}. This style of language creation continued into the seventeenth century and was then abandoned.
 % }}}
         \paragraph{Early artistic languages}
 % {{{
@@ -544,7 +544,7 @@ Esperanto was created by Ludwik Lejzer Zamenhof in 1887 and remains the most wid
 
 ``Volapük and Esperanto spurred the creation of many auxiliary languages, especially by those who sought to improve upon previous auxlangs. The first offshoot of Esperanto was Jacob Braakman's Mundolinco (1888), but the most successful was Ido, the result of a battle among Esperanto enthusiasts over whether Esperanto should be, or could even be allowed to be, improved \parencite{sanders}''. The modern critiques of Esperanto as an international auxiliary language note the irregularities of its grammar and the influences of Slavic languages on its design.
 
-The artistic constructed languages of this time saw an increase in sophistication. The focus for still mainly on vocabulary, but the quantity and quality of the vocabulary have noticeably increased.
+The artistic constructed languages of this time saw an increase in sophistication. The focus was still primarily on vocabulary, but the quantity and quality of the vocabulary have noticeably increased.
 % }}}
         \paragraph{J. R. R. Tolkien}
 % {{{
@@ -634,7 +634,7 @@ The primary concern with this way of classifying constructed languages this way 
 
 What followed were classifications that took a far more granular approach. ``A detailed typology is proposed by Albani and Buonarotti (1994), where a division is made into sacred and non-sacred languages. Sacred languages are further divided into structured (Bālaibalan) and non-structured with six subdivisions. Nonsacred languages split into languages with communicative and expressive goals both with further detailed subdivisions \parencite[93]{stria}''.
 
-The classifications that followed saw a decrease in complexity and a shift to a more visual approach. Gobbo proposed a coordinate system which placed constructed languages between the "secret" and "public" extremes on the \textit{x axis} and "auxiliary purposes" and "fictional purposes" on the \textit{y axis} \parencite{gobbo}. This, however, is also not ideal, as the publicity of languages tends to shift greatly over time.
+The subsequent classifications saw a decrease in complexity and a shift to a more visual approach. Gobbo proposed a coordinate system which placed constructed languages between the "secret" and "public" extremes on the \textit{x axis} and "auxiliary purposes" and "fictional purposes" on the \textit{y axis} \parencite{gobbo}. This, however, is also not ideal, as the publicity of languages tends to shift greatly over time.
 
 \begin{figure}[ht]% {{{
   \bigskip
@@ -663,7 +663,7 @@ The classification proposed by Blanke divides artificial languages into invented
   \item \textbf{International auxiliary languages.} Languages intended to be used as a means of international communication.
   \item \textbf{Artistic languages.} Languages created for aesthetic reasons.
   \item \textbf{Constructed languages.} Languages invented to exercise the limits of language.
-  \item \textbf{Exerimental languages.} Languages created to exercise a philosophical idea.
+  \item \textbf{Experimental languages.} Languages created to exercise a philosophical idea.
 \end{itemize}
 % }}}
         \bigskip
@@ -681,6 +681,7 @@ This chapter discusses the following points related to the subjects of computati
   \item The definition of computational linguistics, natural language processing, and distributional semantics.
   \item An overview of the main principles behind distributional semantics.
   \item A comparative evaluation of various distributional model implementations and their computational complexities.
+  \item A list of areas where distributional semantics can be applied.
   \item A comparison between two most widely used similarity metrics.
   \item A discussion of the primary problem of working with high-dimensional data, as well as widely used dimensionality reduction techniques.
 \end{itemize}
@@ -719,7 +720,7 @@ The preface of the book reads: ``Toki Pona is my philosophical attempt to unders
 \begin{itemize}
   \item ``Toki Pona is semantically, lexically, and phonetically minimalist''.
   \item ``In many ways, Toki Pona resembles a pidgin. When people from different cultures need to communicate, they must focus on the elements that are most universal to our human experience''.
-  \item ``Toki Pona offers a path for semantic reduction. <...> we can distil our thoughts to their most fundamental units to discover what things really mean. We can understand complex ideas in terms of their smaller parts''.
+  \item ``Toki Pona offers a path for semantic reduction. <...> we can distill our thoughts to their most fundamental units to discover what things really mean. We can understand complex ideas in terms of their smaller parts''.
   \item ``An inherent idea of goodness is transparent throughout the language.''
 \end{itemize}
 % }}}
@@ -731,13 +732,13 @@ As the Toki Pona community rapidly grows, many idiolects permeate the way the la
 
 The first issue of the \textit{lipu tenpo} magazine is published online \parencite{liputenpo}. The second official Toki Pona book \textit{Toki Pona Dictionary} is published \parencite{ku}. Toki Pona is officially recognised by the ISO 639-3 registry under the code \textit{tok} \parencite{isoproof}.
 
-The official Toki Pona subreddit sees an influx of members, reaching almost 11.000 subscribers at the time of writing. While no longer directly influencing the language, Lang remains an active member of the community.
+The official Toki Pona subreddit sees an influx of members, reaching almost 12.000 subscribers at the time of writing. While no longer directly influencing the language, Lang remains an active member of the community.
 % }}}
 
   \section{Distributional model}
     \subsection{Pre-processing}
 % {{{
-In the context of machine learning, noise contained within the input data is detrimental to the output. Before the data can be used as input, it has to be thoroughly cleaned from noise. This process is referred to as text pre-processing \parencite[49]{vajjala}.
+In the context of machine learning, noise contained within the input data is detrimental to the output. Before the data can be used as input, it has to be thoroughly cleaned. This process is referred to as text pre-processing \parencite[49]{vajjala}.
 
 The noise includes leftover formatting and HTML (HyperText Markup Language) tags, raw Unicode sequences, emojis, emoticons, punctuation, text in other languages, etc.
 
@@ -763,11 +764,11 @@ Usually, this step is performed after the text has been split into sentences. Th
 % }}}
       \subsubsection{Noise removal}
 % {{{
-Every sequence that only contains symbols or a mixture of letters and symbols that is longer than one character is removed. The tokens which consist of only one punctuation mark are treated differently. Exclamation points and question marks are replaced with periods. The rest of the punctuation marks are removed
+Every sequence that only contains symbols or a mixture of letters and symbols that is longer than one character is removed. The tokens which consist of only one punctuation mark are treated differently: exclamation points and question marks are replaced with periods, while the rest of the punctuation marks are removed.
 
-The tokens of the entry are then compared with a whitelist of allowed tokens. The whitelist includes all of the Toki Pona words, including the vocabulary that is not considered core vocabulary. When the matching is case-insensitive, meaning that it converts each token to lowercase before matching. The case is preserved.
+The tokens of the entry are then compared with a whitelist of allowed tokens. The whitelist includes all of the Toki Pona words, including the ones that are not considered to be the core vocabulary. The matching is case-insensitive, meaning that it converts each token to lowercase before matching. The case is preserved.
 
-The words which were not found to be in the Toki Pona vocabulary, are replaced with a period. The consecutive duplicate tokens which are not found in the whitelist are then removed from the sequence.
+The words which were not found to be in the Toki Pona vocabulary are replaced with a period. The consecutive duplicate tokens which are not found in the whitelist are then removed from the sequence.
 
 % After this is done, the entry looks like this:
 %
@@ -787,13 +788,13 @@ Because there are no punctuation marks left in the entry except for the periods,
 % }}}
       \subsubsection{Normalisation}
 % {{{
-The first word of each sentence is brought to lowercase and compared with the whitelist. If there is a match, the word is replaced with its lowercase. The same is done for fully uppercase words in any part of the sentence.
+The first word of each sentence is brought to lowercase and compared with the whitelist. If there is a match, the word is replaced with its lowercase version. The same is done for fully uppercase words in any position in the sentence.
 
-The vocabulary of Toki Pona includes the word `ali', which is an alternative spelling of the word `ale'. Within the corpus, in all cases where `ali' appears, it is replaced with `ale'.
+The vocabulary of Toki Pona includes the word `ali', which is an alternative spelling of the word `ale'. In all cases where `ali' appears, it is replaced with `ale'.
 
 All of the proper names are removed from the corpus. All of the sentences shorter than three tokens are removed from the corpus as well.
 
-The resulting entry takes the following shape:
+After the aforementioned steps, the entry takes the following shape:
 
 \begin{lstlisting}
 pilin mi la ni li pona
@@ -807,7 +808,7 @@ mi pali pona e pan suwi
     \subsection{Vector space model}
       \subsubsection{Training}
 % {{{
-The model is trained via the Gensim library. ``Gensim is an open-source library for unsupervised topic modelling and natural language processing, using modern statistical machine learning. \parencite{gensim}''. Gensim is chosen as it comes prepackaged with multiple distributional model architecture and a simple interface for training them.
+The model is trained via the Gensim library. ``Gensim is an open-source library for unsupervised topic modelling and natural language processing, using modern statistical machine learning. \parencite{gensim}''. Gensim is chosen as it comes prepackaged with multiple distributional model architectures and a simple interface for training them.
 
 Word2vec trains individual vectors for each word form. While this would be detrimental to training a model of a highly inflected language, no words in Toki Pona are ever inflected.
 
@@ -823,7 +824,7 @@ The model is trained with the following parameters:
 % }}}
       \subsubsection{Dimensionality reduction}
 % {{{
-The Scikit-learn library is used to reduce the dimensionality of the model to two dimensions. Scikit-learn ``features various classification, regression and clustering algorithms including support-vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy \parencite{scikit}''.
+The Scikit-learn library was used to reduce the dimensionality of the model to two dimensions. Scikit-learn ``features various classification, regression and clustering algorithms including support-vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy \parencite{scikit}''.
 
 Scikit-learn provides several methods for dimensionality reduction \parencite{tsne}. Among truncated singular value decomposition (Truncated SVD), principal component analysis (PCA), and t-distributed stochastic neighbour embedding (t-SNE) the best separation was achieved using t-SNE. Moreover, t-SNE ``takes a high dimensional data set and reduces it to a low dimensional graph that retains a lot of the original information \parencite{dimred}''.
 
@@ -975,7 +976,6 @@ The following parameters were used:
 
 \begin{itemize}
   \item \textbf{Number of clusters.} 13, roughly 10 words in each cluster.
-  \item \textbf{Distance.} Cosine distance.
 \end{itemize}
 % }}}
     \subsection{Observations}
@@ -1029,7 +1029,7 @@ There are only five words in Toki Pona that can denote \tb{kule}{colors}: \tp{pi
   \caption{kule, \(\angle\textdegree\)}
 \end{figure}% }}}
 
-The presence of \tp{kasi} among the colours can be attributed to Toki Pona having only one word for blue and green -- \textbf{laso}. Despite the existence of many languages that also have one word for blue and green, the distribution is related the fact that many Toki Pona speakers opt to refer to the colour green unambiguously \cs{kasi}{kule}{0.51}.
+The presence of \tp{kasi} among the colours can be attributed to Toki Pona having only one word for blue and green -- \textbf{laso}. Despite the existence of many languages that also have one word for blue and green, the distribution is evident of the fact that many Toki Pona speakers opt to refer to the colour green unambiguously \cs{kasi}{kule}{0.51}.
 
 The word \textbf{pimeja} is considerably separated from the rest of the colours. This is explained by it often appearing near \tp{tenpo}. In turn, \textbf{tenpo pimeja} is a common way of referring to \textit{nighttime}:
 
@@ -1079,10 +1079,10 @@ Despite one of the word sense of \textbf{mute} being \textit{quantity}, it exper
   \ex
   \gll mi pilin pona mute a. \\
        I feel good very $em$ \\
-  \glt I am feeling very good!
+  \glt I am in a very good mood!
 \end{exe}
 
-The position of \textbf{ale} and \textbf{ala} are exlained by their more frequent usage as a pronouns and a negation particle in the case of \textbf{ala}.
+The position of \textbf{ale} and \textbf{ala} are explained by their more frequent usage as a pronoun and a negation particle respectively.
 
 One of the secondary uses of \textbf{nanpa} and \textbf{wan} is involved in expressing high degree of positivity towards something:
 
@@ -1128,15 +1128,15 @@ The cluster \tp{soweli} contains words that refer to the members of the animal k
 
 The onomatopoeia \tp{mu} is also present in this cluster: \cs{soweli}{mu}{0.54}. Among other words in the cluster, \textbf{pipi} is the least semantically related to \textbf{mu} by a substantial margin: \cs{pipi}{mu}{0.29}. This is perhaps related to the fact that \textit{bugs} do not produce sound with their mouths.
 
-The dictionary entry for \textbf{akesi} contains the now considered outdated \textit{non-cute animal} word sense. The fact that this definition was in use at a time is evident from the semantic similarity between \tp{suwi} and \textbf{akesi}: \cs{akesi}{suwi}{0.27}; compared to the other members of the cluster: \cs{soweli}{suwi}{0.53}, \cs{kala}{suwi}{0.51}, \cs{waso}{suwi}{0.49}, \cs{pipi}{suwi}{0.45}. Also, \textbf{akesi} is the most semantically related to \tp{ike} among other words to animals.
+The dictionary entry for \textbf{akesi} contains the now considered outdated \textit{non-cute animal} word sense. The fact that this definition was in use at a time is evident from the semantic similarity between \tp{suwi} and \textbf{akesi}: \cs{akesi}{suwi}{0.27} compared to the other members of the cluster: \cs{soweli}{suwi}{0.53}, \cs{kala}{suwi}{0.51}, \cs{waso}{suwi}{0.49}, \cs{pipi}{suwi}{0.45}. Also, \textbf{akesi} is the most semantically related to \tp{ike} among words that denote living beings.
 
 The word \tp{mani} has the secondary definition of a \textit{large domesticated animal}. This could be attributed to the themes of hunter-gatherer culture that permeate the language. In the model, only a very weak semantic connection between \textbf{mani} and \textbf{soweli} is present: \cs{mani}{soweli}{0.18}.
 
-Keeping with the theme of hunter-gatherer culture, \tp{alasa} is also in the proximity of the cluster, despite sometimes being used as a pre-verb to mean \textit{to try to}. The closest pair within the cluster is \cs{alasa}{kala}{0.56}, used to mean \textit{fishing}. The connection between \tp{kili} and \textbf{alasa} is also present: \cs{alasa}{kili}{0.14}, albeit a much weaker one.
+Another consequence of hunter-gatherer culture is \tp{alasa}, which is also in the proximity of the cluster, despite often being used as a pre-verb to mean \textit{to try to}. The closest pair within the cluster is \cs{alasa}{kala}{0.56}, used to mean \textit{fishing}. The connection between \tp{kili} and \textbf{alasa} is also present: \cs{alasa}{kili}{0.14}, albeit a much weaker one.
 % }}}
         \paragraph{kalama}
 % {{{
-A small cluster of \tp{kalama} includes words related to sound production and perception: \tp{uta}, \tp{kute}. The earlier discussed \textbf{mu} is also in the vicinity of this cluster: \cs{mu}{kalama}{0.3}.
+A small cluster of \tp{kalama} includes words related to sound production and perception: \tp{uta}, \tp{kute}. The earlier discussed onomatopoeia \textbf{mu} is also in the general vicinity of this cluster: \cs{mu}{kalama}{0.3}.
 
 \begin{figure}[ht]% {{{
   \def\angle{135}
@@ -1253,7 +1253,7 @@ The semantic similarity between \textbf{moku} and \tp{ko} is \cs{moku}{ko}{0.54}
 
 The words \textbf{telo} and \tp{walo} are also closely related: \cs{telo}{walo}{0.64}, as \textbf{telo walo} is a common way of referring to \textit{milk}.
 
-The word \tp{seli} is more semantically related to \textbf{telo} than \tp{telo}: \cs{telo}{seli}{0.67}, \cs{telo}{lete}{0.53}, suggesting that \textbf{seli} is used to describe the process of \textit{cooking}.
+The word \tp{seli} is more semantically related to \textbf{telo} than \tp{lete}: \cs{telo}{seli}{0.67}, \cs{telo}{lete}{0.53}, suggesting that \textbf{seli} cab be used to describe the process of \textit{cooking}.
 % }}}
         \paragraph{ike}
 % {{{
@@ -1298,7 +1298,7 @@ The proximity of \tp{lawa} to the cluster may be related to negative undertones 
 % }}}
         \paragraph{nimi sama ijo}
 % {{{
-The cluster of \textbf{nimi sama ijo} or pronouns includes the words \tp{mi}, \tp{sina}, \tp{ona}. The words \tp{ni}, \tp{ale}, and \tp{ala}.
+The cluster of \textbf{nimi sama ijo} or pronouns includes the words \tp{mi}, \tp{sina}, \tp{ona}, as well as the words \tp{ni}, \tp{ale}, and \tp{ala}.
 
 \begin{figure}[ht]% {{{
   \def\angle{-135}
@@ -1325,7 +1325,7 @@ The cluster of \textbf{nimi sama ijo} or pronouns includes the words \tp{mi}, \t
   \caption{ike, \(\angle\textdegree\)}
 \end{figure}% }}}
 
-Interestingly, \tp{jan} is also part of this cluster. Syntactically, proper nouns behave like adjectives in Toki Pona. This explaines the semantic similarity between \textbf{jan} and \textbf{ona}: \cs{jan}{ona}{0.53}. In fact, they are the closest neighbors within the model.
+Interestingly, \tp{jan} is also a part of this cluster. Syntactically, proper nouns behave like adjectives in Toki Pona. This explaines the semantic similarity between \textbf{jan} and \textbf{ona}: \cs{jan}{ona}{0.53}. In fact, they are the closest neighbors within the model.
 % }}}
       \paragraph{tenpo}
 % {{{
@@ -1386,18 +1386,18 @@ Sometimes, \tp{poka} is used to specify time not too far removed from the presen
 % }}}
       \paragraph{mama}
 % {{{
-The word cluster centered around \tp{mama} includes words related to the concept of family: \tp{meli}, \tp{mije}, \tp{unpa}, \tp{olin}, \tp{sama}, \tp{lili}.
+The word cluster centred around \tp{mama} includes words related to the concept of family: \tp{meli}, \tp{mije}, \tp{unpa}, \tp{olin}, \tp{sama}, \tp{lili}.
 
 The presense of \textbf{lili} is explained by \textbf{jan lili} being a common way to refer to a \textit{child}: \cs{mama}{lili}{0.34}.
 % }}}
       \paragraph{esun}
 % {{{
-The small cluster centered around \tp{esun} represents words that are related to the idea of \textit{commerce}: \tp{mani}, \tp{pali}, \tp{jo}, \tp{moku}.
+The small cluster centred around \tp{esun} represents words that are related to the idea of \textit{commerce}: \tp{mani}, \tp{pali}, and \tp{jo}.
 % }}}
 
   \section{Summary}
 
-This chapter provides a short history of Toki Pona, as well as the following steps of the applied research:
+This chapter provides a short description of Toki Pona and the following steps of the applied research:
 
 \begin{itemize}
   \item The pre-processing, tokenisation, noise removal, sentence segmentation, and normalisation of textual corpora.
@@ -1411,7 +1411,7 @@ All of the objectives set in the introduction of this research were achieved in 
 % {{{
 The small size of the Toki Pona vocabulary and the low precision of word definitions encourage the use of semantic decomposition when speaking about concepts of higher degrees of complexity. While this feature of the language broadens the range of contexts in which a particular word can appear, certain patterns within the vocabulary were found to be clearly defined.
 
-The use of the principles behind distributional semantics in a semantic analysis of a language remains a novel approach. The results greatly depend one the size of the available corpora and the lexical and morphological complexity of the language being analysed. In the case of Toki Pona, which is neither inflected nor contains a large number of lexemes, it has proven to be an extremely effective means of analysing word senses of individual vocabulary items.
+The use of the principles behind distributional semantics in a semantic analysis of a language remains a novel approach. The results greatly depend on the size of the available corpora and the lexical and morphological complexity of the language being analysed. In the case of Toki Pona, which is neither inflected nor contains a large number of lexemes, it has proven to be an extremely effective means of analysing word senses of individual vocabulary items.
 
 The analysis showed that Toki Pona substantially differs from the language which was originally published back in 2014. Some word senses have largely fallen out of use, some asserted dominance over others. With the help of the distributional model created in the course of this research, predominant word senses were separated from secondary ones.
 
@@ -1452,7 +1452,7 @@ The author hopes that this research will serve as the groundwork for further aca
 
     \bigskip
 
-    ni ale li pini la o pona tawa kijetesantakalu a
+    ale ni la o pona tawa kijetesantakalu suli a
 
   \end{minipage}
 \vspace*{\fill}
