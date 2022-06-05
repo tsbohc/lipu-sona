@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  2 JUN 2022 01:59
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/VoidLinux) (preloaded format=xelatex 2021.12.20)  5 JUN 2022 17:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -813,31 +813,31 @@ Package fontspec Info: Font family 'Alegreya(8)' created for font 'Alegreya'
 
 )
 Requested font "Iosevka Custom" at 14.39996pt
- -> ^^F^^)^^+Z^^E
+ -> k^^V\^^E
 Requested font "Iosevka Custom/OT" at 14.40002pt
- -> ^^G^^)^^+Z^^E
+ -> ^^Â^^V\^^E
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 14.40001pt
- -> 3^^)^^+Z^^E
+ -> ^^Ø^^V\^^E
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40001pt
- -> I^^)^^+Z^^E
+ -> ^^ï^^V\^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40001pt
- -> I^^)^^+Z^^E
+ -> ^^ï^^V\^^E
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40001pt
- -> I^^)^^+Z^^E
+ -> ^^ï^^V\^^E
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^Ï^^)^^+Z^^E
+ -> ^^5^^V\^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^ç^^)^^+Z^^E
+ -> ^^M^^V\^^E
 Requested font "Iosevka Custom/B/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^ç^^)^^+Z^^E
+ -> ^^M^^V\^^E
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40002pt
- -> W^^Xp^^$^^ëU
+ -> =^^Îd0^^ U
 Requested font "Iosevka Custom/I/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^ ^^)^^+Z^^E
+ -> &^^V\^^E
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40002pt
- -> Pdv^^$^^ëU
+ -> ^^6+e0^^ U
 Requested font "Iosevka Custom/BI/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^ ^^)^^+Z^^E
+ -> &^^V\^^E
 
 Package fontspec Info: Font family 'IosevkaCustom(0)' created for font
 (fontspec)             'Iosevka Custom' with options
@@ -1644,7 +1644,7 @@ LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
 Requested font "[Alegreya-Italic.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 14.4pt
  -> /usr/share/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf
 Requested font "Iosevka Custom/OT:script=latn;language=dflt;" at 12.0pt
- -> ^^?5+^^$^^ëU
+ -> ^^T^^
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 294.
 Requested font "[Alegreya-Regular.otf]/OT:script=latn;language=dflt;+pnum;+lnum;mapping=tex-text;" at 12.0pt
@@ -1769,37 +1769,37 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 1374.
 [48] [49] [50]
 Chapter .
 Requested font "linja pona 4.9" at 14.39996pt
- -> -^^O?^^$^^ëU
+ -> 3^^^<0^^ U
 Requested font "linja pona 4.9/OT" at 14.40002pt
- -> @v?^^$^^ëU
+ -> ^^î^^à=0^^ U
 Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40001pt
- -> <^^%?^^$^^ëU
+ -> ^^P(<0^^ U
 Requested font "linja pona 4.9/BI/OT:script=latn;language=dflt;" at 14.40001pt
- -> <v?^^$^^ëU
+ -> ^^ð^^à=0^^ U
 
 Package fontspec Info: Could not resolve font "linja pona 4.9/BI" (it probably
 (fontspec)             doesn't exist).
 
 Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40001pt
- -> <v?^^$^^ëU
+ -> ^^ð^^à=0^^ U
 Requested font "linja pona 4.9/B/OT:script=latn;language=dflt;" at 14.40001pt
- -> <v?^^$^^ëU
+ -> ^^ð^^à=0^^ U
 
 Package fontspec Info: Could not resolve font "linja pona 4.9/B" (it probably
 (fontspec)             doesn't exist).
 
 Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40001pt
- -> <v?^^$^^ëU
+ -> ^^ð^^à=0^^ U
 Requested font "linja pona 4.9/I/OT:script=latn;language=dflt;" at 14.40001pt
- -> <v?^^$^^ëU
+ -> ^^ð^^à=0^^ U
 
 Package fontspec Info: Could not resolve font "linja pona 4.9/I" (it probably
 (fontspec)             doesn't exist).
 
 Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40002pt
- -> <v?^^$^^ëU
+ -> ^^ð^^à=0^^ U
 Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.40002pt
- -> ^^üc<^^$^^ëU
+ -> @+;0^^ U
 
 Package fontspec Info: Font family 'linjapona4.9(0)' created for font 'linja
 (fontspec)             pona 4.9' with options [].
@@ -1812,9 +1812,9 @@ Package fontspec Info: Font family 'linjapona4.9(0)' created for font 'linja
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 14.4pt
- -> ^^üc<^^$^^ëU
+ -> @+;0^^ U
 Requested font "linja pona 4.9/OT:script=latn;language=dflt;" at 20.74pt
- -> ^^x<^^$^^ëU
+ -> ^^ð^^<0^^ U
 
 Underfull \hbox (badness 10000) in paragraph at lines 1439--1440
 []\TU/linjapona4.9(0)/m/n/20.74 lipu ni li pali suli pi sona musi mi. lipu ni la mi toki e nimi sona suli
@@ -1855,10 +1855,10 @@ Package logreq Info: Writing requests to 'lipu.run.xml'.
 Here is how much of TeX's memory you used:
  36459 strings out of 476919
  720015 string characters out of 5827662
- 1728739 words of memory out of 5000000
+ 1728740 words of memory out of 5000000
  55822 multiletter control sequences out of 15000+600000
  409204 words of font info for 98 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  113i,11n,124p,835b,5048s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lipu.xdv (70 pages, 1250684 bytes).
+Output written on lipu.xdv (70 pages, 1250740 bytes).
